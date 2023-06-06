@@ -1,0 +1,335 @@
+// ------------------------------
+//  GENERAL RESETS 
+// ------------------------------
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: "Poppins", Arial, Helvetica, Verdana;
+
+}
+
+header {
+    position: relative;
+    max-width: 1920px;
+    min-height: 400px;
+    margin: 0 auto;
+    overflow: visible;
+}
+
+// ------------------------------
+//  NAVBAR BACKGROUND
+// ------------------------------
+@media screen and (min-width: 0px) and (max-width: 799px) {
+    .navbar-bg-container {
+        position: absolute;
+        right: 0;
+        top: 0;
+
+        img {
+            width: 100vw;
+            min-height: 155px;
+            max-height: 200px;
+        }
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .navbar-bg-container {
+        position: absolute;
+        right: 0;
+        top: 0;
+
+        img {
+            width: 65vw;
+            max-width: 1300px;
+        }
+    }
+}
+
+// ------------------------------
+//  NAVBAR LINK EFFECTS & COLORS
+// ------------------------------
+
+@media screen and (min-width: 1000px) {
+
+    #navbar-links a {
+        position: relative;
+    }
+
+    #navbar-links a::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 5px;
+        width: 0;
+        height: 3px;
+        background-color: #7fd378;
+        transition: width 0.2s ease-in-out;
+    }
+
+    #navbar-links a:hover::after {
+        width: 100%;
+    }
+
+    #navbar-links {
+        position: relative;
+
+        // ACTIVE (width: 100%)
+        .home a::after {
+            width: 100%;
+            background-color: #38C6E5;
+        }
+
+        .home a:hover {
+            color: #38C6E5;
+            transition: 0.1s;
+        }
+
+        // ------------------
+        .about a::after {
+            background-color: #7fd378;
+        }
+
+        .about a:hover {
+            color: #7fd378;
+            transition: 0.1s;
+        }
+
+        // ------------------
+        .services a::after {
+            background-color: #804DD4;
+        }
+
+        .services a:hover {
+            color: #804DD4;
+            transition: 0.1s;
+        }
+
+        // ------------------
+        .blog a::after {
+            background-color: #D44D4D;
+        }
+
+        .blog a:hover {
+            color: #D44D4D;
+            transition: 0.1s;
+        }
+
+        .contact {
+            a {
+                color: black;
+                border-radius: 7.5px;
+                width: 150px;
+                padding: 15px 30px;
+                background-color: #fdcf14;
+                transition: 0.2s;
+            }
+
+            a:hover {
+                color: white;
+                background-color: #fdcf14;
+                transition: 0.2s;
+            }
+        }
+
+        .contact a::after {
+            width: 0;
+            background-color: #F2C613;
+        }
+    }
+
+}
+
+// ------------------------------
+//        NAVBAR & LOGO
+// ------------------------------
+@media screen and (min-width: 0px) and (max-width: 499px) {
+    .logo {
+        position: absolute;
+        left: 10px;
+        top: 15px;
+        min-width: 300px;
+
+        img {
+            width: 45%;
+            max-width: 300px;
+            min-width: 220px;
+        }
+    }
+
+}
+
+@media screen and (min-width: 500px) and (max-width: 999px) {
+    .logo {
+        position: absolute;
+        left: 15px;
+        top: 15px;
+
+        img {
+            width: 45%;
+            min-width: 220px;
+        }
+    }
+
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1199px) {
+    .logo {
+        position: absolute;
+        left: 30px;
+        top: 25px;
+
+        img {
+            width: 50%;
+
+        }
+    }
+
+    #navbar-links {
+        position: absolute;
+        z-index: 5;
+        top: 55px;
+        right: 20px;
+        display: flex;
+        flex-direction: row;
+        color: white;
+        width: auto;
+        height: auto;
+
+
+        li {
+            width: auto;
+            margin: 0 20px;
+
+            a {
+                width: auto;
+                color: white;
+                font-weight: 500;
+                font-size: 1.125em;
+                padding: 10px 5px;
+
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1349px) {
+    .logo {
+        position: absolute;
+        left: 38px;
+        top: 38px;
+
+        img {
+            width: 50%;
+
+        }
+    }
+
+    #navbar-links {
+        position: absolute;
+        z-index: 5;
+        top: 65px;
+        right: 25px;
+        display: flex;
+        flex-direction: row;
+        color: white;
+        width: auto;
+        height: auto;
+
+        li {
+            width: auto;
+            margin: 0 30px;
+
+            a {
+                width: auto;
+                color: white;
+                font-weight: 500;
+                font-size: 1.125em;
+                padding: 10px 5px;
+
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1350px) and (max-width: 1499px) {
+    .logo {
+        position: absolute;
+        left: 65px;
+        top: 50px;
+
+        img {
+            width: 50%;
+
+        }
+    }
+
+    #navbar-links {
+        position: absolute;
+        z-index: 5;
+        top: 80px;
+        right: 40px;
+        display: flex;
+        flex-direction: row;
+        color: white;
+        width: auto;
+        height: auto;
+
+
+        li {
+            width: auto;
+            margin: 0 40px;
+
+            a {
+                width: auto;
+                color: white;
+                font-weight: 500;
+                font-size: 1.125em;
+                padding: 10px 5px;
+
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1500px) {
+    .logo {
+        position: absolute;
+        margin-left: 75px;
+        top: 60px;
+
+        img {
+            width: 60%;
+        }
+
+    }
+
+    #navbar-links {
+        position: absolute;
+        z-index: 5;
+        top: 95px;
+        right: 55px;
+        display: flex;
+        flex-direction: row;
+        color: white;
+        width: auto;
+        height: auto;
+
+        li {
+            width: auto;
+            margin: 0 50px;
+
+            a {
+                width: auto;
+                color: white;
+                font-weight: 500;
+                font-size: 1.125em;
+                padding: 10px 5px;
+
+            }
+        }
+    }
+}
