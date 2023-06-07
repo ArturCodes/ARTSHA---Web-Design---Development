@@ -342,9 +342,9 @@ header {
   .toggle-button {
     position: absolute;
     right: 10px;
-    top: 15px;
-    width: 15px;
-    height: 15px;
+    top: 27px;
+    width: 27px;
+    height: 27px;
     justify-content: center;
     align-items: center;
     background-color: #38C6E5;
