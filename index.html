@@ -13,6 +13,8 @@
 </head>
 
 <body>
+    <!--Screen reader skip main nav-->
+    <a class="skip" aria-label="skip to main content" href="#main">Click To Skip To Main Content</a>
 
     <header>
 
@@ -33,7 +35,16 @@
             </picture>
         </a>
 
-        <nav>
+        <nav role="navigation">
+
+            <button class="toggle-button" aria-label="mobile menu toggle">
+                <div class="box" aria-hidden="true">
+                    <span class="line1"></span>
+                    <span class="line2"></span>
+                    <span class="line3"></span>
+                </div>
+            </button>
+
             <ul id="navbar-links">
                 <li class="home"><a href="index.html">Home</a></li>
                 <li class="about"><a href="./about/about.html">About</a></li>
