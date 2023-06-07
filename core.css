@@ -1,35 +1,33 @@
-* {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  text-decoration: none;
-  box-sizing: border-box;
-  font-family: "Poppins", Arial, Helvetica, Verdana;
+@media screen and (min-width: 0px) {
+  * {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: "Poppins", Arial, Helvetica, Verdana;
+  }
+  header {
+    position: relative;
+    max-width: 1920px;
+    min-height: 400px;
+    margin: 0 auto;
+    overflow: visible;
+  }
+  .skip {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    z-index: -1111111;
+  }
+  .logo,
+  .logo img,
+  #navbar-links,
+  #navbar-links li {
+    transition: 0.3s ease;
+  }
 }
-
-header {
-  position: relative;
-  max-width: 1920px;
-  min-height: 400px;
-  margin: 0 auto;
-  overflow: visible;
-}
-
-.skip {
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 0;
-  z-index: -1111111;
-}
-
-.logo,
-.logo img,
-#navbar-links,
-#navbar-links li {
-  transition: 0.3s ease;
-}
-
 @media screen and (min-width: 0px) and (max-width: 849px) {
   .navbar-bg-container {
     position: absolute;
