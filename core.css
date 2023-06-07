@@ -15,7 +15,7 @@ header {
   overflow: visible;
 }
 
-@media screen and (min-width: 0px) and (max-width: 799px) {
+@media screen and (min-width: 0px) and (max-width: 849px) {
   .navbar-bg-container {
     position: absolute;
     right: 0;
@@ -27,7 +27,7 @@ header {
     max-height: 200px;
   }
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 850px) {
   .navbar-bg-container {
     position: absolute;
     right: 0;
@@ -110,19 +110,17 @@ header {
     position: absolute;
     left: 10px;
     top: 15px;
-    min-width: 300px;
   }
   .logo img {
     width: 45%;
-    max-width: 300px;
     min-width: 220px;
   }
 }
 @media screen and (min-width: 500px) and (max-width: 999px) {
   .logo {
     position: absolute;
-    left: 15px;
-    top: 15px;
+    left: 20px;
+    top: 20px;
   }
   .logo img {
     width: 45%;
