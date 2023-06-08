@@ -10,6 +10,10 @@
 
     <link rel="stylesheet" href="core.css">
 
+
+    <script src="./menu-toggle.js" async preload></script>
+
+
 </head>
 
 <body>
@@ -37,12 +41,14 @@
 
         <nav role="navigation">
 
-            <button class="toggle-button" aria-label="mobile menu toggle">
-                <div class="box" aria-hidden="true">
-                    <span class="line1"></span>
-                    <span class="line2"></span>
-                    <span class="line3"></span>
+            <button id="menu-toggle">
+
+                <div class="menu-toggle">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
                 </div>
+
             </button>
 
             <ul id="navbar-links">
