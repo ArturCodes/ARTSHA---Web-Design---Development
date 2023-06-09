@@ -7,19 +7,19 @@
     box-sizing: border-box;
     font-family: "Poppins", Arial, Helvetica, Verdana;
   }
-  header {
-    position: relative;
-    max-width: 1920px;
-    min-height: 400px;
-    margin: 0 auto;
-    overflow: visible;
-  }
   .skip {
     position: absolute;
     top: 0;
     left: 0;
     opacity: 0;
     z-index: -1111111;
+  }
+  header {
+    position: relative;
+    max-width: 1920px;
+    min-height: 400px;
+    margin: 0 auto;
+    overflow: visible;
   }
   .logo,
   .logo img,
@@ -119,6 +119,10 @@
   }
 }
 @media screen and (min-width: 0px) and (max-width: 499px) {
+  nav {
+    position: absolute;
+    z-index: 999;
+  }
   .logo {
     position: absolute;
     padding: 0;
@@ -131,6 +135,27 @@
     height: 100%;
     -o-object-fit: contain;
        object-fit: contain;
+  }
+  #navbar-links {
+    position: relative;
+    z-index: 999;
+    width: 65vw;
+    height: 100vh;
+    min-width: 275px;
+    max-width: 400px;
+  }
+  #opacity-bg {
+    height: 0px;
+    width: 100vw;
+    display: none;
+  }
+  #opacity-bg.show {
+    z-index: 888;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(53, 49, 72, 0.168627451);
+    top: 0;
+    left: 0;
   }
 }
 @media screen and (min-width: 500px) and (max-width: 999px) {
@@ -272,9 +297,9 @@
   }
 }
 @media screen and (min-width: 0px) {
-  #menu-toggle {
+  #menu-toggle-button {
+    position: fixed;
     background-color: transparent;
-    position: absolute;
     right: 27px;
     top: 29px;
     width: 30px;
@@ -282,6 +307,7 @@
     justify-content: center;
     align-items: center;
     border: none;
+    z-index: 9999;
   }
   .menu-toggle {
     width: 30px;
@@ -294,12 +320,9 @@
   .line {
     height: 3px;
     background-color: white;
-    transition: transform 0.7s;
+    transition: transform 0.5s;
     border-radius: 2px;
     opacity: 100%;
-  }
-  .line3 {
-    transition: 0.7s;
   }
   .active.line1 {
     transform: translate(-2px, 11px) rotate(225deg);
@@ -311,12 +334,12 @@
     width: 110%;
   }
   .active.line3 {
-    transform: translate(0%, -15px);
+    transform: translate(0%, -20px);
     opacity: 0%;
   }
 }
 @media screen and (min-width: 500px) and (max-width: 999px) {
-  #menu-toggle {
+  #menu-toggle-button {
     background-color: transparent;
     position: absolute;
     right: 34px;
@@ -329,7 +352,7 @@
   }
 }
 @media screen and (min-width: 1000px) {
-  #menu-toggle {
+  #menu-toggle-button {
     display: none;
   }
 }/*# sourceMappingURL=core.css.map */
