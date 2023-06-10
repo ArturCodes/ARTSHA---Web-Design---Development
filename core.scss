@@ -166,7 +166,7 @@
 // ------------------------------
 @media screen and (min-width: 0px) and (max-width: 499px) {
     nav {
-        position: absolute;
+        position: relative;
         z-index: 999;
     }
 
@@ -185,18 +185,50 @@
     }
 
     #navbar-links {
-        position: relative;
-        z-index: 999;
-        width: 65vw;
+        position: absolute;
+        width: 0;
         height: 100vh;
-        min-width: 275px;
-        max-width: 400px;
+        transition: width 0.3s;
+
+        li {
+            display: none;
+        }
+    }
+
+    #navbar-links.initial-state {
+        width: 0;
+    }
+
+    #navbar-links.mobile-nav-active {
+        background-color: #3F3B51;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 35vw;
+        width: 65vw;
+        max-width: 225px;
+        right: 0;
+        z-index: 999;
+        transition: width 0.3s;
+
+        li {
+            display: block;
+            padding: 20px;
+            margin: 10px;
+
+            a {
+                color: white;
+            }
+        }
     }
 
     #opacity-bg {
         height: 0px;
         width: 100vw;
         display: none;
+        transition: height 0.3s, width 0.3s;
     }
 
     #opacity-bg.show {
@@ -204,7 +236,6 @@
         height: 100vh;
         width: 100vw;
         background-color: #3531482b;
-        // backdrop-filter: blur(5px);
         top: 0;
         left: 0;
     }
