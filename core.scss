@@ -185,19 +185,34 @@
     }
 
     #navbar-links {
+        background-color: #3F3B51;
         position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 65vw;
+        max-width: 225px;
+        right: -225px;
+        z-index: 999;
         width: 0;
+
+
         height: 100vh;
-        transition: width 0.3s;
+        transition: 0.4s;
+        z-index: 999;
 
         li {
-            display: none;
+            display: block;
+            padding: 20px;
+            margin: 10px;
+
+            a {
+                color: white;
+            }
         }
     }
 
-    #navbar-links.initial-state {
-        width: 0;
-    }
 
     #navbar-links.mobile-nav-active {
         background-color: #3F3B51;
@@ -206,12 +221,11 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin-bottom: 35vw;
         width: 65vw;
         max-width: 225px;
         right: 0;
         z-index: 999;
-        transition: width 0.3s;
+        transition: 0.4s;
 
         li {
             display: block;
