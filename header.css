@@ -119,10 +119,6 @@
   }
 }
 @media screen and (min-width: 0px) and (max-width: 499px) {
-  nav {
-    position: relative;
-    z-index: 999;
-  }
   .logo {
     position: absolute;
     padding: 0;
@@ -136,68 +132,6 @@
     -o-object-fit: contain;
        object-fit: contain;
   }
-  #navbar-links {
-    background-color: #3F3B51;
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 65vw;
-    max-width: 225px;
-    right: 0;
-    z-index: 999;
-    height: 100vh;
-    transition: 0.4s;
-    z-index: 999;
-  }
-  #navbar-links li {
-    display: block;
-    padding: 20px;
-    margin: 10px;
-  }
-  #navbar-links li a {
-    color: white;
-  }
-  #navbar-links.mobile-nav-active {
-    background-color: #3F3B51;
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 65vw;
-    max-width: 225px;
-    right: 0;
-    z-index: 999;
-    transition: 0.4s;
-  }
-  #navbar-links.mobile-nav-active li {
-    display: block;
-    padding: 20px;
-    margin: 10px;
-  }
-  #navbar-links.mobile-nav-active li a {
-    color: white;
-  }
-  #opacity-bg {
-    display: none;
-    background-color: hsla(251, 16%, 27%, 0.5);
-    height: 100vh;
-    width: 100vw;
-    transition: 0.3s;
-  }
-  #opacity-bg.opacity-active {
-    display: block;
-    z-index: 888;
-    height: 100vh;
-    width: 100vw;
-    background-color: rgba(53, 49, 72, 0.168627451);
-    -webkit-backdrop-filter: blur(3px);
-            backdrop-filter: blur(3px);
-    top: 0;
-    left: 0;
-  }
 }
 @media screen and (min-width: 500px) and (max-width: 999px) {
   .logo {
@@ -207,6 +141,12 @@
   }
   .logo img {
     width: 270px;
+  }
+}
+@media screen and (min-width: 0px) and (max-width: 999px) {
+  nav {
+    position: relative;
+    z-index: 999;
   }
   #navbar-links {
     background-color: #3F3B51;
@@ -226,7 +166,7 @@
   #navbar-links li {
     display: none;
     padding: 20px;
-    margin: 10px;
+    margin: 7.5px;
   }
   #navbar-links li a {
     color: white;
