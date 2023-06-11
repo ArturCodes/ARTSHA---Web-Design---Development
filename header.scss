@@ -193,8 +193,7 @@
         align-items: center;
         width: 65vw;
         max-width: 225px;
-
-        right: -225px;
+        right: 0;
         z-index: 999;
 
         height: 100vh;
@@ -238,17 +237,20 @@
     }
 
     #opacity-bg {
-        height: 0px;
-        width: 100vw;
         display: none;
-        transition: height 0.3s, width 0.3s;
+        background-color: hsla(251, 16%, 27%, 0.5);
+        height: 100vh;
+        width: 100vw;
+        transition: 0.3s;
     }
 
-    #opacity-bg.show {
+    #opacity-bg.opacity-active {
+        display: block;
         z-index: 888;
         height: 100vh;
         width: 100vw;
         background-color: #3531482b;
+        backdrop-filter: blur(3px);
         top: 0;
         left: 0;
     }
@@ -264,6 +266,75 @@
         img {
             width: 270px
         }
+    }
+
+    #navbar-links {
+        background-color: #3F3B51;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 65vw;
+        max-width: 300px;
+        height: 100vh;
+        right: 0;
+        width: 0;
+        z-index: 999;
+        transition: 0.4s;
+
+        li {
+            display: none;
+            padding: 20px;
+            margin: 10px;
+
+            a {
+                color: white;
+            }
+        }
+    }
+
+
+    #navbar-links.mobile-nav-active {
+        background-color: #3F3B51;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 65vw;
+        max-width: 300px;
+        right: 0;
+        z-index: 999;
+        transition: 0.4s;
+
+        li {
+            display: block;
+            padding: 20px;
+            margin: 10px;
+
+            a {
+                color: white;
+            }
+        }
+    }
+
+    #opacity-bg {
+        display: none;
+        height: 100vh;
+        width: 100vw;
+        transition: 0.3s;
+    }
+
+    #opacity-bg.opacity-active {
+        display: block;
+        z-index: 888;
+        height: 100vh;
+        width: 100vw;
+        background-color: #3531482b;
+        backdrop-filter: blur(3px);
+        top: 0;
+        left: 0;
     }
 
 }
