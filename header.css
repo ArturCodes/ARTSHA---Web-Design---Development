@@ -147,7 +147,6 @@
     max-width: 225px;
     right: -225px;
     z-index: 999;
-    width: 0;
     height: 100vh;
     transition: 0.4s;
     z-index: 999;
@@ -393,4 +392,4 @@
   #menu-toggle-button {
     display: none;
   }
-}/*# sourceMappingURL=core.css.map */
+}/*# sourceMappingURL=header.css.map */
