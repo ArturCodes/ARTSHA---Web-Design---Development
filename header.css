@@ -51,6 +51,40 @@
     max-width: 1300px;
   }
 }
+@media screen and (min-width: 0px) and (max-width: 999px) {
+  #navbar-links {
+    position: relative;
+  }
+  #navbar-links .home a::after {
+    width: 100%;
+    background-color: #38C6E5;
+  }
+  #navbar-links .home a:hover {
+    color: #38C6E5;
+    transition: 0.1s;
+  }
+  #navbar-links .about a::after {
+    background-color: #7fd378;
+  }
+  #navbar-links .about a:hover {
+    color: #7fd378;
+    transition: 0.1s;
+  }
+  #navbar-links .services a::after {
+    background-color: #804DD4;
+  }
+  #navbar-links .services a:hover {
+    color: #804DD4;
+    transition: 0.1s;
+  }
+  #navbar-links .blog a::after {
+    background-color: #D44D4D;
+  }
+  #navbar-links .blog a:hover {
+    color: #D44D4D;
+    transition: 0.1s;
+  }
+}
 @media screen and (min-width: 1000px) {
   #navbar-links a {
     position: relative;
@@ -118,31 +152,6 @@
     background-color: #F2C613;
   }
 }
-@media screen and (min-width: 0px) and (max-width: 499px) {
-  .logo {
-    position: absolute;
-    padding: 0;
-    margin: 0;
-    left: 15px;
-    top: 17px;
-  }
-  .logo img {
-    width: 220px;
-    height: 100%;
-    -o-object-fit: contain;
-       object-fit: contain;
-  }
-}
-@media screen and (min-width: 500px) and (max-width: 999px) {
-  .logo {
-    position: absolute;
-    left: 18px;
-    top: 18px;
-  }
-  .logo img {
-    width: 270px;
-  }
-}
 @media screen and (min-width: 0px) and (max-width: 999px) {
   nav {
     position: relative;
@@ -208,6 +217,31 @@
             backdrop-filter: blur(3px);
     top: 0;
     left: 0;
+  }
+}
+@media screen and (min-width: 0px) and (max-width: 499px) {
+  .logo {
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    left: 15px;
+    top: 17px;
+  }
+  .logo img {
+    width: 220px;
+    height: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 999px) {
+  .logo {
+    position: absolute;
+    left: 18px;
+    top: 18px;
+  }
+  .logo img {
+    width: 270px;
   }
 }
 @media screen and (min-width: 1000px) and (max-width: 1199px) {
