@@ -17,7 +17,7 @@
   header {
     position: relative;
     max-width: 1920px;
-    min-height: 400px;
+    min-height: 200px;
     margin: 0 auto;
     overflow: visible;
   }
@@ -202,12 +202,14 @@
     color: white;
   }
   #opacity-bg {
+    position: absolute;
     display: none;
     height: 100vh;
     width: 100vw;
     transition: 0.3s;
   }
   #opacity-bg.opacity-active {
+    position: absolute;
     display: block;
     z-index: 888;
     height: 100vh;
@@ -248,7 +250,7 @@
   .logo {
     position: absolute;
     left: 30px;
-    top: 25px;
+    top: 35px;
   }
   .logo img {
     width: 300px;
@@ -280,7 +282,7 @@
   .logo {
     position: absolute;
     left: 38px;
-    top: 38px;
+    top: 44px;
   }
   .logo img {
     width: 300px;
@@ -312,7 +314,7 @@
   .logo {
     position: absolute;
     left: 65px;
-    top: 50px;
+    top: 59px;
   }
   .logo img {
     width: 300PX;
@@ -344,7 +346,7 @@
   .logo {
     position: absolute;
     margin-left: 75px;
-    top: 60px;
+    top: 69px;
   }
   .logo img {
     width: 340px;
@@ -417,7 +419,7 @@
 @media screen and (min-width: 500px) and (max-width: 999px) {
   #menu-toggle-button {
     background-color: transparent;
-    position: absolute;
+    position: fixed;
     right: 34px;
     top: 34px;
     width: 30px;
