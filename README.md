@@ -38,3 +38,56 @@ bottom: 25px;
 left: -75px;
 opacity: .5;
 }
+
+// ------------------
+.contact {
+overflow: hidden;
+padding: 15px 15px;
+
+            a {
+                color: black;
+                border-radius: 7.5px;
+                width: 150px;
+                padding: 15px 30px;
+                background-color: #fdcf14;
+                transition: 0.2s;
+            }
+
+            a:hover {
+                color: white;
+                background-color: #fdcf14;
+                transition: 0.2s;
+            }
+        }
+
+        .contact a::after {
+            width: 0;
+            background-color: #f3c61285;
+            background-color: #F2C613;
+
+        }
+
+        // BACKUP
+        // .contact {
+        //     a {
+        //         color: black;
+        //         border-radius: 7.5px;
+        //         width: 150px;
+        //         padding: 15px 30px;
+        //         background-color: #fdcf14;
+        //         transition: 0.2s;
+        //     }
+
+        //     a:hover {
+        //         color: white;
+        //         background-color: #fdcf14;
+        //         transition: 0.2s;
+        //     }
+        // }
+
+        // .contact a::after {
+        //     width: 0;
+        //     background-color: #F2C613;
+
+        // }
+    }

@@ -1,4 +1,9 @@
 // ----------------------------------
+//  Variables
+// ----------------------------------
+$yellow: #ffcc00;
+
+// ----------------------------------
 //  Resets & Transitions
 // ----------------------------------
 @media screen and (min-width: 0px) {
@@ -137,7 +142,6 @@
         bottom: 5px;
         width: 0;
         height: 3px;
-        background-color: #7fd378;
         transition: width 0.2s ease-in-out;
     }
 
@@ -151,7 +155,6 @@
         a:hover {
             transition: 0.1s;
         }
-
 
         // ACTIVE (width: 100%)
         .home a::after {
@@ -190,57 +193,34 @@
             color: #D44D4D;
         }
 
-        // ------------------
+        //------------------ 
         .contact {
             overflow: hidden;
-            padding: 15px 30px;
+            padding: 15px 15px;
+            position: relative;
 
             a {
+                border: 2px solid darken($yellow, 5%);
                 color: black;
                 border-radius: 7.5px;
                 width: 150px;
                 padding: 15px 30px;
-                background-color: #fdcf14;
-                transition: 0.2s;
+                background-color: $yellow;
+                transition: 0.3s;
+                z-index: 888;
+
+                box-shadow: 0px 2px 0 darken($yellow, 5%), 2px 4px 6px darken($yellow, 2%);
+
             }
 
             a:hover {
                 color: white;
-                background-color: #fdcf14;
-                transition: 0.2s;
+                background-color: $yellow;
+                transition: 0.3s;
+
             }
         }
 
-        .contact a::after {
-            width: 0;
-            background-color: #f3c61285;
-            background-color: #F2C613;
-
-        }
-
-        // BACKUP
-        // .contact {
-        //     a {
-        //         color: black;
-        //         border-radius: 7.5px;
-        //         width: 150px;
-        //         padding: 15px 30px;
-        //         background-color: #fdcf14;
-        //         transition: 0.2s;
-        //     }
-
-        //     a:hover {
-        //         color: white;
-        //         background-color: #fdcf14;
-        //         transition: 0.2s;
-        //     }
-        // }
-
-        // .contact a::after {
-        //     width: 0;
-        //     background-color: #F2C613;
-
-        // }
     }
 
 }
@@ -280,18 +260,18 @@
 @media screen and (min-width: 1000px) and (max-width: 1199px) {
     .logo {
         position: absolute;
-        left: 30px;
-        top: 35px;
+        left: 35px;
+        top: 37px;
 
         img {
-            width: 300px;
+            width: 280px;
         }
     }
 
     #navbar-links {
         position: absolute;
         z-index: 5;
-        top: 55px;
+        top: 45px;
         right: 20px;
         display: flex;
         flex-direction: row;
@@ -299,7 +279,6 @@
         color: white;
         width: auto;
         height: auto;
-
 
         li {
             width: auto;
@@ -309,10 +288,14 @@
                 width: auto;
                 color: white;
                 font-weight: 500;
-                font-size: 1.125em;
+                font-size: 1em;
                 padding: 10px 5px;
-
             }
+        }
+
+        .contact {
+            position: relative;
+            margin: 0;
         }
     }
 }
@@ -321,10 +304,10 @@
     .logo {
         position: absolute;
         left: 38px;
-        top: 44px;
+        top: 43px;
 
         img {
-            width: 300px;
+            width: 290px;
 
         }
     }
@@ -332,7 +315,7 @@
     #navbar-links {
         position: absolute;
         z-index: 5;
-        top: 65px;
+        top: 50px;
         right: 25px;
         display: flex;
         flex-direction: row;
@@ -354,6 +337,10 @@
 
             }
         }
+
+        .contact {
+            margin: 0;
+        }
     }
 }
 
@@ -361,7 +348,7 @@
     .logo {
         position: absolute;
         left: 65px;
-        top: 59px;
+        top: 58px;
 
         img {
             width: 300PX;
@@ -372,7 +359,7 @@
     #navbar-links {
         position: absolute;
         z-index: 5;
-        top: 80px;
+        top: 65px;
         right: 40px;
         display: flex;
         flex-direction: row;
@@ -396,13 +383,17 @@
 
             }
         }
+
+        .contact {
+            margin: 0;
+        }
     }
 }
 
 @media screen and (min-width: 1500px) {
     .logo {
         position: absolute;
-        left: 75px;
+        left: 85px;
         top: 69px;
 
         img {
@@ -414,8 +405,8 @@
     #navbar-links {
         position: absolute;
         z-index: 5;
-        top: 95px;
-        right: 55px;
+        top: 80px;
+        right: 75px;
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -425,16 +416,21 @@
 
         li {
             width: auto;
-            margin: 0 50px;
+            margin: 0 45px;
 
             a {
                 width: auto;
                 color: white;
                 font-weight: 500;
-                font-size: 1.125em;
+                font-size: 1.25em;
                 padding: 10px 5px;
 
             }
+        }
+
+        .contact {
+            margin: 0;
+            padding: 15px 30px;
         }
     }
 }
@@ -555,11 +551,10 @@
 
         .contact {
             a:hover {
-                color: #ffcc00;
+                color: $yellow;
             }
         }
     }
-
 
     #opacity-bg {
         position: absolute;

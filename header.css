@@ -101,7 +101,6 @@
     bottom: 5px;
     width: 0;
     height: 3px;
-    background-color: #7fd378;
     transition: width 0.2s ease-in-out;
   }
   #navbar-links a:hover::after {
@@ -140,25 +139,24 @@
   }
   #navbar-links .contact {
     overflow: hidden;
-    padding: 15px 30px;
+    padding: 15px 15px;
+    position: relative;
   }
   #navbar-links .contact a {
+    border: 2px solid #e6b800;
     color: black;
     border-radius: 7.5px;
     width: 150px;
     padding: 15px 30px;
-    background-color: #fdcf14;
-    transition: 0.2s;
+    background-color: #ffcc00;
+    transition: 0.3s;
+    z-index: 888;
+    box-shadow: 0px 2px 0 #e6b800, 2px 4px 6px #f5c400;
   }
   #navbar-links .contact a:hover {
     color: white;
-    background-color: #fdcf14;
-    transition: 0.2s;
-  }
-  #navbar-links .contact a::after {
-    width: 0;
-    background-color: rgba(243, 198, 18, 0.5215686275);
-    background-color: #F2C613;
+    background-color: #ffcc00;
+    transition: 0.3s;
   }
 }
 @media screen and (min-width: 0px) and (max-width: 499px) {
@@ -189,16 +187,16 @@
 @media screen and (min-width: 1000px) and (max-width: 1199px) {
   .logo {
     position: absolute;
-    left: 30px;
-    top: 35px;
+    left: 35px;
+    top: 37px;
   }
   .logo img {
-    width: 300px;
+    width: 280px;
   }
   #navbar-links {
     position: absolute;
     z-index: 5;
-    top: 55px;
+    top: 45px;
     right: 20px;
     display: flex;
     flex-direction: row;
@@ -215,23 +213,27 @@
     width: auto;
     color: white;
     font-weight: 500;
-    font-size: 1.125em;
+    font-size: 1em;
     padding: 10px 5px;
+  }
+  #navbar-links .contact {
+    position: relative;
+    margin: 0;
   }
 }
 @media screen and (min-width: 1200px) and (max-width: 1349px) {
   .logo {
     position: absolute;
     left: 38px;
-    top: 44px;
+    top: 43px;
   }
   .logo img {
-    width: 300px;
+    width: 290px;
   }
   #navbar-links {
     position: absolute;
     z-index: 5;
-    top: 65px;
+    top: 50px;
     right: 25px;
     display: flex;
     flex-direction: row;
@@ -251,12 +253,15 @@
     font-size: 1.125em;
     padding: 10px 5px;
   }
+  #navbar-links .contact {
+    margin: 0;
+  }
 }
 @media screen and (min-width: 1350px) and (max-width: 1499px) {
   .logo {
     position: absolute;
     left: 65px;
-    top: 59px;
+    top: 58px;
   }
   .logo img {
     width: 300PX;
@@ -264,7 +269,7 @@
   #navbar-links {
     position: absolute;
     z-index: 5;
-    top: 80px;
+    top: 65px;
     right: 40px;
     display: flex;
     flex-direction: row;
@@ -284,11 +289,14 @@
     font-size: 1.125em;
     padding: 10px 5px;
   }
+  #navbar-links .contact {
+    margin: 0;
+  }
 }
 @media screen and (min-width: 1500px) {
   .logo {
     position: absolute;
-    left: 75px;
+    left: 85px;
     top: 69px;
   }
   .logo img {
@@ -297,8 +305,8 @@
   #navbar-links {
     position: absolute;
     z-index: 5;
-    top: 95px;
-    right: 55px;
+    top: 80px;
+    right: 75px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -308,14 +316,18 @@
   }
   #navbar-links li {
     width: auto;
-    margin: 0 50px;
+    margin: 0 45px;
   }
   #navbar-links li a {
     width: auto;
     color: white;
     font-weight: 500;
-    font-size: 1.125em;
+    font-size: 1.25em;
     padding: 10px 5px;
+  }
+  #navbar-links .contact {
+    margin: 0;
+    padding: 15px 30px;
   }
 }
 @media screen and (min-width: 0px) {
