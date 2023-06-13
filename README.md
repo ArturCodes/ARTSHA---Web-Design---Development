@@ -15,6 +15,8 @@ Green - #7FD378
 
 Purple - #804DD4
 
+Red - #D44D4D
+
 Orange - #E38025
 
 yellow - #ffcc00

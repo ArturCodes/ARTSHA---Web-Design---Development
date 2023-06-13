@@ -1,6 +1,12 @@
 // ----------------------------------
 //  Variables
 // ----------------------------------
+$background: #3F3B51;
+
+$blue: #38C6E5;
+$green: #7fd378;
+$purple: #804DD4;
+$red: #D44D4D;
 $yellow: #ffcc00;
 
 // ----------------------------------
@@ -93,38 +99,38 @@ $yellow: #ffcc00;
         // ACTIVE (width: 100%)
         .home a::after {
             width: 100%;
-            background-color: #38C6E5;
+            background-color: $blue;
         }
 
         .home a:hover {
-            color: #38C6E5;
+            color: $blue;
         }
 
         // ------------------
         .about a::after {
-            background-color: #7fd378;
+            background-color: $green;
         }
 
         .about a:hover {
-            color: #7fd378;
+            color: $green;
         }
 
         // ------------------
         .services a::after {
-            background-color: #804DD4;
+            background-color: $purple;
         }
 
         .services a:hover {
-            color: #804DD4;
+            color: $purple;
         }
 
         // ------------------
         .blog a::after {
-            background-color: #D44D4D;
+            background-color: $red;
         }
 
         .blog a:hover {
-            color: #D44D4D;
+            color: $red;
         }
     }
 }
@@ -151,6 +157,7 @@ $yellow: #ffcc00;
 
     #navbar-links {
         position: relative;
+        height: auto;
 
         a:hover {
             transition: 0.1s;
@@ -159,38 +166,35 @@ $yellow: #ffcc00;
         // ACTIVE (width: 100%)
         .home a::after {
             width: 100%;
-            background-color: #38C6E5;
+            background-color: $blue;
         }
 
         .home a:hover {
-            color: #38C6E5;
+            color: $blue;
         }
 
-        // ------------------
         .about a::after {
-            background-color: #7fd378;
+            background-color: $green;
         }
 
         .about a:hover {
-            color: #7fd378;
+            color: $green;
         }
 
-        // ------------------
         .services a::after {
-            background-color: #804DD4;
+            background-color: $purple;
         }
 
         .services a:hover {
-            color: #804DD4;
+            color: $purple;
         }
 
-        // ------------------
         .blog a::after {
-            background-color: #D44D4D;
+            background-color: $red;
         }
 
         .blog a:hover {
-            color: #D44D4D;
+            color: $red;
         }
 
         //------------------ 
@@ -198,25 +202,34 @@ $yellow: #ffcc00;
             overflow: hidden;
             padding: 15px 15px;
             position: relative;
+            overflow: visible;
 
             a {
-                border: 2px solid darken($yellow, 5%);
+                background-color: $yellow;
                 color: black;
+                box-shadow: 1px 2px 0 darken($yellow, 5%), 2px 4px 6px darken($background, 15%);
                 border-radius: 7.5px;
                 width: 150px;
                 padding: 15px 30px;
-                background-color: $yellow;
                 transition: 0.3s;
                 z-index: 888;
-
-                box-shadow: 0px 2px 0 darken($yellow, 5%), 2px 4px 6px darken($yellow, 2%);
+                margin: 15px;
 
             }
 
             a:hover {
                 color: white;
-                background-color: $yellow;
                 transition: 0.3s;
+                border: 2px solid darken($yellow, 5%);
+
+
+                background: darken($background, 1.5%);
+                border: 1px solid rgba(#000, .05);
+                box-shadow: 1px 1px 2px rgba(#fff, .2);
+                color: lighten($yellow, 18%);
+                text-decoration: none;
+                text-shadow: -1px -1px 0 darken(white, 9.5%);
+                transition: all 250ms linear;
 
             }
         }
@@ -526,7 +539,7 @@ $yellow: #ffcc00;
         justify-content: center;
         height: 100vh;
         z-index: 900;
-        background-color: #3F3B51;
+        background-color: $background;
         transition: 0.3s;
         width: 0;
         overflow: hidden;
