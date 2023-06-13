@@ -138,6 +138,10 @@
   #navbar-links .blog a:hover {
     color: #D44D4D;
   }
+  #navbar-links .contact {
+    overflow: hidden;
+    padding: 15px 30px;
+  }
   #navbar-links .contact a {
     color: black;
     border-radius: 7.5px;
@@ -198,6 +202,7 @@
     right: 20px;
     display: flex;
     flex-direction: row;
+    align-items: center;
     color: white;
     width: auto;
     height: auto;
@@ -230,6 +235,7 @@
     right: 25px;
     display: flex;
     flex-direction: row;
+    align-items: center;
     color: white;
     width: auto;
     height: auto;
@@ -262,6 +268,7 @@
     right: 40px;
     display: flex;
     flex-direction: row;
+    align-items: center;
     color: white;
     width: auto;
     height: auto;
@@ -294,6 +301,7 @@
     right: 55px;
     display: flex;
     flex-direction: row;
+    align-items: center;
     color: white;
     width: auto;
     height: auto;
