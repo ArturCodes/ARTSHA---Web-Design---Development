@@ -9,6 +9,9 @@ $purple: #804DD4;
 $red: #D44D4D;
 $yellow: #ffcc00;
 
+$black: black;
+$white: white;
+
 // ----------------------------------
 //  Resets & Transitions
 // ----------------------------------
@@ -206,8 +209,9 @@ $yellow: #ffcc00;
 
             a {
                 background-color: $yellow;
-                color: black;
-                box-shadow: 1px 2px 0 darken($yellow, 5%), 2px 4px 6px darken($background, 15%);
+                color: $black;
+                box-shadow: 1px 2px 0 darken($yellow, 5%), 2px 4px 6px darken($background, 25%);
+
                 border-radius: 7.5px;
                 width: 150px;
                 padding: 15px 30px;
@@ -218,18 +222,11 @@ $yellow: #ffcc00;
             }
 
             a:hover {
-                color: white;
+                color: $white;
+                background-color: darken($yellow, 2%);
                 transition: 0.3s;
-                border: 2px solid darken($yellow, 5%);
+                box-shadow: 1px 2px 0 darken($yellow, 5%), 2px 4px 6px darken($background, 15%);
 
-
-                background: darken($background, 1.5%);
-                border: 1px solid rgba(#000, .05);
-                box-shadow: 1px 1px 2px rgba(#fff, .2);
-                color: lighten($yellow, 18%);
-                text-decoration: none;
-                text-shadow: -1px -1px 0 darken(white, 9.5%);
-                transition: all 250ms linear;
 
             }
         }
@@ -289,7 +286,7 @@ $yellow: #ffcc00;
         display: flex;
         flex-direction: row;
         align-items: center;
-        color: white;
+        color: $white;
         width: auto;
         height: auto;
 
@@ -299,7 +296,7 @@ $yellow: #ffcc00;
 
             a {
                 width: auto;
-                color: white;
+                color: $white;
                 font-weight: 500;
                 font-size: 1em;
                 padding: 10px 5px;
@@ -333,7 +330,7 @@ $yellow: #ffcc00;
         display: flex;
         flex-direction: row;
         align-items: center;
-        color: white;
+        color: $white;
         width: auto;
         height: auto;
 
@@ -343,7 +340,7 @@ $yellow: #ffcc00;
 
             a {
                 width: auto;
-                color: white;
+                color: $white;
                 font-weight: 500;
                 font-size: 1.125em;
                 padding: 10px 5px;
@@ -378,7 +375,7 @@ $yellow: #ffcc00;
         flex-direction: row;
         align-items: center;
 
-        color: white;
+        color: $white;
         width: auto;
         height: auto;
 
@@ -389,7 +386,7 @@ $yellow: #ffcc00;
 
             a {
                 width: auto;
-                color: white;
+                color: $white;
                 font-weight: 500;
                 font-size: 1.125em;
                 padding: 10px 5px;
@@ -423,7 +420,7 @@ $yellow: #ffcc00;
         display: flex;
         flex-direction: row;
         align-items: center;
-        color: white;
+        color: $white;
         width: auto;
         height: auto;
 
@@ -433,7 +430,7 @@ $yellow: #ffcc00;
 
             a {
                 width: auto;
-                color: white;
+                color: $white;
                 font-weight: 500;
                 font-size: 1.25em;
                 padding: 10px 5px;
@@ -478,7 +475,7 @@ $yellow: #ffcc00;
 
     .line {
         height: 3px;
-        background-color: white;
+        background-color: $white;
         transition: transform 0.5s;
         border-radius: 2px;
         opacity: 100%;
@@ -557,7 +554,7 @@ $yellow: #ffcc00;
 
             a {
                 padding: 25px;
-                color: white;
+                color: $white;
             }
 
         }
