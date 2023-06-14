@@ -23,7 +23,8 @@
   header {
     position: relative;
     max-width: 1920px;
-    min-height: 200px;
+    height: calc(100px + 10vw);
+    min-height: 175px;
     margin: 0 auto;
     overflow: visible;
   }
@@ -31,7 +32,7 @@
   .logo img,
   #navbar-links,
   #navbar-links li {
-    transition: 0.4s ease;
+    transition: 0.3s ease;
   }
 }
 @media screen and (min-width: 0px) and (max-width: 849px) {
@@ -58,6 +59,9 @@
   }
 }
 @media screen and (min-width: 0px) and (max-width: 999px) {
+  #navbar-links li a {
+    font-size: 1.25em;
+  }
   #navbar-links {
     position: relative;
   }
@@ -153,11 +157,11 @@
     padding: 15px 30px;
     margin: 15px;
     z-index: 888;
-    transition: color 0.3s;
+    transition: 0.2s;
   }
   #navbar-links .contact a:hover {
     color: white;
-    transition: color 0.3s;
+    transition: 0.2s;
     box-shadow: 1px 2px 0 #e6b800, 3px 6px 6px #060507;
   }
 }
