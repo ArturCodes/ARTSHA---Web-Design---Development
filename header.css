@@ -151,15 +151,14 @@
     border-radius: 7.5px;
     width: 150px;
     padding: 15px 30px;
-    transition: 0.3s;
-    z-index: 888;
     margin: 15px;
+    z-index: 888;
+    transition: color 0.3s;
   }
   #navbar-links .contact a:hover {
     color: white;
-    background-color: #f5c400;
-    transition: 0.3s;
-    box-shadow: 1px 2px 0 #e6b800, 2px 4px 6px #1d1b25;
+    transition: color 0.3s;
+    box-shadow: 1px 2px 0 #e6b800, 3px 6px 6px #060507;
   }
 }
 @media screen and (min-width: 0px) and (max-width: 499px) {
