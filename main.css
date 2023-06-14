@@ -58,6 +58,11 @@ main {
 @media screen and (min-width: 0px) {
   .what-we-do-top-blob {
     display: block;
-    background-image: url("./images/what-we-do-bottom-bg.png");
+    background-image: url("./images/what-we-do-top-mobile-blob.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 600px;
+    width: 100%;
+    margin-top: 50px;
   }
 }/*# sourceMappingURL=main.css.map */

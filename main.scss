@@ -107,7 +107,24 @@ main {
 
     .what-we-do-top-blob {
         display: block;
-        background-image: url('./images/what-we-do-bottom-bg.png');
+        background-image: url('./images/what-we-do-top-mobile-blob.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 600px;
+        width: 100%;
+        margin-top: 50px;
+
+        //         display: block;
+        // content: '';
+        // position: absolute;
+        // background-image: url('./images/what-we-do-top-mobile-blob.png');
+        // background-size: contain;
+        // background-repeat: no-repeat;
+        // width: 60%;
+        // height: 60%;
+        // bottom: 25px;
+        // left: -75px;
+        // opacity: .5;
     }
 
     //     // Buttons
