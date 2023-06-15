@@ -538,7 +538,7 @@ header {
         height: 55vw;
         max-height: 625px;
         position: absolute;
-        right: -350px;
+        right: -375px;
         top: -65px;
         z-index: 100;
     }
@@ -660,9 +660,10 @@ header {
         background-image: url('./images/what-we-do-top-blob-desktop.png');
         background-size: contain;
         background-repeat: no-repeat;
-        height: 600px;
+        background-position: bottom;
+        height: 23vw;
         width: 100%;
-        margin-top: -50px;
+        margin-top: -25px;
         position: relative;
     }
 }
@@ -673,9 +674,10 @@ header {
         background-image: url('./images/what-we-do-top-blob-desktop.png');
         background-size: contain;
         background-repeat: no-repeat;
-        height: 600px;
+        background-position: bottom;
+        height: 23vw;
         width: 100%;
-        margin-top: -125px;
+        margin-top: -150px;
         position: relative;
     }
 }
