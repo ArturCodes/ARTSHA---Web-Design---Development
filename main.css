@@ -1,5 +1,7 @@
-main {
+main,
+header {
   max-width: 1920px;
+  background-color: white;
 }
 
 @media screen and (min-width: 850px) {
@@ -444,6 +446,88 @@ main {
     height: 600px;
     width: 100%;
     margin-top: 40px;
+  }
+  #what-we-do {
+    background-color: #3F3B51;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+    position: relative;
+  }
+  #what-we-do .what-we-do-header {
+    width: 92vw;
+    margin-bottom: 25px;
+  }
+  #what-we-do .what-we-do-header h1 {
+    font-size: clamp(3em, 15vw, 4.5em);
+    width: auto;
+    text-align: center;
+    font-weight: 700;
+    margin: 50px 0 15px;
+    color: white;
+  }
+  #what-we-do .what-we-do-header h1 span {
+    color: #38C6E5;
+  }
+  #what-we-do .what-we-do-header p {
+    text-align: center;
+    color: white;
+    margin: 0 auto;
+    max-width: 500px;
+    font-size: 1.125em;
+  }
+  #what-we-do .what-we-do-items {
+    width: 86%;
+    margin-bottom: 50px;
+  }
+  #what-we-do .what-we-do-items .item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 25 px;
+    align-items: flex-start;
+  }
+  #what-we-do .what-we-do-items .item img {
+    margin: 35px auto 20px;
+    width: 125px;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+            user-select: none;
+  }
+  #what-we-do .what-we-do-items .item h2 {
+    color: white;
+    line-height: 1.25;
+    font-size: 1.75em;
+    text-align: center;
+    margin-bottom: 15px;
+    max-width: 275px;
+    margin: 0 auto 20px;
+  }
+  #what-we-do .what-we-do-items .item p {
+    text-align: center;
+    color: white;
+    max-width: 425px;
+    margin: 0 auto;
+    line-height: 1.75;
+  }
+  #what-we-do .what-we-do-blob {
+    position: relative;
+    display: block;
+    height: auto;
+    width: 100vw;
+    z-index: 1;
+    top: 0;
+    background-color: white;
+  }
+  #what-we-do .do-bottom-blob {
+    content: "";
+    background-image: url("./images/what-we-do-bottom-blob-desktop.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: 40vw;
+    position: relative;
+    top: 0;
   }
 }
 @media screen and (min-width: 850px) and (max-width: 1199px) {
