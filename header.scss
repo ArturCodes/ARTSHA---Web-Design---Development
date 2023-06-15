@@ -57,6 +57,7 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
         position: relative;
         height: calc(100px + 10vw);
         min-height: 175px;
+        max-height: 300px;
         margin: 0 auto;
         overflow: visible;
     }
@@ -160,29 +161,30 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
 
     #navbar-links a {
         position: relative;
-    }
 
-    #navbar-links a::after {
-        content: '';
-        position: absolute;
-        left: 0;
-        bottom: 5px;
-        width: 0;
-        height: 3px;
-        transition: width 0.2s ease-in-out;
-    }
+        &:hover {
+            transition: 0.1s;
+        }
 
-    #navbar-links a:hover::after {
-        width: 100%;
+        &::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 5px;
+            width: 0;
+            height: 3px;
+            transition: width 0.2s ease-in-out;
+        }
+
+        &:hover::after {
+            width: 100%;
+        }
+
     }
 
     #navbar-links {
         position: relative;
         height: auto;
-
-        a:hover {
-            transition: 0.1s;
-        }
 
         // ACTIVE (width: 100%)
         .home a::after {
@@ -218,33 +220,34 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
             color: $red;
         }
 
-        .contact {
-            overflow: hidden;
-            padding: 15px 15px;
-            position: relative;
-            overflow: visible;
+    }
 
-            a {
-                background-color: $yellow;
-                color: $black;
-                box-shadow: 1px 2px 0 darken($yellow, 5%), 2px 4px 6px darken($background, 25%);
+    #navbar-links .contact {
+        overflow: hidden;
+        padding: 15px 15px;
+        position: relative;
+        overflow: visible;
 
-                border-radius: 7.5px;
-                width: 150px;
-                padding: 15px 30px;
-                margin: 15px;
-                z-index: 888;
-                transition: 0.2s;
-            }
-
-            a:hover {
-                color: $white;
-                transition: 0.2s;
-                box-shadow: 1px 2px 0 darken($yellow, 5%), 3px 6px 6px darken($background, 25%);
-
-            }
+        a {
+            background-color: $yellow;
+            color: $black;
+            // box-shadow: 1px 2px 0 darken($yellow, 5%), 2px 4px 6px darken($background, 25%);
+            box-shadow: 2px 4px 6px darken($background, 25%);
+            border-radius: 7.5px;
+            width: 150px;
+            padding: 15px 30px;
+            margin: 15px;
+            z-index: 888;
+            transition: 0.3s;
         }
 
+        a:hover {
+            color: $white;
+            transition: 0.3s;
+            box-shadow: 0px 1px 0 darken($yellow, 5%), 3px 6px 6px darken($background, 75%);
+            box-shadow: $box-shadow-hover;
+
+        }
     }
 
 }
@@ -306,14 +309,14 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
 
         li {
             width: auto;
-            margin: 0 20px;
+            margin: 0 15px;
 
             a {
                 width: auto;
                 color: $white;
                 font-weight: 500;
                 font-size: 1em;
-                padding: 10px 5px;
+                padding: 15px;
             }
         }
 
@@ -350,14 +353,14 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
 
         li {
             width: auto;
-            margin: 0 30px;
+            margin: 0 25px;
 
             a {
                 width: auto;
                 color: $white;
                 font-weight: 500;
                 font-size: 1.125em;
-                padding: 10px 5px;
+                padding: 15px;
 
             }
         }
@@ -396,14 +399,14 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
 
         li {
             width: auto;
-            margin: 0 40px;
+            margin: 0 30px;
 
             a {
                 width: auto;
                 color: $white;
                 font-weight: 500;
                 font-size: 1.125em;
-                padding: 10px 5px;
+                padding: 15px;
 
             }
         }
@@ -440,14 +443,14 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
 
         li {
             width: auto;
-            margin: 0 45px;
+            margin: 0 35px;
 
             a {
                 width: auto;
                 color: $white;
                 font-weight: 500;
                 font-size: 1.25em;
-                padding: 10px 5px;
+                padding: 15px;
 
             }
         }

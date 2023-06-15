@@ -23,7 +23,7 @@ main {
   }
   .hero-text-container {
     position: relative;
-    z-index: 999;
+    z-index: 200;
   }
   .hero-text-container .text h1 {
     font-size: clamp(2.75em, 12vw, 3.5em);
@@ -82,7 +82,7 @@ main {
   }
   .hero-text-container {
     position: relative;
-    z-index: 999;
+    z-index: 200;
     margin-left: 25px;
   }
   .hero-text-container .text h1 {
