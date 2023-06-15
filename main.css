@@ -22,6 +22,7 @@ header {
     text-align: center;
     height: 100%;
     margin-top: 25px;
+    margin-bottom: 40px;
   }
   .hero-text-container {
     position: relative;
@@ -225,7 +226,7 @@ header {
     flex-direction: row;
     width: 100%;
     margin: 0 auto;
-    margin-bottom: -25px;
+    margin-bottom: 75px;
   }
   .hero-text-container {
     position: relative;
@@ -298,7 +299,7 @@ header {
     flex-direction: row;
     width: 100%;
     margin: 0 auto;
-    margin-bottom: -25px;
+    margin-bottom: 100px;
   }
   .hero-text-container {
     position: relative;
@@ -357,9 +358,9 @@ header {
     width: 100%;
     min-height: 300px;
     height: 55vw;
-    max-height: 600px;
+    max-height: 575px;
     position: absolute;
-    right: -350px;
+    right: -300px;
     top: -65px;
     z-index: 100;
   }
@@ -371,7 +372,7 @@ header {
     flex-direction: row;
     width: 100%;
     margin: 0 auto;
-    margin-bottom: -25px;
+    margin-bottom: 75px;
   }
   .hero-text-container {
     position: relative;
@@ -430,7 +431,7 @@ header {
     width: 100%;
     min-height: 300px;
     height: 55vw;
-    max-height: 650px;
+    max-height: 625px;
     position: absolute;
     right: -350px;
     top: -65px;
@@ -440,12 +441,13 @@ header {
 @media screen and (min-width: 0px) and (max-width: 849px) {
   .what-we-do-top-blob {
     display: block;
+    background-color: white;
     background-image: url("./images/what-we-do-top-mobile-blob.png");
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
-    height: 600px;
+    background-position: bottom;
+    height: calc(250px + 30vw);
     width: 100%;
-    margin-top: 40px;
   }
   #what-we-do {
     background-color: #3F3B51;
