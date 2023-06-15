@@ -12,6 +12,9 @@
     box-sizing: border-box;
     height: 100%;
     width: 100%;
+    max-width: 1920px;
+    overflow-x: hidden;
+    margin: 0 auto;
   }
   .skip {
     position: absolute;
@@ -22,7 +25,6 @@
   }
   header {
     position: relative;
-    max-width: 1920px;
     height: calc(100px + 10vw);
     min-height: 175px;
     margin: 0 auto;
@@ -59,12 +61,6 @@
   }
 }
 @media screen and (min-width: 0px) and (max-width: 999px) {
-  #navbar-links li a {
-    font-size: 1.25em;
-  }
-  #navbar-links {
-    position: relative;
-  }
   #navbar-links a:hover {
     transition: 0.1s;
   }
@@ -92,6 +88,9 @@
   }
   #navbar-links .blog a:hover {
     color: #D44D4D;
+  }
+  #navbar-links .contact a:hover {
+    color: #ffcc00;
   }
 }
 @media screen and (min-width: 1000px) {
@@ -193,7 +192,7 @@
 @media screen and (min-width: 1000px) and (max-width: 1199px) {
   .logo {
     position: absolute;
-    left: 35px;
+    left: 50px;
     top: 37px;
   }
   .logo img {
@@ -230,7 +229,7 @@
 @media screen and (min-width: 1200px) and (max-width: 1349px) {
   .logo {
     position: absolute;
-    left: 38px;
+    left: 60px;
     top: 43px;
   }
   .logo img {
@@ -266,7 +265,7 @@
 @media screen and (min-width: 1350px) and (max-width: 1499px) {
   .logo {
     position: absolute;
-    left: 65px;
+    left: 75px;
     top: 58px;
   }
   .logo img {
@@ -302,17 +301,17 @@
 @media screen and (min-width: 1500px) {
   .logo {
     position: absolute;
-    left: 85px;
-    top: 69px;
+    left: 125px;
+    top: 72px;
   }
   .logo img {
-    width: 340px;
+    width: 320px;
   }
   #navbar-links {
     position: absolute;
     z-index: 5;
     top: 80px;
-    right: 75px;
+    right: 100px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -399,7 +398,7 @@
 }
 @media screen and (min-width: 0px) and (max-width: 999px) {
   #navbar-links {
-    position: absolute;
+    position: fixed;
     right: 0;
     display: flex;
     flex-direction: column;
@@ -411,24 +410,26 @@
     transition: 0.3s;
     width: 0;
     overflow: hidden;
+    background-image: url("./images/New.png");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
+  }
+  #navbar-links li {
+    margin: 25px;
+  }
+  #navbar-links li a {
+    font-size: 1.25em;
+    padding: 25px;
+    color: white;
   }
   #navbar-links.mobile-nav-active {
     width: 300px;
     max-width: 60vw;
     transition: 0.3s;
   }
-  #navbar-links li {
-    margin: 25px;
-  }
-  #navbar-links li a {
-    padding: 25px;
-    color: white;
-  }
-  #navbar-links .contact a:hover {
-    color: #ffcc00;
-  }
   #opacity-bg {
-    position: absolute;
+    position: fixed;
     display: none;
     height: 100vh;
     width: 100vw;

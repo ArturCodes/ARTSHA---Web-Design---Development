@@ -2,10 +2,17 @@ main {
   max-width: 1920px;
 }
 
-@media screen and (min-width: 0px) {
+@media screen and (min-width: 850px) {
+  .hero-text-container,
+  .text h1,
+  .hero-guy {
+    transition: 0.3s;
+  }
+}
+@media screen and (min-width: 0px) and (max-width: 849px) {
   #hero {
     position: relative;
-    width: 96%;
+    width: 98%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -14,48 +21,421 @@ main {
     height: 100%;
     margin-top: 25px;
   }
-  #hero .text h1 {
-    font-size: clamp(2.75em, 12vw, 4em);
+  .hero-text-container {
+    position: relative;
+    z-index: 999;
+  }
+  .hero-text-container .text h1 {
+    font-size: clamp(2.75em, 12vw, 3.5em);
     width: auto;
     text-align: center;
     font-weight: 700;
     margin-bottom: 25px;
   }
-  #hero .text p {
+  .hero-text-container .text p {
     line-height: 1.75;
-    padding: 0 5vw;
+    padding: 0 4vw;
     text-align: center;
-    max-width: 500px;
+    max-width: 600px;
     margin-bottom: 35px;
     font-size: 1.125em;
   }
-  #hero .buttons {
+  .hero-text-container .buttons {
     display: flex;
     flex-direction: row;
     justify-content: center;
   }
-  #hero .buttons a {
+  .hero-text-container .buttons a {
     padding: 15px 30px;
     border-radius: 7.5px;
     color: #000000;
     margin-right: 20px;
-    box-shadow: 1px 1px 3px #3f3b51, 1px -1px 3px rgba(63, 59, 81, 0.0549019608), -1px 1px 3px rgba(63, 59, 81, 0.0549019608), -1px -1px 3px rgba(63, 59, 81, 0.0549019608);
+    box-shadow: 1px 1px 3px rgba(63, 59, 81, 0.0549019608), 1px -1px 3px rgba(63, 59, 81, 0.0549019608), -1px 1px 3px rgba(63, 59, 81, 0.0549019608), -1px -1px 3px rgba(63, 59, 81, 0.0549019608);
     border-color: 1px solid lightgray;
     min-width: 125px;
     transition: 0.3s;
     text-align: center;
   }
-  #hero .buttons a:hover {
-    box-shadow: 1px 1px 3px rgba(63, 59, 81, 0.6352941176), 1px -1px 3px rgba(63, 59, 81, 0.6352941176), -1px 1px 3px rgba(63, 59, 81, 0.6352941176);
+  .hero-text-container .buttons a:hover {
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2274509804), 1px -1px 1px rgba(0, 0, 0, 0.2274509804), -1px 1px 1px rgba(0, 0, 0, 0.2274509804), -1px -1px 1px rgba(0, 0, 0, 0.2274509804);
   }
-  #hero .buttons .contact-btn {
+  .hero-text-container .buttons .contact-btn {
     background-color: #ffcc00;
+    box-shadow: 1px 2px 0 #e6b800, 2px 4px 6px #060507;
   }
-  #hero .buttons .services-btn {
+  .hero-text-container .buttons .services-btn {
     background-color: white;
+    box-shadow: 1px 2px 0 #f2f2f2, 2px 4px 6px #060507;
+  }
+  .hero-guy {
+    display: none;
   }
 }
-@media screen and (min-width: 0px) {
+@media screen and (min-width: 850px) and (max-width: 999px) {
+  #hero {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: -15px;
+  }
+  .hero-text-container {
+    position: relative;
+    z-index: 999;
+    margin-left: 25px;
+  }
+  .hero-text-container .text h1 {
+    font-size: clamp(2.75em, 12vw, 3.5em);
+    width: auto;
+    text-align: left;
+    font-weight: 700;
+    margin-bottom: 25px;
+  }
+  .hero-text-container .text p {
+    line-height: 1.75;
+    text-align: left;
+    max-width: 395px;
+    margin-bottom: 35px;
+    font-size: 1.125em;
+  }
+  .hero-text-container .buttons {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    z-index: 999;
+  }
+  .hero-text-container .buttons a {
+    padding: 15px 30px;
+    border-radius: 7.5px;
+    color: #000000;
+    margin-right: 20px;
+    box-shadow: 1px 1px 3px rgba(63, 59, 81, 0.0549019608), 1px -1px 3px rgba(63, 59, 81, 0.0549019608), -1px 1px 3px rgba(63, 59, 81, 0.0549019608), -1px -1px 3px rgba(63, 59, 81, 0.0549019608);
+    border-color: 1px solid lightgray;
+    min-width: 125px;
+    transition: 0.3s;
+    text-align: center;
+  }
+  .hero-text-container .buttons a:hover {
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2274509804), 1px -1px 1px rgba(0, 0, 0, 0.2274509804), -1px 1px 1px rgba(0, 0, 0, 0.2274509804), -1px -1px 1px rgba(0, 0, 0, 0.2274509804);
+  }
+  .hero-text-container .buttons .contact-btn {
+    background-color: #ffcc00;
+    box-shadow: 1px 2px 0 #e6b800, 2px 4px 6px #060507;
+  }
+  .hero-text-container .buttons .services-btn {
+    background-color: white;
+    box-shadow: 1px 2px 0 #f2f2f2, 2px 4px 6px #060507;
+  }
+  .hero-guy {
+    background-image: url("./images/hero-guy.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+    width: 100%;
+    min-height: 300px;
+    height: 55vw;
+    max-height: 450px;
+    position: absolute;
+    right: -250px;
+    top: -65px;
+    z-index: 100;
+  }
+}
+@media screen and (min-width: 1000px) and (max-width: 1199px) {
+  #hero {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: -25px;
+  }
+  .hero-text-container {
+    position: relative;
+    z-index: 999;
+    margin-left: 50px;
+    margin-top: 25px;
+  }
+  .hero-text-container .text h1 {
+    font-size: clamp(2.75em, 12vw, 3.5em);
+    width: auto;
+    text-align: left;
+    font-weight: 700;
+    margin-bottom: 25px;
+  }
+  .hero-text-container .text p {
+    line-height: 1.75;
+    text-align: left;
+    max-width: 395px;
+    margin-bottom: 35px;
+    font-size: 1.125em;
+  }
+  .hero-text-container .buttons {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    z-index: 999;
+  }
+  .hero-text-container .buttons a {
+    padding: 15px 30px;
+    border-radius: 7.5px;
+    color: #000000;
+    margin-right: 20px;
+    box-shadow: 1px 1px 3px rgba(63, 59, 81, 0.0549019608), 1px -1px 3px rgba(63, 59, 81, 0.0549019608), -1px 1px 3px rgba(63, 59, 81, 0.0549019608), -1px -1px 3px rgba(63, 59, 81, 0.0549019608);
+    border-color: 1px solid lightgray;
+    min-width: 125px;
+    transition: 0.3s;
+    text-align: center;
+  }
+  .hero-text-container .buttons a:hover {
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2274509804), 1px -1px 1px rgba(0, 0, 0, 0.2274509804), -1px 1px 1px rgba(0, 0, 0, 0.2274509804), -1px -1px 1px rgba(0, 0, 0, 0.2274509804);
+  }
+  .hero-text-container .buttons .contact-btn {
+    background-color: #ffcc00;
+    box-shadow: 1px 2px 0 #e6b800, 2px 4px 6px #060507;
+  }
+  .hero-text-container .buttons .services-btn {
+    background-color: white;
+    box-shadow: 1px 2px 0 #f2f2f2, 2px 4px 6px #060507;
+  }
+  .hero-guy {
+    background-image: url("./images/hero-guy.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+    width: 100%;
+    min-height: 300px;
+    height: 55vw;
+    max-height: 500px;
+    position: absolute;
+    right: -250px;
+    top: -65px;
+    z-index: 100;
+  }
+}
+@media screen and (min-width: 1200px) and (max-width: 1349px) {
+  #hero {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: -25px;
+  }
+  .hero-text-container {
+    position: relative;
+    z-index: 999;
+    margin-left: 60px;
+    margin-top: 25px;
+  }
+  .hero-text-container .text h1 {
+    font-size: clamp(2.75em, 12vw, 4em);
+    width: auto;
+    text-align: left;
+    font-weight: 700;
+    margin-bottom: 25px;
+  }
+  .hero-text-container .text p {
+    line-height: 1.75;
+    text-align: left;
+    max-width: 500px;
+    margin-bottom: 35px;
+    font-size: 1.125em;
+  }
+  .hero-text-container .buttons {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    z-index: 999;
+  }
+  .hero-text-container .buttons a {
+    padding: 15px 30px;
+    border-radius: 7.5px;
+    color: #000000;
+    margin-right: 20px;
+    box-shadow: 1px 1px 3px rgba(63, 59, 81, 0.0549019608), 1px -1px 3px rgba(63, 59, 81, 0.0549019608), -1px 1px 3px rgba(63, 59, 81, 0.0549019608), -1px -1px 3px rgba(63, 59, 81, 0.0549019608);
+    border-color: 1px solid lightgray;
+    min-width: 125px;
+    transition: 0.3s;
+    text-align: center;
+  }
+  .hero-text-container .buttons a:hover {
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2274509804), 1px -1px 1px rgba(0, 0, 0, 0.2274509804), -1px 1px 1px rgba(0, 0, 0, 0.2274509804), -1px -1px 1px rgba(0, 0, 0, 0.2274509804);
+  }
+  .hero-text-container .buttons .contact-btn {
+    background-color: #ffcc00;
+    box-shadow: 1px 2px 0 #e6b800, 2px 4px 6px #060507;
+  }
+  .hero-text-container .buttons .services-btn {
+    background-color: white;
+    box-shadow: 1px 2px 0 #f2f2f2, 2px 4px 6px #060507;
+  }
+  .hero-guy {
+    background-image: url("./images/hero-guy.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+    width: 100%;
+    min-height: 300px;
+    height: 55vw;
+    max-height: 525px;
+    position: absolute;
+    right: -300px;
+    top: -65px;
+    z-index: 100;
+  }
+}
+@media screen and (min-width: 1350px) and (max-width: 1499px) {
+  #hero {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: -25px;
+  }
+  .hero-text-container {
+    position: relative;
+    z-index: 999;
+    margin-left: 75px;
+    margin-top: 25px;
+  }
+  .hero-text-container .text h1 {
+    font-size: clamp(2.75em, 12vw, 4.5em);
+    width: auto;
+    text-align: left;
+    font-weight: 700;
+    margin-bottom: 25px;
+  }
+  .hero-text-container .text p {
+    line-height: 1.75;
+    text-align: left;
+    max-width: 550px;
+    margin-bottom: 35px;
+    font-size: 1.125em;
+  }
+  .hero-text-container .buttons {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    z-index: 999;
+  }
+  .hero-text-container .buttons a {
+    padding: 15px 30px;
+    border-radius: 7.5px;
+    color: #000000;
+    margin-right: 20px;
+    box-shadow: 1px 1px 3px rgba(63, 59, 81, 0.0549019608), 1px -1px 3px rgba(63, 59, 81, 0.0549019608), -1px 1px 3px rgba(63, 59, 81, 0.0549019608), -1px -1px 3px rgba(63, 59, 81, 0.0549019608);
+    border-color: 1px solid lightgray;
+    min-width: 125px;
+    transition: 0.3s;
+    text-align: center;
+  }
+  .hero-text-container .buttons a:hover {
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2274509804), 1px -1px 1px rgba(0, 0, 0, 0.2274509804), -1px 1px 1px rgba(0, 0, 0, 0.2274509804), -1px -1px 1px rgba(0, 0, 0, 0.2274509804);
+  }
+  .hero-text-container .buttons .contact-btn {
+    background-color: #ffcc00;
+    box-shadow: 1px 2px 0 #e6b800, 2px 4px 6px #060507;
+  }
+  .hero-text-container .buttons .services-btn {
+    background-color: white;
+    box-shadow: 1px 2px 0 #f2f2f2, 2px 4px 6px #060507;
+  }
+  .hero-guy {
+    background-image: url("./images/hero-guy.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+    width: 100%;
+    min-height: 300px;
+    height: 55vw;
+    max-height: 600px;
+    position: absolute;
+    right: -350px;
+    top: -65px;
+    z-index: 100;
+  }
+}
+@media screen and (min-width: 1500px) {
+  #hero {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: -25px;
+  }
+  .hero-text-container {
+    position: relative;
+    z-index: 999;
+    margin-left: 125px;
+    margin-top: 25px;
+  }
+  .hero-text-container .text h1 {
+    font-size: clamp(2.75em, 12vw, 5em);
+    width: auto;
+    text-align: left;
+    font-weight: 700;
+    margin-bottom: 25px;
+  }
+  .hero-text-container .text p {
+    line-height: 1.75;
+    text-align: left;
+    max-width: 650px;
+    margin-bottom: 35px;
+    font-size: 1.3em;
+  }
+  .hero-text-container .buttons {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    z-index: 999;
+  }
+  .hero-text-container .buttons a {
+    padding: 15px 30px;
+    border-radius: 7.5px;
+    color: #000000;
+    margin-right: 20px;
+    box-shadow: 1px 1px 3px rgba(63, 59, 81, 0.0549019608), 1px -1px 3px rgba(63, 59, 81, 0.0549019608), -1px 1px 3px rgba(63, 59, 81, 0.0549019608), -1px -1px 3px rgba(63, 59, 81, 0.0549019608);
+    border-color: 1px solid lightgray;
+    min-width: 125px;
+    transition: 0.3s;
+    text-align: center;
+  }
+  .hero-text-container .buttons a:hover {
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2274509804), 1px -1px 1px rgba(0, 0, 0, 0.2274509804), -1px 1px 1px rgba(0, 0, 0, 0.2274509804), -1px -1px 1px rgba(0, 0, 0, 0.2274509804);
+  }
+  .hero-text-container .buttons .contact-btn {
+    background-color: #ffcc00;
+    box-shadow: 1px 2px 0 #e6b800, 2px 4px 6px #060507;
+  }
+  .hero-text-container .buttons .services-btn {
+    background-color: white;
+    box-shadow: 1px 2px 0 #f2f2f2, 2px 4px 6px #060507;
+  }
+  .hero-guy {
+    background-image: url("./images/hero-guy.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+    width: 100%;
+    min-height: 300px;
+    height: 55vw;
+    max-height: 650px;
+    position: absolute;
+    right: -350px;
+    top: -65px;
+    z-index: 100;
+  }
+}
+@media screen and (min-width: 0px) and (max-width: 849px) {
   .what-we-do-top-blob {
     display: block;
     background-image: url("./images/what-we-do-top-mobile-blob.png");
@@ -63,6 +443,30 @@ main {
     background-repeat: no-repeat;
     height: 600px;
     width: 100%;
-    margin-top: 50px;
+    margin-top: 40px;
+  }
+}
+@media screen and (min-width: 850px) and (max-width: 1199px) {
+  .what-we-do-top-blob {
+    display: block;
+    background-image: url("./images/what-we-do-top-blob-desktop.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 600px;
+    width: 100%;
+    margin-top: -50px;
+    position: relative;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .what-we-do-top-blob {
+    display: block;
+    background-image: url("./images/what-we-do-top-blob-desktop.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 600px;
+    width: 100%;
+    margin-top: -125px;
+    position: relative;
   }
 }/*# sourceMappingURL=main.css.map */

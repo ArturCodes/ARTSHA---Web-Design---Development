@@ -42,10 +42,10 @@ position: absolute;
 background-image: url('./images/plant.png');
 background-size: contain;
 background-repeat: no-repeat;
-width: 60%;
-height: 60%;
-bottom: 25px;
-left: -75px;
+width: 100%;
+height: 100%;
+bottom: 0px;
+left: 0px;
 opacity: .5;
 }
 

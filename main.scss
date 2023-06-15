@@ -10,31 +10,39 @@ $yellow: #ffcc00;
 $black: black;
 $white: white;
 
-// $box-shadow: 1px 2px 0 darken($background, 5%), 2px 4px 6px darken($background, 25%);
-
-// $box-shadow-hover: 1px 2px 0 darken($background, 5%), 3px 6px 6px darken($background, 25%);
-
-$box-shadow: 1px 1px 3px #3f3b51,
+$box-shadow: 1px 1px 3px #3f3b510e,
     1px -1px 3px #3f3b510e,
     -1px 1px 3px #3f3b510e,
     -1px -1px 3px #3f3b510e;
 
-$box-shadow-hover: 1px 1px 3px #3f3b51a2,
-    1px -1px 3px #3f3b51a2,
-    -1px 1px 3px #3f3b51a2;
+$box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
+    1px -1px 1px darken(#3f3b513a, 100%),
+    -1px 1px 1px darken(#3f3b513a, 100%),
+    -1px -1px 1px darken(#3f3b513a, 100%);
 
+// ------------------------------
+//  General & Transitions 
+// ------------------------------
 main {
     max-width: 1920px;
+}
+
+@media screen and (min-width: 850px) {
+
+    .hero-text-container,
+    .text h1,
+    .hero-guy {
+        transition: 0.3s;
+    }
 }
 
 // ------------------------------
 //  Hero Section  
 // ------------------------------
-@media screen and (min-width: 0px) {
-
+@media screen and (min-width: 0px) and (max-width: 849px) {
     #hero {
         position: relative;
-        width: 96%;
+        width: 98%;
         margin: 0 auto;
         display: flex;
         flex-direction: column;
@@ -43,9 +51,15 @@ main {
         height: 100%;
         margin-top: 25px;
 
+    }
+
+    .hero-text-container {
+        position: relative;
+        z-index: 999;
+
         .text {
             h1 {
-                font-size: clamp(2.75em, 12vw, 4em);
+                font-size: clamp(2.75em, 12vw, 3.5em);
                 width: auto;
                 text-align: center;
                 font-weight: 700;
@@ -54,9 +68,9 @@ main {
 
             p {
                 line-height: 1.75;
-                padding: 0 5vw;
+                padding: 0 4vw;
                 text-align: center;
-                max-width: 500px;
+                max-width: 600px;
                 margin-bottom: 35px;
                 font-size: 1.125em;
             }
@@ -85,26 +99,453 @@ main {
 
             .contact-btn {
                 background-color: $yellow;
+                box-shadow: 1px 2px 0 darken($yellow, 5%), 2px 4px 6px darken($background, 25%);
+
+
             }
 
             .services-btn {
                 background-color: $white;
+                box-shadow: 1px 2px 0 darken($white, 5%), 2px 4px 6px darken($background, 25%);
+
             }
         }
     }
 
     .hero-guy {
-        // display: none;
+        display: none;
     }
 }
 
+@media screen and (min-width: 850px) and (max-width: 999px) {
+    #hero {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: -15px;
+    }
 
+    .hero-text-container {
+        position: relative;
+        z-index: 999;
+        margin-left: 25px;
+
+        .text {
+
+            h1 {
+                font-size: clamp(2.75em, 12vw, 3.5em);
+                width: auto;
+                text-align: left;
+                font-weight: 700;
+                margin-bottom: 25px;
+            }
+
+            p {
+                line-height: 1.75;
+                text-align: left;
+                max-width: 395px;
+                margin-bottom: 35px;
+                font-size: 1.125em;
+            }
+        }
+
+        .buttons {
+            position: relative;
+            display: flex;
+            flex-direction: row;
+            justify-content: left;
+            z-index: 999;
+
+            a {
+                padding: 15px 30px;
+                border-radius: 7.5px;
+                color: #000000;
+                margin-right: 20px;
+                box-shadow: $box-shadow;
+                border-color: 1px solid lightgray;
+                min-width: 125px;
+                transition: 0.3s;
+                text-align: center;
+
+                &:hover {
+                    box-shadow: $box-shadow-hover;
+                }
+            }
+
+            .contact-btn {
+                background-color: $yellow;
+                box-shadow: 1px 2px 0 darken($yellow, 5%), 2px 4px 6px darken($background, 25%);
+            }
+
+            .services-btn {
+                background-color: $white;
+                box-shadow: 1px 2px 0 darken($white, 5%), 2px 4px 6px darken($background, 25%);
+            }
+        }
+    }
+
+    .hero-guy {
+        background-image: url('./images/hero-guy.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: bottom;
+        width: 100%;
+        min-height: 300px;
+        height: 55vw;
+        max-height: 450px;
+        position: absolute;
+        right: -250px;
+        top: -65px;
+        z-index: 100;
+    }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1199px) {
+    #hero {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: -25px;
+    }
+
+    .hero-text-container {
+        position: relative;
+        z-index: 999;
+        margin-left: 50px;
+        margin-top: 25px;
+
+        .text {
+            h1 {
+                font-size: clamp(2.75em, 12vw, 3.5em);
+                width: auto;
+                text-align: left;
+                font-weight: 700;
+                margin-bottom: 25px;
+            }
+
+            p {
+                line-height: 1.75;
+                text-align: left;
+                max-width: 395px;
+                margin-bottom: 35px;
+                font-size: 1.125em;
+            }
+        }
+
+        .buttons {
+            position: relative;
+            display: flex;
+            flex-direction: row;
+            justify-content: left;
+            z-index: 999;
+
+            a {
+                padding: 15px 30px;
+                border-radius: 7.5px;
+                color: #000000;
+                margin-right: 20px;
+                box-shadow: $box-shadow;
+                border-color: 1px solid lightgray;
+                min-width: 125px;
+                transition: 0.3s;
+                text-align: center;
+
+                &:hover {
+                    box-shadow: $box-shadow-hover;
+                }
+            }
+
+            .contact-btn {
+                background-color: $yellow;
+                box-shadow: 1px 2px 0 darken($yellow, 5%), 2px 4px 6px darken($background, 25%);
+            }
+
+            .services-btn {
+                background-color: $white;
+                box-shadow: 1px 2px 0 darken($white, 5%), 2px 4px 6px darken($background, 25%);
+            }
+        }
+    }
+
+    .hero-guy {
+        background-image: url('./images/hero-guy.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: bottom;
+        width: 100%;
+        min-height: 300px;
+        height: 55vw;
+        max-height: 500px;
+        position: absolute;
+        right: -250px;
+        top: -65px;
+        z-index: 100;
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1349px) {
+    #hero {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: -25px;
+    }
+
+    .hero-text-container {
+        position: relative;
+        z-index: 999;
+        margin-left: 60px;
+        margin-top: 25px;
+
+        .text {
+            h1 {
+                font-size: clamp(2.75em, 12vw, 4em);
+                width: auto;
+                text-align: left;
+                font-weight: 700;
+                margin-bottom: 25px;
+            }
+
+            p {
+                line-height: 1.75;
+                text-align: left;
+                max-width: 500px;
+                margin-bottom: 35px;
+                font-size: 1.125em;
+            }
+        }
+
+        .buttons {
+            position: relative;
+            display: flex;
+            flex-direction: row;
+            justify-content: left;
+            z-index: 999;
+
+            a {
+                padding: 15px 30px;
+                border-radius: 7.5px;
+                color: #000000;
+                margin-right: 20px;
+                box-shadow: $box-shadow;
+                border-color: 1px solid lightgray;
+                min-width: 125px;
+                transition: 0.3s;
+                text-align: center;
+
+                &:hover {
+                    box-shadow: $box-shadow-hover;
+                }
+            }
+
+            .contact-btn {
+                background-color: $yellow;
+                box-shadow: 1px 2px 0 darken($yellow, 5%), 2px 4px 6px darken($background, 25%);
+            }
+
+            .services-btn {
+                background-color: $white;
+                box-shadow: 1px 2px 0 darken($white, 5%), 2px 4px 6px darken($background, 25%);
+            }
+        }
+    }
+
+    .hero-guy {
+        background-image: url('./images/hero-guy.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: bottom;
+        width: 100%;
+        min-height: 300px;
+        height: 55vw;
+        max-height: 525px;
+        position: absolute;
+        right: -300px;
+        top: -65px;
+        z-index: 100;
+    }
+}
+
+@media screen and (min-width: 1350px) and (max-width: 1499px) {
+    #hero {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: -25px;
+    }
+
+    .hero-text-container {
+        position: relative;
+        z-index: 999;
+        margin-left: 75px;
+        margin-top: 25px;
+
+        .text {
+            h1 {
+                font-size: clamp(2.75em, 12vw, 4.5em);
+                width: auto;
+                text-align: left;
+                font-weight: 700;
+                margin-bottom: 25px;
+            }
+
+            p {
+                line-height: 1.75;
+                text-align: left;
+                max-width: 550px;
+                margin-bottom: 35px;
+                font-size: 1.125em;
+            }
+        }
+
+        .buttons {
+            position: relative;
+            display: flex;
+            flex-direction: row;
+            justify-content: left;
+            z-index: 999;
+
+            a {
+                padding: 15px 30px;
+                border-radius: 7.5px;
+                color: #000000;
+                margin-right: 20px;
+                box-shadow: $box-shadow;
+                border-color: 1px solid lightgray;
+                min-width: 125px;
+                transition: 0.3s;
+                text-align: center;
+
+                &:hover {
+                    box-shadow: $box-shadow-hover;
+                }
+            }
+
+            .contact-btn {
+                background-color: $yellow;
+                box-shadow: 1px 2px 0 darken($yellow, 5%), 2px 4px 6px darken($background, 25%);
+            }
+
+            .services-btn {
+                background-color: $white;
+                box-shadow: 1px 2px 0 darken($white, 5%), 2px 4px 6px darken($background, 25%);
+            }
+        }
+    }
+
+    .hero-guy {
+        background-image: url('./images/hero-guy.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: bottom;
+        width: 100%;
+        min-height: 300px;
+        height: 55vw;
+        max-height: 600px;
+        position: absolute;
+        right: -350px;
+        top: -65px;
+        z-index: 100;
+    }
+}
+
+@media screen and (min-width: 1500px) {
+    #hero {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: -25px;
+    }
+
+    .hero-text-container {
+        position: relative;
+        z-index: 999;
+        margin-left: 125px;
+        margin-top: 25px;
+
+        .text {
+            h1 {
+                font-size: clamp(2.75em, 12vw, 5em);
+                width: auto;
+                text-align: left;
+                font-weight: 700;
+                margin-bottom: 25px;
+            }
+
+            p {
+                line-height: 1.75;
+                text-align: left;
+                max-width: 650px;
+                margin-bottom: 35px;
+                font-size: 1.3em;
+            }
+        }
+
+        .buttons {
+            position: relative;
+            display: flex;
+            flex-direction: row;
+            justify-content: left;
+            z-index: 999;
+
+            a {
+                padding: 15px 30px;
+                border-radius: 7.5px;
+                color: #000000;
+                margin-right: 20px;
+                box-shadow: $box-shadow;
+                border-color: 1px solid lightgray;
+                min-width: 125px;
+                transition: 0.3s;
+                text-align: center;
+
+                &:hover {
+                    box-shadow: $box-shadow-hover;
+                }
+            }
+
+            .contact-btn {
+                background-color: $yellow;
+                box-shadow: 1px 2px 0 darken($yellow, 5%), 2px 4px 6px darken($background, 25%);
+            }
+
+            .services-btn {
+                background-color: $white;
+                box-shadow: 1px 2px 0 darken($white, 5%), 2px 4px 6px darken($background, 25%);
+            }
+        }
+    }
+
+    .hero-guy {
+        background-image: url('./images/hero-guy.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: bottom;
+        width: 100%;
+        min-height: 300px;
+        height: 55vw;
+        max-height: 650px;
+        position: absolute;
+        right: -350px;
+        top: -65px;
+        z-index: 100;
+    }
+}
 
 // ------------------------------
 //  What We Do Section  
 // ------------------------------
-@media screen and (min-width: 0px) {
-
+@media screen and (min-width: 0px) and (max-width: 849px) {
     .what-we-do-top-blob {
         display: block;
         background-image: url('./images/what-we-do-top-mobile-blob.png');
@@ -112,173 +553,33 @@ main {
         background-repeat: no-repeat;
         height: 600px;
         width: 100%;
-        margin-top: 50px;
-
-        //         display: block;
-        // content: '';
-        // position: absolute;
-        // background-image: url('./images/what-we-do-top-mobile-blob.png');
-        // background-size: contain;
-        // background-repeat: no-repeat;
-        // width: 60%;
-        // height: 60%;
-        // bottom: 25px;
-        // left: -75px;
-        // opacity: .5;
+        margin-top: 40px;
     }
 
-    //     // Buttons
-    //     div {
-    //         display: flex;
-    //         flex-direction: row;
-    //         padding: 5px;
-    //         z-index: 5;
-    //         color: #1f1f1f;
+}
 
-    //         .btn:nth-child(1) {
-    // padding: 7.5px 15px;
-    // background-color: #ffcc00;
-    // border-color: 1px solid lightgray;
-    // box-shadow: $box-shadow;
+@media screen and (min-width: 850px) and (max-width: 1199px) {
+    .what-we-do-top-blob {
+        display: block;
+        background-image: url('./images/what-we-do-top-blob-desktop.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 600px;
+        width: 100%;
+        margin-top: -50px;
+        position: relative;
+    }
+}
 
-    // border-radius: 7.5px;
-    // min-width: 125px;
-    // text-align: center;
-    // transition: 0.3s;
-
-    //         }
-
-    //         .btn:nth-child(2) {
-    // padding: 7.5px 15px;
-    // background-color: white;
-    // border-radius: 7.5px;
-    // box-shadow: $box-shadow;
-    // min-width: 125px;
-    // text-align: center;
-    // transition: 0.3s;
-    //         }
-
-    //         .btn {
-    //             margin: 0 7.5px;
-
-    //             &:hover {
-    //                 box-shadow: $box-shadow-hover;
-    //                 transition: 0.2s;
-    //             }
-    //         }
-
-    //     }
-
-    //     .hero-guy {
-    //         display: none;
-    //         overflow-x: hidden;
-    //     }
-    // }
-
-    // .hero-blob {
-    //     background-image: url("/images/hero-blob-mobile.png");
-    //     width: 100%;
-    //     background-repeat: no-repeat;
-    //     background-size: contain;
-    //     background-position: bottom;
-    //     height: 65vw;
-    //     position: relative;
-    //     display: block;
-    //     bottom: 0;
-    // }
-
-
-    // @media only screen and (min-width: 768px) {
-    //     #hero {
-    //         position: relative;
-    //         width: auto;
-    //         display: block;
-    //         left: 35px;
-    //         z-index: 5;
-    //         margin-bottom: -100px;
-
-    //         h1 {
-    //             text-align: left;
-    //             padding: 0;
-    //         }
-
-    //         p {
-    //             text-align: left;
-    //             padding: 0;
-    //         }
-
-    //         .btn {
-    //             margin: 0 !important;
-    //             margin-right: 15px !important;
-    //         }
-
-    //     }
-
-    //     .hero-guy {
-    //         background-image: url('./images/hero-guy.png');
-    //         background-repeat: no-repeat;
-    //         background-size: contain;
-    //         background-position: bottom;
-    //         width: 100%;
-    //         min-height: 300px;
-    //         height: 40vw;
-    //         max-height: 750px !important;
-    //         position: absolute;
-    //         overflow: hidden;
-    //         right: -275px;
-    //         bottom: 200px;
-    //         z-index: 2;
-    //     }
-
-    //     .hero-blob {
-    //         background-image: url("/images/hero-blob.png");
-    //         height: 27vw;
-    //         max-height: 450px;
-    //     }
-    // }
-
-    // @media only screen and (min-width: 1300px) {
-    //     #hero {
-    //         align-items: start;
-    //         z-index: 5;
-    //         margin: 0 auto;
-    //         left: 100px;
-    //         margin-bottom: -100px;
-    //         overflow: visible;
-
-
-    //         h1 {
-    //             position: relative;
-    //             font-size: clamp(1.75em, 5vw, 5em);
-    //             padding: 0;
-    //             text-align: left;
-    //             width: auto;
-    //             min-width: 800px;
-    //             z-index: 5;
-    //             margin-top: -20px;
-
-    //         }
-
-    //         P {
-    //             position: relative;
-    //             padding: 0;
-    //             text-align: left;
-    //             width: auto;
-    //             z-index: 5;
-    //             font-size: 1.125em;
-    //         }
-
-    //         div {
-    //             position: relative;
-    //             z-index: 5;
-    //         }
-    //     }
-
-    //     .hero-guy {
-    //         bottom: 225px;
-    //         right: -350px;
-    //     }
-
-    // }
-
+@media screen and (min-width: 1200px) {
+    .what-we-do-top-blob {
+        display: block;
+        background-image: url('./images/what-we-do-top-blob-desktop.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 600px;
+        width: 100%;
+        margin-top: -125px;
+        position: relative;
+    }
 }

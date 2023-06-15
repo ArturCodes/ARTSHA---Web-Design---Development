@@ -2,18 +2,27 @@
 //  Variables
 // ----------------------------------
 $background: #3F3B51;
-
 $blue: #38C6E5;
 $green: #7fd378;
 $purple: #804DD4;
 $red: #D44D4D;
 $yellow: #ffcc00;
-
 $black: black;
 $white: white;
 
+$box-shadow: 1px 1px 3px #3f3b510e,
+    1px -1px 3px #3f3b510e,
+    -1px 1px 3px #3f3b510e,
+    -1px -1px 3px #3f3b510e;
+
+$box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
+    1px -1px 1px darken(#3f3b513a, 100%),
+    -1px 1px 1px darken(#3f3b513a, 100%),
+    -1px -1px 1px darken(#3f3b513a, 100%);
+
+
 // ----------------------------------
-//  Resets & Transitions
+//  General & Transitions
 // ----------------------------------
 @media screen and (min-width: 0px) {
     * {
@@ -30,6 +39,10 @@ $white: white;
         box-sizing: border-box;
         height: 100%;
         width: 100%;
+        max-width: 1920px;
+        overflow-x: hidden;
+        margin: 0 auto;
+
     }
 
     .skip {
@@ -42,7 +55,6 @@ $white: white;
 
     header {
         position: relative;
-        max-width: 1920px;
         height: calc(100px + 10vw);
         min-height: 175px;
         margin: 0 auto;
@@ -89,17 +101,11 @@ $white: white;
 }
 
 // ----------------------------------
-//  Navbar Link Effects & Colors
+//  Navbar Links Effects & Colors
 // ----------------------------------
 
 @media screen and (min-width: 0px) and (max-width: 999px) {
-    #navbar-links li a {
-        font-size: 1.25em;
-    }
-
     #navbar-links {
-        position: relative;
-
         a:hover {
             transition: 0.1s;
         }
@@ -140,6 +146,13 @@ $white: white;
         .blog a:hover {
             color: $red;
         }
+
+        .contact {
+            a:hover {
+                color: $yellow;
+            }
+        }
+
     }
 }
 
@@ -205,7 +218,6 @@ $white: white;
             color: $red;
         }
 
-        //------------------ 
         .contact {
             overflow: hidden;
             padding: 15px 15px;
@@ -229,6 +241,7 @@ $white: white;
                 color: $white;
                 transition: 0.2s;
                 box-shadow: 1px 2px 0 darken($yellow, 5%), 3px 6px 6px darken($background, 25%);
+
             }
         }
 
@@ -271,7 +284,7 @@ $white: white;
 @media screen and (min-width: 1000px) and (max-width: 1199px) {
     .logo {
         position: absolute;
-        left: 35px;
+        left: 50px;
         top: 37px;
 
         img {
@@ -314,7 +327,7 @@ $white: white;
 @media screen and (min-width: 1200px) and (max-width: 1349px) {
     .logo {
         position: absolute;
-        left: 38px;
+        left: 60px;
         top: 43px;
 
         img {
@@ -358,7 +371,7 @@ $white: white;
 @media screen and (min-width: 1350px) and (max-width: 1499px) {
     .logo {
         position: absolute;
-        left: 65px;
+        left: 75px;
         top: 58px;
 
         img {
@@ -404,11 +417,11 @@ $white: white;
 @media screen and (min-width: 1500px) {
     .logo {
         position: absolute;
-        left: 85px;
-        top: 69px;
+        left: 125px;
+        top: 72px;
 
         img {
-            width: 340px;
+            width: 320px;
         }
 
     }
@@ -417,7 +430,7 @@ $white: white;
         position: absolute;
         z-index: 5;
         top: 80px;
-        right: 75px;
+        right: 100px;
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -529,7 +542,7 @@ $white: white;
 @media screen and (min-width: 0px) and (max-width: 999px) {
 
     #navbar-links {
-        position: absolute;
+        position: fixed;
         right: 0;
         display: flex;
         flex-direction: column;
@@ -541,6 +554,20 @@ $white: white;
         transition: 0.3s;
         width: 0;
         overflow: hidden;
+        background-image: url('./images/New.png');
+        background-repeat: no-repeat;
+        background-position: bottom;
+        background-size: contain;
+    }
+
+    #navbar-links li {
+        margin: 25px;
+
+        a {
+            font-size: 1.25em;
+            padding: 25px;
+            color: $white;
+        }
     }
 
     #navbar-links.mobile-nav-active {
@@ -549,26 +576,8 @@ $white: white;
         transition: 0.3s;
     }
 
-    #navbar-links {
-        li {
-            margin: 25px;
-
-            a {
-                padding: 25px;
-                color: $white;
-            }
-
-        }
-
-        .contact {
-            a:hover {
-                color: $yellow;
-            }
-        }
-    }
-
     #opacity-bg {
-        position: absolute;
+        position: fixed;
         display: none;
         height: 100vh;
         width: 100vw;
