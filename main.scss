@@ -20,28 +20,22 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
     -1px 1px 1px darken(#3f3b513a, 100%),
     -1px -1px 1px darken(#3f3b513a, 100%);
 
-// box-shadow: 1px 1px 0 darken($background, 5%),
-//     -1px -1px 0 darken($background, 5%),
-//     -1px 1px 0 darken($background, 5%),
-//     1px -1px 0 darken($background, 5%);
-
+// What-We-Do Mixin
+// Item Box Styles And Hover CSS
 @mixin what-we-do-item-box {
-
     max-width: 400px;
     margin: 15px;
     margin-bottom: 75px;
-    padding: 35px 25px;
+    padding: 40px 25px;
     border-radius: 25px;
-
-
     box-shadow: 0px 0px 15px darken($background, 10%);
     transition: 0.3s;
+    align-self: stretch;
 
     &:hover {
         box-shadow: 0px 0px 15px darken($background, 25%);
         transition: 0.3s;
     }
-
 }
 
 // ------------------------------
@@ -594,7 +588,6 @@ header {
     }
 
     .what-we-do-header {
-        width: 92vw;
         margin-top: 25px;
         margin-bottom: 25px;
 
@@ -623,15 +616,15 @@ header {
     .what-we-do-items {
         width: 100%;
         margin-bottom: 50px;
-        min-width: 350px;
+        min-width: 300px;
 
         .item {
+            width: 90%;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             max-width: 350px;
-
             @include what-we-do-item-box;
             margin: 25px auto;
 
@@ -733,58 +726,6 @@ header {
             }
         }
 
-        .what-we-do-items {
-            width: 86%;
-            margin-bottom: 50px;
-
-            .item {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                padding: 5px;
-                align-items: flex-start;
-                padding: 35px 25px;
-                border-radius: 25px;
-                box-shadow: 1px 1px 0 darken($background, 5%),
-                    -1px -1px 0 darken($background, 5%),
-                    -1px 1px 0 darken($background, 5%),
-                    1px -1px 0 darken($background, 5%);
-
-                &:hover {
-
-                    box-shadow: 0px 0px 15px darken($background, 25%);
-                    transition: 0.3s;
-                }
-
-                img {
-                    margin: 0 auto;
-                    width: 150px;
-                    max-width: 350px;
-                    height: auto;
-                    user-select: none;
-                    margin-bottom: 25px;
-                }
-
-                h2 {
-                    color: white;
-                    line-height: 1.25;
-                    font-size: 1.75em;
-                    text-align: center;
-                    margin-bottom: 15px;
-                    max-width: 275px;
-                    margin: 0 auto 20px;
-                }
-
-                p {
-                    text-align: center;
-                    color: white;
-                    max-width: 425px;
-                    margin: 0 auto;
-                    line-height: 1.75;
-                }
-            }
-        }
-
         .what-we-do-blob {
             position: relative;
             display: block;
@@ -816,17 +757,50 @@ header {
     }
 
     .what-we-do-items {
-        width: 100% !important;
+        width: 100%;
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: center;
         align-items: flex-start;
         margin-bottom: 75px;
 
         .item {
+            display: flex;
+            flex-direction: column;
+            padding: 5px;
+            align-items: flex-start;
+            padding: 35px 25px;
+            border-radius: 25px;
             margin: 0 15px;
             max-width: 350px;
             @include what-we-do-item-box;
+        }
+
+        img {
+            margin: 0 auto;
+            width: 150px;
+            max-width: 350px;
+            height: auto;
+            user-select: none;
+            margin-bottom: 25px;
+        }
+
+        h2 {
+            color: white;
+            line-height: 1.25;
+            font-size: 1.75em;
+            text-align: center;
+            margin-bottom: 15px;
+            max-width: 275px;
+            margin: 0 auto 20px;
+        }
+
+        p {
+            text-align: center;
+            color: white;
+            max-width: 425px;
+            margin: 0 auto;
+            line-height: 1.75;
         }
     }
 }
@@ -881,7 +855,7 @@ header {
     }
 
     .what-we-do-items {
-        margin-bottom: 50px;
+        margin-bottom: 25px;
         display: flex;
         flex-direction: row;
 
@@ -924,7 +898,7 @@ header {
                 max-width: 425px;
                 margin: 0 auto;
                 line-height: 1.75;
-                padding-bottom: 25px;
+                padding-bottom: 10px;
             }
         }
     }
@@ -946,6 +920,23 @@ header {
 //  Quote #1
 // ------------------------------
 @media screen and (min-width: 0px) and (max-width: 849px) {
+
+    #quote-1 {
+        position: relative;
+        width: 90%;
+        max-width: 1200px;
+        text-align: center;
+        margin: 75px auto 0px;
+
+        h2 {
+            font-size: clamp(1.5em, 5vw, 3em);
+            margin: 0 auto;
+            line-height: 1.5;
+        }
+    }
+}
+
+@media screen and (min-width: 0px) {
 
     #quote-1 {
         position: relative;

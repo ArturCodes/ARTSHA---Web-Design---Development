@@ -458,7 +458,6 @@ header {
     position: relative;
   }
   .what-we-do-header {
-    width: 92vw;
     margin-top: 25px;
     margin-bottom: 25px;
   }
@@ -483,9 +482,10 @@ header {
   .what-we-do-items {
     width: 100%;
     margin-bottom: 50px;
-    min-width: 350px;
+    min-width: 300px;
   }
   .what-we-do-items .item {
+    width: 90%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -494,10 +494,11 @@ header {
     max-width: 400px;
     margin: 15px;
     margin-bottom: 75px;
-    padding: 35px 25px;
+    padding: 40px 25px;
     border-radius: 25px;
     box-shadow: 0px 0px 15px #282633;
     transition: 0.3s;
+    align-self: stretch;
     margin: 25px auto;
   }
   .what-we-do-items .item:hover {
@@ -590,50 +591,6 @@ header {
     max-width: 500px;
     font-size: 1.125em;
   }
-  #what-we-do .what-we-do-items {
-    width: 86%;
-    margin-bottom: 50px;
-  }
-  #what-we-do .what-we-do-items .item {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 5px;
-    align-items: flex-start;
-    padding: 35px 25px;
-    border-radius: 25px;
-    box-shadow: 1px 1px 0 #343042, -1px -1px 0 #343042, -1px 1px 0 #343042, 1px -1px 0 #343042;
-  }
-  #what-we-do .what-we-do-items .item:hover {
-    box-shadow: 0px 0px 15px #060507;
-    transition: 0.3s;
-  }
-  #what-we-do .what-we-do-items .item img {
-    margin: 0 auto;
-    width: 150px;
-    max-width: 350px;
-    height: auto;
-    -webkit-user-select: none;
-       -moz-user-select: none;
-            user-select: none;
-    margin-bottom: 25px;
-  }
-  #what-we-do .what-we-do-items .item h2 {
-    color: white;
-    line-height: 1.25;
-    font-size: 1.75em;
-    text-align: center;
-    margin-bottom: 15px;
-    max-width: 275px;
-    margin: 0 auto 20px;
-  }
-  #what-we-do .what-we-do-items .item p {
-    text-align: center;
-    color: white;
-    max-width: 425px;
-    margin: 0 auto;
-    line-height: 1.75;
-  }
   #what-we-do .what-we-do-blob {
     position: relative;
     display: block;
@@ -659,27 +616,60 @@ header {
     max-width: 600px;
   }
   .what-we-do-items {
-    width: 100% !important;
+    width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     align-items: flex-start;
     margin-bottom: 75px;
   }
   .what-we-do-items .item {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    align-items: flex-start;
+    padding: 35px 25px;
+    border-radius: 25px;
     margin: 0 15px;
     max-width: 350px;
     max-width: 400px;
     margin: 15px;
     margin-bottom: 75px;
-    padding: 35px 25px;
+    padding: 40px 25px;
     border-radius: 25px;
     box-shadow: 0px 0px 15px #282633;
     transition: 0.3s;
+    align-self: stretch;
   }
   .what-we-do-items .item:hover {
     box-shadow: 0px 0px 15px #060507;
     transition: 0.3s;
+  }
+  .what-we-do-items img {
+    margin: 0 auto;
+    width: 150px;
+    max-width: 350px;
+    height: auto;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+            user-select: none;
+    margin-bottom: 25px;
+  }
+  .what-we-do-items h2 {
+    color: white;
+    line-height: 1.25;
+    font-size: 1.75em;
+    text-align: center;
+    margin-bottom: 15px;
+    max-width: 275px;
+    margin: 0 auto 20px;
+  }
+  .what-we-do-items p {
+    text-align: center;
+    color: white;
+    max-width: 425px;
+    margin: 0 auto;
+    line-height: 1.75;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -726,7 +716,7 @@ header {
     max-width: 600px;
   }
   .what-we-do-items {
-    margin-bottom: 50px;
+    margin-bottom: 25px;
     display: flex;
     flex-direction: row;
   }
@@ -740,10 +730,11 @@ header {
     max-width: 400px;
     margin: 15px;
     margin-bottom: 75px;
-    padding: 35px 25px;
+    padding: 40px 25px;
     border-radius: 25px;
     box-shadow: 0px 0px 15px #282633;
     transition: 0.3s;
+    align-self: stretch;
   }
   .what-we-do-items .item:hover {
     box-shadow: 0px 0px 15px #060507;
@@ -774,7 +765,7 @@ header {
     max-width: 425px;
     margin: 0 auto;
     line-height: 1.75;
-    padding-bottom: 25px;
+    padding-bottom: 10px;
   }
   .what-we-do-blob {
     position: relative;
@@ -787,6 +778,20 @@ header {
   }
 }
 @media screen and (min-width: 0px) and (max-width: 849px) {
+  #quote-1 {
+    position: relative;
+    width: 90%;
+    max-width: 1200px;
+    text-align: center;
+    margin: 75px auto 0px;
+  }
+  #quote-1 h2 {
+    font-size: clamp(1.5em, 5vw, 3em);
+    margin: 0 auto;
+    line-height: 1.5;
+  }
+}
+@media screen and (min-width: 0px) {
   #quote-1 {
     position: relative;
     width: 90%;
