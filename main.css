@@ -704,6 +704,8 @@ header {
   }
   .what-we-do-items {
     margin-bottom: 50px;
+    display: flex;
+    flex-direction: row;
   }
   .what-we-do-items .item {
     display: flex;
@@ -711,7 +713,6 @@ header {
     max-width: 1400px;
     padding: 35px 25px;
     flex-direction: column;
-    justify-content: center;
     justify-content: space-evenly;
     align-items: flex-start;
     border-radius: 25px;
@@ -719,6 +720,8 @@ header {
     margin: 15px;
     margin-bottom: 75px;
     box-shadow: 1px 1px 0 #343042, -1px -1px 0 #343042, -1px 1px 0 #343042, 1px -1px 0 #343042;
+    box-shadow: 0px 0px 15px #282633;
+    transition: 0.3s;
   }
   .what-we-do-items .item:hover {
     box-shadow: 0px 0px 15px #060507;
