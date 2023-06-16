@@ -714,11 +714,26 @@ header {
                 justify-content: center;
                 padding: 5px;
                 align-items: flex-start;
+                padding: 35px 25px;
+                border-radius: 25px;
+                box-shadow: 1px 1px 0 darken($background, 5%),
+                    -1px -1px 0 darken($background, 5%),
+                    -1px 1px 0 darken($background, 5%),
+                    1px -1px 0 darken($background, 5%);
+
+                &:hover {
+
+                    box-shadow: 0px 0px 15px darken($background, 25%);
+                    transition: 0.3s;
+                }
 
                 img {
-                    margin: 35px auto 20px;
-                    width: 125px;
+                    margin: 0 auto;
+                    width: 150px;
+                    max-width: 350px;
+                    height: auto;
                     user-select: none;
+                    margin-bottom: 25px;
                 }
 
                 h2 {
@@ -811,6 +826,7 @@ header {
         align-items: center;
         z-index: 1;
         position: relative;
+        padding-bottom: 25px;
 
         .what-we-do-header {
             width: 92vw;
@@ -846,16 +862,17 @@ header {
                 padding: 35px 25px;
                 flex-direction: column;
                 justify-content: center;
-                align-items: flex-end;
-
-                box-shadow: 2px 2px 15px darken($background, 15%);
                 border-radius: 25px;
-
-                max-width: 350px;
-                margin: 0 15px;
+                max-width: 400px;
+                margin: 15px;
+                box-shadow: 1px 1px 0 darken($background, 5%),
+                    -1px -1px 0 darken($background, 5%),
+                    -1px 1px 0 darken($background, 5%),
+                    1px -1px 0 darken($background, 5%);
 
                 &:hover {
-                    box-shadow: 1px 1px 3px darken($background, 25%);
+                    box-shadow: 0px 0px 15px darken($background, 25%);
+                    transition: 0.3s;
                 }
 
                 img {
@@ -864,7 +881,7 @@ header {
                     max-width: 350px;
                     height: auto;
                     user-select: none;
-                    margin-bottom: 25px;
+                    margin-bottom: 15px;
                 }
 
                 h2 {
@@ -872,9 +889,9 @@ header {
                     line-height: 1.25;
                     font-size: 1.75em;
                     text-align: center;
-                    margin-bottom: 15px;
                     max-width: 275px;
-                    margin: 0 auto 20px;
+                    margin: 0 auto;
+                    margin-bottom: 25px;
                 }
 
                 p {
@@ -883,6 +900,7 @@ header {
                     max-width: 425px;
                     margin: 0 auto;
                     line-height: 1.75;
+                    padding-bottom: 25px;
                 }
             }
         }
