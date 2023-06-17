@@ -970,13 +970,12 @@ header {
     }
 
     .contract-bottom-blob {
-        background-color: $white;
+        margin-bottom: - 5px;
         position: relative;
-        display: block;
+        width: 100%;
         height: auto;
-        width: 100vw;
-        z-index: 1;
         bottom: 0;
+        background-color: $white;
     }
 }
 
@@ -1009,16 +1008,22 @@ header {
         p {
             color: white;
             margin: 25px auto;
-            width: 92vw;
+            padding: 0 10px;
             max-width: 600px;
             height: auto;
-            font-size: 18px;
+            font-size: clamp(1em, 4vw, 1.125em);
 
             span {
                 font-weight: 700;
                 color: #38C6E5;
             }
         }
+
+        .no-fees {
+            width: 80vw;
+        }
+
+
 
     }
 
@@ -1103,8 +1108,8 @@ header {
                     display: block;
                     text-decoration: solid underline white 1px;
                     -webkit-text-decoration: solid underline white 1px;
-                    text-underline-offset: 1px;
-                    -webkit-text-underline-offset: 1px;
+                    text-underline-offset: 5px;
+                    -webkit-text-underline-offset: 5px;
                 }
 
                 &::before {
@@ -1155,35 +1160,43 @@ header {
 
 @media only screen and (min-width: 850px) and (max-width: 1199px) {
 
-    .contract-container {
-        grid-column-start: 1;
-        grid-column-end: 6;
-        grid-row-start: 1;
-        grid-row-end: 2;
-        position: relative;
+    .contract-content {
+        padding: 25px calc(25px + 5vw);
+        display: grid;
 
-        h2 {
-            color: white;
-            font-size: clamp(1.5em, 7vw, 3em);
-            line-height: 1.5;
-            margin: 0 auto;
+        grid-template-columns: repeat(10, 10%);
+        grid-template-rows: repeat(20, 50px);
 
-            span {
-                color: #38C6E5;
+
+        .contract-container {
+            grid-column-start: 1;
+            grid-column-end: 10;
+            grid-row-start: 1;
+            grid-row-end: 5;
+
+            h2 {
+                color: white;
+                font-size: clamp(1.5em, 7vw, 3em);
+                line-height: 1.5;
+                margin: 0 auto;
+
+                span {
+                    color: #38C6E5;
+                }
             }
-        }
 
-        p {
-            color: white;
-            margin: 25px auto;
-            width: 92vw;
-            max-width: 600px;
-            height: auto;
-            font-size: 18px;
+            p {
+                color: white;
+                margin-top: 25px;
+                width: 92vw;
+                max-width: 600px;
+                height: auto;
+                font-size: 18px;
 
-            span {
-                font-weight: 700;
-                color: #38C6E5;
+                span {
+                    font-weight: 700;
+                    color: #38C6E5;
+                }
             }
         }
 
@@ -1191,13 +1204,15 @@ header {
     }
 
     .bank-girl {
+        position: relative;
+        z-index: 800;
         margin: 0 auto;
-        max-height: 400px;
-        grid-column-start: 6;
-        grid-column-end: 9;
-        grid-row-start: 1;
-        grid-row-end: 2;
-        margin-top: 75px;
+        max-height: 500px;
+
+        grid-column-start: 8;
+        grid-column-end: 10;
+        grid-row-start: 7;
+        margin-top: -100px;
     }
 
     .included-container {
@@ -1208,15 +1223,19 @@ header {
         flex-direction: column;
         grid-column-start: 1;
         grid-column-end: 9;
-        grid-row-start: 5;
+        grid-row-start: 10;
         grid-row-end: 14;
         overflow: visible;
 
 
         h2 {
+            color: $white;
             text-align: left;
-            padding-left: 100px;
-            font-size: clamp(1.5em, 5vw, 2.25em);
+            font-size: clamp(1.5em, 7vw, 3em);
+
+            span {
+                color: $blue;
+            }
 
             &::before {
                 display: block;
@@ -1251,7 +1270,6 @@ header {
         }
 
         .included-items {
-            padding-left: 100px;
             max-width: none;
             display: grid;
             flex-direction: row;
