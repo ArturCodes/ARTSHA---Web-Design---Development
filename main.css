@@ -481,19 +481,18 @@ header {
   }
   .what-we-do-items {
     width: 100%;
-    margin-bottom: 50px;
+    margin-bottom: 25px;
     min-width: 300px;
   }
   .what-we-do-items .item {
-    width: 90%;
+    width: 84%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     max-width: 350px;
-    max-width: 400px;
+    max-width: 375px;
     margin: 15px;
-    margin-bottom: 75px;
     padding: 40px 25px;
     border-radius: 25px;
     box-shadow: 0px 0px 15px #282633;
@@ -621,7 +620,7 @@ header {
     flex-direction: row;
     justify-content: center;
     align-items: flex-start;
-    margin-bottom: 75px;
+    margin-bottom: 50px;
   }
   .what-we-do-items .item {
     display: flex;
@@ -632,9 +631,8 @@ header {
     border-radius: 25px;
     margin: 0 15px;
     max-width: 350px;
-    max-width: 400px;
+    max-width: 375px;
     margin: 15px;
-    margin-bottom: 75px;
     padding: 40px 25px;
     border-radius: 25px;
     box-shadow: 0px 0px 15px #282633;
@@ -716,7 +714,7 @@ header {
     max-width: 600px;
   }
   .what-we-do-items {
-    margin-bottom: 25px;
+    margin-bottom: 50px;
     display: flex;
     flex-direction: row;
   }
@@ -727,9 +725,8 @@ header {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: flex-start;
-    max-width: 400px;
+    max-width: 375px;
     margin: 15px;
-    margin-bottom: 75px;
     padding: 40px 25px;
     border-radius: 25px;
     box-shadow: 0px 0px 15px #282633;
@@ -777,7 +774,7 @@ header {
     background-color: white;
   }
 }
-@media screen and (min-width: 0px) and (max-width: 849px) {
+@media screen and (min-width: 0px) {
   #quote-1 {
     position: relative;
     width: 90%;
@@ -791,17 +788,8 @@ header {
     line-height: 1.5;
   }
 }
-@media screen and (min-width: 0px) {
+@media screen and (min-width: 1200px) {
   #quote-1 {
-    position: relative;
-    width: 90%;
-    max-width: 1200px;
-    text-align: center;
-    margin: 75px auto 0px;
-  }
-  #quote-1 h2 {
-    font-size: clamp(1.5em, 5vw, 3em);
-    margin: 0 auto;
-    line-height: 1.5;
+    margin: 100px auto 50px;
   }
 }/*# sourceMappingURL=main.css.map */
