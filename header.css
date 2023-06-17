@@ -156,7 +156,7 @@
   #navbar-links .contact a {
     background-color: #ffcc00;
     color: black;
-    box-shadow: 2px 4px 6px #060507;
+    box-shadow: 1px 1px 3px rgba(63, 59, 81, 0.0549019608), 1px -1px 3px rgba(63, 59, 81, 0.0549019608), -1px 1px 3px rgba(63, 59, 81, 0.0549019608), -1px -1px 3px rgba(63, 59, 81, 0.0549019608);
     border-radius: 7.5px;
     width: 150px;
     padding: 15px 30px;

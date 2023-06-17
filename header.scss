@@ -237,8 +237,7 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
         a {
             background-color: $yellow;
             color: $black;
-            // box-shadow: 1px 2px 0 darken($yellow, 5%), 2px 4px 6px darken($background, 25%);
-            box-shadow: 2px 4px 6px darken($background, 25%);
+            box-shadow: $box-shadow;
             border-radius: 7.5px;
             width: 150px;
             padding: 15px 30px;
