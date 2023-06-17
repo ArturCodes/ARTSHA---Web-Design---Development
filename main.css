@@ -446,6 +446,7 @@ header {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: bottom;
+    overflow: visible;
     height: calc(250px + 30vw);
     width: 100%;
   }
@@ -473,6 +474,7 @@ header {
     color: #38C6E5;
   }
   .what-we-do-header p {
+    width: 90%;
     text-align: center;
     color: white;
     margin: 0 auto;
@@ -506,7 +508,7 @@ header {
   }
   .what-we-do-items .item img {
     margin: 0px auto 25px;
-    width: 140px;
+    width: 125px;
     height: auto;
     -webkit-user-select: none;
        -moz-user-select: none;
@@ -780,7 +782,8 @@ header {
     width: 90%;
     max-width: 1200px;
     text-align: center;
-    margin: 75px auto 0px;
+    margin: 75px auto 50px;
+    z-index: 999;
   }
   #quote-1 h2 {
     font-size: clamp(1.5em, 5vw, 3em);
@@ -788,24 +791,33 @@ header {
     line-height: 1.5;
   }
 }
+@media screen and (min-width: 850px) {
+  #quote-1 h2 {
+    margin: 100px;
+  }
+}
 @media screen and (min-width: 1200px) {
   #quote-1 {
+    position: relative;
+    z-index: 999;
     margin: 100px auto 50px;
   }
 }
-@media only screen and (min-width: 0px) and (max-width: 849px) {
+@media only screen and (min-width: 0px) {
+  #contract-section {
+    margin-top: -50px;
+    background-color: #3F3B51;
+  }
   .contract-top-blob {
     position: relative;
-    display: block;
+    width: 100%;
     height: auto;
-    width: 100vw;
-    z-index: 1;
+    z-index: 500;
     bottom: 0;
     background-color: white;
   }
-  #contract-section {
-    background-color: #3F3B51;
-  }
+}
+@media only screen and (min-width: 0px) and (max-width: 849px) {
   .contract-container {
     margin-top: 50px;
   }
@@ -845,206 +857,5 @@ header {
     top: 800px;
     right: calc(100px + 1vw);
     transform: scaleX(-1);
-  }
-}
-@media only screen and (min-width: 850px) and (max-width: 1199px) {
-  #contract-section {
-    padding: clamp(1em, 2vw, 5em);
-    height: auto;
-    display: grid;
-    grid-template-columns: repeat(8, 12.5%);
-    grid-template-rows: auto;
-  }
-  .contract-container {
-    grid-column-start: 1;
-    grid-column-end: 6;
-    grid-row-start: 1;
-    grid-row-end: 2;
-    position: relative;
-  }
-  .contract-container h2 {
-    font-size: 2.5em;
-  }
-  .contract-container p {
-    width: 100%;
-    max-width: 400px;
-  }
-  .bank-girl {
-    margin: 0 auto;
-    max-height: 400px;
-    grid-column-start: 6;
-    grid-column-end: 9;
-    grid-row-start: 1;
-    grid-row-end: 2;
-    margin-top: 75px;
-  }
-  .included-container {
-    position: relative;
-    z-index: 5;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    grid-column-start: 1;
-    grid-column-end: 9;
-    grid-row-start: 5;
-    grid-row-end: 14;
-    overflow: visible;
-  }
-  .included-container h2 {
-    text-align: left;
-    padding-left: 100px;
-    font-size: clamp(1.5em, 5vw, 2.25em);
-  }
-  .included-container h2::before {
-    display: block;
-    content: "";
-    background-image: url("./images/cogs.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 100px;
-    height: 100px;
-    position: absolute;
-    left: -10px;
-    top: -70px;
-    opacity: 0.5;
-    z-index: 999;
-  }
-  .included-container h2::after {
-    display: block;
-    content: "";
-    background-image: url("./images/cogs2.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: calc(200px + 5vw);
-    height: calc(200px + 5vw);
-    position: absolute;
-    opacity: 0.05;
-    top: 300px;
-    right: 0;
-    transform: scaleX(-1);
-  }
-  .included-container .included-items {
-    padding-left: 100px;
-    max-width: none;
-    display: grid;
-    flex-direction: row;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(6, auto);
-  }
-  .included-container .included-items .item {
-    padding-left: 30px;
-  }
-  .included-container .included-items .item::before {
-    content: "";
-    background-image: url("./images/check.png");
-    display: block;
-    position: relative;
-    top: 23px;
-    left: -30px;
-    background-size: contain;
-    width: 20px;
-    height: 15px;
-  }
-}
-@media only screen and (min-width: 1200px) {
-  #contract-section {
-    position: relative;
-    padding: clamp(1em, 2vw, 5em);
-    margin-top: -75px;
-    display: grid;
-    margin-bottom: auto;
-    grid-template-columns: repeat(8, 12.5%);
-    grid-template-rows: repeat(10, 125px);
-  }
-  .contract-container {
-    grid-column-start: 2;
-    grid-column-end: 6;
-    grid-row-start: 2;
-    grid-row-end: 5;
-    overflow: visible;
-  }
-  .contract-container::after {
-    display: block;
-    content: "";
-    position: absolute;
-    background-image: url("./images/contract.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 50%;
-    height: 50%;
-    top: -22px;
-    left: -140px;
-    opacity: 0.5;
-    transform: rotate(15deg);
-  }
-  .contract-container h2 {
-    min-width: 700px;
-    position: relative;
-    z-index: 5;
-  }
-  .contract-container p {
-    position: relative;
-    z-index: 5;
-  }
-  .bank-girl {
-    max-height: 575px;
-    grid-column-start: 6;
-    grid-column-end: 9;
-    grid-row-start: 1;
-    grid-row-end: 7;
-    margin-top: 75px;
-    overflow: visible;
-    z-index: 5;
-  }
-  .included-container {
-    display: flex;
-    flex-direction: column;
-    grid-column-start: 2;
-    grid-column-end: 8;
-    grid-row-start: 5;
-    grid-row-end: 15;
-    overflow: visible;
-    margin-top: 150px;
-  }
-  .included-container h2 {
-    text-align: left;
-    position: relative;
-    overflow: visible;
-  }
-  .included-container h2::before {
-    display: block;
-    content: "";
-    background-image: url("./images/cogs.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 150px;
-    height: 150px;
-    position: absolute;
-    opacity: 0.5;
-    top: -100px;
-    left: -160px;
-  }
-  .included-container h2::after {
-    display: block;
-    content: "";
-    background-image: url("./images/cogs2.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: calc(200px + 5vw);
-    height: calc(200px + 5vw);
-    position: absolute;
-    opacity: 0.05;
-    top: 175px;
-    right: -225px;
-    transform: scaleX(-1);
-    overflow: hidden;
-  }
-  .included-container .included-items {
-    display: grid;
-    max-width: none;
-    grid-template-columns: repeat(4, 1fr);
-  }
-  .included-container .included-items .item {
-    padding: 0 25px 0 35px;
   }
 }/*# sourceMappingURL=main.css.map */
