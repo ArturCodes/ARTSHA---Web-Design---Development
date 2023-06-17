@@ -1045,7 +1045,7 @@ header {
             width: calc(250px + 5vw);
             height: calc(150px + 5vw);
             position: absolute;
-            opacity: .05;
+            opacity: .03;
             top: 75px;
             right: calc(25px + 1vw);
             transform: scaleX(-1);
@@ -1060,7 +1060,7 @@ header {
             width: calc(200px + 5vw);
             height: calc(200px + 5vw);
             position: absolute;
-            opacity: .05;
+            opacity: .03;
             top: 800px;
             left: 35%;
             transform: scaleX(-1);
@@ -1214,10 +1214,9 @@ header {
         flex-direction: column;
         grid-column-start: 1;
         grid-column-end: 9;
-        grid-row-start: 10;
-        grid-row-end: 16;
+        grid-row-start: 11;
+        grid-row-end: 20;
         overflow: visible;
-
 
         h2 {
             color: $white;
@@ -1234,12 +1233,12 @@ header {
                 background-image: url('./images/cogs.png');
                 background-size: contain;
                 background-repeat: no-repeat;
-                width: 100px;
-                height: 100px;
+                width: 250px;
+                height: 250px;
                 position: absolute;
                 left: -10px;
-                top: -70px;
-                opacity: .5;
+                top: -80px;
+                opacity: .03;
 
                 z-index: 999;
             }
@@ -1253,9 +1252,9 @@ header {
                 width: calc(200px + 5vw);
                 height: calc(200px + 5vw);
                 position: absolute;
-                opacity: .05;
+                opacity: .03;
                 top: 300px;
-                right: 0;
+                right: -200px;
                 transform: scaleX(-1);
             }
         }
@@ -1318,6 +1317,8 @@ header {
             transition: 0.3s;
             box-shadow: 1px 1px 5px #1a1a1a;
 
+            margin-top: 50px;
+
             &:hover {
                 background-color: white;
                 color: #1a1a1a;
@@ -1331,107 +1332,109 @@ header {
 
 
 
-// @media only screen and (min-width: 1200px) {
-//     .contract-container {
-//         grid-column-start: 2;
-//         grid-column-end: 6;
-//         grid-row-start: 2;
-//         grid-row-end: 5;
-//         overflow: visible;
+@media only screen and (min-width: 1200px) {
+    .contract-container {
+        grid-column-start: 2;
+        grid-column-end: 6;
+        grid-row-start: 2;
+        grid-row-end: 5;
+        overflow: visible;
 
-//         &::after {
-//             display: block;
-//             content: '';
-//             position: absolute;
-//             background-image: url('./images/contract.png');
-//             background-size: contain;
-//             background-repeat: no-repeat;
-//             width: 50%;
-//             height: 50%;
-//             top: -22px;
-//             left: -140px;
-//             opacity: .5;
-//             transform: rotate(15deg);
-//         }
+        &::after {
+            display: block;
+            content: '';
+            position: absolute;
+            background-image: url('./images/contract.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 50%;
+            height: 50%;
+            top: -22px;
+            left: -140px;
+            opacity: .5;
+            transform: rotate(15deg);
+        }
 
 
-//         h2 {
-//             min-width: 700px;
-//             position: relative;
-//             z-index: 5;
-//         }
+        h2 {
+            min-width: 700px;
+            position: relative;
+            z-index: 5;
+        }
 
-//         p {
-//             position: relative;
-//             z-index: 5;
-//         }
-//     }
-//     .bank-girl {
-//         max-height: 575px;
-//         grid-column-start: 6;
-//         grid-column-end: 9;
-//         grid-row-start: 1;
-//         grid-row-end: 7;
-//         margin-top: 75px;
-//         overflow: visible;
-//         z-index: 5;
-//     }
-//     .included-container {
-//         display: flex;
-//         flex-direction: column;
-//         grid-column-start: 2;
-//         grid-column-end: 8;
-//         grid-row-start: 5;
-//         grid-row-end: 15;
-//         overflow: visible;
-//         margin-top: 150px;
+        p {
+            position: relative;
+            z-index: 5;
+        }
+    }
 
-//         h2 {
-//             text-align: left;
-//             position: relative;
-//             overflow: visible;
+    .bank-girl {
+        max-height: 575px;
+        grid-column-start: 6;
+        grid-column-end: 9;
+        grid-row-start: 1;
+        grid-row-end: 7;
+        margin-top: 75px;
+        overflow: visible;
+        z-index: 5;
+    }
 
-//             &::before {
-//                 display: block;
-//                 content: '';
-//                 background-image: url('./images/cogs.png');
-//                 background-size: contain;
-//                 background-repeat: no-repeat;
-//                 width: 150px;
-//                 height: 150px;
-//                 position: absolute;
-//                 opacity: .5;
-//                 top: -100px;
-//                 left: -160px;
-//             }
+    .included-container {
+        display: flex;
+        flex-direction: column;
+        grid-column-start: 2;
+        grid-column-end: 8;
+        grid-row-start: 5;
+        grid-row-end: 15;
+        overflow: visible;
+        margin-top: 150px;
 
-//             &::after {
-//                 display: block;
-//                 content: '';
-//                 background-image: url('./images/cogs2.png');
-//                 background-size: contain;
-//                 background-repeat: no-repeat;
-//                 width: calc(200px + 5vw);
-//                 height: calc(200px + 5vw);
-//                 position: absolute;
-//                 opacity: .05;
-//                 top: 175px;
-//                 right: -225px;
-//                 transform: scaleX(-1);
-//                 overflow: hidden;
-//             }
+        h2 {
+            text-align: left;
+            position: relative;
+            overflow: visible;
 
-//         }
+            &::before {
+                display: block;
+                content: '';
+                background-image: url('./images/cogs.png');
+                background-size: contain;
+                background-repeat: no-repeat;
+                width: 150px;
+                height: 150px;
+                position: absolute;
+                opacity: .5;
+                top: -100px;
+                left: -160px;
+            }
 
-//         .included-items {
-//             display: grid;
-//             max-width: none;
-//             grid-template-columns: repeat(4, 1fr);
+            &::after {
+                display: block;
+                content: '';
+                background-image: url('./images/cogs2.png');
+                background-size: contain;
+                background-repeat: no-repeat;
+                width: calc(200px + 5vw);
+                height: calc(200px + 5vw);
+                position: absolute;
+                opacity: .05;
+                top: 175px;
+                right: -225px;
+                transform: scaleX(-1);
+                overflow: hidden;
+            }
 
-//             .item {
-//                 padding: 0 25px 0 35px;
-//             }
-//         }
+        }
 
-//     }
-// }
+        .included-items {
+            display: grid;
+            max-width: none;
+            grid-template-columns: repeat(4, 1fr);
+
+            .item {
+                padding: 0 25px 0 35px;
+            }
+        }
+
+    }
+}
