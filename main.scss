@@ -984,7 +984,7 @@ header {
         text-align: center;
     }
 
-    .contract-container {
+    .contract-text {
         margin: 0 auto;
         margin-top: 50px;
         justify-content: center;
@@ -1156,41 +1156,42 @@ header {
 
 @media only screen and (min-width: 850px) and (max-width: 1199px) {
 
-    .contract-content {
+    .contract-container {
         padding: 25px calc(25px + 5vw);
         display: grid;
         grid-template-columns: repeat(10, 10%);
         grid-template-rows: repeat(24, 50px);
 
-        .contract-container {
-            grid-column-start: 1;
-            grid-column-end: 10;
-            grid-row-start: 1;
-            grid-row-end: 5;
+    }
 
-            h2 {
-                color: white;
-                font-size: clamp(1.5em, 7vw, 3em);
-                line-height: 1.5;
-                margin: 0 auto;
+    .contract-text {
+        grid-column-start: 1;
+        grid-column-end: 10;
+        grid-row-start: 1;
+        grid-row-end: 6;
 
-                span {
-                    color: #38C6E5;
-                }
+        h2 {
+            color: white;
+            font-size: clamp(1.5em, 7vw, 3em);
+            line-height: 1.5;
+            margin: 0 auto;
+
+            span {
+                color: #38C6E5;
             }
+        }
 
-            p {
-                color: white;
-                margin-top: 25px;
-                width: 92vw;
-                max-width: 600px;
-                height: auto;
-                font-size: 18px;
+        p {
+            color: white;
+            margin-top: 25px;
+            width: 92vw;
+            max-width: 600px;
+            height: auto;
+            font-size: 18px;
 
-                span {
-                    font-weight: 700;
-                    color: #38C6E5;
-                }
+            span {
+                font-weight: 700;
+                color: #38C6E5;
             }
         }
     }
@@ -1330,15 +1331,48 @@ header {
 
 }
 
-
-
 @media only screen and (min-width: 1200px) {
+
     .contract-container {
+        padding: 25px calc(25px + 5vw);
+        display: grid;
+        grid-template-columns: repeat(10, 10%);
+        grid-template-rows: repeat(24, 50px);
+    }
+
+    .contract-text {
         grid-column-start: 2;
         grid-column-end: 6;
-        grid-row-start: 2;
-        grid-row-end: 5;
-        overflow: visible;
+        grid-row-start: 1;
+        grid-row-end: 2;
+
+        text-align: center;
+
+        h2 {
+            color: white;
+            font-size: clamp(1.5em, 7vw, 3em);
+            line-height: 1.5;
+            margin: 0 auto;
+
+            span {
+                color: #38C6E5;
+            }
+        }
+
+        p {
+            padding-left: 25px;
+            color: white;
+            margin-top: 25px;
+            max-width: 600px;
+            height: auto;
+            font-size: 18px;
+            text-align: center;
+
+            span {
+                font-weight: 700;
+                color: #38C6E5;
+            }
+        }
 
         &::after {
             display: block;
@@ -1353,18 +1387,6 @@ header {
             left: -140px;
             opacity: .5;
             transform: rotate(15deg);
-        }
-
-
-        h2 {
-            min-width: 700px;
-            position: relative;
-            z-index: 5;
-        }
-
-        p {
-            position: relative;
-            z-index: 5;
         }
     }
 

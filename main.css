@@ -825,7 +825,7 @@ header {
   #contract-section {
     text-align: center;
   }
-  .contract-container {
+  .contract-text {
     margin: 0 auto;
     margin-top: 50px;
     justify-content: center;
@@ -836,15 +836,15 @@ header {
     position: relative;
     overflow: visible;
   }
-  .contract-container h2 {
+  .contract-text h2 {
     color: white;
     font-size: clamp(1.5em, 7vw, 3em);
     line-height: 1.5;
   }
-  .contract-container h2 span {
+  .contract-text h2 span {
     color: #38C6E5;
   }
-  .contract-container p {
+  .contract-text p {
     color: white;
     margin: 25px auto;
     padding: 0 10px;
@@ -852,11 +852,11 @@ header {
     height: auto;
     font-size: clamp(1em, 4vw, 1.125em);
   }
-  .contract-container p span {
+  .contract-text p span {
     font-weight: 700;
     color: #38C6E5;
   }
-  .contract-container .no-fees {
+  .contract-text .no-fees {
     width: 80vw;
   }
   .bank-girl {
@@ -971,28 +971,28 @@ header {
   }
 }
 @media only screen and (min-width: 850px) and (max-width: 1199px) {
-  .contract-content {
+  .contract-container {
     padding: 25px calc(25px + 5vw);
     display: grid;
     grid-template-columns: repeat(10, 10%);
     grid-template-rows: repeat(24, 50px);
   }
-  .contract-content .contract-container {
+  .contract-text {
     grid-column-start: 1;
     grid-column-end: 10;
     grid-row-start: 1;
-    grid-row-end: 5;
+    grid-row-end: 6;
   }
-  .contract-content .contract-container h2 {
+  .contract-text h2 {
     color: white;
     font-size: clamp(1.5em, 7vw, 3em);
     line-height: 1.5;
     margin: 0 auto;
   }
-  .contract-content .contract-container h2 span {
+  .contract-text h2 span {
     color: #38C6E5;
   }
-  .contract-content .contract-container p {
+  .contract-text p {
     color: white;
     margin-top: 25px;
     width: 92vw;
@@ -1000,7 +1000,7 @@ header {
     height: auto;
     font-size: 18px;
   }
-  .contract-content .contract-container p span {
+  .contract-text p span {
     font-weight: 700;
     color: #38C6E5;
   }
@@ -1123,13 +1123,41 @@ header {
 }
 @media only screen and (min-width: 1200px) {
   .contract-container {
+    padding: 25px calc(25px + 5vw);
+    display: grid;
+    grid-template-columns: repeat(10, 10%);
+    grid-template-rows: repeat(24, 50px);
+  }
+  .contract-text {
     grid-column-start: 2;
     grid-column-end: 6;
-    grid-row-start: 2;
-    grid-row-end: 5;
-    overflow: visible;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    text-align: center;
   }
-  .contract-container::after {
+  .contract-text h2 {
+    color: white;
+    font-size: clamp(1.5em, 7vw, 3em);
+    line-height: 1.5;
+    margin: 0 auto;
+  }
+  .contract-text h2 span {
+    color: #38C6E5;
+  }
+  .contract-text p {
+    padding-left: 25px;
+    color: white;
+    margin-top: 25px;
+    max-width: 600px;
+    height: auto;
+    font-size: 18px;
+    text-align: center;
+  }
+  .contract-text p span {
+    font-weight: 700;
+    color: #38C6E5;
+  }
+  .contract-text::after {
     display: block;
     content: "";
     position: absolute;
@@ -1142,15 +1170,6 @@ header {
     left: -140px;
     opacity: 0.5;
     transform: rotate(15deg);
-  }
-  .contract-container h2 {
-    min-width: 700px;
-    position: relative;
-    z-index: 5;
-  }
-  .contract-container p {
-    position: relative;
-    z-index: 5;
   }
   .bank-girl {
     max-height: 575px;
