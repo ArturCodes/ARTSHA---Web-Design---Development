@@ -972,12 +972,11 @@ header {
             &:hover {
                 p span {
                     color: $blue;
+                    background-color: darken($background, 5%);
                 }
             }
         }
     }
-
-
 
     .contract-bottom-blob {
         margin-bottom: - 5px;
@@ -1344,6 +1343,7 @@ header {
 @media only screen and (min-width: 1200px) {
 
     .contract-container {
+        padding: 15px calc(15px + 5vw);
         display: grid;
         grid-template-columns: repeat(10, 10%);
         grid-template-rows: repeat(11, 100px);
@@ -1351,16 +1351,16 @@ header {
 
     .contract-text {
         grid-column-start: 1;
-        grid-column-end: 7;
+        grid-column-end: 11;
         grid-row-start: 0;
         grid-row-end: 2;
-
 
         h2 {
             color: white;
             font-size: clamp(1.5em, 7vw, 3em);
             line-height: 1.5;
             text-align: center;
+            position: relative;
 
             span {
                 color: #38C6E5;
@@ -1380,17 +1380,20 @@ header {
                 font-weight: 700;
                 color: #38C6E5;
             }
+
+
         }
     }
 
     .bank-girl {
         grid-column-start: 7;
         grid-column-end: 9;
-        grid-row-start: 1;
-        grid-row-end: 6;
+        grid-row-start: 7;
+        grid-row-end: 8;
         max-height: 600px;
         overflow: visible;
         z-index: 5;
+        padding-left: 45px;
     }
 
     .included-container {
@@ -1399,8 +1402,8 @@ header {
         flex-direction: column;
 
         grid-column-start: 2;
-        grid-column-end: 10;
-        grid-row-start: 6;
+        grid-column-end: 8;
+        grid-row-start: 5;
         grid-row-end: 15;
 
 
@@ -1451,8 +1454,7 @@ header {
             max-width: none;
             display: grid;
             flex-direction: row;
-            grid-template-columns: repeat(4, 1fr);
-            grid-template-rows: repeat(3, auto);
+            grid-template-columns: repeat(2, 1fr);
 
             .item {
                 margin: 5px;
@@ -1559,11 +1561,16 @@ header {
 }
 
 
-// ##################################
-//       FOOTER SECTION CSS ONLY  
-// ##################################
+// ==============================
+//  Footer 
+// ==============================
 
-@media only screen and (min-width: 0px) and (max-width: 849px) {
+@media only screen and (min-width: 0px) {
+    .footer-bottom-blob {
+        width: 100%;
+        position: relative;
+        z-index: 999;
+    }
 
     .footer-container {
         overflow: visible;
@@ -1572,7 +1579,7 @@ header {
         display: flex;
         flex-direction: column;
         position: relative;
-        margin-top: -15px;
+        margin-top: -5px;
     }
 
     .footer-logo {
@@ -1585,7 +1592,29 @@ header {
         }
     }
 
-    .footer-content {
+    .footer-bottom {
+        background-color: $blue;
+        height: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 14px;
+
+        a {
+            color: $black;
+        }
+
+        a:hover {
+            color: white;
+            transition: 0.2s;
+        }
+    }
+
+}
+
+@media only screen and (min-width: 0px) and (max-width: 849px) {
+
+    .footer-text {
         width: 80%;
         margin: 0 auto;
         max-width: 1600px;
@@ -1607,11 +1636,10 @@ header {
             ul {
                 display: flex;
                 flex-direction: column;
-                // overflow: visible;
 
                 li {
                     overflow: visible;
-                    margin: 7.5px 0px;
+                    margin: 15px 0px;
 
                     a {
                         color: white;
@@ -1639,7 +1667,7 @@ header {
                 width: 125px;
                 position: absolute;
                 right: -45px;
-                bottom: 112px;
+                bottom: 103px;
             }
 
             h2 {
@@ -1653,81 +1681,56 @@ header {
                 position: relative;
                 display: flex;
                 flex-direction: column;
+                justify-items: center;
 
                 a {
                     color: white;
                     margin-left: 30px;
-                    margin-bottom: 15px;
+                    margin-bottom: 20px;
+
+                    &:hover {
+                        text-decoration: solid 1px $blue;
+                    }
 
                 }
 
                 a:nth-child(1)::before {
-                    display: block;
                     content: '';
                     position: absolute;
                     background-image: url('./images/mail.png');
                     background-size: contain;
                     background-repeat: no-repeat;
-                    width: 25px;
-                    height: 25px;
+                    width: 20px;
+                    height: 20px;
+                    top: -2px;
                     left: 0;
                 }
 
                 a:nth-child(2)::before {
-                    display: block;
                     content: '';
                     position: absolute;
                     background-image: url('./images/phone.png');
                     background-size: contain;
                     background-repeat: no-repeat;
-                    width: 25px;
-                    height: 25px;
+                    width: 19px;
+                    height: 19px;
+                    bottom: 22px;
                     left: 2px;
                 }
             }
         }
     }
 
-    .footer-bottom {
-        background-color: #38C6E5;
-        text-align: center;
-        font-size: 14px;
-
-        a:hover {
-            color: white;
-            transition: 0.2s;
-        }
-    }
 }
 
 @media only screen and (min-width: 850px) and (max-width: 1199px) {
 
-    .footer-container {
-        overflow: visible;
-        background-color: #3f3b51;
-        height: auto;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .footer-logo {
-        margin: 0 auto;
-        margin: 50px auto;
-
-        img {
-            height: calc(75px + 5vw);
-            max-height: 100px;
-
-        }
-    }
-
-    .footer-content {
+    .footer-text {
         display: flex;
         flex-direction: row;
         width: 80%;
         margin: 75px auto;
         justify-content: space-around;
-        margin-bottom: 75px;
         overflow: visible;
 
         &::after {
@@ -1829,7 +1832,6 @@ header {
                 padding-bottom: 5px;
                 border-bottom: 4px solid #3BD3F4;
                 padding-left: 75px;
-
             }
 
             div {
@@ -1838,14 +1840,12 @@ header {
                 padding-left: 50px;
                 position: relative;
                 margin: 7.5px 15px;
-
             }
 
             a {
                 color: white;
                 margin-left: 40px;
-                margin-bottom: 15px;
-                width: auto;
+                margin-bottom: 20px;
             }
 
             a:nth-child(1)::before {
@@ -1858,7 +1858,7 @@ header {
                 width: 20px;
                 height: 20px;
                 left: 60px;
-                top: 3px;
+                top: -2px;
 
             }
 
@@ -1869,49 +1869,101 @@ header {
                 background-image: url('./images/phone.png');
                 background-size: contain;
                 background-repeat: no-repeat;
-                width: 20px;
-                height: 20px;
+                width: 19px;
+                height: 19px;
                 left: 62px;
-                top: 45px;
+                bottom: 22px;
             }
         }
     }
 
-    .footer-bottom {
-        background-color: #38C6E5;
-        text-align: center;
-        font-size: 14px;
+    // ---------------------
+    // Underline Transition
+    // ---------------------
+    .footer-links a {
+        position: relative;
 
-        a:hover {
-            color: white;
-            transition: 0.2s;
+        &:hover {
+            transition: 0.1s;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -5px;
+            width: 0;
+            height: 3px;
+            transition: width 0.2s ease-in-out;
+        }
+
+        &:hover::after {
+            width: 100%;
         }
     }
+
+    .footer-links {
+        position: relative;
+        height: auto;
+
+        // ACTIVE (width: 100%)
+        .home a::after {
+            width: 100%;
+            background-color: $blue;
+        }
+
+        .home a:hover {
+            color: $blue;
+        }
+
+        .about a::after {
+            background-color: $green;
+        }
+
+        .about a:hover {
+            color: $green;
+        }
+
+        .services a::after {
+            background-color: $purple;
+        }
+
+        .services a:hover {
+            color: $purple;
+        }
+
+        .blog a::after {
+            background-color: $red;
+        }
+
+        .blog a:hover {
+            color: $red;
+        }
+
+        .contact a::after {
+            background-color: $yellow;
+        }
+
+        .contact a:hover {
+            color: $yellow;
+        }
+    }
+
+    .footer-contact {
+        a {
+
+            &:hover {
+                transition: 0.2s;
+                color: $blue;
+            }
+        }
+    }
+
 }
 
 @media only screen and (min-width: 1200px) {
 
-    .footer-container {
-        overflow: visible;
-        background-color: #3f3b51;
-        height: auto;
-        display: flex;
-        flex-direction: column;
-        margin-top: -5px;
-    }
-
-    .footer-logo {
-        margin: 0 auto;
-        margin: 50px auto;
-
-        img {
-            height: calc(75px + 5vw);
-            max-height: 100px;
-
-        }
-    }
-
-    .footer-content {
+    .footer-text {
         display: flex;
         flex-direction: row;
         max-width: 1400px;
@@ -1993,6 +2045,80 @@ header {
             }
         }
 
+        // ---------------------
+        // Underline Transition
+        // ---------------------
+        .footer-links a {
+            position: relative;
+
+            &:hover {
+                transition: 0.1s;
+            }
+
+            &::after {
+                content: '';
+                position: absolute;
+                left: 0;
+                bottom: -5px;
+                width: 0;
+                height: 3px;
+                transition: width 0.2s ease-in-out;
+            }
+
+            &:hover::after {
+                width: 100%;
+            }
+        }
+
+        .footer-links {
+            position: relative;
+            height: auto;
+
+            // ACTIVE (width: 100%)
+            .home a::after {
+                width: 100%;
+                background-color: $blue;
+            }
+
+            .home a:hover {
+                color: $blue;
+            }
+
+            .about a::after {
+                background-color: $green;
+            }
+
+            .about a:hover {
+                color: $green;
+            }
+
+            .services a::after {
+                background-color: $purple;
+            }
+
+            .services a:hover {
+                color: $purple;
+            }
+
+            .blog a::after {
+                background-color: $red;
+            }
+
+            .blog a:hover {
+                color: $red;
+            }
+
+            .contact a::after {
+                background-color: $yellow;
+            }
+
+            .contact a:hover {
+                color: $yellow;
+            }
+        }
+
+        // ---------------------
+
         .footer-contact {
             position: relative;
             display: flex;
@@ -2034,11 +2160,14 @@ header {
             a {
                 color: white;
                 margin-left: 40px;
+                position: relative;
                 margin-bottom: 15px;
 
                 &:hover {
-                    text-decoration: 2px underline #38C6E5;
+                    transition: 0.2s;
+                    color: $blue;
                 }
+
             }
 
             a:nth-child(1)::before {
@@ -2050,9 +2179,8 @@ header {
                 background-repeat: no-repeat;
                 width: 20px;
                 height: 20px;
-                left: 60px;
-                top: 3px;
-
+                left: -30px;
+                top: -2px;
             }
 
             a:nth-child(2)::before {
@@ -2062,22 +2190,12 @@ header {
                 background-image: url('./images/phone.png');
                 background-size: contain;
                 background-repeat: no-repeat;
-                width: 20px;
-                height: 20px;
-                left: 62px;
-                top: 45px;
+                width: 19px;
+                height: 19px;
+                left: -28px;
+                top: -2px;
             }
         }
     }
 
-    .footer-bottom {
-        background-color: #3BD3F4;
-        text-align: center;
-        font-size: 14px;
-
-        a:hover {
-            color: white;
-            transition: 0.2s;
-        }
-    }
 }
