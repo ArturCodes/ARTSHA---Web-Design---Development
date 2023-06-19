@@ -45,7 +45,7 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
         overflow-x: hidden;
         margin: 0 auto;
         background-color: $white;
-        min-height: 300vh;
+        min-height: 125vh;
     }
 
     .skip {
@@ -196,9 +196,7 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
         position: relative;
         height: auto;
 
-
         .home a::after {
-
             background-color: $blue;
         }
 
@@ -262,7 +260,6 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
     }
 
 }
-
 
 // ----------------------------------
 //  Logo & Nav Links Position
