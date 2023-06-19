@@ -43,6 +43,8 @@
   #navbar-links li {
     transition: 0.3s ease;
   }
+}
+@media screen and (min-width: 999px) {
   #navbar-links {
     background-color: transparent !important;
   }
@@ -421,7 +423,7 @@
     transition: 0.3s;
     width: 0;
     overflow: hidden;
-    background-image: url("./images/New.png");
+    background-image: url("../images/mobile-menu-bg.png");
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: contain;
