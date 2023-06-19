@@ -782,7 +782,7 @@ header {
     z-index: 999;
   }
   #quote-1 h2 {
-    font-size: clamp(1.75em, 5vw, 3em);
+    font-size: clamp(1.75em, 4.75vw, 3em);
     margin: 0 auto;
     line-height: 1.5;
   }
@@ -814,7 +814,6 @@ header {
   }
   #contract-section .item:hover p span {
     color: #38C6E5;
-    background-color: #343042;
   }
   .contract-bottom-blob {
     margin-bottom: -5px;
@@ -1164,17 +1163,19 @@ header {
   .bank-girl {
     grid-column-start: 7;
     grid-column-end: 9;
-    grid-row-start: 7;
+    grid-row-start: 6;
     grid-row-end: 8;
     max-height: 600px;
     overflow: visible;
     z-index: 5;
     padding-left: 45px;
+    margin-top: 50px;
   }
   .included-container {
     margin-top: 75px;
     display: flex;
     flex-direction: column;
+    align-self: center;
     grid-column-start: 2;
     grid-column-end: 8;
     grid-row-start: 5;
@@ -1185,6 +1186,7 @@ header {
     text-align: left;
     font-size: clamp(1.5em, 7vw, 3em);
     position: relative;
+    margin-bottom: 5px;
   }
   .included-container h2 span {
     color: #38C6E5;
@@ -1269,7 +1271,8 @@ header {
     font-weight: 700;
     transition: 0.3s;
     box-shadow: 1px 1px 5px #1a1a1a;
-    margin-top: 50px;
+    margin-top: 35px;
+    align-self: center;
   }
   .included-container a:hover {
     background-color: white;
@@ -1281,16 +1284,54 @@ header {
 @media screen and (min-width: 0px) {
   #quote-2 {
     position: relative;
-    width: 90%;
-    max-width: 1200px;
     text-align: center;
-    margin: calc(30px + 10vw) auto 50px;
-    z-index: 999;
+    margin: 75px auto 50px auto;
+    height: auto;
+    overflow: visible;
   }
   #quote-2 h2 {
-    font-size: clamp(1.75em, 5vw, 3em);
+    width: 96%;
     margin: 0 auto;
+    margin-top: clamp(50px, 10vw, 100px);
+    font-size: clamp(1.75em, 4.75vw, 3em);
     line-height: 1.5;
+    margin-bottom: 15px;
+  }
+  #quote-2 p {
+    width: 96%;
+    font-size: clamp(1em, 3vw, 1.5em);
+    margin: 10px 0 75px 0;
+    margin: 0 auto;
+    margin-bottom: 50px;
+  }
+  #quote-2 .button-container {
+    height: auto;
+    overflow: visible;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  #quote-2 .button-container a {
+    padding: 15px 30px;
+    border-radius: 7.5px;
+    color: #000000;
+    margin-right: 20px;
+    border-color: 1px solid lightgray;
+    min-width: 125px;
+    transition: 0.2s;
+    text-align: center;
+  }
+  #quote-2 .button-container a:hover {
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2274509804), 1px -1px 1px rgba(0, 0, 0, 0.2274509804), -1px 1px 1px rgba(0, 0, 0, 0.2274509804), -1px -1px 1px rgba(0, 0, 0, 0.2274509804);
+  }
+  #quote-2 .button-container .contact-btn {
+    background-color: #ffcc00;
+    box-shadow: 1px 2px 0 #e6b800, 2px 4px 6px #060507;
+  }
+  #quote-2 .button-container .services-btn {
+    background-color: white;
+    box-shadow: 1px 2px 0 #f2f2f2, 2px 4px 6px #060507;
   }
 }
 @media screen and (min-width: 850px) {
@@ -1319,6 +1360,7 @@ header {
     flex-direction: column;
     position: relative;
     margin-top: -5px;
+    padding-bottom: 50px;
   }
   .footer-logo {
     margin: 0 auto;

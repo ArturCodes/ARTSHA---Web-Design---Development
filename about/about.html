@@ -39,10 +39,10 @@
     <link rel="preload" as="font" type="font/woff2" src="./fonts/Roboto-bold.woff2" crossorigin />
 
     <!--  JS -->
-    <script src="../mobile-menu-button.js"></script>
+    <script src="./menu-toggle.js"></script>
 
     <!-- CSS -->
-    <link rel="stylesheet" href="core.css" />
+    <link rel="stylesheet" href="./about-header.css">
     <link rel="stylesheet" href="./about.css">
 
     <title>About - Artsha Web Design</title>
@@ -51,66 +51,56 @@
 
 <body>
 
-    <body>
-        <!-- ██████████████████████████ -->
-        <!--   Header CSS in hero.css   -->
-        <!-- ██████████████████████████ -->
-        <header>
-            <!----------------------------->
-            <!--     NAVBAR BLOB BG      -->
-            <!----------------------------->
+    <!--For screen reader, a skip to main content-->
+    <a class="skip" aria-label="skip to main content" href="#main">Click To Skip To Main Content</a>
+
+    <!-- ============================================ -->
+    <!--                    Header                    -->
+    <!-- ============================================ -->
+    <header>
+
+        <div class="navbar-bg-container">
             <picture>
-                <source media="(max-width: 767px)" srcset="/images/navbar-mobile.png">
-                <source media="(min-width: 768px) and (max-width: 1299px)" srcset="/images/navbar-tablet.png">
-                <source media="(min-width: 1300px)" srcset="./images/about-navbar-desktop.png">
-                <img class="navbarBG" src="./images/about-navbar-desktop.png" alt="Navbar Background" aria-hidden="true"
-                    decoding="async" width="1248px" height="340px">
+                <source media="(min-width: 0px) and (max-width: 849px)" srcset="./about-images/nav-about-sm.png">
+                <source media="(min-width: 850px)" srcset="./about-images/nav-about-lg.png">
+                <img class="about-navbar" src="./about-images/about-nav-bg-l.png" alt="Navbar background image">
             </picture>
+        </div>
 
-            <!-- ========================= -->
-            <!--        NAVIGATION         -->
-            <!-- ========================= -->
-            <nav>
-                <a class="logo" aria-label="click to go to home page" href="../index.html"></a>
+        <img src="./about-images/logo-about-w.png" alt="">
 
-                <ul id="navbar-links">
-                    <li class="home"><a href="../index.html">Home</a></li>
-                    <li class="about"><a href="../about/about.html">About</a></li>
-                    <li class="services"><a href="../services/services.html">Services</a></li>
-                    <li class="blog"><a href="../blog/blog.html">Blog</a></li>
-                    <li class="contact"><a href="../contact/contact.html">Contact</a></li>
-                </ul>
+        <a class="logo" href="index.html">
+            <picture>
+                <source media="(max-width: 849px)" srcset="./about-images/logo-about-w.png">
+                <source media="(min-width: 850px)" srcset="./about-images/logo-about.png">
+                <img class="about-navbar" src="./about-images/logo-about.png" alt="Navbar background image">
+            </picture>
+        </a>
 
-                <div id="mobile-menu-close" onclick="hide()" role="button" aria-label="close the menu">
-                    <div></div>
-                    <div></div>
-                </div>
+        <button id="menu-toggle-button" onclick="toggleMenu()">
 
-                <div id="mobile-menu-open" onclick="show()" role="button" aria-label="open the menu">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                </div>
-
-                <div id="opacity-bg" onclick="hide()"></div>
-            </nav>
-
-            <!-- ========================= -->
-            <!--           HERO            -->
-            <!-- ========================= -->
-
-            <div id="about-hero">
-
+            <div class="menu-toggle">
+                <span class="line line1"></span>
+                <span class="line line2"></span>
+                <span class="line line3"></span>
             </div>
 
-            <div class="hero-guy"></div>
+        </button>
 
-            <!----------------------------->
-            <!--      HERO BLOB BG       -->
-            <!----------------------------->
-            <div class="hero-blob"></div>
-        </header>
+        <nav id="nav" role="navigation">
+            <ul id="navbar-links">
+                <li class="home"><a href="../index.html">Home</a></li>
+                <li class="about"><a href="./about/about.html">About</a></li>
+                <li class="services"><a href="./services/services.html">Services</a></li>
+                <li class="blog"><a href="./blog/blog.html">Blog</a></li>
+                <li class="contact"><a href="./contact/contact.html">Contact</a></li>
+            </ul>
+        </nav>
 
-    </body>
+        <div id="opacity-bg" onclick="toggleMenu()"></div>
+
+    </header>
+
+</body>
 
 </html>

@@ -107,7 +107,6 @@ header {
             .services-btn {
                 background-color: $white;
                 box-shadow: 1px 2px 0 darken($white, 5%), 2px 4px 6px darken($background, 25%);
-
             }
         }
     }
@@ -928,7 +927,7 @@ header {
         z-index: 999;
 
         h2 {
-            font-size: clamp(1.75em, 5vw, 3em);
+            font-size: clamp(1.75em, 4.75vw, 3em);
             margin: 0 auto;
             line-height: 1.5;
         }
@@ -972,7 +971,6 @@ header {
             &:hover {
                 p span {
                     color: $blue;
-                    background-color: darken($background, 5%);
                 }
             }
         }
@@ -1388,18 +1386,20 @@ header {
     .bank-girl {
         grid-column-start: 7;
         grid-column-end: 9;
-        grid-row-start: 7;
+        grid-row-start: 6;
         grid-row-end: 8;
         max-height: 600px;
         overflow: visible;
         z-index: 5;
         padding-left: 45px;
+        margin-top: 50px;
     }
 
     .included-container {
         margin-top: 75px;
         display: flex;
         flex-direction: column;
+        align-self: center;
 
         grid-column-start: 2;
         grid-column-end: 8;
@@ -1412,6 +1412,7 @@ header {
             text-align: left;
             font-size: clamp(1.5em, 7vw, 3em);
             position: relative;
+            margin-bottom: 5px;
 
             span {
                 color: $blue;
@@ -1510,7 +1511,9 @@ header {
             transition: 0.3s;
             box-shadow: 1px 1px 5px #1a1a1a;
 
-            margin-top: 50px;
+            margin-top: 35px;
+
+            align-self: center;
 
             &:hover {
                 background-color: white;
@@ -1531,18 +1534,68 @@ header {
 
     #quote-2 {
         position: relative;
-        width: 90%;
-        max-width: 1200px;
         text-align: center;
-        margin: calc(30px + 10vw) auto 50px;
-        z-index: 999;
+        margin: 75px auto 50px auto;
+        height: auto;
+        overflow: visible;
 
         h2 {
-            font-size: clamp(1.75em, 5vw, 3em);
+            width: 96%;
             margin: 0 auto;
+            margin-top: clamp(50px, 10vw, 100px);
+            font-size: clamp(1.75em, 4.75vw, 3em);
             line-height: 1.5;
+            margin-bottom: 15px;
+
+        }
+
+        p {
+            width: 96%;
+            font-size: clamp(1em, 3vw, 1.5em);
+            margin: 10px 0 75px 0;
+
+            margin: 0 auto;
+            margin-bottom: 50px;
+        }
+
+        .button-container {
+            height: auto;
+            overflow: visible;
+
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+
+            a {
+                padding: 15px 30px;
+                border-radius: 7.5px;
+                color: #000000;
+                margin-right: 20px;
+                border-color: 1px solid lightgray;
+                min-width: 125px;
+                transition: 0.2s;
+                text-align: center;
+
+                &:hover {
+                    box-shadow: $box-shadow-hover;
+                }
+            }
+
+            .contact-btn {
+                background-color: $yellow;
+                box-shadow:
+                    1px 2px 0 darken($yellow, 5%),
+                    2px 4px 6px darken($background, 25%);
+            }
+
+            .services-btn {
+                background-color: $white;
+                box-shadow: 1px 2px 0 darken($white, 5%), 2px 4px 6px darken($background, 25%);
+            }
         }
     }
+
 }
 
 @media screen and (min-width: 850px) {
@@ -1580,6 +1633,7 @@ header {
         flex-direction: column;
         position: relative;
         margin-top: -5px;
+        padding-bottom: 50px;
     }
 
     .footer-logo {
