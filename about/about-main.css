@@ -43,6 +43,7 @@
   }
   .journey-top-blob {
     background-color: white;
+    width: 100%;
   }
   .journey-container {
     max-width: 850px;
@@ -77,6 +78,7 @@
   }
   .journey-bottom-blob {
     background-color: white;
+    width: 100%;
   }
 }
 @media only screen and (min-width: 0px) {
