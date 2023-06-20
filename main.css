@@ -1139,7 +1139,7 @@ header {
   }
   .contract-text h2 {
     color: white;
-    font-size: clamp(1.5em, 7vw, 3em);
+    font-size: clamp(1.5em, 7vw, 4em);
     line-height: 1.5;
     text-align: center;
     position: relative;
@@ -1153,7 +1153,7 @@ header {
     margin: 0 auto;
     margin-top: 25px;
     height: auto;
-    font-size: 18px;
+    font-size: 1.125em;
     text-align: center;
   }
   .contract-text p span {
