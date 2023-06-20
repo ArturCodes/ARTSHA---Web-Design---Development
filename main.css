@@ -1139,7 +1139,7 @@ header {
   }
   .contract-text h2 {
     color: white;
-    font-size: clamp(1.5em, 7vw, 4em);
+    font-size: clamp(1.5em, 7vw, 3.5em);
     line-height: 1.5;
     text-align: center;
     position: relative;
@@ -1149,11 +1149,11 @@ header {
   }
   .contract-text p {
     color: white;
-    max-width: 600px;
+    max-width: 700px;
     margin: 0 auto;
     margin-top: 25px;
     height: auto;
-    font-size: 1.125em;
+    font-size: 1.25em;
     text-align: center;
   }
   .contract-text p span {
@@ -1369,7 +1369,7 @@ header {
   }
   .footer-logo img {
     height: calc(75px + 5vw);
-    max-height: 100px;
+    max-height: 110px;
   }
   .footer-bottom {
     background-color: #38C6E5;

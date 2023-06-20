@@ -4,7 +4,8 @@
 $background: #3F3B51;
 $blue: #38C6E5;
 $green: #7fd378;
-$purple: #804DD4;
+$purple: lighten(#804DD4, 5%);
+$purple2: #804DD4;
 $red: #D44D4D;
 $yellow: #ffcc00;
 $black: black;
@@ -35,10 +36,11 @@ $white: white;
 
 @media screen and (min-width: 1500px) {
     #hero-about {
+
         display: flex;
         flex-direction: row;
         position: relative;
-
+        margin-bottom: -375px;
     }
 
     .about-text-container {
@@ -47,29 +49,88 @@ $white: white;
 
         p {
             color: $green;
-            font-size: 1.25em;
             font-weight: 700;
         }
 
         line-height: 1.5;
-        font-size: 1.5em;
+        font-size: 2.25em;
     }
 
     .window-girl {
-        margin-top: 25px;
-        margin-left: 125px;
+        position: relative;
+        margin-top: 50px;
+        margin-left: 25px;
         content: '';
         background-image: url('./about-images/window-girl.png');
         background-repeat: no-repeat;
-        background-size: cover;
-        width: 800px;
-        height: 525px;
+        background-size: contain;
+        width: 900px;
+        height: 575px;
     }
 }
 
-
 // ============================== 
 //  My Journey 
+// ==============================
+
+@media screen and (min-width: 0px) {
+
+    #journey {
+        background-color: $background;
+    }
+
+    .journey-top-blob {
+        background-color: $white;
+    }
+
+    .journey-container {
+        max-width: 850px;
+        margin: 0 auto;
+
+        p:first-child {
+            color: $green;
+            font-weight: 700;
+            font-size: 1.75em;
+            margin-bottom: 0px;
+        }
+
+        h1 {
+            color: $white;
+            font-size: 3.5em;
+            margin-bottom: 25px;
+        }
+
+        p {
+            color: $white;
+            margin-bottom: 50px;
+            line-height: 1.75;
+            font-size: 1.25em;
+        }
+
+        .pathway {
+            content: '';
+            background-image: url('./about-images/pathway.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            margin: 0 auto;
+            width: 600px;
+            height: 350px;
+            margin-top: 15px;
+        }
+
+    }
+
+    .journey-bottom-blob {
+        background-color: $white;
+    }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 849px) {}
+
+@media only screen and (min-width: 1200px) {}
+
+// ============================== 
+//   What sets ARTSHA apart   
 // ==============================
 
 @media screen and (min-width: 0px) {}
@@ -77,3 +138,705 @@ $white: white;
 @media only screen and (min-width: 0px) and (max-width: 849px) {}
 
 @media only screen and (min-width: 1200px) {}
+
+
+// ==============================
+//  Footer 
+// ==============================
+
+@media only screen and (min-width: 0px) {
+    .footer-bottom-blob {
+        width: 100%;
+        position: relative;
+        z-index: 999;
+    }
+
+    .footer-container {
+        overflow: visible;
+        background-color: $background;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        margin-top: -5px;
+        padding-bottom: 50px;
+    }
+
+    .footer-logo {
+        margin: 0 auto;
+        margin: 50px auto;
+
+        img {
+            height: calc(75px + 5vw);
+            max-height: 110px;
+        }
+    }
+
+    .footer-bottom {
+        background-color: $green;
+        height: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 14px;
+
+        a {
+            color: $black;
+        }
+
+        a:hover {
+            color: white;
+            transition: 0.2s;
+        }
+    }
+
+    .footer-links {
+        position: relative;
+        height: auto;
+
+        // ACTIVE (width: 100%)
+        .home a::after {
+            width: 100%;
+            background-color: $green;
+        }
+
+        .home a:hover {
+            color: $blue;
+        }
+
+        .about a::after {
+            background-color: $green;
+        }
+
+        .about a:hover {
+            color: $green;
+        }
+
+        .services a::after {
+            background-color: $purple;
+        }
+
+        .services a:hover {
+            color: $purple;
+        }
+
+        .blog a::after {
+            background-color: $red;
+        }
+
+        .blog a:hover {
+            color: $red;
+        }
+
+        .contact a::after {
+            background-color: $yellow;
+        }
+
+        .contact a:hover {
+            color: $yellow;
+        }
+    }
+
+    .footer-contact {
+
+        .email:hover,
+        .phone:hover {
+            transition: 0.2s;
+            color: $green;
+        }
+    }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 849px) {
+
+    .footer-text {
+        width: 80%;
+        margin: 0 auto;
+        max-width: 1600px;
+        display: flex;
+        flex-direction: column;
+        overflow: visible;
+        margin-bottom: 10px;
+
+        .footer-navigation {
+            overflow: visible;
+
+            h2 {
+                color: white;
+                margin-bottom: 15px;
+                padding-bottom: 5px;
+                border-bottom: 4px solid $green;
+            }
+
+            ul {
+                display: flex;
+                flex-direction: column;
+
+                li {
+                    overflow: visible;
+                    margin: 15px 0px;
+
+                    a {
+                        color: white;
+                        padding: 10px;
+                        margin-left: -10px;
+                    }
+                }
+
+            }
+        }
+
+        .footer-contact {
+            margin-top: 50px;
+            margin-bottom: 50px;
+            position: relative;
+            overflow: visible;
+
+            &::before {
+                display: block;
+                content: '';
+                background-image: url('./about-images/leaves.png');
+                background-repeat: no-repeat;
+                background-size: contain;
+                height: 125px;
+                width: 125px;
+                position: absolute;
+                right: -45px;
+                bottom: 103px;
+            }
+
+            h2 {
+                color: white;
+                border-bottom: 4px solid $green;
+                margin-bottom: 25px;
+                padding-bottom: 5px;
+            }
+
+            div {
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                justify-items: center;
+
+                a {
+                    color: white;
+                    margin-left: 30px;
+                    margin-bottom: 20px;
+
+                    &:hover {
+                        text-decoration: solid 1px $green;
+                    }
+
+                }
+
+                a:nth-child(1)::before {
+                    content: '';
+                    position: absolute;
+                    background-image: url('./about-images/mail.png');
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    width: 20px;
+                    height: 20px;
+                    top: -2px;
+                    left: 0;
+                }
+
+                a:nth-child(2)::before {
+                    content: '';
+                    position: absolute;
+                    background-image: url('./about-images/phone.png');
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    width: 19px;
+                    height: 19px;
+                    bottom: 22px;
+                    left: 2px;
+                }
+            }
+        }
+    }
+
+}
+
+@media only screen and (min-width: 850px) and (max-width: 1199px) {
+
+    .footer-text {
+        display: flex;
+        flex-direction: row;
+        width: 80%;
+        margin: 75px auto;
+        justify-content: space-around;
+        overflow: visible;
+
+        &::after {
+            border-bottom: 4px solid #3BD3F4;
+        }
+
+        .footer-navigation {
+            width: 70vw;
+            position: relative;
+            overflow: visible;
+
+            &::before {
+                display: block;
+                content: '';
+                background-image: url('./about-images/leaves.png');
+                background-repeat: no-repeat;
+                background-size: contain;
+                height: 125px;
+                width: 125px;
+                position: absolute;
+                left: 0px;
+                top: -90px;
+            }
+
+
+            h2 {
+                color: white;
+                margin-bottom: 15px;
+                padding-bottom: 5px;
+                border-bottom: 4px solid $green;
+                padding-left: 110px;
+            }
+
+            ul {
+
+                display: flex;
+                flex-direction: row;
+
+                li {
+                    line-height: 1.75;
+                    margin: 2.5px 10px;
+
+                    a {
+                        color: white;
+                        padding: 5px;
+                    }
+
+                    .home {
+                        text-decoration: 3px solid $green underline;
+                        text-underline-offset: 2px;
+                    }
+
+                    .about:hover {
+                        text-decoration: 3px solid #7fd378 underline;
+                        text-underline-offset: 2px;
+                    }
+
+                    .services:hover {
+                        text-decoration: 3px solid $purple underline;
+                        text-underline-offset: 2px;
+                    }
+
+                    .blog:hover {
+                        text-decoration: 3px solid #e38025 underline;
+                        text-underline-offset: 2px;
+                    }
+
+                    .contact:hover {
+                        text-decoration: 3px solid $yellow;
+                        text-underline-offset: 2px;
+                    }
+
+                }
+            }
+        }
+
+        .footer-contact {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            width: 70%;
+            overflow: visible;
+
+            &::after {
+                display: block;
+                content: '';
+                background-image: url('./about-images/leaves2.png');
+                background-repeat: no-repeat;
+                background-size: contain;
+                height: 125px;
+                width: 125px;
+                position: absolute;
+                right: -45px;
+                top: -90px;
+            }
+
+            h2 {
+                color: white;
+                margin-bottom: 15px;
+                padding-bottom: 5px;
+                border-bottom: 4px solid $green;
+                padding-left: 75px;
+            }
+
+            div {
+                display: flex;
+                flex-direction: column;
+                padding-left: 50px;
+                position: relative;
+                margin: 7.5px 15px;
+            }
+
+            a {
+                color: white;
+                margin-left: 40px;
+                margin-bottom: 20px;
+            }
+
+            a:nth-child(1)::before {
+                display: block;
+                content: '';
+                position: absolute;
+                background-image: url('./about-images/mail.png');
+                background-size: contain;
+                background-repeat: no-repeat;
+                width: 20px;
+                height: 20px;
+                left: 60px;
+                top: -2px;
+
+            }
+
+            a:nth-child(2)::before {
+                display: block;
+                content: '';
+                position: absolute;
+                background-image: url('./about-images/phone.png');
+                background-size: contain;
+                background-repeat: no-repeat;
+                width: 19px;
+                height: 19px;
+                left: 62px;
+                bottom: 22px;
+            }
+        }
+    }
+
+    // ---------------------
+    // Underline Transition
+    // ---------------------
+    .footer-links a {
+        position: relative;
+
+        &:hover {
+            transition: 0.1s;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -5px;
+            width: 0;
+            height: 3px;
+            transition: width 0.2s ease-in-out;
+        }
+
+        &:hover::after {
+            width: 100%;
+        }
+    }
+
+    .footer-links {
+        position: relative;
+        height: auto;
+
+        .home a::after {
+            background-color: $green;
+        }
+
+        .home a:hover {
+            color: $green;
+        }
+
+        // ACTIVE (width: 100%)
+        .about a::after {
+            width: 100%;
+            background-color: $green;
+        }
+
+        .about a:hover {
+            color: $green;
+        }
+
+        .services a::after {
+            background-color: $purple;
+        }
+
+        .services a:hover {
+            color: $purple;
+        }
+
+        .blog a::after {
+            background-color: $red;
+        }
+
+        .blog a:hover {
+            color: $red;
+        }
+
+        .contact a::after {
+            background-color: $yellow;
+        }
+
+        .contact a:hover {
+            color: $yellow;
+        }
+    }
+
+    .footer-contact {
+
+        a {
+
+            &:hover {
+                transition: 0.2s;
+                color: $green;
+            }
+        }
+    }
+
+}
+
+@media only screen and (min-width: 1200px) {
+
+    .footer-text {
+        display: flex;
+        flex-direction: row;
+        width: 80%;
+        max-width: 1400px;
+        margin: 0 auto;
+        justify-content: space-around;
+        margin: 75px auto;
+        overflow: visible;
+
+        &::after {
+            border-bottom: 4px solid #3BD3F4;
+        }
+
+        .footer-navigation {
+            width: 70vw;
+            position: relative;
+            overflow: visible;
+
+            &::before {
+                display: block;
+                content: '';
+                background-image: url('./about-images/leaves.png');
+                background-repeat: no-repeat;
+                background-size: contain;
+                height: 125px;
+                width: 125px;
+                position: absolute;
+                left: 0px;
+                top: -90px;
+            }
+
+            h2 {
+                color: $white;
+
+                margin-bottom: 15px;
+                padding-bottom: 5px;
+                border-bottom: 4px solid $green;
+                padding-left: 110px;
+            }
+
+            ul {
+                display: flex;
+                flex-direction: row;
+                margin-left: 90px;
+
+                li {
+                    line-height: 1.75;
+                    margin: 2.5px 12.5px;
+
+                    a {
+                        color: white;
+                        padding: 5px;
+                    }
+
+                    .home {
+                        text-decoration: 3px solid #38C6E5 underline;
+                        text-underline-offset: 2px;
+                    }
+
+                    .about:hover {
+                        text-decoration: 3px solid #7fd378 underline;
+                        text-underline-offset: 2px;
+                    }
+
+                    .services:hover {
+                        text-decoration: 3px solid $purple underline;
+                        text-underline-offset: 2px;
+                    }
+
+                    .blog:hover {
+                        text-decoration: 3px solid #e38025 underline;
+                        text-underline-offset: 2px;
+                    }
+
+                    .contact:hover {
+                        text-decoration: 3px solid $yellow;
+                        text-underline-offset: 2px;
+                    }
+
+                }
+            }
+        }
+
+        // ---------------------
+        // Underline Transition
+        // ---------------------
+        .footer-links a {
+            position: relative;
+            font-size: 1.125em;
+
+            &:hover {
+                transition: 0.1s;
+            }
+
+            &::after {
+                content: '';
+                position: absolute;
+                left: 0;
+                bottom: -5px;
+                width: 0;
+                height: 3px;
+                transition: width 0.2s ease-in-out;
+            }
+
+            &:hover::after {
+                width: 100%;
+            }
+        }
+
+        .footer-links {
+            position: relative;
+            height: auto;
+
+            // ACTIVE (width: 100%)
+            .home a::after {
+                background-color: $blue;
+            }
+
+            .home a:hover {
+                color: $blue;
+            }
+
+            .about a::after {
+                width: 100%;
+                background-color: $green;
+            }
+
+            .about a:hover {
+                color: $green;
+            }
+
+            .services a::after {
+                background-color: $purple;
+            }
+
+            .services a:hover {
+                color: $purple;
+            }
+
+            .blog a::after {
+                background-color: $red;
+            }
+
+            .blog a:hover {
+                color: $red;
+            }
+
+            .contact a::after {
+                background-color: $yellow;
+            }
+
+            .contact a:hover {
+                color: $yellow;
+            }
+        }
+
+        // ---------------------
+
+        .footer-contact {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            width: 70%;
+            overflow: visible;
+
+
+            &::after {
+                display: block;
+                content: '';
+                background-image: url('./about-images/leaves2.png');
+                background-repeat: no-repeat;
+                background-size: contain;
+                height: 125px;
+                width: 125px;
+                position: absolute;
+                right: -45px;
+                top: -90px;
+            }
+
+            h2 {
+                color: white;
+                margin-bottom: 15px;
+                padding-bottom: 5px;
+                border-bottom: 4px solid $green;
+                padding-left: 75px;
+            }
+
+            div {
+                display: flex;
+                flex-direction: column;
+                padding-left: 50px;
+                position: relative;
+                margin: 7.5px 15px;
+
+            }
+
+            a {
+                color: white;
+                margin-left: 40px;
+                position: relative;
+                margin-bottom: 15px;
+                font-size: 1.125em;
+
+                &:hover {
+                    transition: 0.2s;
+                    color: $green;
+                }
+
+            }
+
+            a:nth-child(1)::before {
+                display: block;
+                content: '';
+                position: absolute;
+                background-image: url('./about-images/mail.png');
+                background-size: contain;
+                background-repeat: no-repeat;
+                width: 20px;
+                height: 20px;
+                left: -30px;
+                top: 1px;
+            }
+
+            a:nth-child(2)::before {
+                display: block;
+                content: '';
+                position: absolute;
+                background-image: url('./about-images/phone.png');
+                background-size: contain;
+                background-repeat: no-repeat;
+                width: 19px;
+                height: 19px;
+                left: -28px;
+                top: 1px;
+            }
+        }
+    }
+
+}
