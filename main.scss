@@ -1792,7 +1792,7 @@ header {
         }
 
         .footer-navigation {
-            width: 65vw;
+            width: 70vw;
             position: relative;
             overflow: visible;
 
@@ -1824,7 +1824,7 @@ header {
 
                 li {
                     line-height: 1.75;
-                    margin: 2.5px 15px;
+                    margin: 2.5px 10px;
 
                     a {
                         color: white;
@@ -2004,6 +2004,7 @@ header {
     }
 
     .footer-contact {
+
         a {
 
             &:hover {
@@ -2020,6 +2021,7 @@ header {
     .footer-text {
         display: flex;
         flex-direction: row;
+        width: 80%;
         max-width: 1400px;
         margin: 0 auto;
         justify-content: space-around;
@@ -2031,7 +2033,7 @@ header {
         }
 
         .footer-navigation {
-            width: 65vw;
+            width: 70vw;
             position: relative;
             overflow: visible;
 
@@ -2063,7 +2065,7 @@ header {
 
                 li {
                     line-height: 1.75;
-                    margin: 2.5px 15px;
+                    margin: 2.5px 12.5px;
 
                     a {
                         color: white;
@@ -2104,6 +2106,7 @@ header {
         // ---------------------
         .footer-links a {
             position: relative;
+            font-size: 1.125em;
 
             &:hover {
                 transition: 0.1s;
@@ -2180,6 +2183,7 @@ header {
             width: 70%;
             overflow: visible;
 
+
             &::after {
                 display: block;
                 content: '';
@@ -2199,7 +2203,6 @@ header {
                 padding-bottom: 5px;
                 border-bottom: 4px solid #3BD3F4;
                 padding-left: 75px;
-
             }
 
             div {
@@ -2216,6 +2219,7 @@ header {
                 margin-left: 40px;
                 position: relative;
                 margin-bottom: 15px;
+                font-size: 1.125em;
 
                 &:hover {
                     transition: 0.2s;
@@ -2234,7 +2238,7 @@ header {
                 width: 20px;
                 height: 20px;
                 left: -30px;
-                top: -2px;
+                top: 1px;
             }
 
             a:nth-child(2)::before {
@@ -2247,7 +2251,7 @@ header {
                 width: 19px;
                 height: 19px;
                 left: -28px;
-                top: -2px;
+                top: 1px;
             }
         }
     }

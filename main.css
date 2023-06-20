@@ -1493,7 +1493,7 @@ header {
     border-bottom: 4px solid #3BD3F4;
   }
   .footer-text .footer-navigation {
-    width: 65vw;
+    width: 70vw;
     position: relative;
     overflow: visible;
   }
@@ -1522,7 +1522,7 @@ header {
   }
   .footer-text .footer-navigation ul li {
     line-height: 1.75;
-    margin: 2.5px 15px;
+    margin: 2.5px 10px;
   }
   .footer-text .footer-navigation ul li a {
     color: white;
@@ -1677,6 +1677,7 @@ header {
   .footer-text {
     display: flex;
     flex-direction: row;
+    width: 80%;
     max-width: 1400px;
     margin: 0 auto;
     justify-content: space-around;
@@ -1687,7 +1688,7 @@ header {
     border-bottom: 4px solid #3BD3F4;
   }
   .footer-text .footer-navigation {
-    width: 65vw;
+    width: 70vw;
     position: relative;
     overflow: visible;
   }
@@ -1717,7 +1718,7 @@ header {
   }
   .footer-text .footer-navigation ul li {
     line-height: 1.75;
-    margin: 2.5px 15px;
+    margin: 2.5px 12.5px;
   }
   .footer-text .footer-navigation ul li a {
     color: white;
@@ -1750,6 +1751,7 @@ header {
   }
   .footer-text .footer-links a {
     position: relative;
+    font-size: 1.125em;
   }
   .footer-text .footer-links a:hover {
     transition: 0.1s;
@@ -1839,6 +1841,7 @@ header {
     margin-left: 40px;
     position: relative;
     margin-bottom: 15px;
+    font-size: 1.125em;
   }
   .footer-text .footer-contact a:hover {
     transition: 0.2s;
@@ -1854,7 +1857,7 @@ header {
     width: 20px;
     height: 20px;
     left: -30px;
-    top: -2px;
+    top: 1px;
   }
   .footer-text .footer-contact a:nth-child(2)::before {
     display: block;
@@ -1866,6 +1869,6 @@ header {
     width: 19px;
     height: 19px;
     left: -28px;
-    top: -2px;
+    top: 1px;
   }
 }/*# sourceMappingURL=main.css.map */
