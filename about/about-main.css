@@ -1,0 +1,38 @@
+@media screen and (min-width: 0px) and (max-width: 849px) {
+  #hero-about {
+    display: flex;
+    flex-direction: column;
+  }
+  .about-text-container {
+    margin-left: 125px;
+    margin-top: 25px;
+  }
+}
+@media screen and (min-width: 1500px) {
+  #hero-about {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+  }
+  .about-text-container {
+    margin-left: 125px;
+    margin-top: 125px;
+    line-height: 1.5;
+    font-size: 1.5em;
+  }
+  .about-text-container p {
+    color: #7fd378;
+    font-size: 1.25em;
+    font-weight: 700;
+  }
+  .window-girl {
+    margin-top: 25px;
+    margin-left: 125px;
+    content: "";
+    background-image: url("./about-images/window-girl.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 800px;
+    height: 525px;
+  }
+}/*# sourceMappingURL=about-main.css.map */

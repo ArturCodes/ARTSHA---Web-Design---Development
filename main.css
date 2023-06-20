@@ -1172,7 +1172,7 @@ header {
     margin-top: 50px;
   }
   .included-container {
-    margin-top: 75px;
+    margin-top: 100px;
     display: flex;
     flex-direction: column;
     align-self: center;
@@ -1186,7 +1186,7 @@ header {
     text-align: left;
     font-size: clamp(1.5em, 7vw, 3em);
     position: relative;
-    margin-bottom: 5px;
+    margin-bottom: 15px;
   }
   .included-container h2 span {
     color: #38C6E5;
@@ -1316,7 +1316,6 @@ header {
     padding: 15px 30px;
     border-radius: 7.5px;
     color: #000000;
-    margin-right: 20px;
     border-color: 1px solid lightgray;
     min-width: 125px;
     transition: 0.2s;
@@ -1328,10 +1327,12 @@ header {
   #quote-2 .button-container .contact-btn {
     background-color: #ffcc00;
     box-shadow: 1px 2px 0 #e6b800, 2px 4px 6px #060507;
+    margin-right: 10px;
   }
   #quote-2 .button-container .services-btn {
     background-color: white;
     box-shadow: 1px 2px 0 #f2f2f2, 2px 4px 6px #060507;
+    margin-left: 10px;
   }
 }
 @media screen and (min-width: 850px) {
@@ -1384,6 +1385,46 @@ header {
   .footer-bottom a:hover {
     color: white;
     transition: 0.2s;
+  }
+  .footer-links {
+    position: relative;
+    height: auto;
+  }
+  .footer-links .home a::after {
+    width: 100%;
+    background-color: #38C6E5;
+  }
+  .footer-links .home a:hover {
+    color: #38C6E5;
+  }
+  .footer-links .about a::after {
+    background-color: #7fd378;
+  }
+  .footer-links .about a:hover {
+    color: #7fd378;
+  }
+  .footer-links .services a::after {
+    background-color: #804DD4;
+  }
+  .footer-links .services a:hover {
+    color: #804DD4;
+  }
+  .footer-links .blog a::after {
+    background-color: #D44D4D;
+  }
+  .footer-links .blog a:hover {
+    color: #D44D4D;
+  }
+  .footer-links .contact a::after {
+    background-color: #ffcc00;
+  }
+  .footer-links .contact a:hover {
+    color: #ffcc00;
+  }
+  .footer-contact .email:hover,
+  .footer-contact .phone:hover {
+    transition: 0.2s;
+    color: #38C6E5;
   }
 }
 @media only screen and (min-width: 0px) and (max-width: 849px) {

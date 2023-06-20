@@ -1396,7 +1396,7 @@ header {
     }
 
     .included-container {
-        margin-top: 75px;
+        margin-top: 100px;
         display: flex;
         flex-direction: column;
         align-self: center;
@@ -1412,7 +1412,7 @@ header {
             text-align: left;
             font-size: clamp(1.5em, 7vw, 3em);
             position: relative;
-            margin-bottom: 5px;
+            margin-bottom: 15px;
 
             span {
                 color: $blue;
@@ -1571,7 +1571,6 @@ header {
                 padding: 15px 30px;
                 border-radius: 7.5px;
                 color: #000000;
-                margin-right: 20px;
                 border-color: 1px solid lightgray;
                 min-width: 125px;
                 transition: 0.2s;
@@ -1587,11 +1586,13 @@ header {
                 box-shadow:
                     1px 2px 0 darken($yellow, 5%),
                     2px 4px 6px darken($background, 25%);
+                margin-right: 10px;
             }
 
             .services-btn {
                 background-color: $white;
                 box-shadow: 1px 2px 0 darken($white, 5%), 2px 4px 6px darken($background, 25%);
+                margin-left: 10px;
             }
         }
     }
@@ -1664,6 +1665,61 @@ header {
         }
     }
 
+    .footer-links {
+        position: relative;
+        height: auto;
+
+        // ACTIVE (width: 100%)
+        .home a::after {
+            width: 100%;
+            background-color: $blue;
+        }
+
+        .home a:hover {
+            color: $blue;
+        }
+
+        .about a::after {
+            background-color: $green;
+        }
+
+        .about a:hover {
+            color: $green;
+        }
+
+        .services a::after {
+            background-color: $purple;
+        }
+
+        .services a:hover {
+            color: $purple;
+        }
+
+        .blog a::after {
+            background-color: $red;
+        }
+
+        .blog a:hover {
+            color: $red;
+        }
+
+        .contact a::after {
+            background-color: $yellow;
+        }
+
+        .contact a:hover {
+            color: $yellow;
+        }
+    }
+
+    .footer-contact {
+
+        .email:hover,
+        .phone:hover {
+            transition: 0.2s;
+            color: $blue;
+        }
+    }
 }
 
 @media only screen and (min-width: 0px) and (max-width: 849px) {

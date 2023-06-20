@@ -1,0 +1,79 @@
+// ==============================
+//  Variables
+// ==============================
+$background: #3F3B51;
+$blue: #38C6E5;
+$green: #7fd378;
+$purple: #804DD4;
+$red: #D44D4D;
+$yellow: #ffcc00;
+$black: black;
+$white: white;
+
+// ============================== 
+//  Hero - About
+// ==============================
+@media screen and (min-width: 0px) and (max-width: 849px) {
+    #hero-about {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about-text-container {
+        margin-left: 125px;
+        margin-top: 25px;
+    }
+}
+
+@media screen and (min-width: 850px) and (max-width: 999px) {}
+
+@media screen and (min-width: 1000px) and (max-width: 1199px) {}
+
+@media screen and (min-width: 1200px) and (max-width: 1349px) {}
+
+@media screen and (min-width: 1350px) and (max-width: 1499px) {}
+
+@media screen and (min-width: 1500px) {
+    #hero-about {
+        display: flex;
+        flex-direction: row;
+        position: relative;
+
+    }
+
+    .about-text-container {
+        margin-left: 125px;
+        margin-top: 125px;
+
+        p {
+            color: $green;
+            font-size: 1.25em;
+            font-weight: 700;
+        }
+
+        line-height: 1.5;
+        font-size: 1.5em;
+    }
+
+    .window-girl {
+        margin-top: 25px;
+        margin-left: 125px;
+        content: '';
+        background-image: url('./about-images/window-girl.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 800px;
+        height: 525px;
+    }
+}
+
+
+// ============================== 
+//  My Journey 
+// ==============================
+
+@media screen and (min-width: 0px) {}
+
+@media only screen and (min-width: 0px) and (max-width: 849px) {}
+
+@media only screen and (min-width: 1200px) {}
