@@ -1355,7 +1355,7 @@ header {
   }
   .footer-container {
     overflow: visible;
-    background-color: #3f3b51;
+    background-color: #3F3B51;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -1404,10 +1404,10 @@ header {
     color: #7fd378;
   }
   .footer-links .services a::after {
-    background-color: #804DD4;
+    background-color: #8f62d9;
   }
   .footer-links .services a:hover {
-    color: #804DD4;
+    color: #8f62d9;
   }
   .footer-links .blog a::after {
     background-color: #D44D4D;
@@ -1580,8 +1580,8 @@ header {
     text-underline-offset: 2px;
   }
   .footer-text .footer-navigation ul li .services:hover {
-    -webkit-text-decoration: 3px solid #804dd4 underline;
-            text-decoration: 3px solid #804dd4 underline;
+    -webkit-text-decoration: 3px solid #8f62d9 underline;
+            text-decoration: 3px solid #8f62d9 underline;
     text-underline-offset: 2px;
   }
   .footer-text .footer-navigation ul li .blog:hover {
@@ -1590,8 +1590,8 @@ header {
     text-underline-offset: 2px;
   }
   .footer-text .footer-navigation ul li .contact:hover {
-    -webkit-text-decoration: 3px solid #ffcc00 underline;
-            text-decoration: 3px solid #ffcc00 underline;
+    -webkit-text-decoration: 3px solid #ffcc00;
+            text-decoration: 3px solid #ffcc00;
     text-underline-offset: 2px;
   }
   .footer-text .footer-contact {
@@ -1692,10 +1692,10 @@ header {
     color: #7fd378;
   }
   .footer-links .services a::after {
-    background-color: #804DD4;
+    background-color: #8f62d9;
   }
   .footer-links .services a:hover {
-    color: #804DD4;
+    color: #8f62d9;
   }
   .footer-links .blog a::after {
     background-color: #D44D4D;
@@ -1776,8 +1776,8 @@ header {
     text-underline-offset: 2px;
   }
   .footer-text .footer-navigation ul li .services:hover {
-    -webkit-text-decoration: 3px solid #804dd4 underline;
-            text-decoration: 3px solid #804dd4 underline;
+    -webkit-text-decoration: 3px solid #8f62d9 underline;
+            text-decoration: 3px solid #8f62d9 underline;
     text-underline-offset: 2px;
   }
   .footer-text .footer-navigation ul li .blog:hover {
@@ -1786,8 +1786,8 @@ header {
     text-underline-offset: 2px;
   }
   .footer-text .footer-navigation ul li .contact:hover {
-    -webkit-text-decoration: 3px solid #ffcc00 underline;
-            text-decoration: 3px solid #ffcc00 underline;
+    -webkit-text-decoration: 3px solid #ffcc00;
+            text-decoration: 3px solid #ffcc00;
     text-underline-offset: 2px;
   }
   .footer-text .footer-links a {
@@ -1827,10 +1827,10 @@ header {
     color: #7fd378;
   }
   .footer-text .footer-links .services a::after {
-    background-color: #804DD4;
+    background-color: #8f62d9;
   }
   .footer-text .footer-links .services a:hover {
-    color: #804DD4;
+    color: #8f62d9;
   }
   .footer-text .footer-links .blog a::after {
     background-color: #D44D4D;
