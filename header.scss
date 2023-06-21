@@ -40,6 +40,7 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
     }
 
     body {
+        position: relative;
         height: 100%;
         width: 100%;
         max-width: 1920px;
