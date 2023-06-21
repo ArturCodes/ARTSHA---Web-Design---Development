@@ -90,6 +90,9 @@ $white: white;
     .journey-container {
         max-width: 850px;
         margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 25px;
 
         p:first-child {
             color: $green;
@@ -120,8 +123,27 @@ $white: white;
             margin: 0 auto;
             width: 600px;
             height: 350px;
-            margin-top: 75px;
+            margin-top: 25px;
             margin-bottom: 25px;
+        }
+
+        a {
+            border-radius: 7.5px;
+            border: 1px solid $green;
+            color: $green;
+            margin: 0 auto;
+            min-width: 100px;
+            padding: 20px 30px;
+            font-weight: 700;
+            transition: 0.3s;
+            box-shadow: 1px 1px 5px #1a1a1a;
+
+            &:hover {
+                background-color: white;
+                color: #1a1a1a;
+                transition: 0.3s;
+                border: 1px solid #1a1a1a;
+            }
         }
 
     }
@@ -145,21 +167,83 @@ $white: white;
     #sets-apart {
         background-color: $white;
         width: 80%;
-        max-width: 1200px;
+        max-width: 1000px;
         margin: 0 auto;
     }
 
     .sets-apart-header {
         position: relative;
-        margin-top: -15px;
-        max-width: 850px;
+        max-width: 1000px;
         margin: 0 auto;
+        text-align: center;
+
+        h1 {
+            color: $black;
+            font-size: 3.5em;
+            margin-bottom: 25px;
+            margin-top: 125px;
+
+            span {
+                color: $green;
+            }
+        }
+
+        p {
+            color: $black;
+            margin-bottom: 100px;
+            line-height: 1.75;
+            font-size: 1.25em;
+        }
+
+    }
+
+    .sets-items {
+        h2 {
+            font-size: 2em;
+            border-left: 5px solid $green;
+            padding-left: 7.5px;
+            margin-bottom: 15px;
+        }
+
+        p {
+            line-height: 1.75;
+            margin-bottom: 25px;
+            max-width: 500px;
+
+            span {
+                color: darken($green, 15%);
+            }
+
+            &:last-child {
+                margin-bottom: 50px;
+            }
+        }
     }
 }
 
 @media only screen and (min-width: 0px) and (max-width: 849px) {}
 
-@media only screen and (min-width: 1200px) {}
+@media only screen and (min-width: 1200px) {
+    .sets-apart-container {
+        display: flex;
+        flex-direction: row;
+        position: relative;
+    }
+
+    .set-left {
+        width: 65%;
+    }
+
+    .set-right {
+        position: relative;
+
+        img {
+            position: absolute;
+            margin-left: 150px;
+            height: 200px;
+        }
+    }
+}
 
 
 // ==============================
@@ -218,8 +302,8 @@ $white: white;
 
         // ACTIVE (width: 100%)
         .home a::after {
-            width: 100%;
-            background-color: $green;
+
+            background-color: $blue;
         }
 
         .home a:hover {
@@ -227,6 +311,7 @@ $white: white;
         }
 
         .about a::after {
+            width: 100%;
             background-color: $green;
         }
 
@@ -565,11 +650,11 @@ $white: white;
         height: auto;
 
         .home a::after {
-            background-color: $green;
+            background-color: $blue;
         }
 
         .home a:hover {
-            color: $green;
+            color: $blue;
         }
 
         // ACTIVE (width: 100%)
