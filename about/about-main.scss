@@ -301,7 +301,6 @@ $white: white;
         position: relative;
         height: auto;
 
-        // ACTIVE (width: 100%)
         .home a::after {
 
             background-color: $blue;
@@ -311,6 +310,7 @@ $white: white;
             color: $blue;
         }
 
+        // ACTIVE (width: 100%)
         .about a::after {
             width: 100%;
             background-color: $green;
@@ -396,7 +396,7 @@ $white: white;
 
         .footer-contact {
             margin-top: 50px;
-            margin-bottom: 50px;
+            margin-bottom: 25px;
             position: relative;
             overflow: visible;
 
