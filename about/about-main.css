@@ -129,6 +129,7 @@
   }
   .sets-apart-header h1 span {
     color: #7fd378;
+    line-height: 1.5;
   }
   .sets-apart-header p {
     color: black;
