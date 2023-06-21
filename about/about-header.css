@@ -9,6 +9,7 @@
   }
   html {
     background-color: #343042;
+    overflow-x: hidden;
   }
   body {
     height: 100%;
