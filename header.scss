@@ -553,6 +553,7 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
 
 @media screen and (min-width: 0px) and (max-width: 999px) {
 
+
     #navbar-links {
         position: fixed;
         right: 0;
@@ -566,10 +567,6 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
         transition: 0.3s;
         width: 0;
         overflow: hidden;
-        background-image: url('./images/mobile-menu-bg.png');
-        background-repeat: no-repeat;
-        background-position: bottom;
-        background-size: contain;
     }
 
     #navbar-links li {

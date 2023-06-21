@@ -419,10 +419,6 @@
     transition: 0.3s;
     width: 0;
     overflow: hidden;
-    background-image: url("./images/mobile-menu-bg.png");
-    background-repeat: no-repeat;
-    background-position: bottom;
-    background-size: contain;
   }
   #navbar-links li {
     margin: 25px;

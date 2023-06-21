@@ -568,10 +568,7 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
         transition: 0.3s;
         width: 0;
         overflow: hidden;
-        background-image: url('../images/mobile-menu-bg.png');
-        background-repeat: no-repeat;
-        background-position: bottom;
-        background-size: contain;
+
     }
 
     #navbar-links li {
