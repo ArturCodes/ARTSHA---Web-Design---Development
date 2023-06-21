@@ -33,11 +33,11 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
         text-decoration: none;
         box-sizing: border-box;
         font-family: "Poppins", Arial, Helvetica, Verdana;
-        overflow-x: hidden;
     }
 
     html {
         background-color: darken($background, 5%);
+        overflow-x: hidden;
     }
 
     body {

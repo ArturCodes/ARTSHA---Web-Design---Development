@@ -6,10 +6,10 @@
     text-decoration: none;
     box-sizing: border-box;
     font-family: "Poppins", Arial, Helvetica, Verdana;
-    overflow-x: hidden;
   }
   html {
     background-color: #343042;
+    overflow-x: hidden;
   }
   body {
     height: 100%;
