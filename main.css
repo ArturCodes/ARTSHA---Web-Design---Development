@@ -1361,7 +1361,6 @@ header {
     flex-direction: column;
     position: relative;
     margin-top: -5px;
-    padding-bottom: 50px;
   }
   .footer-logo {
     margin: 0 auto;
@@ -1435,7 +1434,6 @@ header {
     display: flex;
     flex-direction: column;
     overflow: visible;
-    margin-bottom: 10px;
   }
   .footer-text .footer-navigation {
     overflow: visible;

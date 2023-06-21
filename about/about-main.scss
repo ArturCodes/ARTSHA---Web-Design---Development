@@ -20,7 +20,7 @@ $white: white;
         flex-direction: column;
     }
 
-    .about-text-container {
+    .about-hero-text {
         margin-left: 125px;
         margin-top: 25px;
     }
@@ -36,16 +36,19 @@ $white: white;
 
 @media screen and (min-width: 1500px) {
     #hero-about {
-
         display: flex;
         flex-direction: row;
         position: relative;
         margin-bottom: -375px;
+        overflow: visible;
     }
 
-    .about-text-container {
+    .about-hero-text {
         margin-left: 125px;
         margin-top: 125px;
+        width: 45%;
+        position: relative;
+        z-index: 900;
 
         p {
             color: $green;
@@ -56,7 +59,7 @@ $white: white;
         font-size: 2.25em;
     }
 
-    .window-girl {
+    .about-hero-girl {
         position: relative;
         margin-top: 50px;
         margin-left: 25px;
@@ -93,6 +96,7 @@ $white: white;
             font-weight: 700;
             font-size: 1.75em;
             margin-bottom: 0px;
+            margin-top: 125px;
         }
 
         h1 {
@@ -116,7 +120,8 @@ $white: white;
             margin: 0 auto;
             width: 600px;
             height: 350px;
-            margin-top: 15px;
+            margin-top: 75px;
+            margin-bottom: 25px;
         }
 
     }
@@ -124,11 +129,11 @@ $white: white;
     .journey-bottom-blob {
         background-color: $white;
         width: 100%;
-
+        margin-bottom: -5px;
     }
 }
 
-@media only screen and (min-width: 0px) and (max-width: 849px) {}
+@media only screen and (min-width: 0px) and (width: 849px) {}
 
 @media only screen and (min-width: 1200px) {}
 
@@ -136,7 +141,21 @@ $white: white;
 //   What sets ARTSHA apart   
 // ==============================
 
-@media screen and (min-width: 0px) {}
+@media screen and (min-width: 0px) {
+    #sets-apart {
+        background-color: $white;
+        width: 80%;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .sets-apart-header {
+        position: relative;
+        margin-top: -15px;
+        max-width: 850px;
+        margin: 0 auto;
+    }
+}
 
 @media only screen and (min-width: 0px) and (max-width: 849px) {}
 
@@ -162,7 +181,6 @@ $white: white;
         flex-direction: column;
         position: relative;
         margin-top: -5px;
-        padding-bottom: 50px;
     }
 
     .footer-logo {
