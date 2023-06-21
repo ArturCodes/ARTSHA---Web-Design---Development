@@ -1279,6 +1279,7 @@ header {
             .item {
                 padding-left: 30px;
                 margin: 5px 10px;
+                margin-left: -30px;
 
                 &::before {
                     content: '';

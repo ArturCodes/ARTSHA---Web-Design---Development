@@ -1076,6 +1076,7 @@ header {
   .included-container .included-items .item {
     padding-left: 30px;
     margin: 5px 10px;
+    margin-left: -30px;
   }
   .included-container .included-items .item::before {
     content: "";
