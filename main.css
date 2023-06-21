@@ -1142,7 +1142,7 @@ header {
   .contract-text h2 {
     color: white;
     font-size: clamp(1.5em, 7vw, 3.5em);
-    line-height: 1.5;
+    line-height: 1.25;
     text-align: center;
     position: relative;
   }
@@ -1223,6 +1223,7 @@ header {
     z-index: 999;
   }
   .included-container .included-items {
+    margin-left: -50px;
     max-width: none;
     display: grid;
     flex-direction: row;
@@ -1230,7 +1231,7 @@ header {
   }
   .included-container .included-items .item {
     margin: 5px;
-    padding: 10px 15px 25px 45px;
+    padding: 10px 15px 5px 45px;
     border: 1px solid transparent;
   }
   .included-container .included-items .item::before {
@@ -1252,6 +1253,7 @@ header {
     text-align: left;
     line-height: 1.5;
     font-size: 1.5em;
+    margin-bottom: 5px;
     display: block;
     text-decoration: solid underline white 1px;
     -webkit-text-decoration: solid underline white 1px;
