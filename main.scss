@@ -1181,7 +1181,7 @@ header {
 
         h2 {
             color: white;
-            font-size: clamp(1.5em, 7vw, 3em);
+            font-size: clamp(1.5em, 7vw, 3.25em);
             line-height: 1.5;
             margin: 0 auto;
 
@@ -1223,7 +1223,7 @@ header {
         display: flex;
         flex-direction: column;
         grid-column-start: 1;
-        grid-column-end: 9;
+        grid-column-end: 10;
         grid-row-start: 11;
         grid-row-end: 20;
         overflow: visible;
@@ -1231,7 +1231,8 @@ header {
         h2 {
             color: $white;
             text-align: left;
-            font-size: clamp(1.5em, 7vw, 3em);
+            font-size: clamp(1.5em, 7vw, 3.5em);
+            margin-bottom: 15px;
 
             span {
                 color: $blue;
@@ -1278,7 +1279,7 @@ header {
 
             .item {
                 padding-left: 30px;
-                margin: 5px 10px;
+                margin: 10px 10px;
                 margin-left: -30px;
 
                 &::before {
@@ -1310,6 +1311,7 @@ header {
                 p {
                     color: white;
                     max-width: 300px;
+                    margin-right: 25px;
                 }
             }
 
@@ -1358,7 +1360,7 @@ header {
 
         h2 {
             color: white;
-            font-size: clamp(1.5em, 7vw, 3.5em);
+            font-size: clamp(1.5em, 7vw, 4em);
             line-height: 1.25;
             text-align: center;
             position: relative;
@@ -1395,7 +1397,6 @@ header {
         overflow: visible;
         z-index: 5;
         padding-left: 50px;
-        margin-top: 85px;
     }
 
     .included-container {
@@ -1497,7 +1498,7 @@ header {
 
                 p {
                     color: white;
-                    max-width: 300px;
+                    max-width: 325px;
                 }
             }
 
@@ -1510,15 +1511,14 @@ header {
             color: #38C6E5;
             min-width: 100px;
             padding: 20px 30px;
-            text-align: center;
-            align-self: center;
             font-weight: 700;
             transition: 0.3s;
             box-shadow: 1px 1px 5px #1a1a1a;
 
-            margin-top: 35px;
-
+            margin-top: 50px;
+            margin-left: calc(-250px + 1vw);
             align-self: center;
+            left: 0;
 
             &:hover {
                 background-color: white;
@@ -1550,12 +1550,13 @@ header {
             margin-top: clamp(50px, 10vw, 100px);
             font-size: clamp(1.75em, 4.75vw, 3em);
             line-height: 1.5;
-            margin-bottom: 15px;
+            margin-bottom: 25px;
+            font-weight: 900;
 
         }
 
         p {
-            width: 96%;
+            width: 90%;
             font-size: clamp(1em, 3vw, 1.5em);
             margin: 10px 0 75px 0;
 
