@@ -18,7 +18,7 @@
     margin: 0 auto;
     background-color: white;
   }
-  main {
+  section {
     overflow-x: hidden;
   }
   .skip {
@@ -58,7 +58,7 @@
     max-height: 200px;
   }
 }
-@media screen and (min-width: 8501387px) {
+@media screen and (min-width: 850px) {
   .navbar-bg-container {
     position: absolute;
     right: 0;
