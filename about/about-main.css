@@ -116,6 +116,7 @@
     flex-direction: column;
     position: relative;
     margin-top: -5px;
+    padding-bottom: 25px;
   }
   .footer-logo {
     margin: 0 auto;
