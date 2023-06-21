@@ -9,7 +9,6 @@
   }
   html {
     background-color: #343042;
-    overflow-x: hidden;
   }
   body {
     height: 100%;
@@ -18,6 +17,9 @@
     overflow-x: hidden;
     margin: 0 auto;
     background-color: white;
+  }
+  main {
+    overflow-x: hidden;
   }
   .skip {
     position: absolute;
@@ -56,7 +58,7 @@
     max-height: 200px;
   }
 }
-@media screen and (min-width: 850px) {
+@media screen and (min-width: 8501387px) {
   .navbar-bg-container {
     position: absolute;
     right: 0;

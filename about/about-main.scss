@@ -230,17 +230,18 @@ $white: white;
         position: relative;
     }
 
-    .set-left {
-        width: 65%;
+    .sets-left {
+        width: 50%;
     }
 
-    .set-right {
+    .sets-right {
         position: relative;
+        margin-left: 50px;
+        margin-top: 50px;
 
         img {
             position: absolute;
-            margin-left: 150px;
-            height: 200px;
+            width: 700px;
         }
     }
 }

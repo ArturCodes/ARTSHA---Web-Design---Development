@@ -37,7 +37,6 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
 
     html {
         background-color: darken($background, 5%);
-        overflow-x: hidden;
     }
 
     body {
@@ -47,6 +46,11 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
         overflow-x: hidden;
         margin: 0 auto;
         background-color: $white;
+    }
+
+    main {
+        overflow-x: hidden;
+
     }
 
     .skip {
@@ -96,7 +100,7 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
     }
 }
 
-@media screen and (min-width: 850px) {
+@media screen and (min-width: 8501387px) {
     .navbar-bg-container {
         position: absolute;
         right: 0;
