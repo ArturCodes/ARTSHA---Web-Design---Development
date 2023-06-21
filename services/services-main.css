@@ -513,13 +513,13 @@
     color: #38C6E5;
   }
   .footer-links .about a::after {
-    width: 100%;
     background-color: #7fd378;
   }
   .footer-links .about a:hover {
     color: #7fd378;
   }
   .footer-links .services a::after {
+    width: 100%;
     background-color: #8f62d9;
   }
   .footer-links .services a:hover {
@@ -648,13 +648,13 @@
     color: #38C6E5;
   }
   .footer-text .footer-links .about a::after {
-    width: 100%;
     background-color: #7fd378;
   }
   .footer-text .footer-links .about a:hover {
     color: #7fd378;
   }
   .footer-text .footer-links .services a::after {
+    width: 100%;
     background-color: #8f62d9;
   }
   .footer-text .footer-links .services a:hover {

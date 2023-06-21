@@ -660,9 +660,8 @@ $white: white;
             color: $blue;
         }
 
-        // ACTIVE (width: 100%)
+
         .about a::after {
-            width: 100%;
             background-color: $green;
         }
 
@@ -670,7 +669,9 @@ $white: white;
             color: $green;
         }
 
+        // ACTIVE (width: 100%)
         .services a::after {
+            width: 100%;
             background-color: $purple;
         }
 
@@ -824,7 +825,7 @@ $white: white;
             position: relative;
             height: auto;
 
-            // ACTIVE (width: 100%)
+
             .home a::after {
                 background-color: $blue;
             }
@@ -834,7 +835,7 @@ $white: white;
             }
 
             .about a::after {
-                width: 100%;
+
                 background-color: $green;
             }
 
@@ -842,7 +843,9 @@ $white: white;
                 color: $green;
             }
 
+            // ACTIVE (width: 100%)
             .services a::after {
+                width: 100%;
                 background-color: $purple;
             }
 
