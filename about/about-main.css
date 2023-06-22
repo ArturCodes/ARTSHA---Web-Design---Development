@@ -3,22 +3,19 @@
   transition: 0.2s;
 }
 
-@media screen and (min-width: 850px) {
+@media screen and (min-width: 0px) {
   #hero-about {
-    display: flex;
-    flex-direction: row;
     position: relative;
     overflow: visible;
+    z-index: 500;
   }
   .about-hero-text p {
     color: #5bc652;
     font-weight: 600;
-    font-size: 0.75em;
   }
   .about-hero-text h1 {
     line-height: 1.5;
     font-weight: 600;
-    font-size: clamp(1em, 5vw, 2em);
   }
 }
 @media screen and (min-width: 0px) and (max-width: 849px) {
@@ -30,24 +27,29 @@
     text-align: center;
     margin-top: 25px;
   }
-  .about-hero-text h1 {
-    font-size: clamp(1em, 12vw, 2em);
+  .about-hero-text p {
+    font-size: 0.75em;
+  }
+}
+@media screen and (min-width: 850px) {
+  #hero-about {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: -350px;
+  }
+  .about-hero-text p {
+    font-size: 0.75em;
   }
 }
 @media screen and (min-width: 850px) and (max-width: 999px) {
-  #hero-about {
-    margin-bottom: -350px;
-  }
   .about-hero-text {
     min-height: 500px;
     margin-left: 25px;
     margin-top: 25px;
     width: 50%;
     position: relative;
-    z-index: 900;
     line-height: 1.5;
     font-size: 2.25em;
-    z-index: 500;
   }
   .about-hero-text h1 {
     font-size: 1em;
@@ -66,9 +68,6 @@
   }
 }
 @media screen and (min-width: 1000px) and (max-width: 1199px) {
-  #hero-about {
-    margin-bottom: -350px;
-  }
   .about-hero-text {
     min-height: 500px;
     margin-left: 60px;
@@ -96,21 +95,16 @@
   }
 }
 @media screen and (min-width: 1200px) and (max-width: 1349px) {
-  #hero-about {
-    margin-bottom: -375px;
-  }
   .about-hero-text {
     min-height: 500px;
-    margin-left: 125px;
-    margin-top: 125px;
+    margin-left: 60px;
+    margin-top: 60px;
     width: 45%;
     position: relative;
     z-index: 900;
-    line-height: 1.5;
-    font-size: 2.25em;
   }
   .about-hero-text p {
-    color: #7fd378;
+    color: #5bc652;
     font-weight: 700;
   }
   .about-hero-girl {
@@ -127,18 +121,13 @@
   }
 }
 @media screen and (min-width: 1350px) and (max-width: 1499px) {
-  #hero-about {
-    margin-bottom: -375px;
-  }
   .about-hero-text {
     min-height: 500px;
-    margin-left: 125px;
+    margin-left: 60px;
     margin-top: 125px;
     width: 45%;
     position: relative;
     z-index: 900;
-    line-height: 1.5;
-    font-size: 2.25em;
   }
   .about-hero-text p {
     color: #7fd378;
@@ -158,9 +147,6 @@
   }
 }
 @media screen and (min-width: 1500px) and (max-width: 1699px) {
-  #hero-about {
-    margin-bottom: -375px;
-  }
   .about-hero-text {
     min-height: 500px;
     margin-left: 125px;
@@ -168,8 +154,6 @@
     width: 45%;
     position: relative;
     z-index: 900;
-    line-height: 1.5;
-    font-size: 2.25em;
   }
   .about-hero-text p {
     color: #7fd378;
@@ -189,9 +173,6 @@
   }
 }
 @media screen and (min-width: 1700px) {
-  #hero-about {
-    margin-bottom: -375px;
-  }
   .about-hero-text {
     min-height: 500px;
     margin-left: 125px;
@@ -205,9 +186,6 @@
   .about-hero-text p {
     color: #7fd378;
     font-weight: 700;
-  }
-  .about-hero-text h1 {
-    max-width: 750px;
   }
   .about-hero-girl {
     position: absolute;
