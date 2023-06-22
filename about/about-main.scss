@@ -4,6 +4,7 @@
 $background: #3F3B51;
 $blue: #38C6E5;
 $green: #7fd378;
+$greenDarkened: darken($green, 10%);
 $purple: lighten(#804DD4, 5%);
 $purple2: #804DD4;
 $red: #D44D4D;
@@ -14,6 +15,34 @@ $white: white;
 // ============================== 
 //  Hero - About
 // ==============================
+.about-hero-girl,
+.about-hero-text {
+    transition: 0.2s;
+}
+
+@media screen and (min-width: 850px) {
+    #hero-about {
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        overflow: visible;
+    }
+
+    .about-hero-text {
+        p {
+            color: $greenDarkened;
+            font-weight: 600;
+            font-size: 0.75em;
+        }
+
+        h1 {
+            line-height: 1.5;
+            font-weight: 600;
+            font-size: clamp(1em, 5vw, 2em);
+        }
+    }
+}
+
 @media screen and (min-width: 0px) and (max-width: 849px) {
     #hero-about {
         display: flex;
@@ -21,29 +50,93 @@ $white: white;
     }
 
     .about-hero-text {
-        margin-left: 125px;
+        text-align: center;
         margin-top: 25px;
+
+        h1 {
+            font-size: clamp(1em, 12vw, 2em);
+        }
     }
 }
 
-@media screen and (min-width: 850px) and (max-width: 999px) {}
-
-@media screen and (min-width: 1000px) and (max-width: 1199px) {}
-
-@media screen and (min-width: 1200px) and (max-width: 1349px) {}
-
-@media screen and (min-width: 1350px) and (max-width: 1499px) {}
-
-@media screen and (min-width: 1500px) {
+@media screen and (min-width: 850px) and (max-width: 999px) {
     #hero-about {
-        display: flex;
-        flex-direction: row;
-        position: relative;
-        margin-bottom: -375px;
-        overflow: visible;
+        margin-bottom: -350px;
     }
 
     .about-hero-text {
+        min-height: 500px;
+        margin-left: 25px;
+        margin-top: 25px;
+        width: 50%;
+        position: relative;
+        z-index: 900;
+        line-height: 1.5;
+        font-size: 2.25em;
+        z-index: 500;
+
+        h1 {
+            font-size: 1em;
+        }
+
+    }
+
+    .about-hero-girl {
+        position: absolute;
+        right: -85px;
+        margin-top: -30px;
+        margin-left: 25px;
+        content: '';
+        background-image: url('./about-images/window-girl.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 600px;
+        height: 550px;
+    }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1199px) {
+    #hero-about {
+        margin-bottom: -350px;
+    }
+
+    .about-hero-text {
+        min-height: 500px;
+        margin-left: 60px;
+        margin-top: 60px;
+        width: 50%;
+        position: relative;
+        z-index: 900;
+        line-height: 1.5;
+        font-size: 2.25em;
+
+        h1 {
+            font-size: 1em;
+        }
+
+    }
+
+    .about-hero-girl {
+        position: absolute;
+        right: -65px;
+        margin-top: -25px;
+        margin-left: 25px;
+        content: '';
+        background-image: url('./about-images/window-girl.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 650px;
+        height: 550px;
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1349px) {
+    #hero-about {
+        margin-bottom: -375px;
+    }
+
+    .about-hero-text {
+        min-height: 500px;
         margin-left: 125px;
         margin-top: 125px;
         width: 45%;
@@ -60,15 +153,127 @@ $white: white;
     }
 
     .about-hero-girl {
+        position: absolute;
+        right: 0px;
+        margin-top: 25px;
+        margin-left: 25px;
+        content: '';
+        background-image: url('./about-images/window-girl.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 700px;
+        height: 550px;
+    }
+}
+
+@media screen and (min-width: 1350px) and (max-width: 1499px) {
+    #hero-about {
+        margin-bottom: -375px;
+    }
+
+    .about-hero-text {
+        min-height: 500px;
+        margin-left: 125px;
+        margin-top: 125px;
+        width: 45%;
         position: relative;
-        margin-top: 50px;
+        z-index: 900;
+
+        p {
+            color: $green;
+            font-weight: 700;
+        }
+
+        line-height: 1.5;
+        font-size: 2.25em;
+    }
+
+    .about-hero-girl {
+        position: absolute;
+        right: 0px;
+        margin-top: 25px;
+        margin-left: 25px;
+        content: '';
+        background-image: url('./about-images/window-girl.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 800px;
+        height: 550px;
+    }
+}
+
+@media screen and (min-width: 1500px) and (max-width: 1699px) {
+    #hero-about {
+        margin-bottom: -375px;
+    }
+
+    .about-hero-text {
+        min-height: 500px;
+        margin-left: 125px;
+        margin-top: 125px;
+        width: 45%;
+        position: relative;
+        z-index: 900;
+
+        p {
+            color: $green;
+            font-weight: 700;
+        }
+
+        line-height: 1.5;
+        font-size: 2.25em;
+    }
+
+    .about-hero-girl {
+        position: absolute;
+        right: 0px;
+        margin-top: 25px;
+        margin-left: 25px;
+        content: '';
+        background-image: url('./about-images/window-girl.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 850px;
+        height: 600px;
+    }
+}
+
+@media screen and (min-width: 1700px) {
+    #hero-about {
+        margin-bottom: -375px;
+    }
+
+    .about-hero-text {
+        min-height: 500px;
+        margin-left: 125px;
+        margin-top: 125px;
+        width: 45%;
+        position: relative;
+        z-index: 900;
+        line-height: 1.5;
+        font-size: 2.25em;
+
+        p {
+            color: $green;
+            font-weight: 700;
+        }
+
+        h1 {
+            max-width: 750px;
+        }
+    }
+
+    .about-hero-girl {
+        position: absolute;
+        right: 50px;
+        margin-top: 45px;
         margin-left: 25px;
         content: '';
         background-image: url('./about-images/window-girl.png');
         background-repeat: no-repeat;
         background-size: contain;
         width: 900px;
-        height: 575px;
+        height: 600px;
     }
 }
 
@@ -180,8 +385,8 @@ $white: white;
         h1 {
             color: $black;
             font-size: 3.5em;
-            margin-bottom: 25px;
-            margin-top: 125px;
+            margin-bottom: 5px;
+            margin-top: 50px;
 
             span {
                 color: $green;
@@ -190,6 +395,8 @@ $white: white;
         }
 
         p {
+            max-width: 850px;
+            margin: 0 auto;
             color: $black;
             margin-bottom: 100px;
             line-height: 1.75;
@@ -223,7 +430,9 @@ $white: white;
     }
 }
 
-@media only screen and (min-width: 0px) and (max-width: 849px) {}
+@media only screen and (min-width: 0px) and (max-width: 849px) {
+    .about-hero-text {}
+}
 
 @media only screen and (min-width: 1200px) {
     .sets-apart-container {
