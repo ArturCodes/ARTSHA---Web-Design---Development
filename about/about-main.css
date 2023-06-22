@@ -1,13 +1,19 @@
 .about-hero-girl,
-.about-hero-text {
-  transition: 0.2s;
+.about-hero-text,
+.about-hero-text p,
+.about-hero-text h1 {
+  transition: 0.3s;
 }
 
 @media screen and (min-width: 0px) {
-  #hero-about {
+  #hero {
     position: relative;
     overflow: visible;
     z-index: 500;
+  }
+  .about-hero-text {
+    position: relative;
+    z-index: 900;
   }
   .about-hero-text p {
     color: #5bc652;
@@ -17,9 +23,17 @@
     line-height: 1.5;
     font-weight: 600;
   }
+  .about-hero-girl {
+    position: absolute;
+    content: "";
+    background-image: url("./about-images/window-girl.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100%;
+  }
 }
 @media screen and (min-width: 0px) and (max-width: 849px) {
-  #hero-about {
+  #hero {
     display: flex;
     flex-direction: column;
   }
@@ -32,172 +46,131 @@
   }
 }
 @media screen and (min-width: 850px) {
-  #hero-about {
+  #hero {
     display: flex;
     flex-direction: row;
     margin-bottom: -350px;
   }
-  .about-hero-text p {
-    font-size: 0.75em;
+  .about-hero-text {
+    min-height: 500px;
   }
 }
 @media screen and (min-width: 850px) and (max-width: 999px) {
   .about-hero-text {
-    min-height: 500px;
     margin-left: 25px;
-    margin-top: 25px;
+    margin-top: 50px;
     width: 50%;
-    position: relative;
-    line-height: 1.5;
-    font-size: 2.25em;
+  }
+  .about-hero-text p {
+    font-size: 1.5em;
   }
   .about-hero-text h1 {
-    font-size: 1em;
+    font-size: 2em;
   }
   .about-hero-girl {
-    position: absolute;
     right: -85px;
     margin-top: -30px;
     margin-left: 25px;
-    content: "";
-    background-image: url("./about-images/window-girl.png");
-    background-repeat: no-repeat;
-    background-size: contain;
     width: 600px;
-    height: 550px;
   }
 }
 @media screen and (min-width: 1000px) and (max-width: 1199px) {
   .about-hero-text {
-    min-height: 500px;
     margin-left: 60px;
-    margin-top: 60px;
+    margin-top: 75px;
     width: 50%;
-    position: relative;
-    z-index: 900;
     line-height: 1.5;
-    font-size: 2.25em;
+  }
+  .about-hero-text p {
+    font-size: 1.75em;
   }
   .about-hero-text h1 {
-    font-size: 1em;
+    font-size: 2.25em;
   }
   .about-hero-girl {
-    position: absolute;
-    right: -65px;
+    right: -100px;
     margin-top: -25px;
     margin-left: 25px;
-    content: "";
-    background-image: url("./about-images/window-girl.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 650px;
-    height: 550px;
+    width: 700px;
   }
 }
 @media screen and (min-width: 1200px) and (max-width: 1349px) {
+  #about-hero {
+    margin-bottom: -475px;
+  }
   .about-hero-text {
-    min-height: 500px;
     margin-left: 60px;
-    margin-top: 60px;
+    margin-top: 100px;
     width: 45%;
-    position: relative;
-    z-index: 900;
   }
   .about-hero-text p {
-    color: #5bc652;
-    font-weight: 700;
+    font-size: 2em;
+  }
+  .about-hero-text h1 {
+    font-size: 2.5em;
   }
   .about-hero-girl {
-    position: absolute;
-    right: 0px;
-    margin-top: 25px;
+    right: -50px;
+    margin-top: -25px;
     margin-left: 25px;
-    content: "";
-    background-image: url("./about-images/window-girl.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 700px;
-    height: 550px;
+    width: 750px;
   }
 }
 @media screen and (min-width: 1350px) and (max-width: 1499px) {
   .about-hero-text {
-    min-height: 500px;
-    margin-left: 60px;
+    margin-left: 75px;
     margin-top: 125px;
     width: 45%;
-    position: relative;
-    z-index: 900;
   }
   .about-hero-text p {
-    color: #7fd378;
-    font-weight: 700;
+    font-size: 2.25em;
+  }
+  .about-hero-text h1 {
+    font-size: 2.75em;
   }
   .about-hero-girl {
-    position: absolute;
     right: 0px;
-    margin-top: 25px;
+    margin-top: 0px;
     margin-left: 25px;
-    content: "";
-    background-image: url("./about-images/window-girl.png");
-    background-repeat: no-repeat;
-    background-size: contain;
     width: 800px;
-    height: 550px;
   }
 }
 @media screen and (min-width: 1500px) and (max-width: 1699px) {
   .about-hero-text {
-    min-height: 500px;
     margin-left: 125px;
     margin-top: 125px;
     width: 45%;
-    position: relative;
-    z-index: 900;
   }
   .about-hero-text p {
-    color: #7fd378;
-    font-weight: 700;
+    font-size: 2.5em;
+  }
+  .about-hero-text h1 {
+    font-size: 3em;
   }
   .about-hero-girl {
-    position: absolute;
     right: 0px;
     margin-top: 25px;
     margin-left: 25px;
-    content: "";
-    background-image: url("./about-images/window-girl.png");
-    background-repeat: no-repeat;
-    background-size: contain;
     width: 850px;
-    height: 600px;
   }
 }
 @media screen and (min-width: 1700px) {
   .about-hero-text {
-    min-height: 500px;
     margin-left: 125px;
     margin-top: 125px;
     width: 45%;
-    position: relative;
-    z-index: 900;
-    line-height: 1.5;
-    font-size: 2.25em;
   }
   .about-hero-text p {
-    color: #7fd378;
-    font-weight: 700;
+    font-size: 2.75em;
+  }
+  .about-hero-text h1 {
+    font-size: 3.5em;
   }
   .about-hero-girl {
-    position: absolute;
-    right: 50px;
-    margin-top: 45px;
+    right: -50px;
+    margin-top: 25px;
     margin-left: 25px;
-    content: "";
-    background-image: url("./about-images/window-girl.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 900px;
-    height: 600px;
+    width: 1000px;
   }
 }
 @media screen and (min-width: 0px) {
@@ -704,6 +677,9 @@
   }
 }
 @media only screen and (min-width: 1200px) {
+  .footer-container {
+    margin-top: -50px;
+  }
   .footer-text {
     display: flex;
     flex-direction: row;
