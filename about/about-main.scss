@@ -211,7 +211,7 @@ $white: white;
     }
 
     .about-hero-girl {
-        right: 0px;
+        right: -25px;
         margin-top: 25px;
         width: 850px;
     }
@@ -322,7 +322,12 @@ $white: white;
     }
 }
 
-@media only screen and (min-width: 0px) and (width: 849px) {}
+@media only screen and (min-width: 0px) and (width: 849px) {
+    .journey-top-blob {
+        width: 100%;
+        height: 250px;
+    }
+}
 
 @media only screen and (min-width: 1200px) {}
 
