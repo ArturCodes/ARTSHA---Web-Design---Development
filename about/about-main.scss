@@ -68,11 +68,12 @@ $white: white;
         margin-bottom: 25px;
 
         p {
+            font-weight: 500;
             font-size: 1.5em;
         }
 
         h1 {
-            font-size: 2em;
+            font-size: 1.75em;
         }
     }
 
@@ -256,22 +257,24 @@ $white: white;
 
     .journey-container {
         max-width: 850px;
-        margin: 0 auto;
         display: flex;
         flex-direction: column;
         margin-bottom: 25px;
+        width: 90%;
+        margin: 0 auto;
 
         p:first-child {
             color: $green;
             font-weight: 700;
-            font-size: 1.75em;
+            font-size: 1em;
             margin-bottom: 0px;
-            margin-top: 125px;
+            margin-top: 75px;
         }
 
         h1 {
+            width: 100%;
             color: $white;
-            font-size: 3.5em;
+            font-size: 2em;
             margin-bottom: 25px;
         }
 
