@@ -467,7 +467,13 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
     }
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 850px) {
+    .sets-apart-header {
+        width: 60%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
     .sets-apart-container {
         display: flex;
         flex-direction: row;
