@@ -136,7 +136,6 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
 
         // ------------------
         .about a::after {
-            width: 100%;
             background-color: $green;
         }
 
@@ -146,6 +145,7 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
 
         // ------------------
         .services a::after {
+            width: 100%;
             background-color: $purple;
         }
 
@@ -208,9 +208,7 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
             color: $blue;
         }
 
-        // ACTIVE (width: 100%)
         .about a::after {
-            width: 100%;
             background-color: $green;
         }
 
@@ -219,6 +217,7 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
         }
 
         .services a::after {
+            width: 100%;
             background-color: $purple;
         }
 
