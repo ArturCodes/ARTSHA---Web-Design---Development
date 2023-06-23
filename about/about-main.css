@@ -325,8 +325,10 @@
     margin-bottom: 50px;
   }
   .sets-buttons {
+    display: flex;
     margin-top: 75px;
     margin-bottom: 100px;
+    height: auto;
   }
   .sets-buttons a {
     padding: 15px 30px;
