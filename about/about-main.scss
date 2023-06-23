@@ -79,11 +79,11 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
 
         p {
             font-weight: 600;
-            font-size: 1.25em;
+            font-size: 1.5em;
         }
 
         h1 {
-            font-size: 1.5em;
+            font-size: 2em;
         }
     }
 
@@ -189,7 +189,7 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
         width: 45%;
 
         p {
-            font-size: 2.25em;
+            font-size: 2em;
         }
 
         h1 {
@@ -284,7 +284,7 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
         h1 {
             width: 100%;
             color: $white;
-            font-size: 2em;
+            font-size: clamp(2em, 6vw, 3em);
             margin-bottom: 25px;
             line-height: 1.25;
         }
