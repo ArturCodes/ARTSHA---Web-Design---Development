@@ -45,7 +45,7 @@
     margin-bottom: 25px;
   }
   .about-hero-text p {
-    font-weight: 500;
+    font-weight: 600;
     font-size: 1.25em;
   }
   .about-hero-text h1 {
@@ -201,7 +201,7 @@
   .journey-container p:first-child {
     color: #7fd378;
     font-weight: 700;
-    font-size: 1.125em;
+    font-size: 1.25em;
     margin-bottom: 0px;
   }
   .journey-container h1 {
@@ -307,7 +307,8 @@
     max-width: 500px;
   }
   .sets-items p span {
-    color: #49c03f;
+    color: #5bc652;
+    font-weight: 600;
   }
   .sets-items p:last-child {
     margin-bottom: 75px;
@@ -355,6 +356,7 @@
     width: 75%;
     margin: 0 auto;
     text-align: center;
+    margin-bottom: 75px;
   }
   .sets-apart-header h1 {
     margin-top: 75px;
@@ -365,20 +367,41 @@
     color: #7fd378;
   }
   .sets-apart-header p {
-    max-width: 800px;
+    max-width: 750px;
     margin: 0 auto;
   }
   .sets-apart-container {
-    width: 100%;
+    width: 60%;
     display: flex;
     flex-direction: row;
     position: relative;
+    justify-content: space-between;
     margin: 0 auto;
   }
+  .sets-items h2 {
+    font-size: 2em;
+    border-left: 5px solid #7fd378;
+    padding-left: 12.5px;
+    margin-bottom: 15px;
+    line-height: 1.25;
+  }
+  .sets-items p {
+    line-height: 1.75;
+    margin-bottom: 25px;
+    max-width: 500px;
+  }
+  .sets-items p span {
+    color: #5bc652;
+    font-weight: 600;
+  }
+  .sets-items p:last-child {
+    margin-bottom: 75px;
+  }
   .sets-left {
-    width: 50%;
+    max-width: 500px;
   }
   .sets-right {
+    width: 60%;
     position: relative;
     margin-left: 50px;
     margin-top: 150px;
@@ -386,6 +409,32 @@
   .sets-right img {
     position: absolute;
     width: 600px;
+  }
+  .sets-buttons {
+    margin-top: 75px;
+    margin-bottom: 100px;
+  }
+  .sets-buttons a {
+    padding: 15px 30px;
+    border-radius: 7.5px;
+    color: #000000;
+    border-color: 1px solid lightgray;
+    min-width: 125px;
+    transition: 0.2s;
+    text-align: center;
+  }
+  .sets-buttons a:hover {
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2274509804), 1px -1px 1px rgba(0, 0, 0, 0.2274509804), -1px 1px 1px rgba(0, 0, 0, 0.2274509804), -1px -1px 1px rgba(0, 0, 0, 0.2274509804);
+  }
+  .sets-buttons .contact-btn {
+    background-color: #ffcc00;
+    box-shadow: 1px 2px 0 #e6b800, 2px 4px 6px #060507;
+    margin-right: 10px;
+  }
+  .sets-buttons .services-btn {
+    background-color: white;
+    box-shadow: 1px 2px 0 #f2f2f2, 2px 4px 6px #060507;
+    margin-left: 10px;
   }
 }
 @media only screen and (min-width: 0px) {
