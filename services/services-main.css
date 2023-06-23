@@ -182,14 +182,14 @@
   }
 }
 @media screen and (min-width: 0px) {
-  #journey {
+  #standing-out {
     background-color: #3F3B51;
   }
-  .journey-top-blob {
+  .standing-out-top-blob {
     background-color: white;
     width: 100%;
   }
-  .journey-container {
+  .standing-out-container {
     max-width: 850px;
     display: flex;
     flex-direction: column;
@@ -198,26 +198,26 @@
     margin-bottom: 75px;
     margin-top: 50px;
   }
-  .journey-container p:first-child {
+  .standing-out-container p:first-child {
     color: #7fd378;
     font-weight: 700;
     font-size: 1.25em;
     margin-bottom: 0px;
   }
-  .journey-container h1 {
+  .standing-out-container h1 {
     width: 100%;
     color: white;
     font-size: 2em;
     margin-bottom: 25px;
     line-height: 1.25;
   }
-  .journey-container p {
+  .standing-out-container p {
     color: white;
     margin-bottom: 50px;
     line-height: 1.75;
     font-size: 1.125em;
   }
-  .journey-container .pathway {
+  .standing-out-container .pathway {
     content: "";
     background-image: url("./services-images/pathway.png");
     background-size: contain;
@@ -230,7 +230,7 @@
     max-height: 350px;
     margin-bottom: 50px;
   }
-  .journey-container a {
+  .standing-out-container a {
     border-radius: 7.5px;
     border: 1px solid #7fd378;
     color: #7fd378;
@@ -241,13 +241,13 @@
     transition: 0.3s;
     box-shadow: 1px 1px 5px #1a1a1a;
   }
-  .journey-container a:hover {
+  .standing-out-container a:hover {
     background-color: white;
     color: #1a1a1a;
     transition: 0.3s;
     border: 1px solid #1a1a1a;
   }
-  .journey-bottom-blob {
+  .standing-out-bottom-blob {
     background-color: white;
     width: 100%;
     margin-bottom: -5px;

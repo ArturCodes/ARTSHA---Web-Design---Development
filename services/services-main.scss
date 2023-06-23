@@ -23,7 +23,7 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
     -1px -1px 1px darken(#3f3b513a, 100%);
 
 // ============================== 
-//  Hero - services
+//  Hero - Services
 // ==============================
 .services-hero-guy,
 .services-hero-text,
@@ -251,21 +251,21 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
 }
 
 // ============================== 
-//  My Journey 
+//  Standing Out From The Crowd
 // ==============================
 
 @media screen and (min-width: 0px) {
 
-    #journey {
+    #standing-out {
         background-color: $background;
     }
 
-    .journey-top-blob {
+    .standing-out-top-blob {
         background-color: $white;
         width: 100%;
     }
 
-    .journey-container {
+    .standing-out-container {
         max-width: 850px;
         display: flex;
         flex-direction: column;
@@ -331,7 +331,7 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
 
     }
 
-    .journey-bottom-blob {
+    .standing-out-bottom-blob {
         background-color: $white;
         width: 100%;
         margin-bottom: -5px;
@@ -343,7 +343,7 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
 @media only screen and (min-width: 1200px) {}
 
 // ============================== 
-//   What sets ARTSHA apart   
+//  Websites Done Differently 
 // ==============================
 
 @media screen and (min-width: 0px) and (max-width: 849px) {
