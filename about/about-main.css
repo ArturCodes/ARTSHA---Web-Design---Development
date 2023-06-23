@@ -193,39 +193,42 @@
     max-width: 850px;
     display: flex;
     flex-direction: column;
-    margin-bottom: 25px;
     width: 90%;
     margin: 0 auto;
+    margin-bottom: 75px;
+    margin-top: 50px;
   }
   .journey-container p:first-child {
     color: #7fd378;
     font-weight: 700;
-    font-size: 1em;
+    font-size: 1.125em;
     margin-bottom: 0px;
-    margin-top: 75px;
   }
   .journey-container h1 {
     width: 100%;
     color: white;
     font-size: 2em;
     margin-bottom: 25px;
+    line-height: 1.25;
   }
   .journey-container p {
     color: white;
     margin-bottom: 50px;
     line-height: 1.75;
-    font-size: 1.25em;
+    font-size: 1.125em;
   }
   .journey-container .pathway {
     content: "";
     background-image: url("./about-images/pathway.png");
     background-size: contain;
     background-repeat: no-repeat;
+    background-position: center;
     margin: 0 auto;
-    width: 600px;
-    height: 350px;
-    margin-top: 25px;
-    margin-bottom: 25px;
+    width: 100%;
+    max-width: 600px;
+    height: 40vw;
+    max-height: 350px;
+    margin-bottom: 50px;
   }
   .journey-container a {
     border-radius: 7.5px;
@@ -250,10 +253,10 @@
     margin-bottom: -5px;
   }
 }
-@media screen and (min-width: 0px) {
+@media screen and (min-width: 0px) and (max-width: 1199px) {
   #sets-apart {
     background-color: white;
-    width: 80%;
+    width: 90%;
     max-width: 1000px;
     margin: 0 auto;
   }
@@ -261,17 +264,20 @@
     position: relative;
     max-width: 1000px;
     margin: 0 auto;
-    text-align: center;
+    text-align: left;
   }
   .sets-apart-header h1 {
+    max-width: 100%;
+    margin: 0 auto;
     color: black;
-    font-size: 3.5em;
-    margin-bottom: 5px;
+    font-size: 3.125em;
     margin-top: 50px;
+    line-height: 1.25;
+    margin-bottom: 25px;
   }
   .sets-apart-header h1 span {
     color: #7fd378;
-    line-height: 1.5;
+    line-height: 1;
   }
   .sets-apart-header p {
     max-width: 850px;
@@ -279,7 +285,11 @@
     color: black;
     margin-bottom: 100px;
     line-height: 1.75;
-    font-size: 1.25em;
+    font-size: 1.125em;
+  }
+  .sets-apart-container {
+    display: flex;
+    flex-direction: column-reverse;
   }
   .sets-items h2 {
     font-size: 2em;

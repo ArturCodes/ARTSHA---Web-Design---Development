@@ -259,16 +259,16 @@ $white: white;
         max-width: 850px;
         display: flex;
         flex-direction: column;
-        margin-bottom: 25px;
         width: 90%;
         margin: 0 auto;
+        margin-bottom: 75px;
+        margin-top: 50px;
 
         p:first-child {
             color: $green;
             font-weight: 700;
-            font-size: 1em;
+            font-size: 1.125em;
             margin-bottom: 0px;
-            margin-top: 75px;
         }
 
         h1 {
@@ -276,13 +276,14 @@ $white: white;
             color: $white;
             font-size: 2em;
             margin-bottom: 25px;
+            line-height: 1.25;
         }
 
         p {
             color: $white;
             margin-bottom: 50px;
             line-height: 1.75;
-            font-size: 1.25em;
+            font-size: 1.125em;
         }
 
         .pathway {
@@ -290,11 +291,13 @@ $white: white;
             background-image: url('./about-images/pathway.png');
             background-size: contain;
             background-repeat: no-repeat;
+            background-position: center;
             margin: 0 auto;
-            width: 600px;
-            height: 350px;
-            margin-top: 25px;
-            margin-bottom: 25px;
+            width: 100%;
+            max-width: 600px;
+            height: 40vw;
+            max-height: 350px;
+            margin-bottom: 50px;
         }
 
         a {
@@ -333,10 +336,10 @@ $white: white;
 //   What sets ARTSHA apart   
 // ==============================
 
-@media screen and (min-width: 0px) {
+@media screen and (min-width: 0px) and (max-width: 1199px) {
     #sets-apart {
         background-color: $white;
-        width: 80%;
+        width: 90%;
         max-width: 1000px;
         margin: 0 auto;
     }
@@ -345,17 +348,20 @@ $white: white;
         position: relative;
         max-width: 1000px;
         margin: 0 auto;
-        text-align: center;
+        text-align: left;
 
         h1 {
+            max-width: 100%;
+            margin: 0 auto;
             color: $black;
-            font-size: 3.5em;
-            margin-bottom: 5px;
+            font-size: 3.125em;
             margin-top: 50px;
+            line-height: 1.25;
+            margin-bottom: 25px;
 
             span {
                 color: $green;
-                line-height: 1.5;
+                line-height: 1;
             }
         }
 
@@ -365,9 +371,14 @@ $white: white;
             color: $black;
             margin-bottom: 100px;
             line-height: 1.75;
-            font-size: 1.25em;
+            font-size: 1.125em;
         }
 
+    }
+
+    .sets-apart-container {
+        display: flex;
+        flex-direction: column-reverse;
     }
 
     .sets-items {
@@ -393,10 +404,6 @@ $white: white;
             }
         }
     }
-}
-
-@media only screen and (min-width: 0px) and (max-width: 849px) {
-    .about-hero-text {}
 }
 
 @media only screen and (min-width: 1200px) {
