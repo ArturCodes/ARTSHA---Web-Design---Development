@@ -6,7 +6,7 @@ $blue: #38C6E5;
 $green: #7fd378;
 $greenDarker: darken($green, 10%);
 $purple: lighten(#804DD4, 5%);
-$purple2: #804DD4;
+$purple2: #804DD4; //actual
 $red: #D44D4D;
 $yellow: #ffcc00;
 $black: black;
@@ -23,12 +23,12 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
     -1px -1px 1px darken(#3f3b513a, 100%);
 
 // ============================== 
-//  Hero - About
+//  Hero - services
 // ==============================
-.about-hero-girl,
-.about-hero-text,
-.about-hero-text p,
-.about-hero-text h1 {
+.services-hero-guy,
+.services-hero-text,
+.services-hero-text p,
+.services-hero-text h1 {
     transition: 0.3s;
 }
 
@@ -39,7 +39,7 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
         z-index: 500;
     }
 
-    .about-hero-text {
+    .services-hero-text {
         position: relative;
         z-index: 900;
 
@@ -54,10 +54,10 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
         }
     }
 
-    .about-hero-girl {
+    .services-hero-guy {
         position: absolute;
         content: '';
-        background-image: url('./about-images/window-girl.png');
+        background-image: url('./services-images/services-hero-guy.png');
         background-repeat: no-repeat;
         background-size: contain;
         height: 100%;
@@ -70,7 +70,7 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
         flex-direction: column;
     }
 
-    .about-hero-text {
+    .services-hero-text {
         width: 90%;
         max-width: 500px;
         margin: 0 auto;
@@ -87,7 +87,7 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
         }
     }
 
-    .about-hero-girl {
+    .services-hero-guy {
         display: none;
     }
 }
@@ -99,7 +99,7 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
         margin-bottom: -350px;
     }
 
-    .about-hero-text {
+    .services-hero-text {
         min-height: 500px;
     }
 }
@@ -107,7 +107,7 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
 // ------------------------------
 
 @media screen and (min-width: 850px) and (max-width: 999px) {
-    .about-hero-text {
+    .services-hero-text {
         margin-left: 25px;
         margin-top: 50px;
         width: 50%;
@@ -121,7 +121,7 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
         }
     }
 
-    .about-hero-girl {
+    .services-hero-guy {
         right: -85px;
         margin-top: -30px;
         margin-left: 25px;
@@ -130,7 +130,7 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
 }
 
 @media screen and (min-width: 1000px) and (max-width: 1199px) {
-    .about-hero-text {
+    .services-hero-text {
         margin-left: 60px;
         margin-top: 75px;
         width: 50%;
@@ -146,7 +146,7 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
 
     }
 
-    .about-hero-girl {
+    .services-hero-guy {
         right: -100px;
         margin-top: -15px;
         margin-left: 25px;
@@ -155,11 +155,11 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
 }
 
 @media screen and (min-width: 1200px) and (max-width: 1349px) {
-    #about-hero {
+    #services-hero {
         margin-bottom: -475px;
     }
 
-    .about-hero-text {
+    .services-hero-text {
         margin-left: 60px;
         margin-top: 100px;
         width: 45%;
@@ -173,7 +173,7 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
         }
     }
 
-    .about-hero-girl {
+    .services-hero-guy {
         right: -50px;
         margin-top: 0px;
         margin-left: 25px;
@@ -182,7 +182,7 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
 }
 
 @media screen and (min-width: 1350px) and (max-width: 1499px) {
-    .about-hero-text {
+    .services-hero-text {
 
         margin-left: 75px;
         margin-top: 125px;
@@ -198,7 +198,7 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
 
     }
 
-    .about-hero-girl {
+    .services-hero-guy {
         right: 0px;
         margin-top: 25px;
         margin-left: 25px;
@@ -207,7 +207,7 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
 }
 
 @media screen and (min-width: 1500px) and (max-width: 1699px) {
-    .about-hero-text {
+    .services-hero-text {
         margin-left: 125px;
         margin-top: 125px;
         width: 50%;
@@ -221,7 +221,7 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
         }
     }
 
-    .about-hero-girl {
+    .services-hero-guy {
         right: -25px;
         margin-top: 25px;
         width: 850px;
@@ -229,7 +229,7 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
 }
 
 @media screen and (min-width: 1700px) {
-    .about-hero-text {
+    .services-hero-text {
         margin-left: 125px;
         margin-top: 150px;
         width: 50%;
@@ -243,7 +243,7 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
         }
     }
 
-    .about-hero-girl {
+    .services-hero-guy {
         right: -25px;
         margin-top: 50px;
         width: 1000px;
@@ -298,7 +298,7 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
 
         .pathway {
             content: '';
-            background-image: url('./about-images/pathway.png');
+            background-image: url('./services-images/pathway.png');
             background-size: contain;
             background-repeat: no-repeat;
             background-position: center;
@@ -642,12 +642,12 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
         }
 
         // ACTIVE (width: 100%)
-        .about a::after {
+        .services a::after {
             width: 100%;
             background-color: $green;
         }
 
-        .about a:hover {
+        .services a:hover {
             color: $green;
         }
 
@@ -734,7 +734,7 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
             &::before {
                 display: block;
                 content: '';
-                background-image: url('./about-images/leaves.png');
+                background-image: url('./services-images/leaves.png');
                 background-repeat: no-repeat;
                 background-size: contain;
                 height: 125px;
@@ -772,7 +772,7 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
                 a:nth-child(1)::before {
                     content: '';
                     position: absolute;
-                    background-image: url('./about-images/mail.png');
+                    background-image: url('./services-images/mail.png');
                     background-size: contain;
                     background-repeat: no-repeat;
                     width: 20px;
@@ -784,7 +784,7 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
                 a:nth-child(2)::before {
                     content: '';
                     position: absolute;
-                    background-image: url('./about-images/phone.png');
+                    background-image: url('./services-images/phone.png');
                     background-size: contain;
                     background-repeat: no-repeat;
                     width: 19px;
@@ -820,7 +820,7 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
             &::before {
                 display: block;
                 content: '';
-                background-image: url('./about-images/leaves.png');
+                background-image: url('./services-images/leaves.png');
                 background-repeat: no-repeat;
                 background-size: contain;
                 height: 125px;
@@ -858,7 +858,7 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
                         text-underline-offset: 2px;
                     }
 
-                    .about:hover {
+                    .services:hover {
                         text-decoration: 3px solid #7fd378 underline;
                         text-underline-offset: 2px;
                     }
@@ -892,7 +892,7 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
             &::after {
                 display: block;
                 content: '';
-                background-image: url('./about-images/leaves2.png');
+                background-image: url('./services-images/leaves2.png');
                 background-repeat: no-repeat;
                 background-size: contain;
                 height: 125px;
@@ -928,7 +928,7 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
                 display: block;
                 content: '';
                 position: absolute;
-                background-image: url('./about-images/mail.png');
+                background-image: url('./services-images/mail.png');
                 background-size: contain;
                 background-repeat: no-repeat;
                 width: 20px;
@@ -942,7 +942,7 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
                 display: block;
                 content: '';
                 position: absolute;
-                background-image: url('./about-images/phone.png');
+                background-image: url('./services-images/phone.png');
                 background-size: contain;
                 background-repeat: no-repeat;
                 width: 19px;
@@ -991,12 +991,12 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
         }
 
         // ACTIVE (width: 100%)
-        .about a::after {
+        .services a::after {
             width: 100%;
             background-color: $green;
         }
 
-        .about a:hover {
+        .services a:hover {
             color: $green;
         }
 
@@ -1066,7 +1066,7 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
             &::before {
                 display: block;
                 content: '';
-                background-image: url('./about-images/leaves.png');
+                background-image: url('./services-images/leaves.png');
                 background-repeat: no-repeat;
                 background-size: contain;
                 height: 125px;
@@ -1104,7 +1104,7 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
                         text-underline-offset: 2px;
                     }
 
-                    .about:hover {
+                    .services:hover {
                         text-decoration: 3px solid #7fd378 underline;
                         text-underline-offset: 2px;
                     }
@@ -1167,12 +1167,12 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
                 color: $blue;
             }
 
-            .about a::after {
+            .services a::after {
                 width: 100%;
                 background-color: $green;
             }
 
-            .about a:hover {
+            .services a:hover {
                 color: $green;
             }
 
@@ -1214,7 +1214,7 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
             &::after {
                 display: block;
                 content: '';
-                background-image: url('./about-images/leaves2.png');
+                background-image: url('./services-images/leaves2.png');
                 background-repeat: no-repeat;
                 background-size: contain;
                 height: 125px;
@@ -1259,7 +1259,7 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
                 display: block;
                 content: '';
                 position: absolute;
-                background-image: url('./about-images/mail.png');
+                background-image: url('./services-images/mail.png');
                 background-size: contain;
                 background-repeat: no-repeat;
                 width: 20px;
@@ -1272,7 +1272,7 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
                 display: block;
                 content: '';
                 position: absolute;
-                background-image: url('./about-images/phone.png');
+                background-image: url('./services-images/phone.png');
                 background-size: contain;
                 background-repeat: no-repeat;
                 width: 19px;

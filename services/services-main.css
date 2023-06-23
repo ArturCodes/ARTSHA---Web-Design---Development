@@ -1,7 +1,7 @@
-.about-hero-girl,
-.about-hero-text,
-.about-hero-text p,
-.about-hero-text h1 {
+.services-hero-guy,
+.services-hero-text,
+.services-hero-text p,
+.services-hero-text h1 {
   transition: 0.3s;
 }
 
@@ -11,22 +11,22 @@
     overflow: visible;
     z-index: 500;
   }
-  .about-hero-text {
+  .services-hero-text {
     position: relative;
     z-index: 900;
   }
-  .about-hero-text p {
+  .services-hero-text p {
     color: #5bc652;
     font-weight: 600;
   }
-  .about-hero-text h1 {
+  .services-hero-text h1 {
     line-height: 1.5;
     font-weight: 600;
   }
-  .about-hero-girl {
+  .services-hero-guy {
     position: absolute;
     content: "";
-    background-image: url("./about-images/window-girl.png");
+    background-image: url("./services-images/services-hero-guy.png");
     background-repeat: no-repeat;
     background-size: contain;
     height: 100%;
@@ -37,21 +37,21 @@
     display: flex;
     flex-direction: column;
   }
-  .about-hero-text {
+  .services-hero-text {
     width: 90%;
     max-width: 500px;
     margin: 0 auto;
     text-align: center;
     margin-bottom: 25px;
   }
-  .about-hero-text p {
+  .services-hero-text p {
     font-weight: 600;
     font-size: 1.25em;
   }
-  .about-hero-text h1 {
+  .services-hero-text h1 {
     font-size: 1.5em;
   }
-  .about-hero-girl {
+  .services-hero-guy {
     display: none;
   }
 }
@@ -61,23 +61,23 @@
     flex-direction: row;
     margin-bottom: -350px;
   }
-  .about-hero-text {
+  .services-hero-text {
     min-height: 500px;
   }
 }
 @media screen and (min-width: 850px) and (max-width: 999px) {
-  .about-hero-text {
+  .services-hero-text {
     margin-left: 25px;
     margin-top: 50px;
     width: 50%;
   }
-  .about-hero-text p {
+  .services-hero-text p {
     font-size: 1.5em;
   }
-  .about-hero-text h1 {
+  .services-hero-text h1 {
     font-size: 2em;
   }
-  .about-hero-girl {
+  .services-hero-guy {
     right: -85px;
     margin-top: -30px;
     margin-left: 25px;
@@ -85,19 +85,19 @@
   }
 }
 @media screen and (min-width: 1000px) and (max-width: 1199px) {
-  .about-hero-text {
+  .services-hero-text {
     margin-left: 60px;
     margin-top: 75px;
     width: 50%;
     line-height: 1.5;
   }
-  .about-hero-text p {
+  .services-hero-text p {
     font-size: 1.75em;
   }
-  .about-hero-text h1 {
+  .services-hero-text h1 {
     font-size: 2.25em;
   }
-  .about-hero-girl {
+  .services-hero-guy {
     right: -100px;
     margin-top: -15px;
     margin-left: 25px;
@@ -105,21 +105,21 @@
   }
 }
 @media screen and (min-width: 1200px) and (max-width: 1349px) {
-  #about-hero {
+  #services-hero {
     margin-bottom: -475px;
   }
-  .about-hero-text {
+  .services-hero-text {
     margin-left: 60px;
     margin-top: 100px;
     width: 45%;
   }
-  .about-hero-text p {
+  .services-hero-text p {
     font-size: 2em;
   }
-  .about-hero-text h1 {
+  .services-hero-text h1 {
     font-size: 2.5em;
   }
-  .about-hero-girl {
+  .services-hero-guy {
     right: -50px;
     margin-top: 0px;
     margin-left: 25px;
@@ -127,18 +127,18 @@
   }
 }
 @media screen and (min-width: 1350px) and (max-width: 1499px) {
-  .about-hero-text {
+  .services-hero-text {
     margin-left: 75px;
     margin-top: 125px;
     width: 45%;
   }
-  .about-hero-text p {
+  .services-hero-text p {
     font-size: 2.25em;
   }
-  .about-hero-text h1 {
+  .services-hero-text h1 {
     font-size: 2.75em;
   }
-  .about-hero-girl {
+  .services-hero-guy {
     right: 0px;
     margin-top: 25px;
     margin-left: 25px;
@@ -146,36 +146,36 @@
   }
 }
 @media screen and (min-width: 1500px) and (max-width: 1699px) {
-  .about-hero-text {
+  .services-hero-text {
     margin-left: 125px;
     margin-top: 125px;
     width: 50%;
   }
-  .about-hero-text p {
+  .services-hero-text p {
     font-size: 2.5em;
   }
-  .about-hero-text h1 {
+  .services-hero-text h1 {
     font-size: 3.25em;
   }
-  .about-hero-girl {
+  .services-hero-guy {
     right: -25px;
     margin-top: 25px;
     width: 850px;
   }
 }
 @media screen and (min-width: 1700px) {
-  .about-hero-text {
+  .services-hero-text {
     margin-left: 125px;
     margin-top: 150px;
     width: 50%;
   }
-  .about-hero-text p {
+  .services-hero-text p {
     font-size: 2.75em;
   }
-  .about-hero-text h1 {
+  .services-hero-text h1 {
     font-size: 3.75em;
   }
-  .about-hero-girl {
+  .services-hero-guy {
     right: -25px;
     margin-top: 50px;
     width: 1000px;
@@ -219,7 +219,7 @@
   }
   .journey-container .pathway {
     content: "";
-    background-image: url("./about-images/pathway.png");
+    background-image: url("./services-images/pathway.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -488,11 +488,11 @@
   .footer-links .home a:hover {
     color: #38C6E5;
   }
-  .footer-links .about a::after {
+  .footer-links .services a::after {
     width: 100%;
     background-color: #7fd378;
   }
-  .footer-links .about a:hover {
+  .footer-links .services a:hover {
     color: #7fd378;
   }
   .footer-links .services a::after {
@@ -560,7 +560,7 @@
   .footer-text .footer-contact::before {
     display: block;
     content: "";
-    background-image: url("./about-images/leaves.png");
+    background-image: url("./services-images/leaves.png");
     background-repeat: no-repeat;
     background-size: contain;
     height: 125px;
@@ -593,7 +593,7 @@
   .footer-text .footer-contact div a:nth-child(1)::before {
     content: "";
     position: absolute;
-    background-image: url("./about-images/mail.png");
+    background-image: url("./services-images/mail.png");
     background-size: contain;
     background-repeat: no-repeat;
     width: 20px;
@@ -604,7 +604,7 @@
   .footer-text .footer-contact div a:nth-child(2)::before {
     content: "";
     position: absolute;
-    background-image: url("./about-images/phone.png");
+    background-image: url("./services-images/phone.png");
     background-size: contain;
     background-repeat: no-repeat;
     width: 19px;
@@ -633,7 +633,7 @@
   .footer-text .footer-navigation::before {
     display: block;
     content: "";
-    background-image: url("./about-images/leaves.png");
+    background-image: url("./services-images/leaves.png");
     background-repeat: no-repeat;
     background-size: contain;
     height: 125px;
@@ -666,7 +666,7 @@
             text-decoration: 3px solid #7fd378 underline;
     text-underline-offset: 2px;
   }
-  .footer-text .footer-navigation ul li .about:hover {
+  .footer-text .footer-navigation ul li .services:hover {
     -webkit-text-decoration: 3px solid #7fd378 underline;
             text-decoration: 3px solid #7fd378 underline;
     text-underline-offset: 2px;
@@ -696,7 +696,7 @@
   .footer-text .footer-contact::after {
     display: block;
     content: "";
-    background-image: url("./about-images/leaves2.png");
+    background-image: url("./services-images/leaves2.png");
     background-repeat: no-repeat;
     background-size: contain;
     height: 125px;
@@ -728,7 +728,7 @@
     display: block;
     content: "";
     position: absolute;
-    background-image: url("./about-images/mail.png");
+    background-image: url("./services-images/mail.png");
     background-size: contain;
     background-repeat: no-repeat;
     width: 20px;
@@ -740,7 +740,7 @@
     display: block;
     content: "";
     position: absolute;
-    background-image: url("./about-images/phone.png");
+    background-image: url("./services-images/phone.png");
     background-size: contain;
     background-repeat: no-repeat;
     width: 19px;
@@ -776,11 +776,11 @@
   .footer-links .home a:hover {
     color: #38C6E5;
   }
-  .footer-links .about a::after {
+  .footer-links .services a::after {
     width: 100%;
     background-color: #7fd378;
   }
-  .footer-links .about a:hover {
+  .footer-links .services a:hover {
     color: #7fd378;
   }
   .footer-links .services a::after {
@@ -831,7 +831,7 @@
   .footer-text .footer-navigation::before {
     display: block;
     content: "";
-    background-image: url("./about-images/leaves.png");
+    background-image: url("./services-images/leaves.png");
     background-repeat: no-repeat;
     background-size: contain;
     height: 125px;
@@ -865,7 +865,7 @@
             text-decoration: 3px solid #38C6E5 underline;
     text-underline-offset: 2px;
   }
-  .footer-text .footer-navigation ul li .about:hover {
+  .footer-text .footer-navigation ul li .services:hover {
     -webkit-text-decoration: 3px solid #7fd378 underline;
             text-decoration: 3px solid #7fd378 underline;
     text-underline-offset: 2px;
@@ -914,11 +914,11 @@
   .footer-text .footer-links .home a:hover {
     color: #38C6E5;
   }
-  .footer-text .footer-links .about a::after {
+  .footer-text .footer-links .services a::after {
     width: 100%;
     background-color: #7fd378;
   }
-  .footer-text .footer-links .about a:hover {
+  .footer-text .footer-links .services a:hover {
     color: #7fd378;
   }
   .footer-text .footer-links .services a::after {
@@ -949,7 +949,7 @@
   .footer-text .footer-contact::after {
     display: block;
     content: "";
-    background-image: url("./about-images/leaves2.png");
+    background-image: url("./services-images/leaves2.png");
     background-repeat: no-repeat;
     background-size: contain;
     height: 125px;
@@ -987,7 +987,7 @@
     display: block;
     content: "";
     position: absolute;
-    background-image: url("./about-images/mail.png");
+    background-image: url("./services-images/mail.png");
     background-size: contain;
     background-repeat: no-repeat;
     width: 20px;
@@ -999,7 +999,7 @@
     display: block;
     content: "";
     position: absolute;
-    background-image: url("./about-images/phone.png");
+    background-image: url("./services-images/phone.png");
     background-size: contain;
     background-repeat: no-repeat;
     width: 19px;
