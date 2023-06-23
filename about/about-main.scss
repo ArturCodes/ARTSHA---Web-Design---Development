@@ -12,6 +12,16 @@ $yellow: #ffcc00;
 $black: black;
 $white: white;
 
+$box-shadow: 1px 1px 3px #3f3b510e,
+    1px -1px 3px #3f3b510e,
+    -1px 1px 3px #3f3b510e,
+    -1px -1px 3px #3f3b510e;
+
+$box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
+    1px -1px 1px darken(#3f3b513a, 100%),
+    -1px 1px 1px darken(#3f3b513a, 100%),
+    -1px -1px 1px darken(#3f3b513a, 100%);
+
 // ============================== 
 //  Hero - About
 // ==============================
@@ -336,7 +346,7 @@ $white: white;
 //   What sets ARTSHA apart   
 // ==============================
 
-@media screen and (min-width: 0px) and (max-width: 1199px) {
+@media screen and (min-width: 0px) and (max-width: 849px) {
     #sets-apart {
         background-color: $white;
         width: 90%;
@@ -346,30 +356,33 @@ $white: white;
 
     .sets-apart-header {
         position: relative;
-        max-width: 1000px;
         margin: 0 auto;
         text-align: left;
+        text-align: center;
 
         h1 {
-            max-width: 100%;
             margin: 0 auto;
             color: $black;
             font-size: 3.125em;
-            margin-top: 50px;
+            margin-top: 75px;
             line-height: 1.25;
             margin-bottom: 25px;
 
-            span {
+            .no-wrap {
+                white-space: nowrap;
+            }
+
+            .green {
                 color: $green;
-                line-height: 1;
+                line-height: 1.25;
             }
         }
 
         p {
-            max-width: 850px;
+            max-width: 700px;
             margin: 0 auto;
             color: $black;
-            margin-bottom: 100px;
+            margin-bottom: 50px;
             line-height: 1.75;
             font-size: 1.125em;
         }
@@ -379,15 +392,16 @@ $white: white;
     .sets-apart-container {
         display: flex;
         flex-direction: column-reverse;
+        margin: 0 auto;
     }
 
     .sets-items {
         h2 {
             font-size: 2em;
             border-left: 5px solid $green;
-            padding-left: 7.5px;
+            padding-left: 12.5px;
             margin-bottom: 15px;
-            line-height: 1.5;
+            line-height: 1.25;
         }
 
         p {
@@ -400,8 +414,55 @@ $white: white;
             }
 
             &:last-child {
-                margin-bottom: 50px;
+                margin-bottom: 75px;
             }
+        }
+    }
+
+    .sets-left {
+        margin: 0 auto;
+    }
+
+    .sets-right {
+        text-align: center;
+
+        img {
+            width: 90%;
+            max-width: 400px;
+            margin-bottom: 50px;
+        }
+    }
+
+    .sets-buttons {
+        margin-top: 75px;
+        margin-bottom: 100px;
+
+        a {
+            padding: 15px 30px;
+            border-radius: 7.5px;
+            color: #000000;
+            border-color: 1px solid lightgray;
+            min-width: 125px;
+            transition: 0.2s;
+            text-align: center;
+
+            &:hover {
+                box-shadow: $box-shadow-hover;
+            }
+        }
+
+        .contact-btn {
+            background-color: $yellow;
+            box-shadow:
+                1px 2px 0 darken($yellow, 5%),
+                2px 4px 6px darken($background, 25%);
+            margin-right: 10px;
+        }
+
+        .services-btn {
+            background-color: $white;
+            box-shadow: 1px 2px 0 darken($white, 5%), 2px 4px 6px darken($background, 25%);
+            margin-left: 10px;
         }
     }
 }
