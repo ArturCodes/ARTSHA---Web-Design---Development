@@ -16,7 +16,7 @@
     z-index: 900;
   }
   .services-hero-text p {
-    color: #5bc652;
+    color: #804DD4;
     font-weight: 600;
   }
   .services-hero-text h1 {
@@ -464,7 +464,7 @@
     max-height: 110px;
   }
   .footer-bottom {
-    background-color: #7fd378;
+    background-color: #8f62d9;
     height: 25px;
     display: flex;
     justify-content: center;
@@ -488,14 +488,14 @@
   .footer-links .home a:hover {
     color: #38C6E5;
   }
-  .footer-links .services a::after {
-    width: 100%;
+  .footer-links .about a::after {
     background-color: #7fd378;
   }
-  .footer-links .services a:hover {
+  .footer-links .about a:hover {
     color: #7fd378;
   }
   .footer-links .services a::after {
+    width: 100%;
     background-color: #8f62d9;
   }
   .footer-links .services a:hover {
@@ -536,7 +536,7 @@
     color: white;
     margin-bottom: 15px;
     padding-bottom: 5px;
-    border-bottom: 4px solid #7fd378;
+    border-bottom: 4px solid #8f62d9;
   }
   .footer-text .footer-navigation ul {
     display: flex;
@@ -571,7 +571,7 @@
   }
   .footer-text .footer-contact h2 {
     color: white;
-    border-bottom: 4px solid #7fd378;
+    border-bottom: 4px solid #8f62d9;
     margin-bottom: 25px;
     padding-bottom: 5px;
   }
@@ -623,7 +623,7 @@
     overflow: visible;
   }
   .footer-text::after {
-    border-bottom: 4px solid #3BD3F4;
+    border-bottom: 4px solid #8f62d9;
   }
   .footer-text .footer-navigation {
     width: 70vw;
@@ -646,7 +646,7 @@
     color: white;
     margin-bottom: 15px;
     padding-bottom: 5px;
-    border-bottom: 4px solid #7fd378;
+    border-bottom: 4px solid #8f62d9;
     padding-left: 110px;
   }
   .footer-text .footer-navigation ul {
@@ -709,7 +709,7 @@
     color: white;
     margin-bottom: 15px;
     padding-bottom: 5px;
-    border-bottom: 4px solid #7fd378;
+    border-bottom: 4px solid #8f62d9;
     padding-left: 75px;
   }
   .footer-text .footer-contact div {
@@ -876,8 +876,8 @@
     text-underline-offset: 2px;
   }
   .footer-text .footer-navigation ul li .blog:hover {
-    -webkit-text-decoration: 3px solid #e38025 underline;
-            text-decoration: 3px solid #e38025 underline;
+    -webkit-text-decoration: 3px solid #D44D4D underline;
+            text-decoration: 3px solid #D44D4D underline;
     text-underline-offset: 2px;
   }
   .footer-text .footer-navigation ul li .contact:hover {

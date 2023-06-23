@@ -44,7 +44,7 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
         z-index: 900;
 
         p {
-            color: $greenDarker;
+            color: $purple2;
             font-weight: 600;
         }
 
@@ -611,7 +611,7 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
     }
 
     .footer-bottom {
-        background-color: $green;
+        background-color: $purple;
         height: 25px;
         display: flex;
         justify-content: center;
@@ -641,17 +641,17 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
             color: $blue;
         }
 
-        // ACTIVE (width: 100%)
-        .services a::after {
-            width: 100%;
+        .about a::after {
             background-color: $green;
         }
 
-        .services a:hover {
+        .about a:hover {
             color: $green;
         }
 
+        // ACTIVE (width: 100%)
         .services a::after {
+            width: 100%;
             background-color: $purple;
         }
 
@@ -704,7 +704,7 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
                 color: white;
                 margin-bottom: 15px;
                 padding-bottom: 5px;
-                border-bottom: 4px solid $green;
+                border-bottom: 4px solid $purple;
             }
 
             ul {
@@ -747,7 +747,7 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
 
             h2 {
                 color: white;
-                border-bottom: 4px solid $green;
+                border-bottom: 4px solid $purple;
                 margin-bottom: 25px;
                 padding-bottom: 5px;
             }
@@ -809,7 +809,7 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
         overflow: visible;
 
         &::after {
-            border-bottom: 4px solid #3BD3F4;
+            border-bottom: 4px solid $purple;
         }
 
         .footer-navigation {
@@ -835,7 +835,7 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
                 color: white;
                 margin-bottom: 15px;
                 padding-bottom: 5px;
-                border-bottom: 4px solid $green;
+                border-bottom: 4px solid $purple;
                 padding-left: 110px;
             }
 
@@ -906,7 +906,7 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
                 color: white;
                 margin-bottom: 15px;
                 padding-bottom: 5px;
-                border-bottom: 4px solid $green;
+                border-bottom: 4px solid $purple;
                 padding-left: 75px;
             }
 
@@ -1100,12 +1100,12 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
                     }
 
                     .home {
-                        text-decoration: 3px solid #38C6E5 underline;
+                        text-decoration: 3px solid $blue underline;
                         text-underline-offset: 2px;
                     }
 
                     .services:hover {
-                        text-decoration: 3px solid #7fd378 underline;
+                        text-decoration: 3px solid $green underline;
                         text-underline-offset: 2px;
                     }
 
@@ -1115,7 +1115,7 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
                     }
 
                     .blog:hover {
-                        text-decoration: 3px solid #e38025 underline;
+                        text-decoration: 3px solid $red underline;
                         text-underline-offset: 2px;
                     }
 
