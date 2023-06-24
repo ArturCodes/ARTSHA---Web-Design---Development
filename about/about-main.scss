@@ -524,19 +524,17 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
     }
 
     .sets-left {
-        width: 80%;
         max-width: 600px;
     }
 
     .sets-right {
         left: 0;
-        width: 50%;
         position: relative;
         margin-top: 150px;
 
         img {
             position: absolute;
-            width: clamp(575px, 40vw, 650px);
+            width: 575px;
         }
     }
 
@@ -573,6 +571,7 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
         }
     }
 }
+
 
 
 // ==============================
@@ -794,6 +793,7 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
     }
 
 }
+
 
 @media only screen and (min-width: 850px) and (max-width: 1199px) {
 
