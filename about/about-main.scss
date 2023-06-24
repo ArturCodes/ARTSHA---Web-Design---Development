@@ -25,9 +25,6 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
 // ============================== 
 //  Hero - About
 // ==============================
-// .about-hero-girl {
-//     transition: 0.3s;
-// }
 
 @media screen and (min-width: 0px) {
     #hero {
@@ -102,8 +99,7 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
     }
 }
 
-// ------------------------------
-
+////////////////////////////////////////
 @media screen and (min-width: 850px) and (max-width: 999px) {
     .about-hero-text {
         margin-left: 25px;
@@ -184,14 +180,14 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
 
         margin-left: 75px;
         margin-top: 125px;
-        width: 45%;
+        width: 40%;
 
         p {
             font-size: 2em;
         }
 
         h1 {
-            font-size: 2.75em;
+            font-size: 3.5em;
         }
 
     }
@@ -208,20 +204,20 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
     .about-hero-text {
         margin-left: 125px;
         margin-top: 125px;
-        width: 50%;
+        width: 40%;
 
         p {
-            font-size: 2.5em;
+            font-size: 2.25em;
         }
 
         h1 {
-            font-size: 3.25em;
+            font-size: 3.75em;
         }
     }
 
     .about-hero-girl {
         right: -25px;
-        margin-top: 25px;
+        margin-top: 50px;
         width: 850px;
     }
 }
@@ -230,14 +226,15 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
     .about-hero-text {
         margin-left: 125px;
         margin-top: 150px;
-        width: 50%;
+        width: 40%;
 
         p {
-            font-size: 2.75em;
+            font-size: 2.5em;
         }
 
         h1 {
-            font-size: 3.75em;
+            font-size: 4em;
+            line-height: 1.5;
         }
     }
 

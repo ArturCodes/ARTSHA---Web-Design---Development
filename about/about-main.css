@@ -124,13 +124,13 @@
   .about-hero-text {
     margin-left: 75px;
     margin-top: 125px;
-    width: 45%;
+    width: 40%;
   }
   .about-hero-text p {
     font-size: 2em;
   }
   .about-hero-text h1 {
-    font-size: 2.75em;
+    font-size: 3.5em;
   }
   .about-hero-girl {
     right: 0px;
@@ -143,17 +143,17 @@
   .about-hero-text {
     margin-left: 125px;
     margin-top: 125px;
-    width: 50%;
+    width: 40%;
   }
   .about-hero-text p {
-    font-size: 2.5em;
+    font-size: 2.25em;
   }
   .about-hero-text h1 {
-    font-size: 3.25em;
+    font-size: 3.75em;
   }
   .about-hero-girl {
     right: -25px;
-    margin-top: 25px;
+    margin-top: 50px;
     width: 850px;
   }
 }
@@ -161,13 +161,14 @@
   .about-hero-text {
     margin-left: 125px;
     margin-top: 150px;
-    width: 50%;
+    width: 40%;
   }
   .about-hero-text p {
-    font-size: 2.75em;
+    font-size: 2.5em;
   }
   .about-hero-text h1 {
-    font-size: 3.75em;
+    font-size: 4em;
+    line-height: 1.5;
   }
   .about-hero-girl {
     right: -25px;
