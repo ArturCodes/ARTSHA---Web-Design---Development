@@ -556,7 +556,7 @@
   .footer-text .footer-contact::before {
     display: block;
     content: "";
-    background-image: url("./about-images/leaves.png");
+    background-image: url("./about-images/leaves2.png");
     background-repeat: no-repeat;
     background-size: contain;
     height: 125px;
@@ -827,7 +827,7 @@
   .footer-text .footer-navigation::before {
     display: block;
     content: "";
-    background-image: url("./about-images/leaves.png");
+    background-image: url("./about-images/leaves2.png");
     background-repeat: no-repeat;
     background-size: contain;
     height: 125px;
@@ -945,7 +945,7 @@
   .footer-text .footer-contact::after {
     display: block;
     content: "";
-    background-image: url("./about-images/leaves2.png");
+    background-image: url("./about-images/leaves.png");
     background-repeat: no-repeat;
     background-size: contain;
     height: 125px;
