@@ -322,7 +322,7 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
             box-shadow: 1px 1px 5px #1a1a1a;
 
             &:hover {
-                background-color: white;
+                background-color: $white;
                 color: #1a1a1a;
                 transition: 0.3s;
                 border: 1px solid #1a1a1a;
@@ -623,7 +623,7 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
         }
 
         a:hover {
-            color: white;
+            color: $white;
             transition: 0.2s;
         }
     }
@@ -681,7 +681,7 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
         .email:hover,
         .phone:hover {
             transition: 0.2s;
-            color: $green;
+            color: $purple;
         }
     }
 }
@@ -764,7 +764,7 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
                     margin-bottom: 20px;
 
                     &:hover {
-                        text-decoration: solid 1px $green;
+                        text-decoration: solid 1px $purple;
                     }
 
                 }
@@ -859,7 +859,7 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
                     }
 
                     .services:hover {
-                        text-decoration: 3px solid #7fd378 underline;
+                        text-decoration: 3px solid $purple underline;
                         text-underline-offset: 2px;
                     }
 
@@ -869,7 +869,7 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
                     }
 
                     .blog:hover {
-                        text-decoration: 3px solid #e38025 underline;
+                        text-decoration: 3px solid $red underline;
                         text-underline-offset: 2px;
                     }
 
@@ -903,7 +903,7 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
             }
 
             h2 {
-                color: white;
+                color: $white;
                 margin-bottom: 15px;
                 padding-bottom: 5px;
                 border-bottom: 4px solid $purple;
@@ -919,7 +919,7 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
             }
 
             a {
-                color: white;
+                color: $white;
                 margin-left: 40px;
                 margin-bottom: 20px;
             }
@@ -1031,7 +1031,7 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
 
             &:hover {
                 transition: 0.2s;
-                color: $green;
+                color: $purple;
             }
         }
     }
@@ -1055,7 +1055,7 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
         overflow: visible;
 
         &::after {
-            border-bottom: 4px solid #3BD3F4;
+            border-bottom: 4px solid $blue;
         }
 
         .footer-navigation {
@@ -1081,7 +1081,7 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
 
                 margin-bottom: 15px;
                 padding-bottom: 5px;
-                border-bottom: 4px solid $green;
+                border-bottom: 4px solid $purple;
                 padding-left: 110px;
             }
 
@@ -1095,7 +1095,7 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
                     margin: 2.5px 12.5px;
 
                     a {
-                        color: white;
+                        color: $white;
                         padding: 5px;
                     }
 
@@ -1225,10 +1225,10 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
             }
 
             h2 {
-                color: white;
+                color: $white;
                 margin-bottom: 15px;
                 padding-bottom: 5px;
-                border-bottom: 4px solid $green;
+                border-bottom: 4px solid $purple;
                 padding-left: 75px;
             }
 
@@ -1242,7 +1242,7 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
             }
 
             a {
-                color: white;
+                color: $white;
                 margin-left: 40px;
                 position: relative;
                 margin-bottom: 15px;
@@ -1250,7 +1250,7 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
 
                 &:hover {
                     transition: 0.2s;
-                    color: $green;
+                    color: $purple;
                 }
 
             }

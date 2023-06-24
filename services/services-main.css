@@ -516,7 +516,7 @@
   .footer-contact .email:hover,
   .footer-contact .phone:hover {
     transition: 0.2s;
-    color: #7fd378;
+    color: #8f62d9;
   }
 }
 @media only screen and (min-width: 0px) and (max-width: 849px) {
@@ -587,8 +587,8 @@
     margin-bottom: 20px;
   }
   .footer-text .footer-contact div a:hover {
-    -webkit-text-decoration: solid 1px #7fd378;
-            text-decoration: solid 1px #7fd378;
+    -webkit-text-decoration: solid 1px #8f62d9;
+            text-decoration: solid 1px #8f62d9;
   }
   .footer-text .footer-contact div a:nth-child(1)::before {
     content: "";
@@ -667,8 +667,8 @@
     text-underline-offset: 2px;
   }
   .footer-text .footer-navigation ul li .services:hover {
-    -webkit-text-decoration: 3px solid #7fd378 underline;
-            text-decoration: 3px solid #7fd378 underline;
+    -webkit-text-decoration: 3px solid #8f62d9 underline;
+            text-decoration: 3px solid #8f62d9 underline;
     text-underline-offset: 2px;
   }
   .footer-text .footer-navigation ul li .services:hover {
@@ -677,8 +677,8 @@
     text-underline-offset: 2px;
   }
   .footer-text .footer-navigation ul li .blog:hover {
-    -webkit-text-decoration: 3px solid #e38025 underline;
-            text-decoration: 3px solid #e38025 underline;
+    -webkit-text-decoration: 3px solid #D44D4D underline;
+            text-decoration: 3px solid #D44D4D underline;
     text-underline-offset: 2px;
   }
   .footer-text .footer-navigation ul li .contact:hover {
@@ -803,7 +803,7 @@
   }
   .footer-contact a:hover {
     transition: 0.2s;
-    color: #7fd378;
+    color: #8f62d9;
   }
 }
 @media only screen and (min-width: 1200px) {
@@ -821,7 +821,7 @@
     overflow: visible;
   }
   .footer-text::after {
-    border-bottom: 4px solid #3BD3F4;
+    border-bottom: 4px solid #38C6E5;
   }
   .footer-text .footer-navigation {
     width: 70vw;
@@ -844,7 +844,7 @@
     color: white;
     margin-bottom: 15px;
     padding-bottom: 5px;
-    border-bottom: 4px solid #7fd378;
+    border-bottom: 4px solid #8f62d9;
     padding-left: 110px;
   }
   .footer-text .footer-navigation ul {
@@ -962,7 +962,7 @@
     color: white;
     margin-bottom: 15px;
     padding-bottom: 5px;
-    border-bottom: 4px solid #7fd378;
+    border-bottom: 4px solid #8f62d9;
     padding-left: 75px;
   }
   .footer-text .footer-contact div {
@@ -981,7 +981,7 @@
   }
   .footer-text .footer-contact a:hover {
     transition: 0.2s;
-    color: #7fd378;
+    color: #8f62d9;
   }
   .footer-text .footer-contact a:nth-child(1)::before {
     display: block;
