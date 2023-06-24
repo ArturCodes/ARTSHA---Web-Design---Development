@@ -120,10 +120,10 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
     }
 
     .services-hero-guy {
-        right: -85px;
-        margin-top: -30px;
-        margin-left: 25px;
+        position: absolute;
+        right: 0;
         width: 600px;
+        height: 350px;
     }
 }
 
@@ -208,7 +208,7 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
     .services-hero-text {
         margin-left: 125px;
         margin-top: 125px;
-        width: 50%;
+        width: 45%;
 
         p {
             font-size: 2.5em;
@@ -220,9 +220,10 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
     }
 
     .services-hero-guy {
-        right: -25px;
-        margin-top: 25px;
-        width: 850px;
+        right: -50px;
+        margin-top: -25px;
+        width: 900px;
+        height: 750px;
     }
 }
 
@@ -230,7 +231,7 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
     .services-hero-text {
         margin-left: 125px;
         margin-top: 150px;
-        width: 50%;
+        width: 45%;
 
         p {
             font-size: 2.75em;
@@ -242,9 +243,10 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
     }
 
     .services-hero-guy {
-        right: -25px;
-        margin-top: 50px;
+        right: -50px;
+        margin-top: 0px;
         width: 1000px;
+        height: 800px;
     }
 }
 
@@ -258,7 +260,9 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
         background-color: $background;
     }
 
+
     .standing-out-top-blob {
+        position: relative;
         background-color: $white;
         width: 100%;
     }
