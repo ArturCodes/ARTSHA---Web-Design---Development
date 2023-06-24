@@ -260,6 +260,7 @@
     margin: 0 auto;
     text-align: left;
     text-align: center;
+    margin-bottom: 75px;
   }
   .sets-apart-header h1 {
     margin: 0 auto;
@@ -348,31 +349,46 @@
     margin-left: 10px;
   }
 }
-@media only screen and (min-width: 850px) {
-  .sets-apart-header {
-    width: 75%;
+@media only screen and (min-width: 850px) and (min-width: 1199px) {
+  #sets-apart {
+    background-color: white;
+    width: 90%;
+    max-width: 1000px;
     margin: 0 auto;
+  }
+  .sets-apart-header {
+    position: relative;
+    margin: 0 auto;
+    text-align: left;
     text-align: center;
-    margin-bottom: 100px;
+    margin-bottom: 75px;
   }
   .sets-apart-header h1 {
+    margin: 0 auto;
+    color: black;
+    font-size: 3em;
     margin-top: 75px;
+    line-height: 1.25;
     margin-bottom: 25px;
-    font-size: 3.5em;
+  }
+  .sets-apart-header h1 .no-wrap {
+    white-space: nowrap;
   }
   .sets-apart-header h1 .green {
     color: #7fd378;
+    line-height: 1.25;
   }
   .sets-apart-header p {
     max-width: 700px;
     margin: 0 auto;
+    color: black;
+    margin-bottom: 50px;
+    line-height: 1.75;
+    font-size: 1.125em;
   }
   .sets-apart-container {
-    width: 70%;
     display: flex;
-    flex-direction: row;
-    position: relative;
-    justify-content: space-evenly;
+    flex-direction: column-reverse;
     margin: 0 auto;
   }
   .sets-items h2 {
@@ -395,20 +411,21 @@
     margin-bottom: 75px;
   }
   .sets-left {
-    max-width: 600px;
+    margin: 0 auto;
   }
   .sets-right {
-    left: 0;
-    position: relative;
-    margin-top: 150px;
+    text-align: center;
   }
   .sets-right img {
-    position: absolute;
-    width: 575px;
+    width: 90%;
+    max-width: 400px;
+    margin-bottom: 50px;
   }
   .sets-buttons {
+    display: flex;
     margin-top: 75px;
     margin-bottom: 100px;
+    height: auto;
   }
   .sets-buttons a {
     padding: 15px 30px;
