@@ -71,7 +71,7 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
     }
 
     .services-hero-text {
-        width: 90%;
+        width: 94%;
         max-width: 500px;
         margin: 0 auto;
         text-align: center;
@@ -79,11 +79,13 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
 
         p {
             font-weight: 600;
-            font-size: 1.25em;
+            font-size: 1.5em;
         }
 
         h1 {
-            font-size: 1.5em;
+            font-size: 1.75em;
+            line-height: 1.5;
+            margin-bottom: 25px;
         }
     }
 
@@ -96,12 +98,8 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
     #hero {
         display: flex;
         flex-direction: row;
-        margin-bottom: -350px;
     }
 
-    .services-hero-text {
-        min-height: 500px;
-    }
 }
 
 // ------------------------------
@@ -338,7 +336,7 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
     }
 }
 
-@media only screen and (min-width: 0px) and (width: 849px) {}
+@media only screen and (min-width: 850px) and (width: 1199px) {}
 
 @media only screen and (min-width: 1200px) {}
 

@@ -38,7 +38,7 @@
     flex-direction: column;
   }
   .services-hero-text {
-    width: 90%;
+    width: 94%;
     max-width: 500px;
     margin: 0 auto;
     text-align: center;
@@ -46,10 +46,12 @@
   }
   .services-hero-text p {
     font-weight: 600;
-    font-size: 1.25em;
+    font-size: 1.5em;
   }
   .services-hero-text h1 {
-    font-size: 1.5em;
+    font-size: 1.75em;
+    line-height: 1.5;
+    margin-bottom: 25px;
   }
   .services-hero-guy {
     display: none;
@@ -59,10 +61,6 @@
   #hero {
     display: flex;
     flex-direction: row;
-    margin-bottom: -350px;
-  }
-  .services-hero-text {
-    min-height: 500px;
   }
 }
 @media screen and (min-width: 850px) and (max-width: 999px) {
