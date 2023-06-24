@@ -1,7 +1,4 @@
-.about-hero-girl,
-.about-hero-text,
-.about-hero-text p,
-.about-hero-text h1 {
+.about-hero-girl {
   transition: 0.3s;
 }
 

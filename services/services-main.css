@@ -1,7 +1,4 @@
-.services-hero-guy,
-.services-hero-text,
-.services-hero-text p,
-.services-hero-text h1 {
+.services-hero-guy {
   transition: 0.3s;
 }
 
