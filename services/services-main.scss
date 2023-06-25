@@ -103,19 +103,20 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
         width: 55%;
 
         p {
-            font-size: 1.5em;
+            font-size: 1.25em;
         }
 
         h1 {
-            font-size: 2.5em;
+            font-size: 2.25em;
         }
     }
 
     .services-hero-guy {
         position: absolute;
-        right: 0;
-        width: 600px;
-        height: 350px;
+        margin-top: -25px;
+        right: -25px;
+        width: 500px;
+        height: 450px;
     }
 }
 
@@ -131,16 +132,17 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
         }
 
         h1 {
-            font-size: 2.75em;
+            font-size: 2.5em;
         }
 
     }
 
     .services-hero-guy {
-        right: -100px;
-        margin-top: -15px;
+        right: -75px;
+        margin-top: -25px;
         margin-left: 25px;
-        width: 700px;
+        width: 650px;
+        height: 500px;
     }
 }
 
@@ -165,9 +167,9 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
 
     .services-hero-guy {
         right: -50px;
-        margin-top: 0px;
+        margin-top: -25px;
         margin-left: 25px;
-        width: 700px;
+        width: 750px;
         height: 600px;
     }
 }
@@ -177,7 +179,7 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
 
         margin-left: 75px;
         margin-top: 125px;
-        width: 45%;
+        width: 50%;
 
         p {
             font-size: 2em;
@@ -190,10 +192,10 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
     }
 
     .services-hero-guy {
-        right: 0px;
-        margin-top: 25px;
+        right: -50px;
+        margin-top: -25px;
         margin-left: 25px;
-        width: 750px;
+        width: 825px;
         height: 600px;
     }
 }
@@ -202,7 +204,7 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
     .services-hero-text {
         margin-left: 125px;
         margin-top: 125px;
-        width: 45%;
+        width: 50%;
 
         p {
             font-size: 2.25em;
@@ -214,9 +216,9 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
     }
 
     .services-hero-guy {
-        right: -50px;
+        right: -75px;
         margin-top: -25px;
-        width: 850px;
+        width: 900px;
         height: 750px;
     }
 }
