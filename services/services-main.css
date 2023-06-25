@@ -161,15 +161,14 @@
 @media screen and (min-width: 1700px) {
   .services-hero-text {
     margin-left: 125px;
-    margin-top: 150px;
-    width: 45%;
+    margin-top: 125px;
+    width: 40%;
   }
   .services-hero-text p {
-    font-size: 2.5em;
+    font-size: 1.5em;
   }
   .services-hero-text h1 {
-    font-size: 3.75em;
-    line-height: 1.5;
+    font-size: 3em;
   }
   .services-hero-guy {
     right: -50px;
@@ -359,8 +358,8 @@
     margin-bottom: 25px;
     font-size: 3.5em;
   }
-  .done-differently-header h1 .green {
-    color: #7fd378;
+  .done-differently-header h1 span {
+    color: #8f62d9;
   }
   .done-differently-header p {
     max-width: 750px;

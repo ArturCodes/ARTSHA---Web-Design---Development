@@ -226,16 +226,15 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
 @media screen and (min-width: 1700px) {
     .services-hero-text {
         margin-left: 125px;
-        margin-top: 150px;
-        width: 45%;
+        margin-top: 125px;
+        width: 40%;
 
         p {
-            font-size: 2.5em;
+            font-size: 1.5em;
         }
 
         h1 {
-            font-size: 3.75em;
-            line-height: 1.5;
+            font-size: 3em;
         }
     }
 
@@ -476,8 +475,8 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
             margin-bottom: 25px;
             font-size: 3.5em;
 
-            .green {
-                color: $green;
+            span {
+                color: $purple ;
             }
         }
 
