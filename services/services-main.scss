@@ -176,7 +176,6 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
 
 @media screen and (min-width: 1350px) and (max-width: 1499px) {
     .services-hero-text {
-
         margin-left: 75px;
         margin-top: 125px;
         width: 50%;
@@ -188,7 +187,6 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
         h1 {
             font-size: 3.25em;
         }
-
     }
 
     .services-hero-guy {
@@ -204,14 +202,14 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
     .services-hero-text {
         margin-left: 125px;
         margin-top: 125px;
-        width: 50%;
+        width: 40%;
 
         p {
-            font-size: 2.25em;
+            font-size: 1.75em;
         }
 
         h1 {
-            font-size: 3.5em;
+            font-size: 2.75em;
         }
     }
 
@@ -230,19 +228,18 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
         width: 40%;
 
         p {
-            font-size: 1.5em;
+            font-size: 1.75em;
         }
 
         h1 {
-            font-size: 3em;
+            font-size: 2.75em;
         }
     }
 
     .services-hero-guy {
         right: -50px;
         margin-top: 0px;
-        width: 1000px;
-        height: 800px;
+        width: 500px;
     }
 }
 
