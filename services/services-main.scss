@@ -82,11 +82,11 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
 
         p {
             font-weight: 600;
-            font-size: clamp(1.25em, 5vw, 1.5em)
+            font-size: 1.5em;
         }
 
         h1 {
-            font-size: clamp(1.75em, 5vw, 2.25em);
+            font-size: 2.25em;
             margin-bottom: 25px;
         }
     }
@@ -270,11 +270,11 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
         flex-direction: column;
         width: 90%;
         margin: 0 auto;
-        margin-bottom: 75px;
-        margin-top: 50px;
+        margin-bottom: 25px;
+        margin-top: 125px;
 
         p:first-child {
-            color: $purple;
+            color: lighten($purple, 5%);
             font-weight: 700;
             font-size: 1.25em;
             margin-bottom: 0px;
@@ -312,7 +312,7 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
         a {
             border-radius: 7.5px;
             border: 1px solid $purple;
-            color: $purple;
+            color: lighten($purple, 5%);
             margin: 0 auto;
             min-width: 100px;
             padding: 20px 30px;
@@ -346,14 +346,14 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
 // ==============================
 
 @media screen and (min-width: 0px) and (max-width: 849px) {
-    #sets-apart {
+    #done-differently {
         background-color: $white;
         width: 90%;
         max-width: 1000px;
         margin: 0 auto;
     }
 
-    .sets-apart-header {
+    .done-differently-header {
         position: relative;
         margin: 0 auto;
         text-align: left;
@@ -367,13 +367,8 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
             line-height: 1.25;
             margin-bottom: 25px;
 
-            .no-wrap {
-                white-space: nowrap;
-            }
-
-            .green {
-                color: $green;
-                line-height: 1.25;
+            span {
+                color: $purple;
             }
         }
 
@@ -388,7 +383,7 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
 
     }
 
-    .sets-apart-container {
+    .done-differently-container {
         display: flex;
         flex-direction: column-reverse;
         margin: 0 auto;
@@ -470,7 +465,7 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
 }
 
 @media only screen and (min-width: 850px) {
-    .sets-apart-header {
+    .done-differently-header {
         width: 75%;
         margin: 0 auto;
         text-align: center;
@@ -492,7 +487,7 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
         }
     }
 
-    .sets-apart-container {
+    .done-differently-container {
         width: 60%;
         display: flex;
         flex-direction: row;
