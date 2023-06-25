@@ -191,7 +191,7 @@
     width: 90%;
     margin: 0 auto;
     margin-bottom: 75px;
-    margin-top: 50px;
+    margin-top: 25px;
   }
   .journey-container p:first-child {
     color: #7fd378;
@@ -265,7 +265,7 @@
   .sets-apart-header h1 {
     margin: 0 auto;
     color: black;
-    font-size: 3em;
+    font-size: clamp(3em, 6vw, 3.25em);
     margin-top: 75px;
     line-height: 1.25;
     margin-bottom: 25px;
@@ -302,7 +302,7 @@
     font-weight: 600;
   }
   .sets-items p:last-child {
-    margin-bottom: 75px;
+    margin-bottom: 50px;
   }
 }
 @media screen and (min-width: 0px) and (max-width: 849px) {
@@ -319,7 +319,7 @@
   }
   .sets-right img {
     width: 90%;
-    max-width: 400px;
+    max-width: 500px;
     margin-bottom: 50px;
   }
   .sets-buttons {
@@ -369,9 +369,10 @@
   }
   .sets-right img {
     position: absolute;
-    max-width: 500px;
+    max-width: 550px;
     margin-top: 250px;
     margin-left: 25px;
+    transition: 0.3s;
   }
   .sets-buttons {
     display: flex;
@@ -420,9 +421,10 @@
   }
   .sets-right img {
     position: absolute;
-    max-width: 500px;
-    margin-top: 250px;
+    max-width: 650px;
+    margin-top: 175px;
     margin-left: 25px;
+    transition: 0.3s;
   }
   .sets-buttons {
     display: flex;
