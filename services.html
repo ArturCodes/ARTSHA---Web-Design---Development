@@ -30,15 +30,15 @@
     <meta name="theme-color" content="#ffffff">
 
     <!-- Preload images & fonts-->
-    <link rel="preload" as="image" href="./services-images/logo-services-w.png">
-    <link rel="preload" as="image" href="./services-images/nav-services-sm.png">
+    <link rel="preload" as="image" href="./services/service-images/logo-services-w.png">
+    <link rel="preload" as="image" href="./services/service-images/nav-services-sm.png">
 
     <!--  JS -->
-    <script src="../menu-toggle.js" async preload></script>
+    <script src="./menu-toggle.js" async preload></script>
 
     <!-- CSS -->
-    <link rel="stylesheet" href="./services-header.css">
-    <link rel="stylesheet" href="./services-main.css">
+    <link rel="stylesheet" href="./services/services-header.css">
+    <link rel="stylesheet" href="./services/services-main.css">
 
     <title>Services - Artsha Web Design</title>
 
@@ -55,18 +55,20 @@
 
         <div class="navbar-bg-container">
             <picture>
-                <source media="(min-width: 0px) and (max-width: 849px)" srcset="./services-images/nav-services-sm.png">
-                <source media="(min-width: 850px)" srcset="./services-images/nav-services-lg.png">
-                <img class="services-navbar" src="./services-images/services-nav-bg-l.png"
+                <source media="(min-width: 0px) and (max-width: 849px)"
+                    srcset="./services/service-images/nav-services-sm.png">
+                <source media="(min-width: 850px)" srcset="./services/service-images/nav-services-lg.png">
+                <img class="services-navbar" src="./services/service-images/nav-services-lg.png"
                     alt="Navbar background image">
             </picture>
         </div>
 
-        <a class="logo" href="../index.html">
+        <a class="logo" href="./">
             <picture>
-                <source media="(max-width: 849px)" srcset="./services-images/logo-services-w.png">
-                <source media="(min-width: 850px)" srcset="./services-images/logo-services.png">
-                <img class="services-navbar" src="./services-images/logo-services.png" alt="Navbar background image">
+                <source media="(max-width: 849px)" srcset="./services/service-images/logo-services-w.png">
+                <source media="(min-width: 850px)" srcset="./services/service-images/logo-services.png">
+                <img class="services-navbar" src="./services/service-images/logo-services.png"
+                    alt="Navbar background image">
             </picture>
         </a>
 
@@ -80,11 +82,11 @@
 
         <nav id="nav" role="navigation">
             <ul id="navbar-links">
-                <li class="home"><a href="../index.html">Home</a></li>
-                <li class="about"><a href="../about/about.html">About</a></li>
-                <li class="services"><a href="../services/services.html">Services</a></li>
-                <li class="blog"><a href="../blog/blog.html">Blog</a></li>
-                <li class="contact"><a href="../contact/contact.html">Contact</a></li>
+                <li class="home"><a href="/">Home</a></li>
+                <li class="about"><a href="./about.html">About</a></li>
+                <li class="services"><a href="./services.html">Services</a></li>
+                <li class="blog"><a href=".blog.html">Blog</a></li>
+                <li class="contact"><a href=".contact.html">Contact</a></li>
             </ul>
         </nav>
 
@@ -111,10 +113,10 @@
         <section id="standing-out">
 
             <picture>
-                <source media="(max-width: 849px)" srcset="./services-images/standing-out-top-blob-mobile.png">
-                <source media="(min-width: 850px)" srcset="./services-images/standing-out-top-blob-desktop.png">
+                <source media="(max-width: 849px)" srcset="./services/service-images/standing-out-top-blob-mobile.png">
+                <source media="(min-width: 850px)" srcset="./services/service-images/standing-out-top-blob-desktop.png">
                 <img class="standing-out-top-blob" decoding="async" aria-hidden="true"
-                    src="./services-images/standing-out-top-blob-desktop.png">
+                    src="./services/service-images/standing-out-top-blob-desktop.png">
             </picture>
 
             <div class="standing-out-container">
@@ -127,14 +129,16 @@
                 <p>Because at the end of the day, our websites needs to deliver results that matter, and we do that by
                     out performing our competitors, and giving you an edge over yours.</p>
 
-                <a href="../about/about.html#sets-apart">What Sets Us Apart</a>
+                <a href="../about.html#sets-apart">What Sets Us Apart</a>
             </div>
 
             <picture>
-                <source media="(max-width: 849px)" srcset="./services-images/standing-out-bottom-blob-mobile.png">
-                <source media="(min-width: 850px)" srcset="./services-images/standing-out-bottom-blob-desktop.png">
+                <source media="(max-width: 849px)"
+                    srcset="./services/service-images/standing-out-bottom-blob-mobile.png">
+                <source media="(min-width: 850px)"
+                    srcset="./services/service-images/standing-out-bottom-blob-desktop.png">
                 <img class="standing-out-bottom-blob" decoding="async" aria-hidden="true"
-                    src="./services-images/standing-out-bottom-blob-desktop.png">
+                    src="./services/service-images/standing-out-bottom-blob-desktop.png">
             </picture>
 
         </section>
@@ -160,10 +164,10 @@
     <footer id="footer-about">
 
         <picture>
-            <source media="(max-width: 849px)" srcset="./services-images/footer-bottom-blob-mobile.png">
-            <source media="(min-width: 850px)" srcset="./services-images/footer-bottom-blob-desktop.png">
+            <source media="(max-width: 849px)" srcset="./services/service-images/footer-bottom-blob-mobile.png">
+            <source media="(min-width: 850px)" srcset="./services/service-images/footer-bottom-blob-desktop.png">
             <img class="footer-bottom-blob" decoding="async" aria-hidden="true"
-                src="./services-images/footer-bottom-blob-desktop.png">
+                src="./services/service-images/footer-bottom-blob-desktop.png">
         </picture>
 
         <div class="footer-container">

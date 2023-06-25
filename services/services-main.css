@@ -1,8 +1,6 @@
 @media screen and (min-width: 0px) {
   #hero {
     position: relative;
-    overflow: visible;
-    z-index: 500;
   }
   .services-hero-text {
     position: relative;
@@ -20,22 +18,17 @@
     position: absolute;
     z-index: 999;
     content: "";
-    background-image: url("./services-images/services-hero-guy.png");
+    background-image: url("./services/service-images/services-hero-guy.png");
+    background-image: url("./service-images/services-hero-guy.png");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     height: 100%;
     overflow: visible;
   }
 }
-@media screen and (min-width: 850px) {
-  #hero {
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 50px;
-  }
-}
 @media screen and (min-width: 0px) and (max-width: 849px) {
   #hero {
+    position: relative;
     display: flex;
     flex-direction: column;
   }
@@ -161,23 +154,25 @@
   }
 }
 @media screen and (min-width: 1700px) {
+  #hero {
+    display: flex;
+    flex-direction: row;
+  }
   .services-hero-text {
     margin-left: 125px;
     margin-top: 125px;
     width: 45%;
   }
   .services-hero-text p {
-    font-size: 1.75em;
+    font-size: 1.5em;
   }
   .services-hero-text h1 {
     font-size: 3em;
   }
   .services-hero-guy {
-    z-index: 900;
     right: -50px;
     margin-top: 0px;
-    width: 700px;
-    overflow: visible;
+    width: 1000px;
   }
 }
 @media screen and (min-width: 0px) {
@@ -188,7 +183,7 @@
     position: relative;
     background-color: white;
     width: 100%;
-    z-index: 500;
+    z-index: 100;
   }
   .standing-out-container {
     max-width: 850px;
