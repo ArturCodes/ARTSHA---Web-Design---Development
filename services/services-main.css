@@ -18,7 +18,6 @@
     position: absolute;
     z-index: 999;
     content: "";
-    background-image: url("./services/service-images/services-hero-guy.png");
     background-image: url("./service-images/services-hero-guy.png");
     background-repeat: no-repeat;
     background-size: contain;
