@@ -48,12 +48,12 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
 
     .services-hero-guy {
         position: absolute;
-        z-index: 999;
+        z-index: 900;
         content: '';
         background-image: url('./service-images/services-hero-guy.png');
         background-repeat: no-repeat;
         background-size: contain;
-        height: 100%;
+        width: 100%;
         overflow: visible;
     }
 }
@@ -220,7 +220,7 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
 
     .services-hero-text {
         margin-left: 125px;
-        margin-top: 125px;
+        margin-top: 150px;
         width: 45%;
 
         p {
@@ -233,9 +233,9 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
     }
 
     .services-hero-guy {
-        right: -50px;
+        right: -850px;
         margin-top: 0px;
-        width: 1000px;
+        height: 700px;
     }
 }
 
@@ -254,6 +254,7 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
         background-color: $white;
         width: 100%;
         z-index: 100;
+        padding-top: 200px;
     }
 
     .standing-out-container {
