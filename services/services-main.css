@@ -4,7 +4,7 @@
   }
   .services-hero-text {
     position: relative;
-    z-index: 900;
+    z-index: 500;
   }
   .services-hero-text p {
     color: #804DD4;

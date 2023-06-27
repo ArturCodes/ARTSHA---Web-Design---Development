@@ -74,11 +74,11 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
 
         p {
             font-weight: 600;
-            font-size: 1.5em;
+            font-size: 1.25em;
         }
 
         h1 {
-            font-size: 2.25em;
+            font-size: 2.5em;
             margin-bottom: 25px;
         }
     }
@@ -100,7 +100,7 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
 @media screen and (min-width: 850px) and (max-width: 999px) {
     .about-hero-text {
         margin-left: 25px;
-        margin-top: 50px;
+        margin-top: 125px;
         width: 45%;
 
         p {
@@ -122,8 +122,8 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
 @media screen and (min-width: 1000px) and (max-width: 1199px) {
     .about-hero-text {
         margin-left: 60px;
-        margin-top: 75px;
-        width: 45%;
+        margin-top: 150px;
+        width: 40%;
         line-height: 1.5;
 
         p {
@@ -131,7 +131,7 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
         }
 
         h1 {
-            font-size: 2.75em;
+            font-size: 2.5em;
         }
 
     }
@@ -147,14 +147,14 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
     .about-hero-text {
         margin-left: 60px;
         margin-top: 175px;
-        width: 45%;
+        width: 40%;
 
         p {
             font-size: 1.5em;
         }
 
         h1 {
-            font-size: 3em;
+            font-size: 2.5em;
         }
     }
 
@@ -169,14 +169,14 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
     .about-hero-text {
         margin-left: 75px;
         margin-top: 200px;
-        width: 45%;
+        width: 35%;
 
         p {
             font-size: 1.5em;
         }
 
         h1 {
-            font-size: 3em;
+            font-size: 2.75em;
         }
 
     }
@@ -193,14 +193,14 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
         position: absolute;
         margin-left: 125px;
         margin-top: 225px;
-        width: 40%;
+        width: 35%;
 
         p {
             font-size: 1.75em;
         }
 
         h1 {
-            font-size: 3.25em;
+            font-size: 3em;
         }
     }
 
@@ -216,7 +216,7 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
         position: absolute;
         margin-left: 125px;
         margin-top: 250px;
-        width: 40%;
+        width: 35%;
 
         p {
             font-size: 1.75em;
