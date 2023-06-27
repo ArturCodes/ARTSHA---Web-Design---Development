@@ -49,6 +49,12 @@
     display: none;
   }
 }
+@media only screen and (min-width: 850px) {
+  #hero {
+    display: flex;
+    flex-direction: row;
+  }
+}
 @media screen and (min-width: 850px) and (max-width: 999px) {
   .services-hero-text {
     margin-left: 25px;
@@ -62,11 +68,7 @@
     font-size: 2.25em;
   }
   .services-hero-guy {
-    position: absolute;
-    margin-top: -25px;
-    right: -25px;
     width: 500px;
-    height: 450px;
   }
 }
 @media screen and (min-width: 1000px) and (max-width: 1199px) {
@@ -83,10 +85,6 @@
     font-size: 2.5em;
   }
   .services-hero-guy {
-    right: -75px;
-    margin-top: -25px;
-    margin-left: 25px;
-    width: 650px;
     height: 500px;
   }
 }
@@ -106,11 +104,7 @@
     font-size: 3em;
   }
   .services-hero-guy {
-    right: -50px;
-    margin-top: -25px;
-    margin-left: 25px;
     width: 750px;
-    height: 600px;
   }
 }
 @media screen and (min-width: 1350px) and (max-width: 1499px) {
@@ -126,14 +120,10 @@
     font-size: 3.25em;
   }
   .services-hero-guy {
-    right: -50px;
-    margin-top: -25px;
-    margin-left: 25px;
     width: 825px;
-    height: 600px;
   }
 }
-@media screen and (min-width: 1500px) and (max-width: 1699px) {
+@media screen and (min-width: 1500px) {
   .services-hero-text {
     margin-left: 125px;
     margin-top: 125px;
@@ -146,32 +136,7 @@
     font-size: 2.75em;
   }
   .services-hero-guy {
-    right: -75px;
-    margin-top: -25px;
     width: 900px;
-    height: 750px;
-  }
-}
-@media screen and (min-width: 1700px) {
-  #hero {
-    display: flex;
-    flex-direction: row;
-  }
-  .services-hero-text {
-    margin-left: 125px;
-    margin-top: 150px;
-    width: 45%;
-  }
-  .services-hero-text p {
-    font-size: 1.5em;
-  }
-  .services-hero-text h1 {
-    font-size: 3em;
-  }
-  .services-hero-guy {
-    right: -850px;
-    margin-top: 0px;
-    height: 700px;
   }
 }
 @media screen and (min-width: 0px) {
@@ -183,7 +148,7 @@
     background-color: white;
     width: 100%;
     z-index: 100;
-    padding-top: 200px;
+    padding-top: 175px;
   }
   .standing-out-container {
     max-width: 850px;
