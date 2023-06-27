@@ -29,15 +29,17 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
 @media screen and (min-width: 0px) {
     #hero {
         position: relative;
+        overflow: visible;
+        z-index: 500;
     }
 
     .services-hero-text {
         position: relative;
-        z-index: 500;
 
         p {
             color: $purple2;
             font-weight: 600;
+            line-height: 1.25;
         }
 
         h1 {
@@ -48,12 +50,11 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
 
     .services-hero-guy {
         position: absolute;
-        z-index: 900;
         content: '';
-        background-image: url('./service-images/services-hero-guy.png');
+        background-image: url('./service-images/services-guy.png');
         background-repeat: no-repeat;
         background-size: contain;
-        width: 100%;
+        height: 100%;
         overflow: visible;
     }
 }
@@ -66,11 +67,10 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
     }
 
     .services-hero-text {
-        width: 94%;
-        max-width: 500px;
-        margin: 0 auto;
+        width: 90%;
+        max-width: 475px;
+        margin: 25px auto;
         text-align: center;
-        margin-bottom: 25px;
 
         p {
             font-weight: 600;
@@ -78,7 +78,7 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
         }
 
         h1 {
-            font-size: 2.25em;
+            font-size: clamp(2em, 6vw, 2.5em);
         }
     }
 
@@ -91,35 +91,16 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
     #hero {
         display: flex;
         flex-direction: row;
+        margin-bottom: -175px;
+        height: 675px;
     }
 }
 
 @media screen and (min-width: 850px) and (max-width: 999px) {
     .services-hero-text {
         margin-left: 25px;
-        margin-top: 50px;
-        width: 55%;
-
-        p {
-            font-size: 1.25em;
-        }
-
-        h1 {
-            font-size: 2.25em;
-        }
-    }
-
-    .services-hero-guy {
-        width: 500px;
-    }
-}
-
-@media screen and (min-width: 1000px) and (max-width: 1199px) {
-    .services-hero-text {
-        margin-left: 60px;
-        margin-top: 75px;
-        width: 50%;
-        line-height: 1.5;
+        margin-top: 125px;
+        width: 45%;
 
         p {
             font-size: 1.5em;
@@ -128,23 +109,90 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
         h1 {
             font-size: 2.5em;
         }
-
     }
 
     .services-hero-guy {
-        height: 500px;
+        right: -125px;
+        margin-top: 60px;
+        width: 700px;
+    }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1199px) {
+    .services-hero-text {
+        margin-left: 60px;
+        margin-top: 150px;
+        width: 45%;
+        line-height: 1.5;
+        z-index: 5;
+
+        p {
+            font-size: 1.5em;
+        }
+
+        h1 {
+            font-size: 2.5em;
+        }
+    }
+
+    .services-hero-guy {
+        right: -75px;
+        margin-top: 75px;
+        width: 750px;
     }
 }
 
 @media screen and (min-width: 1200px) and (max-width: 1349px) {
-    #services-hero {
-        margin-bottom: -475px;
-    }
-
     .services-hero-text {
         margin-left: 60px;
-        margin-top: 100px;
-        width: 50%;
+        margin-top: 175px;
+        width: 40%;
+
+        p {
+            font-size: 1.5em;
+        }
+
+        h1 {
+            font-size: 2.5em;
+        }
+    }
+
+    .services-hero-guy {
+        right: -25px;
+        margin-top: 75px;
+        width: 800px;
+    }
+}
+
+@media screen and (min-width: 1350px) and (max-width: 1499px) {
+    .services-hero-text {
+        margin-left: 75px;
+        margin-top: 200px;
+        width: 40%;
+
+        p {
+            font-size: 1.5em;
+        }
+
+        h1 {
+            font-size: 2.75em;
+        }
+
+    }
+
+    .services-hero-guy {
+        right: 0px;
+        margin-top: 75px;
+        width: 825px;
+    }
+}
+
+@media screen and (min-width: 1500px) and (max-width: 1699px) {
+    .services-hero-text {
+        position: absolute;
+        margin-left: 125px;
+        margin-top: 225px;
+        width: 40%;
 
         p {
             font-size: 1.75em;
@@ -156,50 +204,34 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
     }
 
     .services-hero-guy {
-        width: 750px;
+        right: 25px;
+        margin-top: 100px;
+        width: 850px;
     }
 }
 
-@media screen and (min-width: 1350px) and (max-width: 1499px) {
+@media screen and (min-width: 1700px) {
     .services-hero-text {
-        margin-left: 75px;
-        margin-top: 125px;
-        width: 50%;
+        position: absolute;
+        margin-left: 125px;
+        margin-top: 250px;
+        width: 40%;
 
         p {
             font-size: 2em;
         }
 
         h1 {
-            font-size: 3.25em;
+            font-size: 3.5em;
         }
     }
 
     .services-hero-guy {
-        width: 825px;
-    }
-}
-
-@media screen and (min-width: 1500px) {
-    .services-hero-text {
-        margin-left: 125px;
-        margin-top: 125px;
-        width: 40%;
-
-        p {
-            font-size: 1.75em;
-        }
-
-        h1 {
-            font-size: 2.75em;
-        }
-    }
-
-    .services-hero-guy {
+        right: 75px;
+        margin-top: 115px;
         width: 900px;
     }
 }
-
 
 // ============================== 
 //  Standing Out From The Crowd
@@ -216,7 +248,6 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
         background-color: $white;
         width: 100%;
         z-index: 100;
-        padding-top: 175px;
     }
 
     .standing-out-container {

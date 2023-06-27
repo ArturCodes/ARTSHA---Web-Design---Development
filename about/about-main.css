@@ -6,7 +6,6 @@
   }
   .about-hero-text {
     position: relative;
-    z-index: 900;
   }
   .about-hero-text p {
     color: #5bc652;
@@ -187,7 +186,7 @@
   .journey-container p:first-child {
     color: #7fd378;
     font-weight: 700;
-    font-size: 1.25em;
+    font-size: 1.75em;
     margin-bottom: 0px;
   }
   .journey-container h1 {
