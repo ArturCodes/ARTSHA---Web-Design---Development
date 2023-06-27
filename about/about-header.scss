@@ -59,8 +59,8 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
     header {
         position: relative;
         height: calc(100px + 10vw);
-        min-height: 175px;
-        max-height: 300px;
+        min-height: 100px;
+        max-height: 150px;
         margin: 0 auto;
         overflow: visible;
     }
