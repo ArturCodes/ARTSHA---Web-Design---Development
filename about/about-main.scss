@@ -321,6 +321,12 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
     }
 }
 
+@media only screen and (min-width: 0px) and (max-width: 849px) {
+    .journey-container a {
+        margin-bottom: 25px;
+    }
+}
+
 // ============================== 
 //   What sets ARTSHA apart   
 // ==============================
@@ -404,8 +410,13 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
         margin: 0 auto;
     }
 
+    .sets-apart-header {
+        margin-bottom: -50px;
+    }
+
     .sets-left {
         margin: 0 auto;
+        margin-top: -75px;
     }
 
     .sets-right {
@@ -420,8 +431,8 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
 
     .sets-buttons {
         display: flex;
-        margin-top: 75px;
-        margin-bottom: 100px;
+        margin-top: 50px;
+        margin-bottom: 150px;
         height: auto;
 
         a {
