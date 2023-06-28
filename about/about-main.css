@@ -254,12 +254,12 @@
     text-align: left;
     text-align: center;
     margin-bottom: 75px;
+    margin-top: 50px;
   }
   .sets-apart-header h1 {
     margin: 0 auto;
     color: black;
     font-size: clamp(3em, 6vw, 3.25em);
-    margin-top: 75px;
     line-height: 1.25;
     margin-bottom: 25px;
   }
@@ -274,7 +274,7 @@
     max-width: 750px;
     margin: 0 auto;
     color: black;
-    margin-bottom: 50px;
+    margin-bottom: 100px;
     line-height: 1.75;
     font-size: 1.125em;
   }
@@ -407,6 +407,7 @@
   }
   .sets-left {
     margin: 0 auto;
+    margin-left: -50px;
   }
   .sets-right {
     width: 50%;
