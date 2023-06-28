@@ -1,3 +1,8 @@
+.services-hero-text,
+.services-hero-guy {
+  transition: 0.2s;
+}
+
 @media screen and (min-width: 0px) {
   #hero {
     position: relative;
@@ -40,7 +45,7 @@
   }
   .services-hero-text p {
     font-weight: 600;
-    font-size: 1.5em;
+    font-size: 1.75em;
   }
   .services-hero-text h1 {
     font-size: clamp(2em, 6vw, 2.5em);
@@ -185,8 +190,7 @@
     flex-direction: column;
     width: 90%;
     margin: 0 auto;
-    margin-bottom: 25px;
-    margin-top: 25px;
+    margin-top: 75px;
   }
   .standing-out-container p:first-child {
     color: #9d76de;

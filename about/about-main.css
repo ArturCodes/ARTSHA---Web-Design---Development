@@ -1,3 +1,8 @@
+.about-hero-text,
+.about-hero-girl {
+  transition: 0.2s;
+}
+
 @media screen and (min-width: 0px) {
   #hero {
     position: relative;
@@ -41,7 +46,7 @@
     font-size: 1.5em;
   }
   .about-hero-text h1 {
-    font-size: clamp(2em, 6vw, 2.5em);
+    font-size: clamp(1.75em, 6vw, 3em);
   }
   .about-hero-girl {
     display: none;
@@ -179,14 +184,12 @@
     display: flex;
     flex-direction: column;
     width: 90%;
-    margin: 0 auto;
-    margin-bottom: 75px;
-    margin-top: 25px;
+    margin: 25px auto;
   }
   .journey-container p:first-child {
     color: #7fd378;
     font-weight: 700;
-    font-size: 1.75em;
+    font-size: 1.5em;
     margin-bottom: 0px;
   }
   .journey-container h1 {
@@ -450,6 +453,7 @@
     width: 100%;
     position: relative;
     z-index: 999;
+    margin-top: -75px;
   }
   .footer-container {
     overflow: visible;

@@ -25,6 +25,10 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
 // ============================== 
 //  Hero - Services
 // ==============================
+.services-hero-text,
+.services-hero-guy {
+    transition: 0.2s;
+}
 
 @media screen and (min-width: 0px) {
     #hero {
@@ -74,7 +78,7 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
 
         p {
             font-weight: 600;
-            font-size: 1.5em;
+            font-size: 1.75em;
         }
 
         h1 {
@@ -256,8 +260,7 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
         flex-direction: column;
         width: 90%;
         margin: 0 auto;
-        margin-bottom: 25px;
-        margin-top: 25px;
+        margin-top: 75px;
 
         p:first-child {
             color: lighten($purple, 5%);
