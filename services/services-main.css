@@ -398,6 +398,24 @@
     max-width: 300px;
     width: 100%;
   }
+  .mobile-button {
+    border-radius: 7.5px;
+    border: 1px solid #8f62d9;
+    color: #9d76de;
+    margin: 0 auto;
+    min-width: 100px;
+    padding: 20px 30px;
+    font-weight: 700;
+    transition: 0.3s;
+    box-shadow: 1px 1px 5px #1a1a1a;
+    margin-top: 55px;
+  }
+  .mobile-button:hover {
+    background-color: white;
+    color: #1a1a1a;
+    transition: 0.3s;
+    border: 1px solid #1a1a1a;
+  }
 }
 @media only screen and (min-width: 1000px) {
   #mobile {
