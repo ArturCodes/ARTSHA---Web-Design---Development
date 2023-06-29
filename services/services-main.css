@@ -213,7 +213,7 @@
   }
   .standing-out-container .pathway {
     content: "";
-    background-image: url("./services-images/pathway.png");
+    background-image: url("./service-images/pathway.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -353,6 +353,7 @@
     border-left: 5px solid #804DD4;
     padding-left: 12.5px;
     margin-bottom: 15px;
+    font-size: 1.75em;
   }
   .purpose-text p {
     margin-bottom: 25px;
@@ -436,6 +437,7 @@
     border-left: 5px solid #804DD4;
     padding-left: 12.5px;
     margin-bottom: 15px;
+    font-size: 1.75em;
   }
   .mobile-text p {
     margin-bottom: 25px;
@@ -534,6 +536,7 @@
     border-left: 5px solid #804DD4;
     padding-left: 12.5px;
     margin-bottom: 15px;
+    font-size: 1.75em;
   }
   .search-text p {
     margin-bottom: 25px;
@@ -556,7 +559,6 @@
   }
   .search-cat {
     margin: 0 auto;
-    margin-right: 50px;
   }
   .search-cat img {
     min-width: 350px;
@@ -608,7 +610,7 @@
     margin: 75px auto 35px;
   }
   .optimize-girl img {
-    max-width: 300px;
+    max-width: 500px;
     width: 100%;
     align-self: center;
   }
@@ -633,6 +635,7 @@
     border-left: 5px solid #804DD4;
     padding-left: 12.5px;
     margin-bottom: 15px;
+    font-size: 1.75em;
   }
   .speed-text p {
     margin-bottom: 25px;
@@ -784,7 +787,7 @@
   .footer-text .footer-contact::before {
     display: block;
     content: "";
-    background-image: url("./services-images/leaves.png");
+    background-image: url("./service-images/leaves.png");
     background-repeat: no-repeat;
     background-size: contain;
     height: 125px;
@@ -857,7 +860,7 @@
   .footer-text .footer-navigation::before {
     display: block;
     content: "";
-    background-image: url("./services-images/leaves.png");
+    background-image: url("./service-images/leaves.png");
     background-repeat: no-repeat;
     background-size: contain;
     height: 125px;
@@ -920,7 +923,7 @@
   .footer-text .footer-contact::after {
     display: block;
     content: "";
-    background-image: url("./services-images/leaves2.png");
+    background-image: url("./service-images/leaves2.png");
     background-repeat: no-repeat;
     background-size: contain;
     height: 125px;
@@ -952,7 +955,7 @@
     display: block;
     content: "";
     position: absolute;
-    background-image: url("./services-images/mail.png");
+    background-image: url("./service-images/mail.png");
     background-size: contain;
     background-repeat: no-repeat;
     width: 20px;
@@ -964,7 +967,7 @@
     display: block;
     content: "";
     position: absolute;
-    background-image: url("./services-images/phone.png");
+    background-image: url("./service-images/phone.png");
     background-size: contain;
     background-repeat: no-repeat;
     width: 19px;
@@ -1055,7 +1058,7 @@
   .footer-text .footer-navigation::before {
     display: block;
     content: "";
-    background-image: url("./services-images/leaves.png");
+    background-image: url("./service-images/leaves.png");
     background-repeat: no-repeat;
     background-size: contain;
     height: 125px;
@@ -1173,7 +1176,7 @@
   .footer-text .footer-contact::after {
     display: block;
     content: "";
-    background-image: url("./services-images/leaves2.png");
+    background-image: url("./service-images/leaves2.png");
     background-repeat: no-repeat;
     background-size: contain;
     height: 125px;
@@ -1211,7 +1214,7 @@
     display: block;
     content: "";
     position: absolute;
-    background-image: url("./services-images/mail.png");
+    background-image: url("./service-images/mail.png");
     background-size: contain;
     background-repeat: no-repeat;
     width: 20px;
@@ -1223,7 +1226,7 @@
     display: block;
     content: "";
     position: absolute;
-    background-image: url("./services-images/phone.png");
+    background-image: url("./service-images/phone.png");
     background-size: contain;
     background-repeat: no-repeat;
     width: 19px;
