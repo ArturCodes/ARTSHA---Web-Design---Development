@@ -511,35 +511,35 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
         p {
             margin-bottom: 25px;
         }
+
+        a {
+            position: relative;
+            color: #000000;
+            top: 15px;
+            min-width: 125px;
+            transition: 0.2s;
+            text-align: center;
+            border-radius: 7.5px;
+            padding: 17.5px 25px;
+            border: 1px darken($white, 5%) solid;
+            box-shadow: 1px 2px 0 darken($white, 5%), 2px 4px 6px darken($background, 25%);
+            background-color: $white;
+
+            margin: 0 auto;
+
+            &:hover {
+                box-shadow: $box-shadow-hover;
+            }
+        }
     }
 
     .mobile-guy {
-        margin: 100px auto 35px;
-        width: 90%;
+        margin: 75px auto 35px;
 
         img {
             max-width: 300px;
             width: 100%;
-        }
-    }
-
-    .mobile-button {
-        border-radius: 7.5px;
-        border: 1px solid $purple;
-        color: lighten($purple, 5%);
-        margin: 0 auto;
-        min-width: 100px;
-        padding: 20px 30px;
-        font-weight: 700;
-        transition: 0.3s;
-        box-shadow: 1px 1px 5px #1a1a1a;
-        margin-top: 55px;
-
-        &:hover {
-            background-color: $white;
-            color: #1a1a1a;
-            transition: 0.3s;
-            border: 1px solid #1a1a1a;
+            align-self: center;
         }
     }
 }
@@ -547,12 +547,12 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
 @media only screen and (min-width: 1000px) {
     #mobile {
         max-width: 100%;
-        margin: 100px 0;
         padding: 100px 10vw;
         min-height: 800px;
         display: flex;
         flex-direction: row-reverse;
         align-items: center;
+        justify-content: center;
         background: $lightBackground;
     }
 
@@ -570,6 +570,24 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
         p {
             margin-bottom: 25px;
         }
+
+        a {
+            position: relative;
+            color: #000000;
+            top: 15px;
+            min-width: 125px;
+            transition: 0.2s;
+            text-align: center;
+            border-radius: 7.5px;
+            padding: 17.5px 25px;
+            border: 1px darken($white, 5%) solid;
+            box-shadow: 1px 2px 0 darken($white, 5%), 2px 4px 6px darken($background, 25%);
+            background-color: $white;
+
+            &:hover {
+                box-shadow: $box-shadow-hover;
+            }
+        }
     }
 
     .mobile-guy {
@@ -583,6 +601,244 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
         }
     }
 }
+
+// ==============================
+//  Search Engine Optimization  
+// ==============================
+@media screen and (min-width: 0px) and (max-width: 999px) {
+    #search {
+        max-width: 90%;
+        margin: 100px auto;
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 100px;
+    }
+
+    .search-text {
+        width: 100%;
+        line-height: 1.5;
+        margin: 0 auto;
+        max-width: 550px;
+
+        h2 {
+            border-left: 5px solid $purple2;
+            padding-left: 12.5px;
+            margin-bottom: 15px;
+        }
+
+        p {
+            margin-bottom: 25px;
+        }
+
+        a {
+            position: relative;
+            color: #000000;
+            top: 15px;
+            min-width: 125px;
+            transition: 0.2s;
+            text-align: center;
+            border-radius: 7.5px;
+            padding: 17.5px 25px;
+            border: 1px darken($white, 5%) solid;
+            box-shadow: 1px 2px 0 darken($white, 5%), 2px 4px 6px darken($background, 25%);
+            background-color: $white;
+
+            margin: 0 auto;
+
+            &:hover {
+                box-shadow: $box-shadow-hover;
+            }
+        }
+    }
+
+    .search-cat {
+        margin: 0px auto 15px;
+
+        img {
+            max-width: 450px;
+            width: 100%;
+            align-self: center;
+        }
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    #search {
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 0 10vw;
+        min-height: 800px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .search-text {
+        line-height: 1.5;
+        margin: 0 auto;
+        max-width: 550px;
+
+        h2 {
+            border-left: 5px solid $purple2;
+            padding-left: 12.5px;
+            margin-bottom: 15px;
+        }
+
+        p {
+            margin-bottom: 25px;
+        }
+
+        a {
+            position: relative;
+            color: #000000;
+            top: 15px;
+            min-width: 125px;
+            transition: 0.2s;
+            text-align: center;
+            border-radius: 7.5px;
+            padding: 17.5px 25px;
+            border: 1px darken($white, 5%) solid;
+            box-shadow: 1px 2px 0 darken($white, 5%), 2px 4px 6px darken($background, 25%);
+            background-color: $white;
+
+            &:hover {
+                box-shadow: $box-shadow-hover;
+            }
+        }
+    }
+
+    .search-cat {
+        margin: 0 auto;
+        margin-right: 50px;
+
+        img {
+            min-width: 350px;
+            width: 100%;
+            max-width: 600px;
+        }
+    }
+}
+
+// ==============================
+//  Optimization: Why Speed Matters
+// ==============================
+@media screen and (min-width: 0px) and (max-width: 999px) {
+    #speed {
+        max-width: 100%;
+        margin: 100px auto;
+        display: flex;
+        flex-direction: column;
+        background: $lightBackground;
+        padding-bottom: 100px;
+    }
+
+    .speed-text {
+        width: 90%;
+        line-height: 1.5;
+        margin: 0 auto;
+        max-width: 550px;
+
+        h2 {
+            border-left: 5px solid $purple2;
+            padding-left: 12.5px;
+            margin-bottom: 15px;
+        }
+
+        p {
+            margin-bottom: 25px;
+        }
+
+        a {
+            position: relative;
+            color: #000000;
+            top: 15px;
+            min-width: 125px;
+            transition: 0.2s;
+            text-align: center;
+            border-radius: 7.5px;
+            padding: 17.5px 25px;
+            border: 1px darken($white, 5%) solid;
+            box-shadow: 1px 2px 0 darken($white, 5%), 2px 4px 6px darken($background, 25%);
+            background-color: $white;
+
+            margin: 0 auto;
+
+            &:hover {
+                box-shadow: $box-shadow-hover;
+            }
+        }
+    }
+
+    .optimize-girl {
+        margin: 75px auto 35px;
+
+        img {
+            max-width: 300px;
+            width: 100%;
+            align-self: center;
+        }
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    #speed {
+        max-width: 100%;
+        padding: 100px 10vw;
+        min-height: 800px;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: center;
+        background: $lightBackground;
+    }
+
+    .speed-text {
+        line-height: 1.5;
+        margin: 0 auto;
+        max-width: 550px;
+
+        h2 {
+            border-left: 5px solid $purple2;
+            padding-left: 12.5px;
+            margin-bottom: 15px;
+        }
+
+        p {
+            margin-bottom: 25px;
+        }
+
+        a {
+            position: relative;
+            color: #000000;
+            top: 15px;
+            min-width: 125px;
+            transition: 0.2s;
+            text-align: center;
+            border-radius: 7.5px;
+            padding: 17.5px 25px;
+            border: 1px darken($white, 5%) solid;
+            box-shadow: 1px 2px 0 darken($white, 5%), 2px 4px 6px darken($background, 25%);
+            background-color: $white;
+
+            &:hover {
+                box-shadow: $box-shadow-hover;
+            }
+        }
+    }
+
+    .optimize-girl {
+        margin: 0 auto;
+        margin-left: 50px;
+
+        img {
+            min-width: 400px;
+            width: 100%;
+            max-width: 500px;
+        }
+    }
+}
+
 
 // ==============================
 //  Footer 
