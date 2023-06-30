@@ -147,7 +147,6 @@
     color: #8f62d9;
   }
   #navbar-links .blog a::after {
-    width: 100%;
     background-color: #D44D4D;
   }
   #navbar-links .blog a:hover {
