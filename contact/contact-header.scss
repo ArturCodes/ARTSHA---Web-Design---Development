@@ -225,6 +225,7 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
         }
 
         .blog a::after {
+            width: 100%;
             background-color: $red;
         }
 

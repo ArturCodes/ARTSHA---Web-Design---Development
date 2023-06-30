@@ -2,13 +2,188 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--Swap our for actual link-->
+    <link rel="canonical" href="https://www.artshawebdesign.com">
+
+    <!--Social Media Display-->
+    <meta property="og:title" content="Our Services | Minneapolis, MN | ARTSHA Web Design " />
+    <meta property="og:description"
+        content="ARTSHA Web Design is an agency that specialized in custom made websites, specializing in website performance, optimized for google search, and making it affordable for small business." />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.artshawebdesign.com/" />
+    <meta property="og:image" content="./images/social.jpg" />
+    <meta property="og:image:secure_url" content="./images/social.jpg" />
+
+    <meta name="description"
+        content="ARTSHA Web Design is an independent agency that specialized in custom made websites,website performance, and optimization for google search. All the while making it affordable for small business." />
+
+    <!--Favicons-->
+    <link rel="apple-touch-icon" sizes="180x180" src="./icon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" src="./icon/favicon-32x32.png?v1">
+    <link rel="icon" type="image/png" sizes="16x16" src="./icon/favicon-16x16.png">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Preload images & fonts-->
+    <link rel="preload" as="image" href="./blog/blog-images/logo-blog-w.png">
+    <link rel="preload" as="image" href="./blog/blog-images/nav-blog-sm.png">
+
+    <!--  JS -->
+    <script src="./menu-toggle.js" async preload></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./blog/blog-header.css">
+    <link rel="stylesheet" href="./blog/blog-main.css">
+
+    <title>Services - Artsha Web Design</title>
+
 </head>
 
 <body>
-    <h1 style="font-size: 50px;">Website still under construction</h1>
+    <!--For screen reader, a skip to main content-->
+    <a class="skip" aria-label="skip to main content" href="#main">Click To Skip To Main Content</a>
+
+    <!-- ============================================ -->
+    <!--                    Header                    -->
+    <!-- ============================================ -->
+    <header>
+
+        <div class="navbar-bg-container">
+            <picture>
+                <source media="(min-width: 0px) and (max-width: 849px)"
+                    srcset="./contact/contact-images/nav-contact-sm.png">
+                <source media="(min-width: 850px)" srcset="./contact/contact-images/nav-contact-lg.png">
+                <img class="services-navbar" src="./contact/contact-images/nav-contact-lg.png"
+                    alt="Navbar background image">
+            </picture>
+        </div>
+
+        <a class="logo" href="./">
+            <picture>
+                <source media="(max-width: 849px)" srcset="./contact/contact-images/logo-contact-w.png">
+                <source media="(min-width: 850px)" srcset="./contact/contact-images/logo-contact.png">
+                <img class="services-navbar" src="./contact/contact-images/logo-contact.png"
+                    alt="Navbar background image">
+            </picture>
+        </a>
+
+        <button id="menu-toggle-button" onclick="toggleMenu()">
+            <div class="menu-toggle">
+                <span class="line line1"></span>
+                <span class="line line2"></span>
+                <span class="line line3"></span>
+            </div>
+        </button>
+
+        <nav id="nav" role="navigation">
+            <ul id="navbar-links">
+                <li class="home"><a href="/">Home</a></li>
+                <li class="about"><a href="./about.html">About</a></li>
+                <li class="services"><a href="./services.html">Services</a></li>
+                <li class="blog"><a href="./blog.html">Blog</a></li>
+                <li class="contact"><a href="./contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div id="opacity-bg" onclick="toggleMenu()"></div>
+
+    </header>
+
+    <main>
+        <!-- ============================================ -->
+        <!--                     Hero                     -->
+        <!-- ============================================ -->
+        <section id="hero">
+            <div class="services-hero-text">
+                <p>contact us</p>
+                <h1>We are very much looking forward to working with you</h1>
+            </div>
+            <div class="info-key"></div>
+        </section>
+
+        <!-- ============================================ -->
+        <!--                  Blog Info                   -->
+        <!-- ============================================ -->
+
+        <section id="standing-out">
+
+            <picture>
+                <source media="(max-width: 849px)" srcset="./blog/blog-images/blog-info-top-blob-mobile.png">
+                <source media="(min-width: 850px)" srcset="./blog/blog-images/blog-info-top-blob-desktop.png">
+                <img class="standing-out-top-blob" decoding="async" aria-hidden="true"
+                    src="./blog/blog-images/blog-info-top-blob-desktop.png">
+            </picture>
+
+            <div class="standing-out-container">
+                <h1 style="color: white; font-size: 40px; padding-bottom: 200px">PAGE STILL UNDER CONSTRUCTION</h1>
+            </div>
+
+            <!-- <picture>
+                <source media="(max-width: 849px)"
+                    srcset="./services/service-images/standing-out-bottom-blob-mobile.png">
+                <source media="(min-width: 850px)"
+                    srcset="./services/service-images/standing-out-bottom-blob-desktop.png">
+                <img class="standing-out-bottom-blob" decoding="async" aria-hidden="true"
+                    src="./services/service-images/standing-out-bottom-blob-desktop.png">
+            </picture> -->
+
+        </section>
+
+
+    </main>
+    <!-- ============================================ -->
+    <!--                    Footer                    -->
+    <!-- ============================================ -->
+    <!-- <footer id="footer-about">
+
+        <picture>
+            <source media="(max-width: 849px)" srcset="./services/service-images/footer-bottom-blob-mobile.png">
+            <source media="(min-width: 850px)" srcset="./services/service-images/footer-bottom-blob-desktop.png">
+            <img class="footer-bottom-blob" decoding="async" aria-hidden="true"
+                src="./services/service-images/footer-bottom-blob-desktop.png">
+        </picture>
+
+        <div class="footer-container">
+
+            <a class="footer-logo" aria-label="footer logo" href="index.html">
+                <img src="./services/service-images/logo-services-w.png" alt="logo">
+            </a>
+
+            <div class="footer-text">
+
+                <nav class="footer-navigation">
+                    <h2>Navigation</h2>
+                    <ul class="footer-links">
+                        <li class="home"><a href="./">Home</a></li>
+                        <li class="about"><a href="./about.html">About</a></li>
+                        <li class="services"><a href="./services.html">Services</a></li>
+                        <li class="blog"><a href="./blog.html">Blog</a></li>
+                        <li class="contact"><a href="./contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+
+                <div class="footer-contact">
+                    <h2>Contact Info</h2>
+                    <div>
+                        <a class="email" href="mailto:ArtshaWebDesign@gmail.com">ArtshaWebDesign@gmail.com</a>
+                        <a class="phone" href="tel:7634398513">763 - 439 - 8513</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <a href="index.html">Copyright © 2023 - Artsha - All Rights Reserved</a>
+        </div>
+
+    </footer> -->
+
 </body>
 
 </html>

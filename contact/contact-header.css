@@ -147,6 +147,7 @@
     color: #8f62d9;
   }
   #navbar-links .blog a::after {
+    width: 100%;
     background-color: #D44D4D;
   }
   #navbar-links .blog a:hover {
@@ -449,4 +450,4 @@
     -webkit-backdrop-filter: blur(3px);
             backdrop-filter: blur(3px);
   }
-}/*# sourceMappingURL=blog-header.css.map */
+}/*# sourceMappingURL=contact-header.css.map */
