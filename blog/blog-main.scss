@@ -106,9 +106,10 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
         margin-left: 25px;
         margin-top: 125px;
         width: 45%;
+        z-index: 5;
 
         p {
-            font-size: 1.5em;
+            font-size: 1.75em;
         }
 
         h1 {
@@ -132,7 +133,7 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
         z-index: 5;
 
         p {
-            font-size: 1.5em;
+            font-size: 1.75em;
         }
 
         h1 {
@@ -154,7 +155,7 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
         width: 40%;
 
         p {
-            font-size: 1.5em;
+            font-size: 1.75em;
         }
 
         h1 {
@@ -176,7 +177,7 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
         width: 40%;
 
         p {
-            font-size: 1.5em;
+            font-size: 1.75em;
         }
 
         h1 {
