@@ -33,6 +33,7 @@
     max-height: 150px;
     margin: 0 auto;
     overflow: visible;
+    padding-bottom: 25px;
   }
   p {
     line-height: 1.75;
