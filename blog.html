@@ -2,13 +2,291 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--Swap our for actual link-->
+    <link rel="canonical" href="https://www.artshawebdesign.com">
+
+    <!--Social Media Display-->
+    <meta property="og:title" content="Our Services | Minneapolis, MN | ARTSHA Web Design " />
+    <meta property="og:description"
+        content="ARTSHA Web Design is an agency that specialized in custom made websites, specializing in website performance, optimized for google search, and making it affordable for small business." />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.artshawebdesign.com/" />
+    <meta property="og:image" content="./images/social.jpg" />
+    <meta property="og:image:secure_url" content="./images/social.jpg" />
+
+    <meta name="description"
+        content="ARTSHA Web Design is an independent agency that specialized in custom made websites,website performance, and optimization for google search. All the while making it affordable for small business." />
+
+    <!--Favicons-->
+    <link rel="apple-touch-icon" sizes="180x180" src="./icon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" src="./icon/favicon-32x32.png?v1">
+    <link rel="icon" type="image/png" sizes="16x16" src="./icon/favicon-16x16.png">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Preload images & fonts-->
+    <link rel="preload" as="image" href="./blog/blog-images/logo-blog-w.png">
+    <link rel="preload" as="image" href="./blog/blog-images/nav-blog-sm.png">
+
+    <!--  JS -->
+    <script src="./menu-toggle.js" async preload></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./blog/blog-header.css">
+    <link rel="stylesheet" href="./blog/blog-main.css">
+
+    <title>Services - Artsha Web Design</title>
+
 </head>
 
 <body>
-    <h1 style="font-size: 50px;">Website still under construction</h1>
+    <!--For screen reader, a skip to main content-->
+    <a class="skip" aria-label="skip to main content" href="#main">Click To Skip To Main Content</a>
+
+    <!-- ============================================ -->
+    <!--                    Header                    -->
+    <!-- ============================================ -->
+    <header>
+
+        <div class="navbar-bg-container">
+            <picture>
+                <source media="(min-width: 0px) and (max-width: 849px)" srcset="./blog/blog-images/nav-blog-sm.png">
+                <source media="(min-width: 850px)" srcset="./blog/blog-images/nav-blog-lg.png">
+                <img class="services-navbar" src="./blog/blog-images/nav-blog-lg.png" alt="Navbar background image">
+            </picture>
+        </div>
+
+        <a class="logo" href="./">
+            <picture>
+                <source media="(max-width: 849px)" srcset="./blog/blog-images/logo-blog-w.png">
+                <source media="(min-width: 850px)" srcset="./blog/blog-images/logo-blog.png">
+                <img class="services-navbar" src="./blog/blog-images/logo-blog.png" alt="Navbar background image">
+            </picture>
+        </a>
+
+        <button id="menu-toggle-button" onclick="toggleMenu()">
+            <div class="menu-toggle">
+                <span class="line line1"></span>
+                <span class="line line2"></span>
+                <span class="line line3"></span>
+            </div>
+        </button>
+
+        <nav id="nav" role="navigation">
+            <ul id="navbar-links">
+                <li class="home"><a href="/">Home</a></li>
+                <li class="about"><a href="./about.html">About</a></li>
+                <li class="services"><a href="./services.html">Services</a></li>
+                <li class="blog"><a href="./blog.html">Blog</a></li>
+                <li class="contact"><a href="./contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div id="opacity-bg" onclick="toggleMenu()"></div>
+
+    </header>
+
+    <main>
+        <!-- ============================================ -->
+        <!--                     Hero                     -->
+        <!-- ============================================ -->
+        <section id="hero">
+            <div class="services-hero-text">
+                <p>our blog</p>
+                <h1>Information: The Key to
+                    Smart Decisions Making</h1>
+            </div>
+            <div class="info-key"></div>
+        </section>
+
+        <!-- ============================================ -->
+        <!--                  Blog Info                   -->
+        <!-- ============================================ -->
+
+        <section id="standing-out">
+
+            <picture>
+                <source media="(max-width: 849px)" srcset="./blog/blog-images/blog-info-top-blob-mobile.png">
+                <source media="(min-width: 850px)" srcset="./blog/blog-images/blog-info-top-blob-desktop.png">
+                <img class="standing-out-top-blob" decoding="async" aria-hidden="true"
+                    src="./blog/blog-images/blog-info-top-blob-desktop.png">
+            </picture>
+
+            <div class="standing-out-container">
+                <p>our way of</p>
+                <h1>Standing Out From The Crowd</h1>
+                <p>We don’t cut corners or take shortcuts. Our custom-designed websites are not only tailored to your
+                    needs and preferences, but also designed for your customers experience and optimized for google
+                    search engine.</p>
+
+                <p>Because at the end of the day, our websites needs to deliver results that matter, and we do that by
+                    out performing our competitors, and giving you an edge over yours.</p>
+
+                <a href="../about.html#sets-apart">What Sets Us Apart</a>
+            </div>
+
+            <picture>
+                <source media="(max-width: 849px)"
+                    srcset="./services/service-images/standing-out-bottom-blob-mobile.png">
+                <source media="(min-width: 850px)"
+                    srcset="./services/service-images/standing-out-bottom-blob-desktop.png">
+                <img class="standing-out-bottom-blob" decoding="async" aria-hidden="true"
+                    src="./services/service-images/standing-out-bottom-blob-desktop.png">
+            </picture>
+
+        </section>
+
+        <!-- ============================================ -->
+        <!--           Websites Done Differently          -->
+        <!-- ============================================ -->
+        <section id="done-differently">
+
+            <div class="done-differently-header">
+                <h1>Websites Done <span>Differently</span></h1>
+                <p>Our hands-on approach, combined with a focus on design, speed, and optimization, gives us an edge
+                    over most, if not all, drag-and-drop page builders. A superior website performances is critical for
+                    ranking higher on Google, and that's what we excel at.</p>
+            </div>
+
+        </section>
+        <!-- ============================================ -->
+        <!--     Designing & Developing with a Purpose    -->
+        <!-- ============================================ -->
+        <section id="purpose">
+            <div class="laptop-girl">
+                <img src="./services/service-images/laptop-girl.png" alt="girl with a laptop">
+            </div>
+            <div class="purpose-text">
+                <h2>Designing & Developing with a Purpose</h2>
+                <p>Beginning with the concept, our aim is to develop something that is tailored to you and for your
+                    business. It must not only effectively communicates your message and values, but also provides an
+                    excellent user experience for your customers.</p>
+                <p>When the time comes to designing your site, you'll have as much control over it as you desire. We
+                    will be with you every step of the way, making as many adjustments as needed until you are satisfied
+                    with the final design. </p>
+                <p>The rest of the development process is going to be all us. We will be focused on creating the
+                    highest-performing website possible that meets all of Google's requirements.</p>
+            </div>
+        </section>
+        <!-- ============================================ -->
+        <!--        Prioritizing Mobile Experience        -->
+        <!-- ============================================ -->
+        <section id="mobile">
+            <div class="mobile-guy">
+                <img src="./services/service-images/mobile-guy.png" alt="Guy holding a mobile phone">
+            </div>
+            <div class="mobile-text">
+                <h2>Prioritizing Mobile Experience </h2>
+                <p>In 2015 about 30% of internet traffic was accessed through mobile devices, in 2018 it reached 50%,
+                    and today that number is over 60%. When Google noticed this trend they developed a set of guidelines
+                    known as "mobile-first indexing." </p>
+                <p>This means that Google now looks at the mobile version of a website first, and uses that version to
+                    determine its search ranking. If a website is not mobile-friendly, it will be penalized, effecting
+                    its overall ranking position.</p>
+                <p>We make sure your websites doesn’t face that problem, by ensuring that it looks and functions well on
+                    mobile devices. We make it sure its user friendly and fully responsive across all screen sizes, and
+                    confirm that we comply with all of Google's guidelines</p>
+                <a href="./blog.html">Learn More </a>
+            </div>
+
+        </section>
+        <!-- ============================================ -->
+        <!--          Search Engine Optimization          -->
+        <!-- ============================================ -->
+        <section id="search">
+            <div class="search-cat"><img src="./services/service-images/search-cat.png"
+                    alt="Google search bar with a cat"></div>
+            <div class="search-text">
+                <h2>Search Engine Optimization </h2>
+                <p>It has been estimated by varies studies and data analysis that first three organic search results in
+                    Google receive approximately 75% of all the clicks. This means that if you are not in the top three,
+                    you are missing out on a significant amount of traffic.</p>
+                <p>Reaching the top position on Google’s search page is not a quick or easy task, and if someone told
+                    you they can get your website there in 3 months or less they are either lying to you or simply don’t
+                    know what they are talking about. The truth is the process takes time, a lot of time. As for how
+                    much it depends on the competition and how saturated the market is.</p>
+
+                <p>But there are several factors that google considers in how it ranks website</p>
+                <a href="./blog.html">Learn More</a>
+            </div>
+        </section>
+
+        <!-- ============================================ -->
+        <!--        Optimization: Why Speed Matters       -->
+        <!-- ============================================ -->
+        <section id="speed">
+            <div class="optimize-girl">
+                <div class="search-cat"><img src="./services/service-images/optimize-girl.png"
+                        alt="A girl focusing on     optimizing">
+                </div>
+            </div>
+            <div class="speed-text">
+                <h2>Optimization: Why Speed Matters </h2>
+                <p>There is a good reason why big business’s spend a lot of time and money optimizing every bit of their
+                    website. It is because a simple thing as loading speed can have a big impact on the business, and we
+                    are no different in that regard.</p>
+                <p>If we could summaries it quickly, its that website speed matters because it affects user experience,
+                    search engine ranking, conversion rates, bounce rates, and accessibility. All of those factors
+                    contribute to the success of a website.</p>
+                <p>If you are interested in learning more about the topic of website speed and its importance, we have
+                    an in depth explanation on our blog page which you can access from here.</p>
+                <a href="./blog.html">Learn More</a>
+            </div>
+        </section>
+    </main>
+    <!-- ============================================ -->
+    <!--                    Footer                    -->
+    <!-- ============================================ -->
+    <footer id="footer-about">
+
+        <picture>
+            <source media="(max-width: 849px)" srcset="./services/service-images/footer-bottom-blob-mobile.png">
+            <source media="(min-width: 850px)" srcset="./services/service-images/footer-bottom-blob-desktop.png">
+            <img class="footer-bottom-blob" decoding="async" aria-hidden="true"
+                src="./services/service-images/footer-bottom-blob-desktop.png">
+        </picture>
+
+        <div class="footer-container">
+
+            <a class="footer-logo" aria-label="footer logo" href="index.html">
+                <img src="./services/service-images/logo-services-w.png" alt="logo">
+            </a>
+
+            <div class="footer-text">
+
+                <nav class="footer-navigation">
+                    <h2>Navigation</h2>
+                    <ul class="footer-links">
+                        <li class="home"><a href="./">Home</a></li>
+                        <li class="about"><a href="./about.html">About</a></li>
+                        <li class="services"><a href="./services.html">Services</a></li>
+                        <li class="blog"><a href="./blog.html">Blog</a></li>
+                        <li class="contact"><a href="./contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+
+                <div class="footer-contact">
+                    <h2>Contact Info</h2>
+                    <div>
+                        <a class="email" href="mailto:ArtshaWebDesign@gmail.com">ArtshaWebDesign@gmail.com</a>
+                        <a class="phone" href="tel:7634398513">763 - 439 - 8513</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <a href="index.html">Copyright © 2023 - Artsha - All Rights Reserved</a>
+        </div>
+
+    </footer>
+
 </body>
 
 </html>

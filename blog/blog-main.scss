@@ -2,6 +2,7 @@
 //  Variables
 // ==============================
 $background: #3F3B51;
+$lightBackground: #E7F0F8;
 $blue: #38C6E5;
 $green: #7fd378;
 $greenDarker: darken($green, 10%);
@@ -23,10 +24,10 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
     -1px -1px 1px darken(#3f3b513a, 100%);
 
 // ============================== 
-//  Hero - About
+//  Hero - Services
 // ==============================
-.about-hero-text,
-.about-hero-girl {
+.services-hero-text,
+.info-key {
     transition: 0.2s;
 }
 
@@ -37,11 +38,11 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
         z-index: 500;
     }
 
-    .about-hero-text {
+    .services-hero-text {
         position: relative;
 
         p {
-            color: $greenDarker;
+            color: $red;
             font-weight: 600;
             line-height: 1.25;
         }
@@ -52,23 +53,25 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
         }
     }
 
-    .about-hero-girl {
+    .info-key {
         position: absolute;
         content: '';
-        background-image: url('./about-images/window-girl.png');
+        background-image: url('./blog-images/info-key.png');
         background-repeat: no-repeat;
         background-size: contain;
         height: 100%;
+        overflow: visible;
     }
 }
 
 @media screen and (min-width: 0px) and (max-width: 849px) {
     #hero {
+        position: relative;
         display: flex;
         flex-direction: column;
     }
 
-    .about-hero-text {
+    .services-hero-text {
         width: 90%;
         max-width: 475px;
         margin: 25px auto;
@@ -76,30 +79,30 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
 
         p {
             font-weight: 600;
-            font-size: 1.5em;
+            font-size: 1.75em;
         }
 
         h1 {
-            font-size: clamp(1.75em, 6vw, 3em);
+            font-size: clamp(2em, 6vw, 2.5em);
         }
     }
 
-    .about-hero-girl {
+    .info-key {
         display: none;
     }
 }
 
-@media screen and (min-width: 850px) {
+@media only screen and (min-width: 850px) {
     #hero {
         display: flex;
         flex-direction: row;
-        margin-bottom: -350px;
-        height: 650px;
+        margin-bottom: -175px;
+        height: 675px;
     }
 }
 
 @media screen and (min-width: 850px) and (max-width: 999px) {
-    .about-hero-text {
+    .services-hero-text {
         margin-left: 25px;
         margin-top: 125px;
         width: 45%;
@@ -113,19 +116,20 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
         }
     }
 
-    .about-hero-girl {
-        right: -75px;
+    .info-key {
+        right: -125px;
         margin-top: 60px;
-        width: 650px;
+        width: 700px;
     }
 }
 
 @media screen and (min-width: 1000px) and (max-width: 1199px) {
-    .about-hero-text {
+    .services-hero-text {
         margin-left: 60px;
         margin-top: 150px;
-        width: 40%;
+        width: 45%;
         line-height: 1.5;
+        z-index: 5;
 
         p {
             font-size: 1.5em;
@@ -134,18 +138,17 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
         h1 {
             font-size: 2.5em;
         }
-
     }
 
-    .about-hero-girl {
-        right: -50px;
+    .info-key {
+        right: -75px;
         margin-top: 75px;
-        width: 700px;
+        width: 750px;
     }
 }
 
 @media screen and (min-width: 1200px) and (max-width: 1349px) {
-    .about-hero-text {
+    .services-hero-text {
         margin-left: 60px;
         margin-top: 175px;
         width: 40%;
@@ -159,18 +162,18 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
         }
     }
 
-    .about-hero-girl {
+    .info-key {
         right: -25px;
         margin-top: 75px;
-        width: 750px;
+        width: 800px;
     }
 }
 
 @media screen and (min-width: 1350px) and (max-width: 1499px) {
-    .about-hero-text {
+    .services-hero-text {
         margin-left: 75px;
         margin-top: 200px;
-        width: 35%;
+        width: 40%;
 
         p {
             font-size: 1.5em;
@@ -182,19 +185,19 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
 
     }
 
-    .about-hero-girl {
+    .info-key {
         right: 0px;
         margin-top: 75px;
-        width: 850px;
+        width: 825px;
     }
 }
 
 @media screen and (min-width: 1500px) and (max-width: 1699px) {
-    .about-hero-text {
+    .services-hero-text {
         position: absolute;
         margin-left: 125px;
         margin-top: 225px;
-        width: 35%;
+        width: 40%;
 
         p {
             font-size: 1.75em;
@@ -205,22 +208,22 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
         }
     }
 
-    .about-hero-girl {
+    .info-key {
         right: 25px;
         margin-top: 100px;
-        width: 950px;
+        width: 850px;
     }
 }
 
 @media screen and (min-width: 1700px) {
-    .about-hero-text {
+    .services-hero-text {
         position: absolute;
         margin-left: 125px;
         margin-top: 250px;
-        width: 35%;
+        width: 40%;
 
         p {
-            font-size: 1.75em;
+            font-size: 2em;
         }
 
         h1 {
@@ -228,37 +231,40 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
         }
     }
 
-    .about-hero-girl {
+    .info-key {
         right: 75px;
-        margin-top: 125px;
-        width: 1000px;
+        margin-top: 115px;
+        width: 900px;
     }
 }
 
 // ============================== 
-//  My Journey 
+//  Standing Out From The Crowd
 // ==============================
 
 @media screen and (min-width: 0px) {
 
-    #journey {
+    #standing-out {
         background-color: $background;
     }
 
-    .journey-top-blob {
+    .standing-out-top-blob {
+        position: relative;
         background-color: $white;
         width: 100%;
+        z-index: 100;
     }
 
-    .journey-container {
+    .standing-out-container {
         max-width: 850px;
         display: flex;
         flex-direction: column;
         width: 90%;
-        margin: 25px auto;
+        margin: 0 auto;
+        margin-top: 75px;
 
         p:first-child {
-            color: $green;
+            color: lighten($purple, 5%);
             font-weight: 700;
             font-size: 1.5em;
             margin-bottom: 0px;
@@ -281,7 +287,7 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
 
         .pathway {
             content: '';
-            background-image: url('./about-images/pathway.png');
+            background-image: url('./service-images/pathway.png');
             background-size: contain;
             background-repeat: no-repeat;
             background-position: center;
@@ -295,17 +301,17 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
 
         a {
             border-radius: 7.5px;
-            border: 1px solid $green;
-            color: $green;
+            border: 1px solid $purple;
+            color: lighten($purple, 5%);
             margin: 0 auto;
             min-width: 100px;
-            padding: 17.5px 25px;
+            padding: 20px 30px;
             font-weight: 700;
             transition: 0.3s;
             box-shadow: 1px 1px 5px #1a1a1a;
 
             &:hover {
-                background-color: white;
+                background-color: $white;
                 color: #1a1a1a;
                 transition: 0.3s;
                 border: 1px solid #1a1a1a;
@@ -314,287 +320,526 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
 
     }
 
-    .journey-bottom-blob {
+    .standing-out-bottom-blob {
         background-color: $white;
         width: 100%;
         margin-bottom: -5px;
     }
 }
 
-@media only screen and (min-width: 0px) and (max-width: 849px) {
-    .journey-container a {
-        margin-bottom: 25px;
-    }
-}
-
 // ============================== 
-//   What sets ARTSHA apart   
+//  Websites Done Differently 
 // ==============================
-@media screen and (min-width: 0px) {
-    #sets-apart {
+
+@media screen and (min-width: 0px) and (max-width: 849px) {
+    #done-differently {
         background-color: $white;
         width: 90%;
-        max-width: 850px;
+        max-width: 1000px;
         margin: 0 auto;
-        padding-top: 15px;
     }
 
-    .sets-apart-header {
+    .done-differently-header {
         position: relative;
         margin: 0 auto;
-        text-align: left;
         text-align: center;
-        margin-bottom: 75px;
-        margin-top: 50px;
 
         h1 {
             margin: 0 auto;
             color: $black;
-            font-size: clamp(3em, 6vw, 3.25em);
+            font-size: clamp(2em, 6vw, 3em);
+            margin-top: 75px;
             line-height: 1.25;
             margin-bottom: 25px;
 
-            .no-wrap {
-                white-space: nowrap;
-            }
-
-            .green {
-                color: $green;
-                line-height: 1.25;
+            span {
+                color: $purple;
             }
         }
 
         p {
-            max-width: 750px;
+            max-width: 700px;
             margin: 0 auto;
             color: $black;
-            margin-bottom: 75px;
+            margin-bottom: 50px;
             line-height: 1.75;
             font-size: 1.125em;
         }
 
     }
 
-    .sets-items {
-        h2 {
-            font-size: 2em;
-            border-left: 5px solid $green;
-            padding-left: 12.5px;
-            margin-bottom: 15px;
-            margin-top: 50px;
-            line-height: 1.25;
+}
+
+@media only screen and (min-width: 850px) {
+    .done-differently-header {
+        width: 75%;
+        margin: 0 auto;
+        text-align: center;
+        margin-bottom: 75px;
+
+        h1 {
+            margin-top: 75px;
+            margin-bottom: 25px;
+            font-size: clamp(2em, 6vw, 3em);
+
+            span {
+                color: $purple ;
+            }
         }
 
         p {
-            line-height: 1.75;
+            max-width: 750px;
+            margin: 0 auto;
+        }
+    }
+
+    .done-differently-container {
+        width: 60%;
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        justify-content: space-between;
+        margin: 0 auto;
+    }
+
+}
+
+// ============================== 
+//  Designing & Developing with a Purpose 
+// ==============================
+
+@media screen and (min-width: 0px) and (max-width: 999px) {
+    #purpose {
+        max-width: 90%;
+        margin: 100px auto;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .purpose-text {
+        line-height: 1.5;
+        margin: 0 auto;
+        max-width: 550px;
+
+        h2 {
+            border-left: 5px solid $purple2;
+            padding-left: 12.5px;
+            margin-bottom: 15px;
+        }
+
+        p {
             margin-bottom: 25px;
-            max-width: 500px;
-
-            span {
-                color: $greenDarker;
-                font-weight: 600;
-            }
-
-            &:last-child {
-                margin-bottom: 50px;
-            }
         }
     }
-}
 
-@media screen and (min-width: 0px) and (max-width: 849px) {
-
-
-    .sets-apart-container {
-        display: flex;
-        flex-direction: column-reverse;
+    .laptop-girl {
         margin: 0 auto;
-    }
-
-    .sets-apart-header {
-        margin-bottom: -50px;
-    }
-
-    .sets-left {
-        margin: 0 auto;
-        margin-top: -75px;
-    }
-
-    .sets-right {
-        text-align: center;
+        margin-bottom: 25px;
 
         img {
-            width: 90%;
             max-width: 500px;
-            margin-bottom: 50px;
-        }
-    }
+            width: 100%;
 
-    .sets-buttons {
-        display: flex;
-        margin-top: 50px;
-        margin-bottom: 150px;
-        height: auto;
-
-        a {
-            padding: 17.5px 25px;
-            border-radius: 7.5px;
-            color: #000000;
-            border-color: 1px solid lightgray;
-            min-width: 125px;
-            transition: 0.2s;
-            text-align: center;
-
-            &:hover {
-                box-shadow: $box-shadow-hover;
-            }
-        }
-
-        .contact-btn {
-            background-color: $yellow;
-            box-shadow:
-                1px 2px 0 darken($yellow, 5%),
-                2px 4px 6px darken($background, 25%);
-            margin-right: 10px;
-        }
-
-        .services-btn {
-            background-color: $white;
-            box-shadow: 1px 2px 0 darken($white, 5%), 2px 4px 6px darken($background, 25%);
-            margin-left: 10px;
         }
     }
 }
 
-@media only screen and (min-width: 850px) and (max-width: 1199px) {
-    #sets-apart {
+@media only screen and (min-width: 1000px) {
+    #purpose {
+        max-width: 90%;
+        margin: 100px 7vw;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .purpose-text {
+        line-height: 1.5;
+        margin: 0 auto;
+        max-width: 550px;
+
+        h2 {
+            border-left: 5px solid $purple2;
+            padding-left: 12.5px;
+            margin-bottom: 15px;
+            font-size: 1.75em;
+        }
+
+        p {
+            margin-bottom: 25px;
+        }
+    }
+
+    .laptop-girl {
+        margin: 0 auto;
+        margin-right: 50px;
+
+        img {
+            min-width: 400px;
+            width: 100%;
+            max-width: 600px;
+
+        }
+    }
+}
+
+// ==============================
+//  Prioritizing Mobile Experience 
+// ==============================
+@media screen and (min-width: 0px) and (max-width: 999px) {
+    #mobile {
+        max-width: 100%;
+        margin: 100px auto;
+        display: flex;
+        flex-direction: column;
+        background: $lightBackground;
+        padding-bottom: 100px;
+    }
+
+    .mobile-text {
         width: 90%;
-        padding-top: 15px;
-    }
-
-    .sets-apart-container {
-        display: flex;
-        flex-direction: row;
+        line-height: 1.5;
         margin: 0 auto;
-    }
+        max-width: 550px;
 
-    .sets-left {
-        margin: 0 auto;
-    }
-
-    .sets-right {
-        width: 50%;
-        position: relative;
-
-        img {
-            position: absolute;
-            max-width: 550px;
-            margin-top: 250px;
-            margin-left: 25px;
-            transition: 0.3s;
+        h2 {
+            border-left: 5px solid $purple2;
+            padding-left: 12.5px;
+            margin-bottom: 15px;
         }
-    }
 
-    .sets-buttons {
-        display: flex;
-        margin-top: 75px;
-        margin-bottom: 100px;
-        height: auto;
+        p {
+            margin-bottom: 25px;
+        }
 
         a {
-            padding: 17.5px 25px;
-            border-radius: 7.5px;
+            position: relative;
             color: #000000;
+            top: 15px;
             min-width: 125px;
             transition: 0.2s;
             text-align: center;
+            border-radius: 7.5px;
+            padding: 17.5px 25px;
+            border: 1px darken($white, 5%) solid;
+            box-shadow: 1px 2px 0 darken($white, 5%), 2px 4px 6px darken($background, 25%);
+            background-color: $white;
+
+            margin: 0 auto;
 
             &:hover {
                 box-shadow: $box-shadow-hover;
             }
         }
+    }
 
-        .contact-btn {
-            background-color: $yellow;
-            box-shadow:
-                1px 2px 0 darken($yellow, 5%),
-                2px 4px 6px darken($background, 25%);
-            margin-right: 10px;
-        }
+    .mobile-guy {
+        margin: 75px auto 35px;
 
-        .services-btn {
-            background-color: $white;
-            box-shadow: 1px 2px 0 darken($white, 5%), 2px 4px 6px darken($background, 25%);
-            margin-left: 10px;
+        img {
+            max-width: 300px;
+            width: 100%;
+            align-self: center;
         }
     }
 }
 
-@media only screen and (min-width: 1200px) {
-    #sets-apart {
-        width: 80%;
-        padding-top: 15px;
-    }
-
-    .sets-apart-container {
+@media only screen and (min-width: 1000px) {
+    #mobile {
+        max-width: 100%;
+        padding: 100px 10vw;
+        min-height: 800px;
         display: flex;
-        flex-direction: row;
-        margin: 0 auto;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: center;
+        background: $lightBackground;
     }
 
-    .sets-left {
+    .mobile-text {
+        line-height: 1.5;
         margin: 0 auto;
-        margin-left: -50px;
-    }
+        max-width: 550px;
 
-    .sets-right {
-        width: 50%;
-        position: relative;
-
-        img {
-            position: absolute;
-            max-width: 650px;
-            margin-top: 175px;
-            margin-left: 25px;
-            transition: 0.3s;
+        h2 {
+            border-left: 5px solid $purple2;
+            padding-left: 12.5px;
+            margin-bottom: 15px;
+            font-size: 1.75em;
         }
-    }
 
-    .sets-buttons {
-        display: flex;
-        margin-top: 75px;
-        margin-bottom: 100px;
-        height: auto;
+        p {
+            margin-bottom: 25px;
+        }
 
         a {
-            padding: 17.5px 25px;
-            border-radius: 7.5px;
+            position: relative;
             color: #000000;
-            border-color: 1px solid lightgray;
+            top: 15px;
             min-width: 125px;
             transition: 0.2s;
             text-align: center;
+            border-radius: 7.5px;
+            padding: 17.5px 25px;
+            border: 1px darken($white, 5%) solid;
+            box-shadow: 1px 2px 0 darken($white, 5%), 2px 4px 6px darken($background, 25%);
+            background-color: $white;
 
             &:hover {
                 box-shadow: $box-shadow-hover;
             }
         }
+    }
 
-        .contact-btn {
-            background-color: $yellow;
-            box-shadow:
-                1px 2px 0 darken($yellow, 5%),
-                2px 4px 6px darken($background, 25%);
-            margin-right: 10px;
+    .mobile-guy {
+        margin: 0 auto;
+        margin-left: 50px;
+
+        img {
+            min-width: 400px;
+            width: 100%;
+            max-width: 500px;
+        }
+    }
+}
+
+// ==============================
+//  Search Engine Optimization  
+// ==============================
+@media screen and (min-width: 0px) and (max-width: 999px) {
+    #search {
+        max-width: 90%;
+        margin: 100px auto;
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 100px;
+    }
+
+    .search-text {
+        width: 100%;
+        line-height: 1.5;
+        margin: 0 auto;
+        max-width: 550px;
+
+        h2 {
+            border-left: 5px solid $purple2;
+            padding-left: 12.5px;
+            margin-bottom: 15px;
         }
 
-        .services-btn {
-            background-color: $white;
+        p {
+            margin-bottom: 25px;
+        }
+
+        a {
+            position: relative;
+            color: #000000;
+            top: 15px;
+            min-width: 125px;
+            transition: 0.2s;
+            text-align: center;
+            border-radius: 7.5px;
+            padding: 17.5px 25px;
+            border: 1px darken($white, 5%) solid;
             box-shadow: 1px 2px 0 darken($white, 5%), 2px 4px 6px darken($background, 25%);
-            margin-left: 10px;
+            background-color: $white;
+
+            margin: 0 auto;
+
+            &:hover {
+                box-shadow: $box-shadow-hover;
+            }
         }
     }
 
+    .search-cat {
+        margin: 0px auto 15px;
+
+        img {
+            max-width: 450px;
+            width: 100%;
+            align-self: center;
+        }
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    #search {
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 0 10vw;
+        min-height: 800px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .search-text {
+        line-height: 1.5;
+        margin: 0 auto;
+        max-width: 550px;
+
+        h2 {
+            border-left: 5px solid $purple2;
+            padding-left: 12.5px;
+            margin-bottom: 15px;
+            font-size: 1.75em;
+        }
+
+        p {
+            margin-bottom: 25px;
+        }
+
+        a {
+            position: relative;
+            color: #000000;
+            top: 15px;
+            min-width: 125px;
+            transition: 0.2s;
+            text-align: center;
+            border-radius: 7.5px;
+            padding: 17.5px 25px;
+            border: 1px darken($white, 5%) solid;
+            box-shadow: 1px 2px 0 darken($white, 5%), 2px 4px 6px darken($background, 25%);
+            background-color: $white;
+
+            &:hover {
+                box-shadow: $box-shadow-hover;
+            }
+        }
+    }
+
+    .search-cat {
+        margin: 0 auto;
+
+        img {
+            min-width: 350px;
+            width: 100%;
+            max-width: 600px;
+        }
+    }
+}
+
+// ==============================
+//  Optimization: Why Speed Matters
+// ==============================
+@media screen and (min-width: 0px) and (max-width: 999px) {
+    #speed {
+        max-width: 100%;
+        margin: 100px auto;
+        display: flex;
+        flex-direction: column;
+        background: $lightBackground;
+        padding-bottom: 100px;
+    }
+
+    .speed-text {
+        width: 90%;
+        line-height: 1.5;
+        margin: 0 auto;
+        max-width: 550px;
+
+        h2 {
+            border-left: 5px solid $purple2;
+            padding-left: 12.5px;
+            margin-bottom: 15px;
+        }
+
+        p {
+            margin-bottom: 25px;
+        }
+
+        a {
+            position: relative;
+            color: #000000;
+            top: 15px;
+            min-width: 125px;
+            transition: 0.2s;
+            text-align: center;
+            border-radius: 7.5px;
+            padding: 17.5px 25px;
+            border: 1px darken($white, 5%) solid;
+            box-shadow: 1px 2px 0 darken($white, 5%), 2px 4px 6px darken($background, 25%);
+            background-color: $white;
+
+            margin: 0 auto;
+
+            &:hover {
+                box-shadow: $box-shadow-hover;
+            }
+        }
+    }
+
+    .optimize-girl {
+        margin: 75px auto 35px;
+
+        img {
+            max-width: 500px;
+            width: 100%;
+            align-self: center;
+        }
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    #speed {
+        max-width: 100%;
+        padding: 100px 10vw;
+        min-height: 800px;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: center;
+        background: $lightBackground;
+    }
+
+    .speed-text {
+        line-height: 1.5;
+        margin: 0 auto;
+        max-width: 550px;
+
+        h2 {
+            border-left: 5px solid $purple2;
+            padding-left: 12.5px;
+            margin-bottom: 15px;
+            font-size: 1.75em;
+        }
+
+        p {
+            margin-bottom: 25px;
+        }
+
+        a {
+            position: relative;
+            color: #000000;
+            top: 15px;
+            min-width: 125px;
+            transition: 0.2s;
+            text-align: center;
+            border-radius: 7.5px;
+            padding: 17.5px 25px;
+            border: 1px darken($white, 5%) solid;
+            box-shadow: 1px 2px 0 darken($white, 5%), 2px 4px 6px darken($background, 25%);
+            background-color: $white;
+
+            &:hover {
+                box-shadow: $box-shadow-hover;
+            }
+        }
+    }
+
+    .optimize-girl {
+        margin: 0 auto;
+        margin-left: 50px;
+
+        img {
+            min-width: 400px;
+            width: 100%;
+            max-width: 500px;
+        }
+    }
 }
 
 
@@ -607,7 +852,6 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
         width: 100%;
         position: relative;
         z-index: 999;
-        margin-top: -75px;
     }
 
     .footer-container {
@@ -626,13 +870,13 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
         margin: 50px auto;
 
         img {
-            height: calc(75px + 5vw);
+            height: calc(75px + 10vw);
             max-height: 110px;
         }
     }
 
     .footer-bottom {
-        background-color: $green;
+        background-color: $purple;
         height: 25px;
         display: flex;
         justify-content: center;
@@ -644,7 +888,7 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
         }
 
         a:hover {
-            color: white;
+            color: $white;
             transition: 0.2s;
         }
     }
@@ -662,9 +906,7 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
             color: $blue;
         }
 
-        // ACTIVE (width: 100%)
         .about a::after {
-            width: 100%;
             background-color: $green;
         }
 
@@ -672,7 +914,9 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
             color: $green;
         }
 
+        // ACTIVE (width: 100%)
         .services a::after {
+            width: 100%;
             background-color: $purple;
         }
 
@@ -702,7 +946,7 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
         .email:hover,
         .phone:hover {
             transition: 0.2s;
-            color: $green;
+            color: $purple;
         }
     }
 }
@@ -725,7 +969,7 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
                 color: white;
                 margin-bottom: 15px;
                 padding-bottom: 5px;
-                border-bottom: 4px solid $green;
+                border-bottom: 4px solid $purple;
             }
 
             ul {
@@ -755,7 +999,7 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
             &::before {
                 display: block;
                 content: '';
-                background-image: url('./about-images/leaves2.png');
+                background-image: url('./service-images/leaves.png');
                 background-repeat: no-repeat;
                 background-size: contain;
                 height: 125px;
@@ -768,7 +1012,7 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
 
             h2 {
                 color: white;
-                border-bottom: 4px solid $green;
+                border-bottom: 4px solid $purple;
                 margin-bottom: 25px;
                 padding-bottom: 5px;
             }
@@ -785,7 +1029,7 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
                     margin-bottom: 20px;
 
                     &:hover {
-                        text-decoration: solid 1px $green;
+                        text-decoration: solid 1px $purple;
                     }
 
                 }
@@ -793,7 +1037,7 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
                 a:nth-child(1)::before {
                     content: '';
                     position: absolute;
-                    background-image: url('./about-images/mail.png');
+                    background-image: url('./service-images/mail.png');
                     background-size: contain;
                     background-repeat: no-repeat;
                     width: 20px;
@@ -805,7 +1049,7 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
                 a:nth-child(2)::before {
                     content: '';
                     position: absolute;
-                    background-image: url('./about-images/phone.png');
+                    background-image: url('./service-images/phone.png');
                     background-size: contain;
                     background-repeat: no-repeat;
                     width: 19px;
@@ -830,7 +1074,7 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
         overflow: visible;
 
         &::after {
-            border-bottom: 4px solid #3BD3F4;
+            border-bottom: 4px solid $purple;
         }
 
         .footer-navigation {
@@ -841,7 +1085,7 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
             &::before {
                 display: block;
                 content: '';
-                background-image: url('./about-images/leaves.png');
+                background-image: url('./service-images/leaves.png');
                 background-repeat: no-repeat;
                 background-size: contain;
                 height: 125px;
@@ -856,7 +1100,7 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
                 color: white;
                 margin-bottom: 15px;
                 padding-bottom: 5px;
-                border-bottom: 4px solid $green;
+                border-bottom: 4px solid $purple;
                 padding-left: 110px;
             }
 
@@ -879,8 +1123,8 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
                         text-underline-offset: 2px;
                     }
 
-                    .about:hover {
-                        text-decoration: 3px solid #7fd378 underline;
+                    .services:hover {
+                        text-decoration: 3px solid $purple underline;
                         text-underline-offset: 2px;
                     }
 
@@ -890,7 +1134,7 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
                     }
 
                     .blog:hover {
-                        text-decoration: 3px solid #e38025 underline;
+                        text-decoration: 3px solid $red underline;
                         text-underline-offset: 2px;
                     }
 
@@ -913,7 +1157,7 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
             &::after {
                 display: block;
                 content: '';
-                background-image: url('./about-images/leaves2.png');
+                background-image: url('./service-images/leaves2.png');
                 background-repeat: no-repeat;
                 background-size: contain;
                 height: 125px;
@@ -924,10 +1168,10 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
             }
 
             h2 {
-                color: white;
+                color: $white;
                 margin-bottom: 15px;
                 padding-bottom: 5px;
-                border-bottom: 4px solid $green;
+                border-bottom: 4px solid $purple;
                 padding-left: 75px;
             }
 
@@ -940,7 +1184,7 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
             }
 
             a {
-                color: white;
+                color: $white;
                 margin-left: 40px;
                 margin-bottom: 20px;
             }
@@ -949,7 +1193,7 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
                 display: block;
                 content: '';
                 position: absolute;
-                background-image: url('./about-images/mail.png');
+                background-image: url('./service-images/mail.png');
                 background-size: contain;
                 background-repeat: no-repeat;
                 width: 20px;
@@ -963,7 +1207,7 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
                 display: block;
                 content: '';
                 position: absolute;
-                background-image: url('./about-images/phone.png');
+                background-image: url('./service-images/phone.png');
                 background-size: contain;
                 background-repeat: no-repeat;
                 width: 19px;
@@ -1012,12 +1256,12 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
         }
 
         // ACTIVE (width: 100%)
-        .about a::after {
+        .services a::after {
             width: 100%;
             background-color: $green;
         }
 
-        .about a:hover {
+        .services a:hover {
             color: $green;
         }
 
@@ -1052,7 +1296,7 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
 
             &:hover {
                 transition: 0.2s;
-                color: $green;
+                color: $purple;
             }
         }
     }
@@ -1076,7 +1320,7 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
         overflow: visible;
 
         &::after {
-            border-bottom: 4px solid #3BD3F4;
+            border-bottom: 4px solid $blue;
         }
 
         .footer-navigation {
@@ -1087,7 +1331,7 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
             &::before {
                 display: block;
                 content: '';
-                background-image: url('./about-images/leaves2.png');
+                background-image: url('./service-images/leaves.png');
                 background-repeat: no-repeat;
                 background-size: contain;
                 height: 125px;
@@ -1102,7 +1346,7 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
 
                 margin-bottom: 15px;
                 padding-bottom: 5px;
-                border-bottom: 4px solid $green;
+                border-bottom: 4px solid $purple;
                 padding-left: 110px;
             }
 
@@ -1116,17 +1360,17 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
                     margin: 2.5px 12.5px;
 
                     a {
-                        color: white;
+                        color: $white;
                         padding: 5px;
                     }
 
                     .home {
-                        text-decoration: 3px solid #38C6E5 underline;
+                        text-decoration: 3px solid $blue underline;
                         text-underline-offset: 2px;
                     }
 
-                    .about:hover {
-                        text-decoration: 3px solid #7fd378 underline;
+                    .services:hover {
+                        text-decoration: 3px solid $green underline;
                         text-underline-offset: 2px;
                     }
 
@@ -1136,7 +1380,7 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
                     }
 
                     .blog:hover {
-                        text-decoration: 3px solid #e38025 underline;
+                        text-decoration: 3px solid $red underline;
                         text-underline-offset: 2px;
                     }
 
@@ -1188,12 +1432,12 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
                 color: $blue;
             }
 
-            .about a::after {
+            .services a::after {
                 width: 100%;
                 background-color: $green;
             }
 
-            .about a:hover {
+            .services a:hover {
                 color: $green;
             }
 
@@ -1235,7 +1479,7 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
             &::after {
                 display: block;
                 content: '';
-                background-image: url('./about-images/leaves.png');
+                background-image: url('./service-images/leaves2.png');
                 background-repeat: no-repeat;
                 background-size: contain;
                 height: 125px;
@@ -1246,10 +1490,10 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
             }
 
             h2 {
-                color: white;
+                color: $white;
                 margin-bottom: 15px;
                 padding-bottom: 5px;
-                border-bottom: 4px solid $green;
+                border-bottom: 4px solid $purple;
                 padding-left: 75px;
             }
 
@@ -1263,7 +1507,7 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
             }
 
             a {
-                color: white;
+                color: $white;
                 margin-left: 40px;
                 position: relative;
                 margin-bottom: 15px;
@@ -1271,7 +1515,7 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
 
                 &:hover {
                     transition: 0.2s;
-                    color: $green;
+                    color: $purple;
                 }
 
             }
@@ -1280,7 +1524,7 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
                 display: block;
                 content: '';
                 position: absolute;
-                background-image: url('./about-images/mail.png');
+                background-image: url('./service-images/mail.png');
                 background-size: contain;
                 background-repeat: no-repeat;
                 width: 20px;
@@ -1293,7 +1537,7 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
                 display: block;
                 content: '';
                 position: absolute;
-                background-image: url('./about-images/phone.png');
+                background-image: url('./service-images/phone.png');
                 background-size: contain;
                 background-repeat: no-repeat;
                 width: 19px;
