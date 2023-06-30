@@ -13,7 +13,7 @@
     position: relative;
   }
   .services-hero-text p {
-    color: #ffcc00;
+    color: #D44D4D;
     font-weight: 600;
     line-height: 1.25;
   }
@@ -66,10 +66,11 @@
   .services-hero-text {
     margin-left: 25px;
     margin-top: 125px;
-    width: 45%;
+    width: 40%;
+    z-index: 5;
   }
   .services-hero-text p {
-    font-size: 1.5em;
+    font-size: 1.75em;
   }
   .services-hero-text h1 {
     font-size: 2.5em;
@@ -84,12 +85,12 @@
   .services-hero-text {
     margin-left: 60px;
     margin-top: 150px;
-    width: 45%;
+    width: 35%;
     line-height: 1.5;
     z-index: 5;
   }
   .services-hero-text p {
-    font-size: 1.5em;
+    font-size: 1.75em;
   }
   .services-hero-text h1 {
     font-size: 2.5em;
@@ -105,16 +106,17 @@
     margin-left: 60px;
     margin-top: 175px;
     width: 40%;
+    z-index: 5;
   }
   .services-hero-text p {
-    font-size: 1.5em;
+    font-size: 1.75em;
   }
   .services-hero-text h1 {
     font-size: 2.5em;
   }
   .contact-girl {
     right: -25px;
-    margin-top: 75px;
+    margin-top: 85px;
     width: 800px;
   }
 }
@@ -125,15 +127,15 @@
     width: 40%;
   }
   .services-hero-text p {
-    font-size: 1.5em;
+    font-size: 1.75em;
   }
   .services-hero-text h1 {
     font-size: 2.75em;
   }
   .contact-girl {
-    right: 0px;
-    margin-top: 75px;
-    width: 825px;
+    right: -25px;
+    margin-top: 95px;
+    width: 800px;
   }
 }
 @media screen and (min-width: 1500px) and (max-width: 1699px) {
@@ -142,6 +144,7 @@
     margin-left: 125px;
     margin-top: 225px;
     width: 40%;
+    z-index: 5;
   }
   .services-hero-text p {
     font-size: 1.75em;
@@ -150,8 +153,8 @@
     font-size: 3em;
   }
   .contact-girl {
-    right: 25px;
-    margin-top: 100px;
+    right: 0px;
+    margin-top: 115px;
     width: 850px;
   }
 }
