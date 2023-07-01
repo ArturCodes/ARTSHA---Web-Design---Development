@@ -560,6 +560,7 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
     .mobile-text {
         line-height: 1.5;
         margin: 0 auto;
+        min-width: 400px;
         max-width: 550px;
 
         h2 {
@@ -713,9 +714,10 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
 
     .search-cat {
         margin: 0 auto;
+        margin-right: 50px;
 
         img {
-            min-width: 350px;
+            min-width: 400px;
             width: 100%;
             max-width: 600px;
         }
@@ -798,6 +800,7 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
     .speed-text {
         line-height: 1.5;
         margin: 0 auto;
+        min-width: 400px;
         max-width: 550px;
 
         h2 {
@@ -832,12 +835,12 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
 
     .optimize-girl {
         margin: 0 auto;
-        margin-left: 50px;
+        margin-left: 25px;
 
         img {
-            min-width: 400px;
+            min-width: 450px;
             width: 100%;
-            max-width: 500px;
+            max-width: 650px;
         }
     }
 }
