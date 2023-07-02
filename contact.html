@@ -100,27 +100,49 @@
         <!-- ============================================ -->
         <section id="hero">
             <div class="services-hero-text">
-                <p>contact us</p>
+                <p>contact</p>
                 <h1>We are very much looking forward to working with you</h1>
             </div>
             <div class="contact-girl"></div>
         </section>
 
         <!-- ============================================ -->
-        <!--                  Blog Info                   -->
+        <!--                Contact Page                  -->
         <!-- ============================================ -->
 
-        <section id="standing-out">
+        <section id="contact-page">
 
             <picture>
                 <source media="(max-width: 849px)" srcset="./contact/contact-images/contact-top-blob-mobile.png">
                 <source media="(min-width: 850px)" srcset="./contact/contact-images/contact-top-blob-desktop.png">
-                <img class="standing-out-top-blob" decoding="async" aria-hidden="true"
+                <img class="contact-page-top-blob" decoding="async" aria-hidden="true"
                     src="./contact/contact-images/contact-top-blob-desktop.png">
             </picture>
 
-            <div class="standing-out-container">
-                <h1 style="color: white; font-size: 40px; padding-bottom: 200px">PAGE STILL UNDER CONSTRUCTION</h1>
+            <div class="contact-form-container">
+
+
+                <div class="container">
+                    <h2>Contact Form</h2>
+                    <form action="submit.php" method="POST">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+
+                        <label for="phone">Phone</label>
+                        <input type="tel" id="phone" name="phone" required>
+
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" required></textarea>
+
+                        <button type="submit">Submit</button>
+                    </form>
+
+                </div>
+                <h1 style="color: white; font-size: 40px; padding-bottom: 200px; margin: 50px auto">PAGE STILL
+                    UNDER CONSTRUCTION</h1>
             </div>
 
             <!-- <picture>
