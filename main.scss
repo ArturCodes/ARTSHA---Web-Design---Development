@@ -115,6 +115,7 @@ header {
     .hero-guy {
         display: none;
     }
+
 }
 
 @media screen and (min-width: 850px) and (max-width: 999px) {
@@ -558,14 +559,15 @@ header {
 
 @media screen and (min-width: 0px) and (max-width: 849px) {
     .what-we-do-top-blob {
-        display: block;
+        // display: block;
+        // background-color: $white;
+        // background-image: url('./images/what-we-do-top-mobile-blob.png');
+        // background-size: cover;
+        // background-repeat: no-repeat;
+        // background-position: bottom;
+        // overflow: visible;
+        // height: calc(250px + 30vw);
         background-color: $white;
-        background-image: url('./images/what-we-do-top-mobile-blob.png');
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: bottom;
-        overflow: visible;
-        height: calc(250px + 30vw);
         width: 100%;
     }
 
@@ -673,16 +675,9 @@ header {
 
 @media screen and (min-width: 850px) and (max-width: 1199px) {
     .what-we-do-top-blob {
-        display: block;
         background-color: $white;
-        background-image: url('./images/what-we-do-top-blob-desktop.png');
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: bottom;
-        height: 23vw;
         width: 100%;
         margin-top: -25px;
-        position: relative;
     }
 
     #what-we-do {
@@ -801,16 +796,9 @@ header {
 @media screen and (min-width: 1200px) {
     .what-we-do-top-blob {
         background-color: $white;
-        display: block;
-        background-image: url('./images/what-we-do-top-blob-desktop.png');
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: bottom;
-        height: 23vw;
         max-height: 430px;
         width: 100%;
         margin-top: -150px;
-        position: relative;
     }
 
     #what-we-do {
