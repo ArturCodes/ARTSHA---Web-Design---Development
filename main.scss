@@ -829,7 +829,7 @@ header {
             width: auto;
             text-align: center;
             font-weight: 700;
-            margin: 50px 0 25px;
+            margin: 50px 0 10px;
             color: white;
 
             span {
@@ -1014,7 +1014,7 @@ header {
 
         p {
             color: white;
-            margin: 25px auto;
+            margin: 25px auto 0px;
             padding: 0 10px;
             max-width: 600px;
             height: auto;
@@ -1082,7 +1082,7 @@ header {
         h2 {
             color: white;
             font-size: clamp(1.5em, 10vw, 3em);
-            margin: 50px 0 25px 0;
+            margin: 50px 0 15px 0;
             position: relative;
             overflow: visible;
 
@@ -1102,7 +1102,7 @@ header {
             .item {
                 padding: 0 12.5vw;
                 text-align: left;
-                margin-bottom: 25px;
+                margin-bottom: 15px;
 
                 &::before {
                     content: '';
@@ -1180,7 +1180,7 @@ header {
         h2 {
             color: white;
             font-size: clamp(1.5em, 7vw, 3.25em);
-            line-height: 1.5;
+            line-height: 1.125;
             margin: 0 auto;
 
             span {
@@ -1245,8 +1245,8 @@ header {
                 width: 250px;
                 height: 250px;
                 position: absolute;
-                left: -10px;
-                top: -80px;
+                left: -150px;
+                top: -200px;
                 opacity: .03;
 
                 z-index: 999;
@@ -1359,7 +1359,7 @@ header {
         h2 {
             color: white;
             font-size: clamp(1.5em, 7vw, 5em);
-            line-height: 1.25;
+            line-height: 1;
             text-align: center;
             position: relative;
 
@@ -1374,7 +1374,7 @@ header {
             margin: 0 auto;
             margin-top: 25px;
             height: auto;
-            font-size: 1.5em;
+            font-size: 1.25em;
             text-align: center;
 
             span {
@@ -1437,7 +1437,7 @@ header {
             }
 
             &::after {
-                display: block;
+                display: none;
                 content: '';
                 background-image: url('./images/cogs2.png');
                 background-size: contain;
@@ -1446,8 +1446,8 @@ header {
                 height: calc(200px + 5vw);
                 position: absolute;
                 opacity: .03;
-                top: 300px;
-                right: -200px;
+                top: -150px;
+                right: 50px;
                 transform: scaleX(-1);
                 z-index: 999;
             }
@@ -1547,8 +1547,8 @@ header {
             margin: 0 auto;
             margin-top: clamp(50px, 10vw, 100px);
             font-size: clamp(1.75em, 4.75vw, 3em);
-            line-height: 1.5;
-            margin-bottom: 25px;
+            line-height: 1.25;
+            margin-bottom: 15px;
             font-weight: 900;
 
         }
