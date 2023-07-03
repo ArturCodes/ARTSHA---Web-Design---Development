@@ -16,10 +16,11 @@
     color: #ffcc00;
     font-weight: 600;
     line-height: 1.25;
+    margin-bottom: 10px;
   }
   .services-hero-text h1 {
-    line-height: 1.5;
-    font-weight: 600;
+    line-height: 1.25;
+    font-weight: 500;
   }
   .contact-girl {
     position: absolute;
