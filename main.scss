@@ -917,7 +917,7 @@ header {
         z-index: 999;
 
         h2 {
-            font-size: clamp(1.75em, 4.75vw, 3em);
+            font-size: clamp(1.75em, 4.75vw, 3.5em);
             margin: 0 auto;
             line-height: 1.5;
         }
@@ -1536,10 +1536,10 @@ header {
             width: 96%;
             margin: 0 auto;
             margin-top: clamp(50px, 10vw, 100px);
-            font-size: clamp(1.75em, 4.75vw, 3em);
+            font-size: clamp(1.75em, 4.75vw, 3.5em);
             line-height: 1.25;
             margin-bottom: 15px;
-            font-weight: 900;
+            font-weight: 600;
 
         }
 
