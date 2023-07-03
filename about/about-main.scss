@@ -45,11 +45,12 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
             color: $greenDarker;
             font-weight: 600;
             line-height: 1.25;
+
         }
 
         h1 {
-            line-height: 1.5;
-            font-weight: 600;
+            line-height: 1.25;
+            font-weight: 500;
         }
     }
 
@@ -153,6 +154,7 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
 
         p {
             font-size: 1.75em;
+            margin-bottom: 10px;
         }
 
         h1 {
@@ -222,6 +224,7 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
 
         p {
             font-size: 2em;
+            margin-bottom: 10px;
         }
 
         h1 {
@@ -275,7 +278,7 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
 
         p {
             color: $white;
-            margin-bottom: 50px;
+            margin-bottom: 30px;
             line-height: 1.75;
             font-size: 1.125em;
         }
