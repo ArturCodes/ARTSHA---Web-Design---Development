@@ -132,62 +132,64 @@
                     src="./contact/contact-images/contact-top-blob-desktop.png">
             </picture>
 
-            <picture>
+
+            <section>
+                <form id="form" method="post" name="Contact Form"><input type="hidden" name="form-name"
+                        value="Contact Form">
+
+                    <div class="input-group">
+                        <label for="name">Your First Name</label>
+                        <input id="name" aria-label="name" class="input1" name="name" placeholder="First Name"
+                            type="text" tabindex="1" required="">
+                    </div>
+                    <div class="input-group">
+                        <label for="email">Email Address</label>
+                        <input id="email" aria-label="email" class="input1 right" name="email"
+                            placeholder="Email Address" type="email" tabindex="2" required="">
+                    </div>
+                    <div class="input-group">
+                        <label for="phone">Phone Number</label>
+                        <input id="phone" aria-label="phone number" class="input1" name="phone"
+                            placeholder="Phone Number" type="tel" tabindex="3" required="">
+                    </div>
+
+                    <div class="input-group">
+                        <label for="hear">How did you hear about us?</label>
+                        <input id="hear" aria-label="how did you hear about us" class="input1 right"
+                            name="How did you hear about us?" placeholder="How did you hear about us?" type="text"
+                            tabindex="4" required="">
+                    </div>
+
+                    <label for="message">Message</label>
+                    <textarea id="message" aria-label="What do you need help with?" name="message"
+                        placeholder="What do you need help with?" tabindex="5" required=""></textarea>
+
+                    <p class="form-submit">
+                        <button name="submit" type="submit" id="contact-submit" class="button-solid"
+                            data-submit="...Sending">Submit</button>
+                    </p>
+                </form>
+            </section>
+
+            <!-- <picture>
                 <source media="(max-width: 849px)"
                     srcset="./services/service-images/standing-out-bottom-blob-mobile.png">
                 <source media="(min-width: 850px)"
                     srcset="./services/service-images/standing-out-bottom-blob-desktop.png">
                 <img class="standing-out-bottom-blob" decoding="async" aria-hidden="true"
                     src="./services/service-images/standing-out-bottom-blob-desktop.png">
-            </picture>
+            </picture> -->
 
         </section>
 
-        <section>
 
-            <form id="form" method="post" name="Contact Form"><input type="hidden" name="form-name"
-                    value="Contact Form">
-
-                <div class="input-group">
-                    <label for="name">Your First Name</label>
-                    <input id="name" aria-label="name" class="input1" name="name" placeholder="First Name" type="text"
-                        tabindex="1" required="">
-                </div>
-                <div class="input-group">
-                    <label for="email">Email Address</label>
-                    <input id="email" aria-label="email" class="input1 right" name="email" placeholder="Email Address"
-                        type="email" tabindex="2" required="">
-                </div>
-                <div class="input-group">
-                    <label for="phone">Phone Number</label>
-                    <input id="phone" aria-label="phone number" class="input1" name="phone" placeholder="Phone Number"
-                        type="tel" tabindex="3" required="">
-                </div>
-
-                <div class="input-group">
-                    <label for="hear">How did you hear about us?</label>
-                    <input id="hear" aria-label="how did you hear about us" class="input1 right"
-                        name="How did you hear about us?" placeholder="How did you hear about us?" type="text"
-                        tabindex="4" required="">
-                </div>
-
-                <label for="message">Message</label>
-                <textarea id="message" aria-label="What do you need help with?" name="message"
-                    placeholder="What do you need help with?" tabindex="5" required=""></textarea>
-
-                <p class="form-submit">
-                    <button name="submit" type="submit" id="contact-submit" class="button-solid"
-                        data-submit="...Sending">Submit</button>
-                </p>
-            </form>
-        </section>
         <h1 style="color: black; font-size: 40px; padding-bottom: 200px; margin: 50px auto">PAGE STILL
             UNDER CONSTRUCTION</h1>
     </main>
     <!-- ============================================ -->
     <!--                    Footer                    -->
     <!-- ============================================ -->
-    <footer id="footer-about">
+    <!-- <footer id="footer-about">
 
         <picture>
             <source media="(max-width: 849px)" srcset="./services/service-images/footer-bottom-blob-mobile.png">
@@ -230,7 +232,7 @@
             <a href="index.html">Copyright © 2023 - Artsha - All Rights Reserved</a>
         </div>
 
-    </footer>
+    </footer> -->
 
 </body>
 
