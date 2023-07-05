@@ -816,7 +816,7 @@ header {
   .contract-text h2 {
     color: white;
     font-size: clamp(1.5em, 7vw, 3em);
-    line-height: 1.5;
+    line-height: 1.25;
   }
   .contract-text h2 span {
     color: #38C6E5;
@@ -880,7 +880,7 @@ header {
   .included-container h2 {
     color: white;
     font-size: clamp(1.5em, 10vw, 3em);
-    margin: 50px 0 15px 0;
+    margin: 50px 0 10px 0;
     position: relative;
     overflow: visible;
   }
@@ -1007,7 +1007,6 @@ header {
     color: white;
     text-align: left;
     font-size: clamp(1.5em, 7vw, 3.5em);
-    margin-bottom: 15px;
   }
   .included-container h2 span {
     color: #38C6E5;
@@ -1161,7 +1160,6 @@ header {
     text-align: left;
     font-size: clamp(1.5em, 7vw, 3.5em);
     position: relative;
-    margin-bottom: 15px;
   }
   .included-container h2 span {
     color: #38C6E5;
