@@ -354,8 +354,8 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
             margin: 0 auto;
             color: $black;
             font-size: clamp(3em, 6vw, 3.25em);
-            line-height: 1.25;
-            margin-bottom: 25px;
+            line-height: 1;
+            margin-bottom: 10px;
 
             .no-wrap {
                 white-space: nowrap;

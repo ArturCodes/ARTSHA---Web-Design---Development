@@ -267,8 +267,8 @@
     margin: 0 auto;
     color: black;
     font-size: clamp(3em, 6vw, 3.25em);
-    line-height: 1.25;
-    margin-bottom: 25px;
+    line-height: 1;
+    margin-bottom: 10px;
   }
   .sets-apart-header h1 .no-wrap {
     white-space: nowrap;
