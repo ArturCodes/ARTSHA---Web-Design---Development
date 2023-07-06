@@ -10,7 +10,7 @@ $purple: lighten(#804DD4, 5%);
 $purple2: #804DD4; //actual
 $red: #D44D4D;
 $yellow: #ffcc00;
-$cyan: #3BCEB4;
+$cyan: #149B8A;
 $black: black;
 $white: white;
 
@@ -43,7 +43,7 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
         position: relative;
 
         p {
-            color: $yellow;
+            color: $cyan;
             font-weight: 600;
             line-height: 1.25;
             margin-bottom: 10px;
