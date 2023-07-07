@@ -815,7 +815,7 @@ header {
   }
   .contract-text h2 {
     color: white;
-    font-size: clamp(1.5em, 7vw, 3em);
+    font-size: clamp(1.75em, 7vw, 3em);
     line-height: 1.25;
   }
   .contract-text h2 span {
@@ -1163,35 +1163,6 @@ header {
   }
   .included-container h2 span {
     color: #38C6E5;
-  }
-  .included-container h2::before {
-    display: block;
-    content: "";
-    background-image: url("./images/cogs.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 250px;
-    height: 250px;
-    position: absolute;
-    left: -150px;
-    top: -240px;
-    opacity: 0.03;
-    z-index: 999;
-  }
-  .included-container h2::after {
-    display: none;
-    content: "";
-    background-image: url("./images/cogs2.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: calc(200px + 5vw);
-    height: calc(200px + 5vw);
-    position: absolute;
-    opacity: 0.03;
-    top: -150px;
-    right: 50px;
-    transform: scaleX(-1);
-    z-index: 999;
   }
   .included-container .included-items {
     margin-left: -50px;
