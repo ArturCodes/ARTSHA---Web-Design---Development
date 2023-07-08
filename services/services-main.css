@@ -575,11 +575,12 @@
 @media screen and (min-width: 0px) and (max-width: 999px) {
   #speed {
     max-width: 100%;
-    margin: 100px auto;
     display: flex;
     flex-direction: column;
     background: #E7F0F8;
-    padding-bottom: 100px;
+    padding: 100px auto;
+    position: relative;
+    z-index: 500;
   }
   .speed-text {
     width: 90%;
@@ -677,7 +678,8 @@
   .footer-bottom-blob {
     width: 100%;
     position: relative;
-    z-index: 999;
+    z-index: 5;
+    background-color: #E7F0F8;
   }
   .footer-container {
     overflow: visible;
