@@ -535,6 +535,7 @@
   .search-text {
     line-height: 1.5;
     margin: 0 auto;
+    min-width: 400px;
     max-width: 550px;
   }
   .search-text h2 {
