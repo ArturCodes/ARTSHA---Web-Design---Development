@@ -930,7 +930,7 @@ header {
   }
   .included-container a {
     border-radius: 7.5px;
-    border: 1px solid #38C6E5;
+    border: 2px solid #38C6E5;
     color: #38C6E5;
     min-width: 100px;
     padding: 17.5px 25px;
@@ -944,7 +944,7 @@ header {
     background-color: white;
     color: #1a1a1a;
     transition: 0.3s;
-    border: 1px solid #1a1a1a;
+    border: 2px solid #1a1a1a;
   }
 }
 @media only screen and (min-width: 850px) and (max-width: 1199px) {
@@ -1208,7 +1208,7 @@ header {
   }
   .included-container a {
     border-radius: 7.5px;
-    border: 1px solid #38C6E5;
+    border: 2px solid #38C6E5;
     color: #38C6E5;
     min-width: 100px;
     padding: 20px 30px;
@@ -1224,7 +1224,7 @@ header {
     background-color: white;
     color: #1a1a1a;
     transition: 0.3s;
-    border: 1px solid #1a1a1a;
+    border: 2px solid #1a1a1a;
   }
 }
 @media screen and (min-width: 0px) {

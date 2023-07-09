@@ -309,7 +309,7 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
 
         a {
             border-radius: 7.5px;
-            border: 1px solid $green;
+            border: 2px solid $green;
             color: $green;
             margin: 0 auto;
             min-width: 100px;
@@ -323,7 +323,7 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
                 background-color: white;
                 color: #1a1a1a;
                 transition: 0.3s;
-                border: 1px solid #1a1a1a;
+                border: 2px solid #1a1a1a;
             }
         }
 
@@ -363,7 +363,7 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
         h1 {
             margin: 0 auto;
             color: $black;
-            font-size: clamp(3em, 6vw, 3.25em);
+            font-size: clamp(3em, 6vw, 3.5em);
             line-height: 1;
             margin-bottom: 10px;
 

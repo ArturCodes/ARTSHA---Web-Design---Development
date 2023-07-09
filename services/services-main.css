@@ -227,20 +227,20 @@
   }
   .standing-out-container a {
     border-radius: 7.5px;
-    border: 1px solid #8f62d9;
+    border: 2px solid #8f62d9;
     color: #9d76de;
     margin: 0 auto;
     min-width: 100px;
     padding: 20px 30px;
     font-weight: 700;
     transition: 0.3s;
-    box-shadow: 1px 1px 5px #1a1a1a;
+    box-shadow: 2px 1px 5px #1a1a1a;
   }
   .standing-out-container a:hover {
     background-color: white;
     color: #1a1a1a;
     transition: 0.3s;
-    border: 1px solid #1a1a1a;
+    border: 2px solid #1a1a1a;
   }
   .standing-out-bottom-blob {
     background-color: white;
