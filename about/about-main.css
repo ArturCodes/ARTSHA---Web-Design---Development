@@ -19,7 +19,6 @@
   }
   .about-hero-text h1 {
     line-height: 1.25;
-    font-weight: 500;
   }
   .about-hero-girl {
     position: absolute;
@@ -147,6 +146,7 @@
   }
   .about-hero-text p {
     font-size: 1.75em;
+    margin-bottom: 10px;
   }
   .about-hero-text h1 {
     font-size: 3em;
