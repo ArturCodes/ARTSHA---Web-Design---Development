@@ -191,60 +191,35 @@
   }
   .contact-page-container {
     max-width: 850px;
+    width: 90%;
     display: flex;
     flex-direction: column;
-    width: 60%;
     margin: 0 auto;
     margin-top: 75px;
   }
-  .contact-page-container p:first-child {
-    color: #9d76de;
-    font-weight: 700;
-    font-size: 1.5em;
-    margin-bottom: 0px;
-  }
   .contact-page-container h1 {
-    width: 100%;
     color: white;
-    font-size: clamp(2em, 6vw, 3em);
+    font-size: clamp(2em, 5vw, 3.5em);
     margin-bottom: 25px;
-    line-height: 1.25;
+    text-align: center;
   }
-  .contact-page-container p {
+  .contact-page-container h1 span {
+    color: #149B8A;
+  }
+  .contact-page-container .input-group {
+    display: flex;
+    flex-direction: column;
+    max-width: 250px;
+  }
+  .contact-page-container .input-group label {
     color: white;
-    margin-bottom: 50px;
-    line-height: 1.75;
     font-size: 1.125em;
+    padding-right: 5px;
+    margin-bottom: 10px;
   }
-  .contact-page-container .pathway {
-    content: "";
-    background-image: url("./service-images/pathway.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    margin: 0 auto;
-    width: 100%;
-    max-width: 600px;
-    height: 40vw;
-    max-height: 350px;
-    margin-bottom: 50px;
-  }
-  .contact-page-container a {
-    border-radius: 7.5px;
-    border: 1px solid #8f62d9;
-    color: #9d76de;
-    margin: 0 auto;
-    min-width: 100px;
-    padding: 20px 30px;
-    font-weight: 700;
-    transition: 0.3s;
-    box-shadow: 1px 1px 5px #1a1a1a;
-  }
-  .contact-page-container a:hover {
-    background-color: white;
-    color: #1a1a1a;
-    transition: 0.3s;
-    border: 1px solid #1a1a1a;
+  .contact-page-container .input-group input {
+    margin-bottom: 25px;
+    padding: 10px;
   }
   .contact-page-bottom-blob {
     background-color: white;

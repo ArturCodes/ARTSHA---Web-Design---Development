@@ -263,67 +263,40 @@ $box-shadow-hover: 1px 1px 1px darken(#3f3b513a, 100%),
 
     .contact-page-container {
         max-width: 850px;
+        width: 90%;
         display: flex;
         flex-direction: column;
-        width: 60%;
         margin: 0 auto;
         margin-top: 75px;
 
-        p:first-child {
-            color: lighten($purple, 5%);
-            font-weight: 700;
-            font-size: 1.5em;
-            margin-bottom: 0px;
-        }
-
         h1 {
-            width: 100%;
             color: $white;
-            font-size: clamp(2em, 6vw, 3em);
+            font-size: clamp(2em, 5vw, 3.5em);
             margin-bottom: 25px;
-            line-height: 1.25;
-        }
+            text-align: center;
 
-        p {
-            color: $white;
-            margin-bottom: 50px;
-            line-height: 1.75;
-            font-size: 1.125em;
-        }
-
-        .pathway {
-            content: '';
-            background-image: url('./service-images/pathway.png');
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-position: center;
-            margin: 0 auto;
-            width: 100%;
-            max-width: 600px;
-            height: 40vw;
-            max-height: 350px;
-            margin-bottom: 50px;
-        }
-
-        a {
-            border-radius: 7.5px;
-            border: 1px solid $purple;
-            color: lighten($purple, 5%);
-            margin: 0 auto;
-            min-width: 100px;
-            padding: 20px 30px;
-            font-weight: 700;
-            transition: 0.3s;
-            box-shadow: 1px 1px 5px #1a1a1a;
-
-            &:hover {
-                background-color: $white;
-                color: #1a1a1a;
-                transition: 0.3s;
-                border: 1px solid #1a1a1a;
+            span {
+                color: $cyan;
             }
         }
 
+        .input-group {
+            display: flex;
+            flex-direction: column;
+            max-width: 250px;
+
+            label {
+                color: $white;
+                font-size: 1.125em;
+                padding-right: 5px;
+                margin-bottom: 10px;
+            }
+
+            input {
+                margin-bottom: 25px;
+                padding: 10px;
+            }
+        }
     }
 
     .contact-page-bottom-blob {
